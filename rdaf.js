@@ -103,7 +103,7 @@ function init() {
           { defaultStretch: go.GraphObject.Fill, margin: 3 },
           $("Button",  // button A
             {
-              name: "buttonA-topic",
+              name: "button-a",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate
             },
@@ -131,7 +131,7 @@ function init() {
           { defaultStretch: go.GraphObject.Fill, margin: 3 },
           $("Button",  // button A
             {
-              name: "buttonA-activity",
+              name: "button-a",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate
             },
@@ -142,7 +142,7 @@ function init() {
           ),  // end button A
           $("Button",  // button B
             {
-              name: "buttonB-indicator",
+              name: "button-b",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate
             },
@@ -170,7 +170,7 @@ function init() {
           { defaultStretch: go.GraphObject.Fill, margin: 3 },
           $("Button",  // button A
             {
-              name: "ButtonA",
+              name: "Button-a",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate
             },
@@ -181,7 +181,7 @@ function init() {
           ),  // end button A
           $("Button",  // button B
             {
-              name: "ButtonB",
+              name: "Button-b",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate
             },
@@ -192,7 +192,7 @@ function init() {
           ),  // end button B
           $("Button",  // button C
             {
-              name: "ButtonC",
+              name: "Button-c",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate
             },
@@ -221,7 +221,7 @@ function init() {
           { defaultStretch: go.GraphObject.Fill, margin: 3 },
           $("Button",  // button A
             {
-              name: "buttonA-outcome",
+              name: "button-a",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate
             },
@@ -232,7 +232,7 @@ function init() {
           ),  // end button A
           $("Button",  // button B
             {
-              name: "buttonB-consideration",
+              name: "button-b",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate
             },
@@ -260,7 +260,7 @@ function init() {
           { defaultStretch: go.GraphObject.Fill, margin: 3 },
           $("Button",  // button A
             {
-              name: "buttonA-activity",
+              name: "button-a",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate
             },
@@ -271,7 +271,7 @@ function init() {
           ),  // end button A
           $("Button",  // button B
             {
-              name: "buttonB-indicator",
+              name: "button-b",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate
             },
@@ -299,7 +299,7 @@ function init() {
           { defaultStretch: go.GraphObject.Fill, margin: 3 },
           $("Button",  // button A
             {
-              name: "ButtonA-participant",
+              name: "Button-a",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate
             },
@@ -310,7 +310,7 @@ function init() {
           ),  // end button A
           $("Button",  // button B
             {
-              name: "ButtonB-method",
+              name: "Button-b",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate
             },
@@ -321,7 +321,7 @@ function init() {
           ),  // end button B
           $("Button",  // button C
             {
-              name: "ButtonC-exemplar",
+              name: "Button-c",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate
             },
@@ -382,13 +382,17 @@ function init() {
     );
 
   // create the model for the decision tree
+  makeNodes();
+}
+
+function makeDiagram(entities,links) {
   var model =
     new go.GraphLinksModel(
       { linkFromPortIdProperty: "fromport" });
   // set up the model with the node and link data
-  makeNodes(model);
+  model.nodeDataArray = entities;
+  model.linkDataArray = links;
   myDiagram.model = model;
-
   // make all but the start node invisible
   myDiagram.nodes.each(n => {
     if (n.text !== "Stages") n.visible = false;
@@ -398,84 +402,25 @@ function init() {
   });
 }
 
-function makeNodes(model) {
-  var nodeDataArray = [
-    { key: "Start",
-      text: "Stages",
-      category: "stage",
-      a: "envision",
-      aText: "Envision",
-      topicToolTip: "Topics in the Envision stage.",
-    },
-    { key: "Topic-DG",
-      text: "Data Governance",
-      category: "topic",
-      a: "outcomes",
-      aText: "Outcomes",
-      outcomeToolTip: "Outcomes of Data Governance",
-      b: "considerations",
-      bText: "Considerations",
-      considerationToolTip: "Considerations for Data Governance.",
-    },
-    { key: "Outcome-DGPolicy",
-      category: "outcome",
-      text: "Policy",
-      a: "activities",
-      aText: "Activities",
-      activityToolTip: "Activities that produce Policy.",
-      b: "indicators",
-      bText: "Indicators",
-      indicatorToolTip: "Indicators of Policy.",
-    },
-    { key: "Activity-MissionVision",
-      text: "Define Mission and Vision",
-      a: "participants",
-      aText: "Participants",
-      participantToolTip: "Participants",
-      b: "methods",
-      bText: "Methods",
-      methodToolTip: "Methods",
-      c: "exemplars",
-      cText: "Exemplars",
-      exemplarToolTip: "Examplars",
-      category: "activity"
-    },
-    { key: "Indicator-DGPolicy",
-      text: "Mission and Vision",
-      category: "indicator",
-    },
-    { key: "Consideration-Values",
-      text: "Organizational Values, including DEI",
-      category: "consideration"
-    },
-    { key: "Consideration-POVData",
-      text: "Purpose and value of data",
-      category: "consideration"
-    },
-    { key: "Consideration-FAIRData",
-      text: "Organization intent regarding FAIR Data",
-      category: "consideration"
-    },
-    { key: "Participant-VPR",
-      text: "Vice President for Research",
-      category: "participant"
-    }
-    
-	
-  ];
-   var linkDataArray = [
-       { from: "Start", fromport: "envision", to: "Topic-DG" },
-       { from: "Topic-DG", fromport: "outcomes", to: "Outcome-DGPolicy" },
-       { from: "Topic-DG", fromport: "considerations", to: "Consideration-Values" },
-       { from: "Topic-DG", fromport: "considerations", to: "Consideration-POVData" },
-       { from: "Topic-DG", fromport: "considerations", to: "Consideration-FAIRData" },
-       { from: "Outcome-DGPolicy", fromport: "activities", to: "Activity-MissionVision" },
-       { from: "Outcome-DGPolicy", fromport: "indicators", to: "Indicator-DGPolicy" },
-       { from: "Activity-MissionVision", fromport: "participants", to: "VPR" },
-        
-   ]
-  model.nodeDataArray = nodeDataArray;
-  model.linkDataArray = linkDataArray;
+function makeNodes() {
+  entities = [];
+  fetch('entities.json')
+   .then(response => response.json())
+   .then(data => {
+     entities = data;
+     fetch('links.json')
+      .then(response => response.json())
+      .then(data => {
+         links = data;
+	 makeDiagram(entities,links);
+       })
+       .catch(error => {
+          console.error('Error:', error);
+       })
+   })
+   .catch(error => {
+      console.error('Error:', error);
+  });
 }
 
 window.addEventListener('DOMContentLoaded', init);

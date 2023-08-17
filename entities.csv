@@ -1,0 +1,13 @@
+﻿ID,Name,Category,Description
+S1,Envision,stage,Review of the overall strategies and drivers of an organization’s research data program.
+T1,Data Governance,topic,"Policies, procedures, and processes to manage and monitor organizational requirements, regulatory and legal responsibilities and risks."
+O1,Policy,outcome,A set of high-level principles that establish a guiding framework for data management.
+I1,Vision Statement,indicator,An aspirational state an organization wishes to achieve with respect to RDM.
+C1,"Organizational Values, including DEI",consideration,"""A set of core beliefs...that function as guides to what is seen as good and important in [an] organization"" and ""the guiding principles that provide an organization with purpose and direction."" Values ideally include diversity, equity, and inclusivity."""
+C2,Purpose and value of data,consideration,"A clear statement of the need for, use of, and benefit derived from, research data for a specific objective. "
+C3,Organization intent regarding FAIR Data,consideration,The extent to which an organization supports the internal adoption and use of the FAIR data principles.
+P1,Vice President of Research,participant,The Vice President for Research is ….
+A1,Define the Organizational Vision for RDM,activity,Creation of a clear statement of the organization's vision for RDM
+A2,Define RDM Policies,activity,Development of the policies for RDM
+M1,Task Force,method,Group of stakeholders chartered to work together to accomplish a specific goal or goals
+E1,SBU Archival RDM Task Force,exemplar,A task force convened in 2018 to create basic data management policies for the university to take place from three-to-five years

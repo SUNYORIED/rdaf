@@ -1,0 +1,52 @@
+[
+    {
+        "from": "Start",
+        "to": "T1",
+        "fromport": "envision"
+    },
+    {
+        "from": "T1",
+        "to": "O1",
+        "fromport": "outcomes"
+    },
+    {
+        "from": "O1",
+        "to": "I1",
+        "fromport": "indicators"
+    },
+    {
+        "from": "T1",
+        "to": "C1",
+        "fromport": "considerations"
+    },
+    {
+        "from": "T1",
+        "to": "C2",
+        "fromport": "considerations"
+    },
+    {
+        "from": "T1",
+        "to": "C3",
+        "fromport": "considerations"
+    },
+    {
+        "from": "O1",
+        "to": "A1",
+        "fromport": "activities"
+    },
+    {
+        "from": "A1",
+        "to": "P1",
+        "fromport": "participants"
+    },
+    {
+        "from": "A1",
+        "to": "M1",
+        "fromport": "methods"
+    },
+    {
+        "from": "A1",
+        "to": "E1",
+        "fromport": "exemplars"
+    }
+]

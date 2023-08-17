@@ -1,0 +1,95 @@
+[
+    {
+        "key": "Start",
+        "text": "Stages",
+        "category": "stage",
+        "a": "envision",
+        "aText": "Envision",
+        "aToolTip": "Review of the overall strategies and drivers of an organization\u2019s research data program."
+    },
+    {
+        "key": "T1",
+        "text": "Data Governance",
+        "category": "topic",
+        "a": "outcomes",
+        "aText": "Outcomes",
+        "aToolTip": "Outcomes of Data Governance",
+        "b": "considerations",
+        "bText": "Considerations",
+        "bToolTip": "Considerations for Data Governance"
+    },
+    {
+        "key": "O1",
+        "text": "Policy",
+        "category": "outcome",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that produce Policy",
+        "b": "indicators",
+        "bText": "Indicators",
+        "bToolTip": "Indicators of Policy"
+    },
+    {
+        "key": "I1",
+        "text": "Vision Statement",
+        "category": "indicator"
+    },
+    {
+        "key": "C1",
+        "text": "Organizational Values, including DEI",
+        "category": "consideration"
+    },
+    {
+        "key": "C2",
+        "text": "Purpose and value of data",
+        "category": "consideration"
+    },
+    {
+        "key": "C3",
+        "text": "Organization intent regarding FAIR Data",
+        "category": "consideration"
+    },
+    {
+        "key": "P1",
+        "text": "Vice President of Research",
+        "category": "participant"
+    },
+    {
+        "key": "A1",
+        "text": "Define the Organizational Vision for RDM",
+        "category": "activity",
+        "a": "participants",
+        "aText": "Participants",
+        "aToolTip": "Participants in Define the Organizational Vision for RDM",
+        "b": "methods",
+        "bText": "Methods",
+        "bToolTip": "Methods for Define the Organizational Vision for RDM",
+        "c": "exemplars",
+        "cText": "Exemplars",
+        "cToolTip": "Exemplars of Define the Organizational Vision for RDM"
+    },
+    {
+        "key": "A2",
+        "text": "Define RDM Policies",
+        "category": "activity",
+        "a": "participants",
+        "aText": "Participants",
+        "aToolTip": "Participants in Define RDM Policies",
+        "b": "methods",
+        "bText": "Methods",
+        "bToolTip": "Methods for Define RDM Policies",
+        "c": "exemplars",
+        "cText": "Exemplars",
+        "cToolTip": "Exemplars of Define RDM Policies"
+    },
+    {
+        "key": "M1",
+        "text": "Task Force",
+        "category": "method"
+    },
+    {
+        "key": "E1",
+        "text": "SBU Archival RDM Task Force",
+        "category": "exemplar"
+    }
+]
