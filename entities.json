@@ -19,20 +19,12 @@
         "bToolTip": "Considerations for Data Governance"
     },
     {
-        "key": "O1",
-        "text": "Policy",
-        "category": "outcome",
-        "a": "activities",
-        "aText": "Activities",
-        "aToolTip": "Activities that produce Policy",
-        "b": "indicators",
-        "bText": "Indicators",
-        "bToolTip": "Indicators of Policy"
-    },
-    {
         "key": "I1",
         "text": "Vision Statement",
-        "category": "indicator"
+        "category": "outcome",
+        "a": "activities",
+        "aText": "Produced By",
+        "aToolTip": "Activities that produce Vision Statement"
     },
     {
         "key": "C1",

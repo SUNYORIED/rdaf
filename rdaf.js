@@ -139,18 +139,7 @@ function init() {
             $(go.TextBlock,
               { font: '500 16px Roboto, sans-serif' },
               new go.Binding("text", "aText"))
-          ),  // end button A
-          $("Button",  // button B
-            {
-              name: "button-b",
-              click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
-            },
-            new go.Binding("portId", "b"),
-            $(go.TextBlock,
-              { font: '500 16px Roboto, sans-serif' },
-              new go.Binding("text", "bText"))
-          )  // end button A
+          )
         )  // end Vertical Panel
       )  // end Horizontal Panel
     ));  // end Node and call to add
@@ -206,45 +195,6 @@ function init() {
     ));  // end Node and call to add
 
   myDiagram.nodeTemplateMap.add("topic",
-    $(go.Node, "Auto",
-      new go.Binding("text", "text"),
-      // define the node's outer shape, which will surround the Horizontal Panel
-      $(go.Shape, "Rectangle",
-        { fill: "whitesmoke", stroke: "lightgray" }),
-      // define a horizontal Panel to place the node's text alongside the buttons
-      $(go.Panel, "Horizontal",
-        $(go.TextBlock,
-          { font: "30px Roboto, sans-serif", margin: 5 },
-          new go.Binding("text", "text")),
-        // define a vertical panel to place the node's two buttons one above the other
-        $(go.Panel, "Vertical",
-          { defaultStretch: go.GraphObject.Fill, margin: 3 },
-          $("Button",  // button A
-            {
-              name: "button-a",
-              click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
-            },
-            new go.Binding("portId", "a"),
-            $(go.TextBlock,
-              { font: '500 16px Roboto, sans-serif' },
-              new go.Binding("text", "aText"))
-          ),  // end button A
-          $("Button",  // button B
-            {
-              name: "button-b",
-              click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
-            },
-            new go.Binding("portId", "b"),
-            $(go.TextBlock,
-              { font: '500 16px Roboto, sans-serif' },
-              new go.Binding("text", "bText"))
-          )  // end button A
-        )  // end Vertical Panel
-      )  // end Horizontal Panel
-    ));  // end Node and call to add
-  myDiagram.nodeTemplateMap.add("outcome",
     $(go.Node, "Auto",
       new go.Binding("text", "text"),
       // define the node's outer shape, which will surround the Horizontal Panel
@@ -359,7 +309,19 @@ function init() {
         },
         new go.Binding("text", "text"))
     ));
-  myDiagram.nodeTemplateMap.add("indicator",
+  myDiagram.nodeTemplateMap.add("method",
+    $(go.Node, "Auto",
+      new go.Binding("text", "text"),
+      $(go.Shape, "Rectangle",
+        { fill: "whitesmoke", stroke: "lightgray" }),
+      $(go.TextBlock,
+        {
+          font: '13px Roboto, sans-serif',
+          wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5
+        },
+        new go.Binding("text", "text"))
+    ));
+  myDiagram.nodeTemplateMap.add("exemplar",
     $(go.Node, "Auto",
       new go.Binding("text", "text"),
       $(go.Shape, "Rectangle",

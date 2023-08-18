@@ -5,14 +5,14 @@
         "fromport": "envision"
     },
     {
-        "from": "T1",
-        "to": "O1",
-        "fromport": "outcomes"
+        "from": "I1",
+        "to": "A1",
+        "fromport": "activities"
     },
     {
-        "from": "O1",
+        "from": "T1",
         "to": "I1",
-        "fromport": "indicators"
+        "fromport": "outcomes"
     },
     {
         "from": "T1",
@@ -28,11 +28,6 @@
         "from": "T1",
         "to": "C3",
         "fromport": "considerations"
-    },
-    {
-        "from": "O1",
-        "to": "A1",
-        "fromport": "activities"
     },
     {
         "from": "A1",

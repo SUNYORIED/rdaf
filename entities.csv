@@ -1,8 +1,7 @@
 ﻿ID,Name,Category,Description
-S1,Envision,stage,Review of the overall strategies and drivers of an organization’s research data program.
+Start,Envision,stage,Review of the overall strategies and drivers of an organization’s research data program.
 T1,Data Governance,topic,"Policies, procedures, and processes to manage and monitor organizational requirements, regulatory and legal responsibilities and risks."
-O1,Policy,outcome,A set of high-level principles that establish a guiding framework for data management.
-I1,Vision Statement,indicator,An aspirational state an organization wishes to achieve with respect to RDM.
+I1,Vision Statement,outcome,An aspirational state an organization wishes to achieve with respect to RDM.
 C1,"Organizational Values, including DEI",consideration,"""A set of core beliefs...that function as guides to what is seen as good and important in [an] organization"" and ""the guiding principles that provide an organization with purpose and direction."" Values ideally include diversity, equity, and inclusivity."""
 C2,Purpose and value of data,consideration,"A clear statement of the need for, use of, and benefit derived from, research data for a specific objective. "
 C3,Organization intent regarding FAIR Data,consideration,The extent to which an organization supports the internal adoption and use of the FAIR data principles.

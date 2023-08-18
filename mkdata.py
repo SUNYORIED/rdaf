@@ -41,11 +41,8 @@ for index,row in entities_df.iterrows():
             obj['bToolTip'] = 'Considerations for ' + row['Name']
         elif row['Category'] == 'outcome':
             obj['a'] = 'activities'
-            obj['aText'] = 'Activities'
+            obj['aText'] = 'Produced By'
             obj['aToolTip'] = 'Activities that produce ' + row['Name']
-            obj['b'] = 'indicators'
-            obj['bText'] = 'Indicators'
-            obj['bToolTip'] = 'Indicators of ' + row['Name']
         elif row['Category'] == 'activity':
             obj['a'] = 'participants'
             obj['aText'] = 'Participants'
@@ -73,14 +70,12 @@ for index,row in links_df.iterrows():
     link['to'] = row['Object']
     if row['Predicate'] == 'includes':
         link['fromport'] = 'envision' # TODO fix
-    elif row['Predicate'] == 'produces':
-        link['fromport'] = 'outcomes'
+    elif row['Predicate'] == 'producedBy':
+        link['fromport'] = 'activities'
     elif row['Predicate'] == 'indicatedBy':
-        link['fromport'] = 'indicators'
+        link['fromport'] = 'outcomes'
     elif row['Predicate'] == 'mayConsider':
         link['fromport'] = 'considerations'
-    elif row['Predicate'] == 'createdBy':
-        link['fromport'] = 'activities'
     elif row['Predicate'] == 'mayInvolve':
         link['fromport'] = 'participants'
     elif row['Predicate'] == 'hasMethod':

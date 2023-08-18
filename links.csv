@@ -1,11 +1,10 @@
 ﻿Subject,Predicate,Object
 Start,includes,T1
-T1,produces,O1
-O1,indicatedBy,I1
+I1,producedBy,A1
+T1,indicatedBy,I1
 T1,mayConsider,C1
 T1,mayConsider,C2
 T1,mayConsider,C3
-O1,createdBy,A1
 A1,mayInvolve,P1
 A1,hasMethod,M1
 A1,hasExemplar,E1
