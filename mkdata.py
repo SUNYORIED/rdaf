@@ -138,8 +138,8 @@ for activity in eids['activity']:
     obj['cText'] = 'Exemplars'
     obj['cToolTip'] = 'Exemplars of ' + activity
     obj['d'] = 'pgroups'
-    obj['dText'] = 'Participant Groups'
-    obj['dToolTip'] = 'Participant Groups for ' + activity
+    obj['dText'] = 'Roles'
+    obj['dToolTip'] = 'Roles involved in ' + activity
     entities.append(obj)
 
 for p in eids['participant']:
