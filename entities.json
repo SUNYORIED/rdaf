@@ -11,7 +11,7 @@
         "bToolTip": "The tactical management positioning in an organization for effective research data management throughout the research data lifecycle."
     },
     {
-        "key": "5c3c6c4d-35f9-4ed5-9b5c-9cc2959c5bb2",
+        "key": "acd62087-9757-4fe2-b6a1-3eb0e2c875b7",
         "text": "Data Governance-Strategic/Qualitative",
         "category": "topic",
         "a": "outcomes",
@@ -22,7 +22,7 @@
         "bToolTip": "Considerations for Data Governance-Strategic/Qualitative"
     },
     {
-        "key": "f3c158d6-cebd-4df0-aee4-2b76de34c99b",
+        "key": "37a24f86-bdef-4e86-9a56-4cbb895537f4",
         "text": "Data Governance-Legal and Regulatory Compliance",
         "category": "topic",
         "a": "outcomes",
@@ -33,7 +33,7 @@
         "bToolTip": "Considerations for Data Governance-Legal and Regulatory Compliance"
     },
     {
-        "key": "6a81c153-cd5c-4112-8de9-2748a21a7a45",
+        "key": "7938a53e-8d3e-4d9e-a1cc-cb94e42144c6",
         "text": "Data Culture and Reward Structure",
         "category": "topic",
         "a": "outcomes",
@@ -44,7 +44,7 @@
         "bToolTip": "Considerations for Data Culture and Reward Structure"
     },
     {
-        "key": "2c1be751-7645-4b5c-9112-a01c85ae9a11",
+        "key": "5c1cc146-9403-4699-9a55-9989c96b55ef",
         "text": "Education and Workforce Development",
         "category": "topic",
         "a": "outcomes",
@@ -55,7 +55,7 @@
         "bToolTip": "Considerations for Education and Workforce Development"
     },
     {
-        "key": "84d7898b-acc5-4a77-81c8-5a6f9378327b",
+        "key": "4bc02ea8-a789-4ecc-9713-f662ea0e64bb",
         "text": "Resources\u2014Allocation and Sustainability",
         "category": "topic",
         "a": "outcomes",
@@ -66,7 +66,7 @@
         "bToolTip": "Considerations for Resources\u2014Allocation and Sustainability"
     },
     {
-        "key": "1c8049dd-fcae-4575-b7bd-2c8c8579f101",
+        "key": "18941921-114e-4a1e-8e6a-adf5c42ca828",
         "text": "Community Engagement",
         "category": "topic",
         "a": "outcomes",
@@ -77,7 +77,7 @@
         "bToolTip": "Considerations for Community Engagement"
     },
     {
-        "key": "255c74fa-a359-470c-8fbb-c607ce6ca0e2",
+        "key": "4447c8ca-3c29-4fbc-972e-3dac94500cef",
         "text": "Chain of Control (Custody of Data)",
         "category": "topic",
         "a": "outcomes",
@@ -88,7 +88,7 @@
         "bToolTip": "Considerations for Chain of Control (Custody of Data)"
     },
     {
-        "key": "4d94b5cf-a8fe-426b-9c3b-a52109d3c0a3",
+        "key": "a13144be-e4fd-45be-808e-2ecc41d3f994",
         "text": "Financial Aspects of Planning",
         "category": "topic",
         "a": "outcomes",
@@ -99,7 +99,7 @@
         "bToolTip": "Considerations for Financial Aspects of Planning"
     },
     {
-        "key": "c36f0072-4c11-4d1b-be09-3b088c5229ad",
+        "key": "f2b76630-d653-45a8-9492-647237c5b518",
         "text": "Data Management Planning",
         "category": "topic",
         "a": "outcomes",
@@ -110,7 +110,7 @@
         "bToolTip": "Considerations for Data Management Planning"
     },
     {
-        "key": "1cfaa422-c71d-418d-b59d-e262253918cd",
+        "key": "57c6f9d9-f8c1-47e4-8e28-15f9c9e5365c",
         "text": "Data/Metadata Considerations",
         "category": "topic",
         "a": "outcomes",
@@ -121,7 +121,7 @@
         "bToolTip": "Considerations for Data/Metadata Considerations"
     },
     {
-        "key": "ebb63bc2-b38a-4373-930f-6065e6617025",
+        "key": "0c9f1ebb-4ede-4479-b8db-8dbbc106ce98",
         "text": "Data Architecture",
         "category": "topic",
         "a": "outcomes",
@@ -132,7 +132,7 @@
         "bToolTip": "Considerations for Data Architecture"
     },
     {
-        "key": "a290e3e9-0079-4ecd-a39f-3237312432bb",
+        "key": "f69a92cc-0432-4133-bcb8-76e2e67bb113",
         "text": "Hardware and Software Infrastructure",
         "category": "topic",
         "a": "outcomes",
@@ -143,7 +143,7 @@
         "bToolTip": "Considerations for Hardware and Software Infrastructure"
     },
     {
-        "key": "891b4496-d834-4b46-897c-637ac721b6aa",
+        "key": "b799754e-e5a3-4b69-9b33-df7a561e3d03",
         "text": "Research Data Standards",
         "category": "topic",
         "a": "outcomes",
@@ -154,7 +154,7 @@
         "bToolTip": "Considerations for Research Data Standards"
     },
     {
-        "key": "a4db788e-568d-4ec1-8cde-d4d75dc7c0b0",
+        "key": "4edd651f-cbb5-4dd8-8d92-e73f85fe7978",
         "text": "Assessment",
         "category": "topic",
         "a": "outcomes",
@@ -165,7 +165,7 @@
         "bToolTip": "Considerations for Assessment"
     },
     {
-        "key": "45344e8c-ab0d-45e0-b396-0d021f7c1ac8",
+        "key": "a6dfcfa8-a5ff-4417-b6c8-4330f403da27",
         "text": "Communication and Outreach",
         "category": "topic",
         "a": "outcomes",
@@ -176,7 +176,7 @@
         "bToolTip": "Considerations for Communication and Outreach"
     },
     {
-        "key": "8a40d784-6722-4cd2-ae43-fe4d0ebb25c6",
+        "key": "371ab124-fc17-40bc-8d4f-3d877e20b6d8",
         "text": "Access Control Associated with Data Sensitivity",
         "category": "topic",
         "a": "outcomes",
@@ -187,7 +187,7 @@
         "bToolTip": "Considerations for Access Control Associated with Data Sensitivity"
     },
     {
-        "key": "283a5f78-b5bc-403e-8a60-f27b64c699cf",
+        "key": "02501646-58be-4c86-a7bc-a9fa7e7d8243",
         "text": "Vision Statement",
         "category": "outcome",
         "a": "activities",
@@ -195,7 +195,7 @@
         "aToolTip": "Activities that produce Vision Statement"
     },
     {
-        "key": "05f0d431-6d18-452a-8129-e88dd22dcd3c",
+        "key": "3ad7a132-d07b-4a79-8213-475e98e1ba06",
         "text": "Data Management Value Proposition",
         "category": "outcome",
         "a": "activities",
@@ -203,7 +203,7 @@
         "aToolTip": "Activities that produce Data Management Value Proposition"
     },
     {
-        "key": "bc89320e-7291-479b-bc02-fd930ffcc509",
+        "key": "920b7077-60eb-448e-97d5-982572d844e6",
         "text": "RACI chart",
         "category": "outcome",
         "a": "activities",
@@ -211,7 +211,7 @@
         "aToolTip": "Activities that produce RACI chart"
     },
     {
-        "key": "3ebf512f-2509-421b-940c-a46228a4d171",
+        "key": "d1aab0b4-6c01-4f75-ba18-b8e40e658a7c",
         "text": "Needs Assessment Report",
         "category": "outcome",
         "a": "activities",
@@ -219,7 +219,7 @@
         "aToolTip": "Activities that produce Needs Assessment Report"
     },
     {
-        "key": "10b3b342-55a0-4a88-951e-1e45d3dc5fc9",
+        "key": "3672d6f8-ca81-4914-994a-c9710113350a",
         "text": "Data Governance Council",
         "category": "outcome",
         "a": "activities",
@@ -227,7 +227,7 @@
         "aToolTip": "Activities that produce Data Governance Council"
     },
     {
-        "key": "2f04278f-59c2-473f-bc9e-186692313136",
+        "key": "68dfbd81-4785-4036-b87a-af26a41e6901",
         "text": "Risk Assessment Report",
         "category": "outcome",
         "a": "activities",
@@ -235,7 +235,7 @@
         "aToolTip": "Activities that produce Risk Assessment Report"
     },
     {
-        "key": "289ec0e7-a35e-4bfc-83cc-846f8a45b52a",
+        "key": "2d059792-c198-41d5-b0b3-fafc8e1675d6",
         "text": "Risk mitigation and management",
         "category": "outcome",
         "a": "activities",
@@ -243,7 +243,7 @@
         "aToolTip": "Activities that produce Risk mitigation and management"
     },
     {
-        "key": "14bb6631-0ff2-48c5-af65-2f98e30dd2fc",
+        "key": "5b0a9490-bd63-41c5-8d7e-45d4e5f5b1b4",
         "text": "Dataset Inventory",
         "category": "outcome",
         "a": "activities",
@@ -251,7 +251,7 @@
         "aToolTip": "Activities that produce Dataset Inventory"
     },
     {
-        "key": "fb095395-b259-4843-92b3-6ba091f8e36c",
+        "key": "b5765ad1-0aea-4e3e-a134-1d3763aab83a",
         "text": "Sharing/licensing (Data and Licensing sharing templates)",
         "category": "outcome",
         "a": "activities",
@@ -259,7 +259,7 @@
         "aToolTip": "Activities that produce Sharing/licensing (Data and Licensing sharing templates)"
     },
     {
-        "key": "903f9d6e-52c6-4f12-bb66-5e012ac6bd4b",
+        "key": "5e1be928-2ed4-4ee3-949f-db9624c8df64",
         "text": "Social license for use and reuse",
         "category": "outcome",
         "a": "activities",
@@ -267,7 +267,7 @@
         "aToolTip": "Activities that produce Social license for use and reuse"
     },
     {
-        "key": "5e90b821-6049-441c-8ede-55cb9fa23e43",
+        "key": "b85bfb16-369b-4455-b821-bc1172bccefb",
         "text": "List of Data Policies",
         "category": "outcome",
         "a": "activities",
@@ -275,7 +275,7 @@
         "aToolTip": "Activities that produce List of Data Policies"
     },
     {
-        "key": "a7138bac-3305-4118-a7c6-250240f6f24b",
+        "key": "adce5a1b-df9a-4f22-ac11-18631e7be4c4",
         "text": "Promotion and Tenure includes RDM",
         "category": "outcome",
         "a": "activities",
@@ -283,7 +283,7 @@
         "aToolTip": "Activities that produce Promotion and Tenure includes RDM"
     },
     {
-        "key": "567fd148-16e1-4665-a81c-7f7639adcc08",
+        "key": "3029a406-f946-42dd-80df-0fbb12ba973a",
         "text": "All published data passed an accuracy check",
         "category": "outcome",
         "a": "activities",
@@ -291,7 +291,7 @@
         "aToolTip": "Activities that produce All published data passed an accuracy check"
     },
     {
-        "key": "0426a89a-3c51-4442-aaf7-7817cb0f136b",
+        "key": "857cc95f-cf68-4649-8ea6-ac6a64839564",
         "text": "Incentives and impact for sharing and reuse",
         "category": "outcome",
         "a": "activities",
@@ -299,7 +299,7 @@
         "aToolTip": "Activities that produce Incentives and impact for sharing and reuse"
     },
     {
-        "key": "3f0b5e54-1959-41dd-b57b-48870ed64410",
+        "key": "0312b7d3-b9bf-4513-8ddb-3a27382bf151",
         "text": "Disincentives for sharing and reuse",
         "category": "outcome",
         "a": "activities",
@@ -307,7 +307,7 @@
         "aToolTip": "Activities that produce Disincentives for sharing and reuse"
     },
     {
-        "key": "f10d3ea4-77db-42ae-a9b2-03e376a26b47",
+        "key": "7850a80e-cac8-45cd-b0aa-d222c76397b6",
         "text": "Data management training",
         "category": "outcome",
         "a": "activities",
@@ -315,7 +315,7 @@
         "aToolTip": "Activities that produce Data management training"
     },
     {
-        "key": "ad297957-5f67-4eb7-ad6e-2744079ce15b",
+        "key": "67bdd8e4-813d-4d73-8f95-38b8122bb926",
         "text": "Promotional paths and career development",
         "category": "outcome",
         "a": "activities",
@@ -323,7 +323,7 @@
         "aToolTip": "Activities that produce Promotional paths and career development"
     },
     {
-        "key": "8821eb2d-50f3-4c66-900a-0199b51e5a5e",
+        "key": "867395c1-08fd-4307-9155-b7405116a055",
         "text": "Many funding streams to support research",
         "category": "outcome",
         "a": "activities",
@@ -331,7 +331,7 @@
         "aToolTip": "Activities that produce Many funding streams to support research"
     },
     {
-        "key": "851be58f-61bb-4a31-a1fd-f702c822b9c5",
+        "key": "52bd8d31-fdcd-489a-a8f6-db0c0db8f441",
         "text": "Named Stakeholder communities exist",
         "category": "outcome",
         "a": "activities",
@@ -339,7 +339,7 @@
         "aToolTip": "Activities that produce Named Stakeholder communities exist"
     },
     {
-        "key": "a01a824e-fc21-410a-bdd6-16cefd752e9a",
+        "key": "7d3122e2-6a27-4dc6-b0c5-31ad718429e3",
         "text": "Data Services Inventory",
         "category": "outcome",
         "a": "activities",
@@ -347,7 +347,7 @@
         "aToolTip": "Activities that produce Data Services Inventory"
     },
     {
-        "key": "83cf423f-a592-462c-96db-df22bfd9ca88",
+        "key": "d73de912-4c65-4eef-a74d-ee294fe9c3dd",
         "text": "Funding models for provisioning resources",
         "category": "outcome",
         "a": "activities",
@@ -355,7 +355,7 @@
         "aToolTip": "Activities that produce Funding models for provisioning resources"
     },
     {
-        "key": "1ee7a257-5e01-4e0d-bdd9-9ef997aef9e5",
+        "key": "af6909bb-ac46-420e-abcb-390c765313ec",
         "text": "Decision-making tools to assess costs",
         "category": "outcome",
         "a": "activities",
@@ -363,7 +363,7 @@
         "aToolTip": "Activities that produce Decision-making tools to assess costs"
     },
     {
-        "key": "93a6eafb-527c-47d5-9294-6b0d9b70d94f",
+        "key": "1a5e3cbe-afcd-4443-9236-93663af0be34",
         "text": "Cost-benefit analysis",
         "category": "outcome",
         "a": "activities",
@@ -371,7 +371,7 @@
         "aToolTip": "Activities that produce Cost-benefit analysis"
     },
     {
-        "key": "739240d4-ede8-436d-bc59-110011c21d9e",
+        "key": "f3707eef-5318-48ac-97c5-9b38c1819890",
         "text": "Cost breakdown by lifecycle stage and beyond",
         "category": "outcome",
         "a": "activities",
@@ -379,7 +379,7 @@
         "aToolTip": "Activities that produce Cost breakdown by lifecycle stage and beyond"
     },
     {
-        "key": "61d74ed1-a1fe-4d5e-b745-a89bab60479c",
+        "key": "72705caf-4bb6-44ca-be09-79b99958f54d",
         "text": "Funding workshops for researchers",
         "category": "outcome",
         "a": "activities",
@@ -387,7 +387,7 @@
         "aToolTip": "Activities that produce Funding workshops for researchers"
     },
     {
-        "key": "38694567-6875-455f-9640-8f15787ce04c",
+        "key": "4d7ff2ea-6465-40d6-ab4b-9d5f89851f36",
         "text": "Written data management plans (DMPs)",
         "category": "outcome",
         "a": "activities",
@@ -395,7 +395,7 @@
         "aToolTip": "Activities that produce Written data management plans (DMPs)"
     },
     {
-        "key": "29daaa68-2291-4dbb-ba0e-2de977d7e2a9",
+        "key": "2a95dd83-7485-4ca3-ab43-a9bd19433b27",
         "text": "Data management expertise and training",
         "category": "outcome",
         "a": "activities",
@@ -403,7 +403,7 @@
         "aToolTip": "Activities that produce Data management expertise and training"
     },
     {
-        "key": "adab8862-ddee-4b2a-b6c9-9eccb25a93f1",
+        "key": "1603d0f8-00b9-4006-9a9e-7237b04728ca",
         "text": "Machine-readable DMPs",
         "category": "outcome",
         "a": "activities",
@@ -411,7 +411,7 @@
         "aToolTip": "Activities that produce Machine-readable DMPs"
     },
     {
-        "key": "d2f13d59-7160-4f06-868f-00b5fc9e8c71",
+        "key": "8d5e2789-aa80-4849-b769-5f6cd5cd88c0",
         "text": "Linkage of DMPs to administrative records",
         "category": "outcome",
         "a": "activities",
@@ -419,7 +419,7 @@
         "aToolTip": "Activities that produce Linkage of DMPs to administrative records"
     },
     {
-        "key": "b2f0b2df-fe20-4448-a86a-54bb21424db9",
+        "key": "83c1d27e-88b0-4ef8-b8d6-22505f48ee9d",
         "text": "Data organization in, e.g., a database and a repository, to facilitate future access",
         "category": "outcome",
         "a": "activities",
@@ -427,7 +427,7 @@
         "aToolTip": "Activities that produce Data organization in, e.g., a database and a repository, to facilitate future access"
     },
     {
-        "key": "7ea9eb91-e9ca-42ce-9993-3447c5df142f",
+        "key": "83b10fb5-80bf-4f34-a343-978ef2ba7aef",
         "text": "Metadata is interoperable and shared across systems",
         "category": "outcome",
         "a": "activities",
@@ -435,7 +435,7 @@
         "aToolTip": "Activities that produce Metadata is interoperable and shared across systems"
     },
     {
-        "key": "9e607548-b479-4da8-ab73-69e6daad235e",
+        "key": "86d5928a-3594-4565-8557-d1de88fb3827",
         "text": "Large scale equipment uses persisten instrument identifiers",
         "category": "outcome",
         "a": "activities",
@@ -443,7 +443,7 @@
         "aToolTip": "Activities that produce Large scale equipment uses persisten instrument identifiers"
     },
     {
-        "key": "c9b1894f-2472-4b82-bd35-1614fe110322",
+        "key": "b13f73e8-2df7-452b-8dc2-8b4c48d4ae6b",
         "text": "Define organizational vision for research data",
         "category": "activity",
         "a": "participants",
@@ -456,11 +456,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Define organizational vision for research data",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Define organizational vision for research data"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Define organizational vision for research data"
     },
     {
-        "key": "ab63a0a4-341d-4f89-96e3-2116ff41a58e",
+        "key": "5731dccc-829f-460d-b427-7879da152d72",
         "text": "Define Roles and responsibilities",
         "category": "activity",
         "a": "participants",
@@ -473,11 +473,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Define Roles and responsibilities",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Define Roles and responsibilities"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Define Roles and responsibilities"
     },
     {
-        "key": "4abeaf28-08d8-4e00-b5e0-f7a776852e13",
+        "key": "a380210a-323c-431c-9dfc-cc6e5eba173b",
         "text": "Conduct a data needs assessment",
         "category": "activity",
         "a": "participants",
@@ -490,11 +490,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Conduct a data needs assessment",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Conduct a data needs assessment"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Conduct a data needs assessment"
     },
     {
-        "key": "a0689e23-2f1a-4502-800f-a28604a3c022",
+        "key": "0ff0e840-acd4-454b-b479-ea7c312d3b2a",
         "text": "Risk Assessment",
         "category": "activity",
         "a": "participants",
@@ -507,11 +507,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Risk Assessment",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Risk Assessment"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Risk Assessment"
     },
     {
-        "key": "5f77f716-fe8d-499a-85b1-9f8b901ff0f7",
+        "key": "fb5687ea-347c-45b3-bf08-ee45553880b0",
         "text": "Create an Inventory",
         "category": "activity",
         "a": "participants",
@@ -524,11 +524,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Create an Inventory",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Create an Inventory"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Create an Inventory"
     },
     {
-        "key": "10c2b0b8-2dae-4839-8bf8-19b7d4c446e5",
+        "key": "b6ab09a2-fc77-45f5-a3b0-357ca8849a39",
         "text": "Identify legal and ethical requirements",
         "category": "activity",
         "a": "participants",
@@ -541,11 +541,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Identify legal and ethical requirements",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Identify legal and ethical requirements"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Identify legal and ethical requirements"
     },
     {
-        "key": "2190be01-8490-46f3-85df-a10c98cdc27a",
+        "key": "0e8fc62f-4961-4b00-bb35-91e496d0d5ff",
         "text": "Create Data Policies",
         "category": "activity",
         "a": "participants",
@@ -558,11 +558,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Create Data Policies",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Create Data Policies"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Create Data Policies"
     },
     {
-        "key": "f6eb3c29-95e3-4e0b-a22d-11941ba3af16",
+        "key": "af08796f-5b09-4e07-a9ae-ef3ec1943677",
         "text": "Recognize values of data workers",
         "category": "activity",
         "a": "participants",
@@ -575,11 +575,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Recognize values of data workers",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Recognize values of data workers"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Recognize values of data workers"
     },
     {
-        "key": "85f05034-6321-4667-a5e8-e5de5615c20b",
+        "key": "d69cd7af-7a13-4f5b-ba9b-84180a099d22",
         "text": "Run accuracy checks on shared data",
         "category": "activity",
         "a": "participants",
@@ -592,11 +592,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Run accuracy checks on shared data",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Run accuracy checks on shared data"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Run accuracy checks on shared data"
     },
     {
-        "key": "1eb2e3ed-efa7-4a67-a257-0a4ad3722f73",
+        "key": "387d6b58-d709-4425-b8f1-609ff360c243",
         "text": "Maintainance of FAIR data",
         "category": "activity",
         "a": "participants",
@@ -609,11 +609,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Maintainance of FAIR data",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Maintainance of FAIR data"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Maintainance of FAIR data"
     },
     {
-        "key": "14e91166-3bde-4d08-96e4-a1f59de46439",
+        "key": "88a2230d-fb07-4517-ba2f-247efd1920ea",
         "text": "Conduct a workforce skills inventory",
         "category": "activity",
         "a": "participants",
@@ -626,11 +626,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Conduct a workforce skills inventory",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Conduct a workforce skills inventory"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Conduct a workforce skills inventory"
     },
     {
-        "key": "bf5d937b-2c8b-420d-85ba-1dcb90f8a33c",
+        "key": "ac5fa510-dc9e-4a38-8e2f-78d982c7e832",
         "text": "Provide RDM training",
         "category": "activity",
         "a": "participants",
@@ -643,11 +643,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Provide RDM training",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Provide RDM training"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Provide RDM training"
     },
     {
-        "key": "10376609-f835-496b-ad57-371d6193d141",
+        "key": "20b102c0-7f95-42a1-981f-0864be3c8bf3",
         "text": "Promotion and Tenure includes RDM",
         "category": "activity",
         "a": "participants",
@@ -660,11 +660,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Promotion and Tenure includes RDM",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Promotion and Tenure includes RDM"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Promotion and Tenure includes RDM"
     },
     {
-        "key": "1d726202-fa7c-468c-acb5-a0cd0367c1af",
+        "key": "e27770ef-bb08-4354-9359-cbbfb3f340cd",
         "text": "Find sources of short-term funding",
         "category": "activity",
         "a": "participants",
@@ -677,11 +677,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Find sources of short-term funding",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Find sources of short-term funding"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Find sources of short-term funding"
     },
     {
-        "key": "6f8d7379-aa18-403a-8c40-f675a97276a2",
+        "key": "46783fae-ee5d-425d-afb3-c778a6d45313",
         "text": "Find sources of long-term funding",
         "category": "activity",
         "a": "participants",
@@ -694,11 +694,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Find sources of long-term funding",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Find sources of long-term funding"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Find sources of long-term funding"
     },
     {
-        "key": "f333eb74-5b2e-4316-aab1-26f56db87899",
+        "key": "75b868df-fbad-437c-8e0f-9d8310d0ab22",
         "text": "Create Stakeholder communities",
         "category": "activity",
         "a": "participants",
@@ -711,11 +711,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Create Stakeholder communities",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Create Stakeholder communities"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Create Stakeholder communities"
     },
     {
-        "key": "11b7186d-4497-4502-9d32-db811287b638",
+        "key": "c2147a45-b430-4bce-83ea-c67207122c42",
         "text": "Centralized inventory of services, groups, and resources",
         "category": "activity",
         "a": "participants",
@@ -728,11 +728,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Centralized inventory of services, groups, and resources",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Centralized inventory of services, groups, and resources"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Centralized inventory of services, groups, and resources"
     },
     {
-        "key": "d1da53b5-0cd7-461b-9915-cdd6585e914d",
+        "key": "ce0d16f4-04a5-4546-bc75-17764d4f2de3",
         "text": "Determine funding sources",
         "category": "activity",
         "a": "participants",
@@ -745,11 +745,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Determine funding sources",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Determine funding sources"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Determine funding sources"
     },
     {
-        "key": "034912aa-a5ea-45d3-9d8e-4566ce56a832",
+        "key": "050e57f9-a013-422b-a94e-428faffc3d1b",
         "text": "Staffing and training",
         "category": "activity",
         "a": "participants",
@@ -762,11 +762,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Staffing and training",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Staffing and training"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Staffing and training"
     },
     {
-        "key": "aecf5b56-ec55-4508-a32f-243acad214fe",
+        "key": "0e09c70e-e663-48b1-a340-439904ee9f2c",
         "text": "Support researcher creation of DMP",
         "category": "activity",
         "a": "participants",
@@ -779,11 +779,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Support researcher creation of DMP",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Support researcher creation of DMP"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Support researcher creation of DMP"
     },
     {
-        "key": "d9342334-90bf-49eb-9b1a-62bf0b774067",
+        "key": "19e45d82-eb25-4740-a77d-adde137ed28b",
         "text": "Build an automated RDM infrastructure",
         "category": "activity",
         "a": "participants",
@@ -796,11 +796,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Build an automated RDM infrastructure",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Build an automated RDM infrastructure"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Build an automated RDM infrastructure"
     },
     {
-        "key": "7961de59-e494-4d46-a7ac-77e8de717257",
+        "key": "6f0a5a0a-b135-4c86-87b5-22ae31bfc445",
         "text": "Envision Campus Repository Infrastructure",
         "category": "activity",
         "a": "participants",
@@ -813,11 +813,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Envision Campus Repository Infrastructure",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Envision Campus Repository Infrastructure"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Envision Campus Repository Infrastructure"
     },
     {
-        "key": "17fdf1a0-c754-4254-9d68-0a50ad3d2299",
+        "key": "c50fc4f8-04ac-4978-9fd3-5b1f5415ffb5",
         "text": "Methods to capture and store data/metadata",
         "category": "activity",
         "a": "participants",
@@ -830,11 +830,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Methods to capture and store data/metadata",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Methods to capture and store data/metadata"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Methods to capture and store data/metadata"
     },
     {
-        "key": "675612ce-27fe-479a-ae97-dd518358b603",
+        "key": "268411ad-54e3-4919-9407-9bb496a8201d",
         "text": "Define technical infrastructure (Data, Hardware, Software, Research data)",
         "category": "activity",
         "a": "participants",
@@ -847,11 +847,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Define technical infrastructure (Data, Hardware, Software, Research data)",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Define technical infrastructure (Data, Hardware, Software, Research data)"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Define technical infrastructure (Data, Hardware, Software, Research data)"
     },
     {
-        "key": "734ad4ab-9dd5-43cc-a13c-ec8415c21015",
+        "key": "44457171-b71a-48c8-af30-4f00f7c6f2ee",
         "text": "Use Persistent instrument identifiers",
         "category": "activity",
         "a": "participants",
@@ -864,11 +864,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Use Persistent instrument identifiers",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Use Persistent instrument identifiers"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Use Persistent instrument identifiers"
     },
     {
-        "key": "2c0b9530-390b-463a-9c56-d684a038e8af",
+        "key": "d54306ff-5798-4fd5-bb16-fee101df0eb6",
         "text": "Assess Milestone Achievement and Indicator status",
         "category": "activity",
         "a": "participants",
@@ -881,11 +881,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Assess Milestone Achievement and Indicator status",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Assess Milestone Achievement and Indicator status"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Assess Milestone Achievement and Indicator status"
     },
     {
-        "key": "2f526d32-9cca-4c39-99ad-e120a8365ea7",
+        "key": "e8cfecc7-eb4e-491d-9608-67297136642a",
         "text": "Activity of Community Engagement in Envision",
         "category": "activity",
         "a": "participants",
@@ -898,11 +898,11 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Activity of Community Engagement in Envision",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Activity of Community Engagement in Envision"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Activity of Community Engagement in Envision"
     },
     {
-        "key": "d0280ce2-d30f-4601-a803-072ca752fe12",
+        "key": "37b4f307-3150-4dd3-a664-ff639d1ce38d",
         "text": "Create Data Security Plan and Architecture",
         "category": "activity",
         "a": "participants",
@@ -915,676 +915,676 @@
         "cText": "Exemplars",
         "cToolTip": "Exemplars of Create Data Security Plan and Architecture",
         "d": "pgroups",
-        "dText": "Participant Groups",
-        "dToolTip": "Participant Groups for Create Data Security Plan and Architecture"
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Create Data Security Plan and Architecture"
     },
     {
-        "key": "7debcfca-f72e-4953-ae91-4098b4b6cd76",
+        "key": "87f4e9d7-c6f4-446b-9eff-07c55ed243a0",
         "text": "VPR",
         "category": "participant"
     },
     {
-        "key": "42df431b-1682-4c9d-b688-c4087ec83766",
+        "key": "4feead50-d2d0-4105-90c0-11edc644fc30",
         "text": " Campus Provost",
         "category": "participant"
     },
     {
-        "key": "f8bce669-1791-4077-89cd-e265b4dbe7de",
+        "key": "dae37023-eeb9-4d7a-9e48-c84ee0f22bf2",
         "text": " CIO",
         "category": "participant"
     },
     {
-        "key": "376d50a6-de59-45c8-b022-f0fc1039eeed",
+        "key": "5756232b-f6c0-4b18-b502-64c6a97291e0",
         "text": " Library Dean",
         "category": "participant"
     },
     {
-        "key": "8c82f43a-2ea6-46b3-b511-4a774f667654",
+        "key": "5459782e-2e83-4985-aa94-d59df3b3ab78",
         "text": " Chief Medical Informatics Officer",
         "category": "participant"
     },
     {
-        "key": "12942603-e8eb-4bab-9f7c-d1c75e93016c",
+        "key": "99e5c111-2d8e-4403-979b-c7a904bddaa7",
         "text": " VPRED",
         "category": "participant"
     },
     {
-        "key": "b367c9cd-c2a8-4d27-8e27-8b4f68ac2f4f",
+        "key": "a6143fe4-dd91-4d48-b94b-a653ce304fde",
         "text": " Office of Research Advancement",
         "category": "participant"
     },
     {
-        "key": "3ed61b53-0fd9-4957-bb05-354dc1cfe7cb",
+        "key": "f342bc8d-5a88-43a8-bdef-065b741128fb",
         "text": " Researchers",
         "category": "participant"
     },
     {
-        "key": "6a0fd983-bd5a-45d0-b6f4-51404fe037f3",
+        "key": "09a66132-935d-4de9-9bd4-c42a0890bb0d",
         "text": "As noted in document",
         "category": "participant"
     },
     {
-        "key": "c0ff1e33-0ab3-49e7-a0d6-846806518731",
+        "key": "6d8c993e-7e97-4922-9e97-844b4809e66d",
         "text": "CISO",
         "category": "participant"
     },
     {
-        "key": "37c2d862-76ad-433f-b8f4-9f99feeef601",
+        "key": "aae58a6a-e03b-4e53-a293-676dcd89832f",
         "text": "IT Head",
         "category": "participant"
     },
     {
-        "key": "20abc440-f9aa-4dd9-b8bc-7168a48c20ee",
+        "key": "59f8af8e-86b8-4166-b0d9-bbb7ff0b053c",
         "text": " Librarian",
         "category": "participant"
     },
     {
-        "key": "4efb9eb8-baa9-4d93-b0c5-8b6a6e2cc704",
+        "key": "f0c3cebb-0dfe-4f8c-a4de-28540167e96c",
         "text": "Counsel",
         "category": "participant"
     },
     {
-        "key": "2ef5a068-8ba7-40ac-9731-39337b1285bb",
+        "key": "082f3de1-637d-44ac-a19c-da063043dcfc",
         "text": " VPR",
         "category": "participant"
     },
     {
-        "key": "cae3c1c7-a529-4cc5-9d0a-797b3f72facb",
+        "key": "66a5e53e-d43d-4f44-8956-dbe206779b0a",
         "text": " Finance and Business",
         "category": "participant"
     },
     {
-        "key": "8e38c4bc-026c-4e00-93b4-ed8ff4c5cb51",
+        "key": "f7dafd64-22b2-4986-9aea-765be79e55b1",
         "text": " Comptroller",
         "category": "participant"
     },
     {
-        "key": "29630ec8-eace-4cb4-82d7-a1db7b9dc791",
+        "key": "25d6de52-469c-4767-b5a7-b6a2bb5a05bd",
         "text": "Library Deans",
         "category": "participant"
     },
     {
-        "key": "b796f054-a258-45e7-9def-9b0ff4cdcf3c",
+        "key": "6a555e36-07c2-4f91-a907-9ab8c3db1b0d",
         "text": " Librarians",
         "category": "participant"
     },
     {
-        "key": "29b7de53-6130-4764-af43-ad29e35576db",
+        "key": "b8667679-31b9-4e90-a4ef-7c8c63bd6abd",
         "text": "HR",
         "category": "participant"
     },
     {
-        "key": "968a7295-33db-4433-951c-6b9798bb85a0",
+        "key": "07667ba1-010a-43dd-b62f-6ec87dd636b5",
         "text": "Researchers",
         "category": "participant"
     },
     {
-        "key": "5156185c-372d-4adf-a975-839943455c5c",
+        "key": "fa1062a8-2c4b-4b59-82e9-62f1d4f09e05",
         "text": " Journal publishers",
         "category": "participant"
     },
     {
-        "key": "20f5fbc1-1d35-46ee-887d-b3e3a375db44",
+        "key": "879d3c71-8351-40c5-8fc4-88828c6e87c4",
         "text": " IT",
         "category": "participant"
     },
     {
-        "key": "149c8f09-4226-4e60-8686-764e35b8104e",
+        "key": "572d8e16-8a35-41bd-be4f-0507e6142c52",
         "text": " Research and Economic Development",
         "category": "participant"
     },
     {
-        "key": "470961e2-1382-4f59-8420-e45c266ace01",
+        "key": "af4ec921-ba60-49c5-b00d-cf161c836759",
         "text": "Campus Departments",
         "category": "participant"
     },
     {
-        "key": "46895dbf-ed03-4117-b764-29d80123fdb1",
+        "key": "33af3559-d498-44ec-9e9d-c221e4fce0ae",
         "text": " HR",
         "category": "participant"
     },
     {
-        "key": "9afe0ae2-a2af-4e10-99bd-11f85106c223",
+        "key": "1aa79bc3-00fc-4515-aca0-69fea1eeb733",
         "text": "Finance",
         "category": "participant"
     },
     {
-        "key": "0030a6ee-6196-44af-89f7-f31145b9d551",
+        "key": "4958278c-1926-4fec-953a-07fb186882b1",
         "text": " Provost",
         "category": "participant"
     },
     {
-        "key": "38153e2c-0910-4380-942f-a531fbfcb72d",
+        "key": "c169d08f-ad52-4c22-bfef-7191f3e1c14b",
         "text": "Librarians",
         "category": "participant"
     },
     {
-        "key": "6c7173e9-4025-45f7-a72b-b32f59685bd6",
+        "key": "11811e15-7413-4f3c-b91f-f62faf195616",
         "text": " Research office",
         "category": "participant"
     },
     {
-        "key": "44392eec-f19f-4f85-ac02-29d90920b2e9",
+        "key": "0e9f128d-7e8d-41d4-a1c8-0455a65e5d34",
         "text": "Budget Experts",
         "category": "participant"
     },
     {
-        "key": "e429061c-b7fc-4bc0-8c01-bea5ce55bf01",
+        "key": "a4e5c02e-92c5-449e-804a-94ccee26257e",
         "text": " Sponsored Programs",
         "category": "participant"
     },
     {
-        "key": "3251e11d-efa9-49c9-ba9c-52a2c218e7be",
+        "key": "5777e03a-9cf2-4a2d-bd6b-9cd97ce75a16",
         "text": " CFO",
         "category": "participant"
     },
     {
-        "key": "03be9048-dfd7-4aca-8e59-8acab350c84f",
+        "key": "20f386ee-1e3d-4a49-a268-d3fd15f375ed",
         "text": " Operations Managers",
         "category": "participant"
     },
     {
-        "key": "c7dc1f69-f31b-4fe5-adb8-a7cc8242b491",
+        "key": "f5bffe36-f56a-4c61-a1e1-4e5928abe131",
         "text": " Database Architect",
         "category": "participant"
     },
     {
-        "key": "f947d375-3aea-4339-8555-a1b159e7504b",
+        "key": "5f43ab68-89ed-4030-b100-6be2a6f75ab8",
         "text": "Strategic Leaders",
         "category": "participant_group"
     },
     {
-        "key": "2052bb5d-0d3a-4fdb-b5ce-9a8d1677553c",
+        "key": "926ea36f-178b-47e0-8579-b151626daf58",
         "text": "Connectors/Faciliators",
         "category": "participant_group"
     },
     {
-        "key": "0f581c8b-4895-4923-a086-5a222325d51b",
+        "key": "21707fc2-a15f-4948-8005-92fee5e7e765",
         "text": "SME and Implementers",
         "category": "participant_group"
     },
     {
-        "key": "aecdbecf-347c-4d45-a03d-61db07a9dc4f",
+        "key": "f78be18b-b160-431e-9d2f-f78362645f05",
         "text": "Task Force",
         "category": "method"
     },
     {
-        "key": "661d05fb-46a7-4c12-9fcf-786ddfe30750",
+        "key": "89582566-aaf5-443b-a395-56339266c6a5",
         "text": "Needs Assessment",
         "category": "method"
     },
     {
-        "key": "43792fb0-82bf-4f2e-90c0-38b5dbb6e581",
+        "key": "445a4913-78cc-452a-af7f-228853351612",
         "text": "Task Force Subgroup, Data Governance Council",
         "category": "method"
     },
     {
-        "key": "a49bffb2-682a-461c-a5a8-a32937795f9c",
+        "key": "249d2d9d-8496-43cc-94fb-ce206032bce4",
         "text": "Create a policy review team",
         "category": "method"
     },
     {
-        "key": "2fa1d6c7-1dba-41dd-9f81-2a2881e670d7",
+        "key": "e1978a8c-e41f-41c5-9dca-ebc26a288804",
         "text": "Data Conversations",
         "category": "method"
     },
     {
-        "key": "b3d7a20c-a18b-4871-a8ff-caee8491a708",
+        "key": "c5890081-d938-4f57-839e-e46044055781",
         "text": "Create Data Use Agreement Policy, Create IT Privacy Policies",
         "category": "method"
     },
     {
-        "key": "7017ac1e-bb1a-4a23-9e76-1ec00af5356e",
+        "key": "378267c6-9867-424f-9404-6cd1e8bc5667",
         "text": "Task Force Subgroup (System design)",
         "category": "method"
     },
     {
-        "key": "a8542ff9-44a3-49c0-840a-4454a4ec0835",
+        "key": "b7fba37f-fd79-48f3-8cd6-5a9ae0fe2c9b",
         "text": "SBU Research & Innovation Task Force",
         "category": "exemplar"
     },
     {
-        "key": "5d5b9020-6a20-4d30-83a7-7f4fffff498d",
+        "key": "9015fbdf-eb69-4b9e-ab6f-a9eb07e1de26",
         "text": "SBU Achieving Financial Sustainability",
         "category": "exemplar"
     },
     {
-        "key": "5e86d0af-8a73-43fb-bb1c-c24a16fef4b3",
+        "key": "f2501d6d-ba4c-4fa6-8964-cefbd40f1bda",
         "text": "UB RDM Steering Committee",
         "category": "exemplar"
     },
     {
-        "key": "ceb3aac5-449a-47d7-a5f3-b15d7e4f7350",
+        "key": "ad1b7e87-a0e3-4a38-805c-ed3a8bc57ebe",
         "text": "UA Council on Research",
         "category": "exemplar"
     },
     {
-        "key": "1b81148e-568a-4515-b8db-c654156845ff",
+        "key": "12371eb3-3189-439a-adb6-b652a465447b",
         "text": "UA Data Security Working Group",
         "category": "exemplar"
     },
     {
-        "key": "b6a9ecc2-5c8a-4372-8643-e27f2f54277c",
+        "key": "66b64da6-a0e1-4f53-b073-510079ed202e",
         "text": "UA Data Services Group.SBU Archival Research Data Management Task Force",
         "category": "exemplar"
     },
     {
-        "key": "65701069-7539-46a7-9358-ad7bba8bb0a0",
+        "key": "fa3da584-1bb2-46f9-9630-7a56b76dba86",
         "text": "SBU Data Repository Task FSBU",
         "category": "exemplar"
     },
     {
-        "key": "dd24d4d7-7c91-4be3-8a75-30880f5b7eb6",
+        "key": "252573d1-c0b3-4398-9002-5db426c766c0",
         "text": "SBU NIH DMSP Task Force",
         "category": "exemplar"
     },
     {
-        "key": "c102cb51-3bf9-45f3-8333-bfbbe28f443a",
+        "key": "b62d8fb8-e328-430a-b4e0-d7fea2c885ad",
         "text": "SBU Data Governance Council",
         "category": "exemplar"
     },
     {
-        "key": "485fc6ee-d867-46f3-8352-cf9095a54654",
+        "key": "1390f4ff-3fc1-4435-9680-642fa0923b21",
         "text": "UA Research Governance Council",
         "category": "exemplar"
     },
     {
-        "key": "a4e12b62-3960-4373-a3e6-d27d2dec49e2",
+        "key": "479ef402-b0a5-4b74-8957-b6579a6e9932",
         "text": "UB IT Data Policies",
         "category": "exemplar"
     },
     {
-        "key": "c683b74a-bff1-43b7-9837-f51ef87c1f2e",
+        "key": "66868a61-b0e2-43ac-933c-e80345f2b4d2",
         "text": "SBU Data Policies",
         "category": "exemplar"
     },
     {
-        "key": "e6d4a6b2-4eda-482d-81e5-6ac4c6e54a75",
+        "key": "5e31f4c6-c583-4162-9d3e-f3ce4401c8cb",
         "text": "Data repository (Dryad) curator check before publishing data",
         "category": "exemplar"
     },
     {
-        "key": "e45231f3-c2d7-4b91-b4ef-8c00cee9a0f1",
+        "key": "874cc8e1-7c0f-4cad-9b59-673901b3b91c",
         "text": "Research Foundation work",
         "category": "exemplar"
     },
     {
-        "key": "8373ca6f-edbf-46c8-adde-35995dff924a",
+        "key": "dced7e4a-a01b-4c2f-9e83-03746aec5170",
         "text": "BU Digital Humanities Institutes",
         "category": "exemplar"
     },
     {
-        "key": "8c779845-c020-437e-9777-da5653df8738",
+        "key": "511cec79-619f-4ecc-a283-08efbdfca052",
         "text": "UA Copyright First Responders",
         "category": "exemplar"
     },
     {
-        "key": "08d9fa21-9898-4cf9-99a7-a583320c1567",
+        "key": "1f82fe03-c3a0-4b64-b08d-2a30da258431",
         "text": "ORCID Task Force",
         "category": "exemplar"
     },
     {
-        "key": "4d992ce5-5049-424b-829a-f9e669241b1b",
+        "key": "2b2c8f6a-d133-499f-bd5a-d1c60c99d128",
         "text": "Engage with Security Operations Cener (SOC) Information Security Working Group",
         "category": "exemplar"
     },
     {
-        "key": "f4482a33-6cec-4ad4-ba9e-ac1c8fdd4ade",
+        "key": "fa7ab9f8-742e-43f3-86ae-e5e8b1165012",
         "text": "Enterprise Risk Management Committee",
         "category": "exemplar"
     },
     {
-        "key": "c13a2170-8820-4b9e-a03e-91fbe2d2b762",
+        "key": "ac58b133-0b81-485a-88a2-ee52dcff2caf",
         "text": "Organizational Values, including DEI",
         "category": "consideration"
     },
     {
-        "key": "97c66f57-16ab-490d-a8f9-32e96b80a109",
+        "key": "68064681-5892-4644-8502-0a01edee1589",
         "text": "Purpose and Value of Data",
         "category": "consideration"
     },
     {
-        "key": "e7ff8f21-2f34-4180-b4a6-1e4c73db7b5a",
+        "key": "a45fe835-8659-4edd-816b-2b6ab9a76141",
         "text": "Organization Intent regarding FAIR Data",
         "category": "consideration"
     },
     {
-        "key": "b91bddbf-4594-431b-867f-3d999d263b79",
+        "key": "7fbfb0db-f621-49b6-b466-5faaf22769c2",
         "text": "Value proposition for RDM",
         "category": "consideration"
     },
     {
-        "key": "002e791b-4e9e-4e91-9022-1f9130c11faf",
+        "key": "559e5fe3-e1c2-458e-9c03-3d51b4ae20ad",
         "text": "RDM Organization Structure",
         "category": "consideration"
     },
     {
-        "key": "43238659-fd14-4eb6-b858-94d3fae4a3ee",
+        "key": "c0530174-8dea-496d-8f5b-0bbcf1a06815",
         "text": "End-use support",
         "category": "consideration"
     },
     {
-        "key": "bccf5678-51d6-49aa-9336-28fb0b0aca28",
+        "key": "5590a630-23f7-4825-980b-2e4726d8f62e",
         "text": "Trusteeship, Stewardship",
         "category": "consideration"
     },
     {
-        "key": "f783f966-ee0b-4d06-8045-44fe8ea723f6",
+        "key": "4610e734-5c47-47ae-8066-d526cdfd139f",
         "text": "Privacy",
         "category": "consideration"
     },
     {
-        "key": "a842f0fe-5195-47d4-837f-759a6715c4ff",
+        "key": "70447a95-766b-48e7-b4c4-d45752d4d12d",
         "text": "Security",
         "category": "consideration"
     },
     {
-        "key": "58ac8afc-bfd6-462f-894c-52e21aa7f2fc",
+        "key": "8784e2e8-1f8f-4e9f-a978-5892e489c5d0",
         "text": "Jurisdiction for Sharing and Reuse",
         "category": "consideration"
     },
     {
-        "key": "f783f966-ee0b-4d06-8045-44fe8ea723f6",
+        "key": "4610e734-5c47-47ae-8066-d526cdfd139f",
         "text": "Privacy",
         "category": "consideration"
     },
     {
-        "key": "2bac278e-46dd-41e3-8855-42c0020fa927",
+        "key": "8a6ba90d-9282-4a90-ad30-b86af794b6b5",
         "text": "Ethics",
         "category": "consideration"
     },
     {
-        "key": "ee625132-e2b2-43e8-8fba-d6d6f2487da5",
+        "key": "e59b22b8-9d9e-4e07-bb4f-7f6b5ffda184",
         "text": "Safety and security assurance",
         "category": "consideration"
     },
     {
-        "key": "7a787943-f635-4b95-99bc-21d689ea432c",
+        "key": "4c88d7ee-dfe5-4011-a6cb-0bef56e26a0e",
         "text": "Jurisdiction for sharing and reuse",
         "category": "consideration"
     },
     {
-        "key": "1c0fe66b-2221-40c2-829e-b11b23e9a80b",
+        "key": "6c0f2351-1e53-431b-8b40-6193e6db6873",
         "text": "FAIR data principles",
         "category": "consideration"
     },
     {
-        "key": "9db1f61d-5f4a-4f67-8d91-68171bab3daa",
+        "key": "03e8b1f3-245b-4d88-9560-848e8a7efd8a",
         "text": "CARE and ethics",
         "category": "consideration"
     },
     {
-        "key": "f7781d99-64d5-4c2b-8580-1eb8e1311524",
+        "key": "02384283-f293-4577-a315-66d50f87dd38",
         "text": "Modes of communication",
         "category": "consideration"
     },
     {
-        "key": "9a5c4db2-5680-4617-8a4d-a9e91d2cec72",
+        "key": "5478ed40-4cf8-4959-9396-95c72f906a99",
         "text": "Inclusivity in interactions",
         "category": "consideration"
     },
     {
-        "key": "f7781d99-64d5-4c2b-8580-1eb8e1311524",
+        "key": "02384283-f293-4577-a315-66d50f87dd38",
         "text": "Modes of communication",
         "category": "consideration"
     },
     {
-        "key": "d11e94d6-64dc-4508-ae93-fffb5018a7dd",
+        "key": "608c56cd-d3ac-4e99-8587-00f5fd0107c6",
         "text": "Partners/partnerships",
         "category": "consideration"
     },
     {
-        "key": "42c530f0-fd14-4285-8957-c483580880e1",
+        "key": "2c46f4aa-4911-4a4a-8662-a25c1a5faba6",
         "text": "Engagement across knowledge domains and sectors",
         "category": "consideration"
     },
     {
-        "key": "c14e0ce3-bb4e-478f-99e3-6169d46be51d",
+        "key": "e7a7a6ff-bab6-4f76-971c-a06bbbda232d",
         "text": "Implementation authority",
         "category": "consideration"
     },
     {
-        "key": "a7c26d63-0a01-41a8-8f15-7121226fb0a1",
+        "key": "975e1feb-83f7-48ee-b9eb-94783b387e9a",
         "text": "Provenance",
         "category": "consideration"
     },
     {
-        "key": "66ab464e-08d6-4daa-a568-7468621b00e7",
+        "key": "69381afa-6d5f-450c-bdaf-f68f53717ac7",
         "text": "Funding sources and sustainability",
         "category": "consideration"
     },
     {
-        "key": "4c5f7a71-c2e0-4238-99b6-fd46131421f5",
+        "key": "6e063fb8-5d59-4219-88e0-0a0d13b522f9",
         "text": "Purpose/intent of research study and context of anticipated data use",
         "category": "consideration"
     },
     {
-        "key": "719210a5-616b-4f63-b84f-a0062b690664",
+        "key": "bce67ef8-8d1c-4b20-88ca-dcd7807e9ff2",
         "text": "Level of DMPs written (singular reserach project level or lab/project level)",
         "category": "consideration"
     },
     {
-        "key": "4c5f7a71-c2e0-4238-99b6-fd46131421f5",
+        "key": "6e063fb8-5d59-4219-88e0-0a0d13b522f9",
         "text": "Purpose/intent of research study and context of anticipated data use",
         "category": "consideration"
     },
     {
-        "key": "8f17ac89-89d4-4b0f-af3c-fb1c5210857c",
+        "key": "c9bf31a9-db23-490f-b2d2-b8164aa9ed83",
         "text": "Specification of data objects, metadata, analysis tools, and workflows throughout the lifecycle",
         "category": "consideration"
     },
     {
-        "key": "e5126329-147b-45c8-8304-b68b2e22b098",
+        "key": "01b04097-a605-4810-902d-573ab623f2e4",
         "text": "Quantitative and qualitative",
         "category": "consideration"
     },
     {
-        "key": "ebdfeb3f-4465-49b1-9564-9e1a5dc5c83b",
+        "key": "cc66aaab-2530-4ff1-87c5-454dd853520a",
         "text": "Measurements, including images, audio recordings, and photos/videos",
         "category": "consideration"
     },
     {
-        "key": "a69884fc-975d-4d32-99ca-3a2a91536bec",
+        "key": "c1fca9db-fd92-4a86-a6a9-def610ad878a",
         "text": "Observation",
         "category": "consideration"
     },
     {
-        "key": "84c96dc0-cd8f-4134-a78a-06f0e73f120e",
+        "key": "c3043365-775b-4b5d-8443-5dc99feac3f9",
         "text": "Survey",
         "category": "consideration"
     },
     {
-        "key": "647347be-e505-4177-816f-6e03228b8813",
+        "key": "3327d021-12c1-4132-9161-4bf2fb6027d2",
         "text": "Software",
         "category": "consideration"
     },
     {
-        "key": "090f6296-5334-4be4-acb8-7e7ea8b80ad2",
+        "key": "0d0f95eb-c8d9-4abd-b0c4-1f56fcac8422",
         "text": "Model",
         "category": "consideration"
     },
     {
-        "key": "3473fd5f-d7cb-44be-bd0f-06ef37cb1750",
+        "key": "e4657518-3ad3-4914-95ae-e9a188e16dd3",
         "text": "Documentation (text)",
         "category": "consideration"
     },
     {
-        "key": "9c7c4e18-befe-484d-abff-9bb12892c61a",
+        "key": "c0ce29ca-acdb-456e-99a3-528aaeee7014",
         "text": "Specimen (physical sample)",
         "category": "consideration"
     },
     {
-        "key": "fc84eaf1-1a58-4e2d-a6ea-7e6b075282e2",
+        "key": "044c46fa-5717-4d84-b863-f19c4aeeaa89",
         "text": "Presentation",
         "category": "consideration"
     },
     {
-        "key": "ce2f0f40-17e7-4d0a-9671-e8b902f753c8",
+        "key": "43675d81-f652-4ce6-a4db-6a09367eea11",
         "text": "Criteria for selection of data/metadata",
         "category": "consideration"
     },
     {
-        "key": "f71bc65d-5cd7-479d-bd5b-cae999ff837f",
+        "key": "d36a3416-1e99-495c-aa11-f20c26076089",
         "text": "Nature of data/metadata required",
         "category": "consideration"
     },
     {
-        "key": "67f9a6df-d93d-43c9-a286-c2119d32e988",
+        "key": "9a7353ff-e673-4d32-a9ee-7fc4fc710a9c",
         "text": "Intended extent of FAIRness",
         "category": "consideration"
     },
     {
-        "key": "fac04712-0588-40e8-88a6-6d080b969295",
+        "key": "6fb2048a-fce5-40b2-9e55-941281795e30",
         "text": "Methods to capture and store data/metadata",
         "category": "consideration"
     },
     {
-        "key": "81021988-7441-4c0f-8cef-f7c06357d395",
+        "key": "c8c28529-eb77-433f-a977-932012024b9b",
         "text": "Metadata schema",
         "category": "consideration"
     },
     {
-        "key": "5168f347-e960-4dfa-a158-d323c2288187",
+        "key": "9c59324a-869c-43f3-bb5a-cdfb98363905",
         "text": "Design",
         "category": "consideration"
     },
     {
-        "key": "43f937e4-e02b-4733-a896-9ec48362391a",
+        "key": "0ba62763-667d-4b58-8c72-be5e61783e30",
         "text": "Processing operations",
         "category": "consideration"
     },
     {
-        "key": "0c9d1221-7808-4a92-843c-daf8d77d3fcd",
+        "key": "7c0132b1-36c9-48e1-ba0b-0454825f2543",
         "text": "Workflow",
         "category": "consideration"
     },
     {
-        "key": "090f6296-5334-4be4-acb8-7e7ea8b80ad2",
+        "key": "0d0f95eb-c8d9-4abd-b0c4-1f56fcac8422",
         "text": "Model",
         "category": "consideration"
     },
     {
-        "key": "60bd0f81-d589-4e3f-84aa-3e4c03f54261",
+        "key": "39f853aa-e44e-41b9-9fde-bba9a46de7c7",
         "text": "LIMS",
         "category": "consideration"
     },
     {
-        "key": "f0b47aaa-56db-45c8-bdbe-78286a9de0b8",
+        "key": "9eaaeb34-c7ea-40a0-9987-a83feb84e1c3",
         "text": "Hosting and storage, cloud storage",
         "category": "consideration"
     },
     {
-        "key": "3223670a-3022-4911-8495-7a693fbe76f8",
+        "key": "f3109b80-7cca-469d-be42-4360cbb589ef",
         "text": "Configuration management",
         "category": "consideration"
     },
     {
-        "key": "b477010a-52a2-4b5b-9c6d-a5b2c2f1310d",
+        "key": "50186fd1-b20c-4cac-9207-7bb7c4cb123d",
         "text": "Interoperability among different architectures",
         "category": "consideration"
     },
     {
-        "key": "a842f0fe-5195-47d4-837f-759a6715c4ff",
+        "key": "70447a95-766b-48e7-b4c4-d45752d4d12d",
         "text": "Security",
         "category": "consideration"
     },
     {
-        "key": "98cf686c-08b7-4a05-8465-2359889a7ea9",
+        "key": "84a6dd46-4625-4c11-94c5-7fc99bd8e058",
         "text": "Existing standards",
         "category": "consideration"
     },
     {
-        "key": "4892a4b2-aa3f-42be-bc20-7e54204292a3",
+        "key": "19eca3ed-219f-41ca-b659-73b2d45b1550",
         "text": "Organizational research needs",
         "category": "consideration"
     },
     {
-        "key": "39dc2201-9cf7-4818-a4a7-63a66b453e86",
+        "key": "8e80a4a2-4fd9-4dfb-8053-6da25955d1a2",
         "text": "Tools to support data-related processes",
         "category": "consideration"
     },
     {
-        "key": "ecc6a9cf-c747-40e4-8bc9-0c2eb71d37ee",
+        "key": "b296c626-85dc-4e59-b3d8-683a190f352f",
         "text": "Models that connect infrastructure to data processes and workflow",
         "category": "consideration"
     },
     {
-        "key": "a6c6592f-761b-40e3-9e51-7f287cf70777",
+        "key": "3280151b-bc89-485d-96d7-dda41f8a15c4",
         "text": "Interoperability",
         "category": "consideration"
     },
     {
-        "key": "c4090a3e-10a0-4dea-8800-64692aa75044",
+        "key": "e1f6914e-d013-4017-9019-0609bc4e8911",
         "text": "Persistent instrument identifiers",
         "category": "consideration"
     },
     {
-        "key": "16e0db78-fc2c-433a-b8bb-16970d8ca064",
+        "key": "51520827-73ea-4e3e-ab88-3990acb94443",
         "text": "Sustainability of data vis-\u00e0-vis obsolete infrastructure",
         "category": "consideration"
     },
     {
-        "key": "968063de-79ec-43cd-8ea7-95b33aca2476",
+        "key": "ad7a124f-c34a-410a-9a75-35435dc2b422",
         "text": "Security and privacy considerations",
         "category": "consideration"
     },
     {
-        "key": "01486843-7196-48e5-bc6c-eb52897e6146",
+        "key": "bd50d253-36d8-4149-83cf-82ce527a8c73",
         "text": "Staff expertise and support staff",
         "category": "consideration"
     },
     {
-        "key": "e9c85bbc-e8c8-4720-99e3-b41b0424b0eb",
+        "key": "c929a788-14f7-4099-9b57-447f1fd03b8d",
         "text": "Criteria, i.e., general vs. domain-specific standards",
         "category": "consideration"
     },
     {
-        "key": "d2b5fbd9-ec70-4219-b416-fd49b6ba42d5",
+        "key": "02e4ba58-533c-4e2b-a56e-25337659ac8c",
         "text": "Sources of standards/guidelines for data/metadata",
         "category": "consideration"
     },
     {
-        "key": "7863d84c-7b26-4553-9499-9ff616b426d9",
+        "key": "127017c0-5237-45cc-b921-7d272ba66472",
         "text": "Quality standards",
         "category": "consideration"
     },
     {
-        "key": "1a532c57-678b-4f7b-a021-1fa7828e2a78",
+        "key": "193a8cb4-8914-482d-9110-c663105f65d9",
         "text": "Community-based standards/conventions",
         "category": "consideration"
     },
     {
-        "key": "141f6496-810f-4f69-9c4b-03eefc5c60c6",
+        "key": "0499a3d5-2dab-4fa6-9163-df099cdcc997",
         "text": "Access Control Associated with Data Sensitivity",
         "category": "consideration"
     },
     {
-        "key": "bb64d691-eb1d-4024-b1ff-2a1e2e73a865",
+        "key": "0d00014b-dea0-41ca-b73f-cd76e13484c0",
         "text": "Identification of responsible parties for access",
         "category": "consideration"
     },
     {
-        "key": "504c94e8-11b2-40ec-8841-d0c961d40072",
+        "key": "39e174c0-d7f9-4e96-ad2a-fff116bb4957",
         "text": "Ease of maintenance and implementation of records",
         "category": "consideration"
     },
     {
-        "key": "f19de8fe-ccf9-43da-b0da-7ffbd14bc068",
+        "key": "9ddd622a-b5a1-4c3d-89dd-658e8f1f1c8f",
         "text": "Regulatory compliance",
         "category": "consideration"
     },
     {
-        "key": "20aae074-d12b-4ac5-b048-b7ab81593554",
+        "key": "def4fc3f-505a-4c5b-b17c-f156c9a7d520",
         "text": "Sensitive data/PII",
         "category": "consideration"
     },
     {
-        "key": "f172fb20-5e4e-4e76-bce0-fd3a0a987065",
+        "key": "cf7feb14-60ef-4dd5-8145-9a65b17b72f7",
         "text": "Limited disclosure, e.g., IP",
         "category": "consideration"
     },
     {
-        "key": "d828d58f-bff6-49f8-abb9-7e93dd13718d",
+        "key": "82ca9ea7-1637-4c52-b009-5e4fef0765a1",
         "text": "Licensing for reuse",
         "category": "consideration"
     }
