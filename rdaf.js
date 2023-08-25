@@ -154,6 +154,34 @@ function init() {
         )  // end Vertical Panel
       )  // end Horizontal Panel
     ));  // end Node and call to add
+  myDiagram.nodeTemplateMap.add("outcome-complete",
+    $(go.Node, "Auto",
+      new go.Binding("text", "text"),
+      // define the node's outer shape, which will surround the Horizontal Panel
+      $(go.Shape, "Rectangle",
+        { fill: "#50c878", stroke: "lightgray" }),
+      // define a horizontal Panel to place the node's text alongside the buttons
+      $(go.Panel, "Horizontal",
+        $(go.TextBlock,
+          { font: "20px Roboto, sans-serif", margin: 5 },
+          new go.Binding("text", "text")),
+        // define a vertical panel to place the node's two buttons one above the other
+        $(go.Panel, "Vertical",
+          { defaultStretch: go.GraphObject.Fill, margin: 3 },
+          $("Button",  // button A
+            {
+              name: "button-a",
+              click: buttonExpandCollapse,
+              toolTip: tooltipTemplate
+            },
+            new go.Binding("portId", "a"),
+            $(go.TextBlock,
+              { font: '500 10px Roboto, sans-serif' },
+              new go.Binding("text", "aText"))
+          )
+        )  // end Vertical Panel
+      )  // end Horizontal Panel
+    ));  // end Node and call to add
   myDiagram.nodeTemplateMap.add("activity",
     $(go.Node, "Auto",
       new go.Binding("text", "text"),

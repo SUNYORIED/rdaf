@@ -17,7 +17,7 @@ triples_df = pd.read_csv("RecipePlanTriples.csv",encoding="utf-8",dtype="str")
 considerations_df = pd.read_csv("RecipePlanConsiderations.csv",encoding="utf-8",dtype="str")
 definitions_df = pd.read_csv("RecipePlan-definitions.csv",encoding="utf-8",dtype="str")
 
-eids = {'stage': {}, 'topic': {}, 'activity': {}, 'outcome': {}, 'method': {}, 'exemplar': {}, 'participant_group': {}, 'consideration': {}, 'participant': {} }
+eids = {'stage': {}, 'topic': {}, 'activity': {}, 'outcome': {}, 'method': {}, 'exemplar': {}, 'participant_group': {}, 'consideration': {}, 'participant': {}, 'outcome-complete': {} }
 links = {}
 entities = []
 
@@ -79,7 +79,10 @@ for index,row in triples_df.iterrows():
     stage_id = get_uuid('stage',stage)
     topic_id = get_uuid('topic',topic)
     activity_id = get_uuid('activity',activity)
-    outcome_id = get_uuid('outcome', outcome)
+    if len(exemplars) > 0:
+        outcome_id = get_uuid('outcome-complete', outcome)
+    else:
+        outcome_id = get_uuid('outcome', outcome)
     method_id = get_uuid('method',method)
     participant_group_id = get_uuid('participant_group',participant_group)
     p_ids = {}
@@ -125,6 +128,14 @@ for outcome in eids['outcome']:
     obj['aText'] = 'Produced By'
     obj['aToolTip'] = 'Activities that produce ' + outcome
     entities.append(obj)
+
+for outcome in eids['outcome-complete']:
+    obj = get_obj(outcome,'outcome-complete')
+    obj['a'] = 'activities'
+    obj['aText'] = 'Produced By'
+    obj['aToolTip'] = 'Activities that produce ' + outcome
+    entities.append(obj)
+
 
 for activity in eids['activity']:
     obj = get_obj(activity,'activity')
