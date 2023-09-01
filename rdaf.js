@@ -38,6 +38,18 @@ function init() {
     node.diagram.commitTransaction("expand/collapse");
   }
 
+  function buttonLink(e, port) {
+    link = e.targetObject.portId;
+    if (link.startsWith('http')) {
+    	window.open(link,"_blank")
+    }
+  }
+  
+  function openLink(data) {
+    console.log("Open " + data.a);
+    window.open(data.a, "_blank");
+  }
+
   // recursive function for collapsing complete subtree
   function collapseTree(node, portid) {
     node.findLinksOutOf(portid).each(l => {
@@ -345,6 +357,34 @@ function init() {
         },
         new go.Binding("text", "text"))
     ));
+  myDiagram.nodeTemplateMap.add("exemplar-linked",
+    $(go.Node, "Auto",
+      new go.Binding("text", "text"),
+      // define the node's outer shape, which will surround the Horizontal Panel
+      $(go.Shape, "Rectangle",
+        { fill: "whitesmoke", stroke: "lightgray" }),
+      // define a horizontal Panel to place the node's text alongside the buttons
+      $(go.Panel, "Horizontal",
+        $(go.TextBlock,
+          { font: "9px Roboto, sans-serif", margin: 5 },
+          new go.Binding("text", "text")),
+        // define a vertical panel to place the node's two buttons one above the other
+        $(go.Panel, "Vertical",
+          { defaultStretch: go.GraphObject.Fill, margin: 3 },
+          $("Button",  // button A
+            {
+              name: "button-a",
+	      click: buttonLink,
+              toolTip: tooltipTemplate
+            },
+            new go.Binding("portId", "aToolTip"),
+            $(go.TextBlock,
+              { font: '500 9px Roboto, sans-serif' },
+              new go.Binding("text", "aText"))
+          )
+        )  // end Vertical Panel
+      )  // end Horizontal Panel
+    ));  // end Node and call to add
 
   // define the only Link template
   myDiagram.linkTemplate =

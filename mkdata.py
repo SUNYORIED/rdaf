@@ -113,10 +113,11 @@ for stage in eids['stage']:
     stages.append({'port':str.lower(stage), 'text':stage, 'tooltip':tooltip})
 
 for topic in eids['topic']:
+    tooltip = get_tooltip(topic)
     obj = get_obj(topic,'topic')
     obj['a'] = 'outcomes'
     obj['aText'] = 'Outcomes'
-    obj['aToolTip'] = 'Outcomes of ' + topic
+    obj['aToolTip'] = tooltip
     obj['b'] = 'considerations'
     obj['bText'] = 'Considerations'
     obj['bToolTip'] = 'Considerations for ' + topic
@@ -167,6 +168,13 @@ for m in eids['method']:
 
 for e in eids['exemplar']:
     obj = get_obj(e,'exemplar')
+    parts = e.split('|')
+    if len(parts) > 1:
+        obj['text'] = parts[0]
+        obj['category'] = 'exemplar-linked'
+        obj['a'] = parts[1]
+        obj['aText'] = 'View'
+        obj['aToolTip'] = parts[1]
     entities.append(obj)
 
 for index, row in considerations_df.iterrows():
