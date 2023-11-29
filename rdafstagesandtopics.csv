@@ -1,0 +1,36 @@
+﻿ID,Type,Name,Definition
+E,Stage,Envision,Review of the overall strategies and drivers of an organization’s research data program.
+P,Stage,Plan,The tactical management positioning in an organization for effective research data management throughout the research data lifecycle.
+GA,Stage,Generate/Acquire,"The generation of raw research data, both experimentally and computationally, within an organization, and the collection or acquisition of research data produced outside of an organization."
+PA,Stage,Process/Analyze,"The actions performed on generated or externally acquired research data to yield processed research data, typically using software, from which observations and conclusions can be made.  "
+SUR,Stage,Share/Use/Reuse,"How raw and processed research data are disseminated, used, and reused within an organization and any constraints or encouragements to use/reuse. It also includes the dissemination, use, and reuse of raw and processed research data outside of an organization.  "
+PD,Stage,Preserve/Discard,"The end-of-use and end-of-life provisions for research data in an organization and includes records management, archiving, and safe disposal."
+E.1,Topic,Data Governance—Strategic/Qualitative,"The policies, procedures, and processes pertaining to authority, control,
+and shared decision-making (planning, monitoring, and enforcement) over the management of data assets"
+E.2,Topic,Data Governance—Legal and Regulatory Compliance  ,"The policies, procedures, and processes to manage and monitor an organization’s regulatory [and] legal responsibilities and risks pertaining to data."
+E.3,Topic,Data Culture and Reward Structure,The collective beliefs and behaviors of the people in an organization concerning the value and management of research data. Practices designed to recognize the advantages and accomplishments of sharing data.
+E.4,Topic,Education and Workforce Development,Training to provide staff with the necessary skills and expertise for data-related activities and RDM. Includes leadership support and formal and informal training.
+E.5,Topic,Resources—Allocation and Sustainability,The distribution and longevity of funding to attain and maintain robust research data programs and RDM infrastructure.
+E.6,Topic,Community Engagement,Outreach and interactions among organizations or individuals with shared goals or interests concerning research data activities or RDM
+P.1,Topic,Chain of Control (Custody of Data),"A complete, fully documented step-by-step history of a data asset in an organization, i.e., who has possession of a data asset, at what time, and for what purpose, at all times throughout the lifecycle of the data asset."
+P.2,Topic,Financial Aspects of Planning,Factors to consider in estimating or assessing the costs associated with all research data and RDM activities over the data lifecycle.
+P.3,Topic,Data Management Planning,The process of organizing and specifying objectives and activities throughout the research data lifecycle.
+P.4,Topic,Data Objects,"An entity that, together with associated Representative Information (i.e., metadata), is produced or used in a research study"
+P.5,Topic,FAIR,"Findability, Accessibility, Interoperability, Reuse: a set of guiding principles to support the reusability of data that are beneficial to all scholarly digital research objects."
+P.6,Topic,Data/Metadata Considerations,Factors to take into account prior to conducting a research study
+P.7,Topic,Data Architecture,"The fundamental structure of an organization's research data management (RDM) system embodied in its components, their relationships to each other and to the environment, and the principles guiding its design and evolution. Includes, for example, the underlying storage technologies, networking, hardware, system interfaces, authentication mechanisms, data brokers, monitoring platforms, semantic interoperability tools, long-term preservation services, and HPC."
+P.8,Topic,Hardware and Software Infrastructure,The physical and non-physical functional components that collectively form a foundation for conducting research and RDM
+P.9,Topic,Research Data Standards,"Documents, including codes, specifications, recommended practices, classifications, test methods and guides, that describe how data should be stored or exchanged for the consistent collection and interoperability of that data across different systems, sources, and users."
+P.10,Topic,Assessment,Evaluation of the success of a research project against expectations set before the project has started
+P.11,Topic,Communication and Outreach,Engagement and interactions among groups and Individual working in similar research areas
+P.12,Topic,Access Control Associated with Data Sensitivity,Methods and requirements to limit the individuals and groups permitted to view or use protected data.
+GA.1,Topic,Data Types,"Classifications or categories of data, each with unique collection, generation, and storage challenges"
+GA.2,Topic,Data Sources,Where and from which processes data originates
+GA.3,Topic,Generated Experimental Data,Collection of information through active intervention by the researcher to induce and measure changes or to create differences when a variable is altered
+GA.4,Topic,Generated Computational Data,Production of information resulting from executing a computer model or simulation
+GA.5,Topic,Qualitative Data,Non-ordinal and focusing on qualities or characteristics
+GA.6,Topic,Acquired Data,Obtained from a source outside of the researchers and which was not originally collected for the current research project
+GA.7,Topic,Critically Evaluated (CE) Data,Collected and processed in a standardized way with rigorous methodology to serve as a standard
+GA.8,Topic,FAIR Principles,Compliance with a set of guiding principles proposed by a consortium of scientists and organizations to support the reusability of digital assets
+GA.8,Topic,Community-Based Standards,Technical specifications for encoding metadata for machine processing and exchange
+GA.10,Topic,Acquisition Software,Programs that enable the collection and procurement of data
