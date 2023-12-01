@@ -239,7 +239,7 @@
     },
     {
         "key": "P.1.1",
-        "text": "Roles and responsibilities",
+        "text": "Roles and responsibilities (Chain of Control)",
         "category": "consideration"
     },
     {
@@ -259,32 +259,32 @@
     },
     {
         "key": "P.2.1",
-        "text": "Funding models for provisioning resources",
+        "text": "Funding models for provisioning resources (project)",
         "category": "consideration"
     },
     {
         "key": "P.2.2",
-        "text": "Funding sources",
+        "text": "Funding sources (project)",
         "category": "consideration"
     },
     {
         "key": "P.2.3",
-        "text": "Decision-making tools to assess costs",
+        "text": "Decision-making tools to assess costs (project)",
         "category": "consideration"
     },
     {
         "key": "P.2.4",
-        "text": "Cost-benefit analysis",
+        "text": "Cost-benefit analysis (project)",
         "category": "consideration"
     },
     {
         "key": "P.2.5",
-        "text": "Cost breakdown by lifecycle stage",
+        "text": "Cost breakdown by lifecycle stage (project)",
         "category": "consideration"
     },
     {
         "key": "P.2.6",
-        "text": "Downstream lifecycle costs",
+        "text": "Downstream lifecycle costs (project)",
         "category": "consideration"
     },
     {
@@ -934,13 +934,10 @@
     {
         "key": "E.3",
         "text": "Data Culture and Reward Structure",
-        "category": "topic-considerations",
+        "category": "topic",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "The collective beliefs and behaviors of the people in an organization concerning the value and management of research data. Practices designed to recognize the advantages and accomplishments of sharing data.",
-        "y": "considerations",
-        "yText": "Considerations",
-        "yToolTip": "Considerations for E.3"
+        "aToolTip": "The collective beliefs and behaviors of the people in an organization concerning the value and management of research data. Practices designed to recognize the advantages and accomplishments of sharing data."
     },
     {
         "key": "E.4",
@@ -961,72 +958,84 @@
     {
         "key": "E.6",
         "text": "Community Engagement",
-        "category": "topic-considerations",
+        "category": "topic",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Outreach and interactions among organizations or individuals with shared goals or interests concerning research data activities or RDM",
-        "y": "considerations",
-        "yText": "Considerations",
-        "yToolTip": "Considerations for E.6"
+        "aToolTip": "Outreach and interactions among organizations or individuals with shared goals or interests concerning research data activities or RDM"
     },
     {
         "key": "P.1",
         "text": "Chain of Control (Custody of Data)",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "A complete, fully documented step-by-step history of a data asset in an organization, i.e., who has possession of a data asset, at what time, and for what purpose, at all times throughout the lifecycle of the data asset."
+        "aToolTip": "A complete, fully documented step-by-step history of a data asset in an organization, i.e., who has possession of a data asset, at what time, and for what purpose, at all times throughout the lifecycle of the data asset.",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for P.1"
     },
     {
         "key": "P.2",
         "text": "Financial Aspects of Planning",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Factors to consider in estimating or assessing the costs associated with all research data and RDM activities over the data lifecycle."
+        "aToolTip": "Factors to consider in estimating or assessing the costs associated with all research data and RDM activities over the data lifecycle.",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for P.2"
     },
     {
         "key": "P.3",
         "text": "Data Management Planning",
-        "category": "topic-considerations",
+        "category": "topic",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "The process of organizing and specifying objectives and activities throughout the research data lifecycle.",
-        "y": "considerations",
-        "yText": "Considerations",
-        "yToolTip": "Considerations for P.3"
+        "aToolTip": "The process of organizing and specifying objectives and activities throughout the research data lifecycle."
     },
     {
         "key": "P.4",
         "text": "Data Objects",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "An entity that, together with associated Representative Information (i.e., metadata), is produced or used in a research study"
+        "aToolTip": "An entity that, together with associated Representative Information (i.e., metadata), is produced or used in a research study",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for P.4"
     },
     {
         "key": "P.5",
         "text": "FAIR",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Findability, Accessibility, Interoperability, Reuse: a set of guiding principles to support the reusability of data that are beneficial to all scholarly digital research objects."
+        "aToolTip": "Findability, Accessibility, Interoperability, Reuse: a set of guiding principles to support the reusability of data that are beneficial to all scholarly digital research objects.",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for P.5"
     },
     {
         "key": "P.6",
         "text": "Data/Metadata Considerations",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Factors to take into account prior to conducting a research study"
+        "aToolTip": "Factors to take into account prior to conducting a research study",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for P.6"
     },
     {
         "key": "P.7",
         "text": "Data Architecture",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "The fundamental structure of an organization's research data management (RDM) system embodied in its components, their relationships to each other and to the environment, and the principles guiding its design and evolution. Includes, for example, the underlying storage technologies, networking, hardware, system interfaces, authentication mechanisms, data brokers, monitoring platforms, semantic interoperability tools, long-term preservation services, and HPC."
+        "aToolTip": "The fundamental structure of an organization's research data management (RDM) system embodied in its components, their relationships to each other and to the environment, and the principles guiding its design and evolution. Includes, for example, the underlying storage technologies, networking, hardware, system interfaces, authentication mechanisms, data brokers, monitoring platforms, semantic interoperability tools, long-term preservation services, and HPC.",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for P.7"
     },
     {
         "key": "P.8",
@@ -1042,10 +1051,13 @@
     {
         "key": "P.9",
         "text": "Research Data Standards",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Documents, including codes, specifications, recommended practices, classifications, test methods and guides, that describe how data should be stored or exchanged for the consistent collection and interoperability of that data across different systems, sources, and users."
+        "aToolTip": "Documents, including codes, specifications, recommended practices, classifications, test methods and guides, that describe how data should be stored or exchanged for the consistent collection and interoperability of that data across different systems, sources, and users.",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for P.9"
     },
     {
         "key": "P.10",
@@ -1058,10 +1070,13 @@
     {
         "key": "P.11",
         "text": "Communication and Outreach",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Engagement and interactions among groups and Individual working in similar research areas"
+        "aToolTip": "Engagement and interactions among groups and Individual working in similar research areas",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for P.11"
     },
     {
         "key": "P.12",
@@ -1074,111 +1089,138 @@
     {
         "key": "GA.1",
         "text": "Data Types",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Classifications or categories of data, each with unique collection, generation, and storage challenges"
+        "aToolTip": "Classifications or categories of data, each with unique collection, generation, and storage challenges",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for GA.1"
     },
     {
         "key": "GA.2",
         "text": "Data Sources",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Where and from which processes data originates"
+        "aToolTip": "Where and from which processes data originates",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for GA.2"
     },
     {
         "key": "GA.3",
         "text": "Generated Experimental Data",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Collection of information through active intervention by the researcher to induce and measure changes or to create differences when a variable is altered"
+        "aToolTip": "Collection of information through active intervention by the researcher to induce and measure changes or to create differences when a variable is altered",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for GA.3"
     },
     {
         "key": "GA.4",
         "text": "Generated Computational Data",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Production of information resulting from executing a computer model or simulation"
+        "aToolTip": "Production of information resulting from executing a computer model or simulation",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for GA.4"
     },
     {
         "key": "GA.5",
         "text": "Qualitative Data",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Non-ordinal and focusing on qualities or characteristics"
+        "aToolTip": "Non-ordinal and focusing on qualities or characteristics",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for GA.5"
     },
     {
         "key": "GA.6",
         "text": "Acquired Data",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Obtained from a source outside of the researchers and which was not originally collected for the current research project"
+        "aToolTip": "Obtained from a source outside of the researchers and which was not originally collected for the current research project",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for GA.6"
     },
     {
         "key": "GA.7",
         "text": "Critically Evaluated (CE) Data",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Collected and processed in a standardized way with rigorous methodology to serve as a standard"
+        "aToolTip": "Collected and processed in a standardized way with rigorous methodology to serve as a standard",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for GA.7"
     },
     {
         "key": "GA.8",
         "text": "Community-Based Standards",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Technical specifications for encoding metadata for machine processing and exchange"
+        "aToolTip": "Technical specifications for encoding metadata for machine processing and exchange",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for GA.8"
     },
     {
         "key": "GA.10",
         "text": "Acquisition Software",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Programs that enable the collection and procurement of data"
+        "aToolTip": "Programs that enable the collection and procurement of data",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for GA.10"
     },
     {
         "key": "suny:activity.1",
-        "text": "Identify and define high-level RDM organizational goals",
+        "text": "Convene data governance group",
         "category": "activity-extension-considerations",
         "a": "participants",
         "aText": "Participants",
-        "aToolTip": "Participants in Identify and define high-level RDM organizational goals",
+        "aToolTip": "Participants in Convene data governance group",
         "b": "methods",
         "bText": "Methods",
-        "bToolTip": "Methods for Identify and define high-level RDM organizational goals",
+        "bToolTip": "Methods for Convene data governance group",
         "c": "outputs",
         "cText": "Outputs",
-        "cToolTip": "Outputs of Identify and define high-level RDM organizational goals",
+        "cToolTip": "Outputs of Convene data governance group",
         "d": "pgroups",
         "dText": "Roles",
-        "dToolTip": "Roles involved in Identify and define high-level RDM organizational goals",
+        "dToolTip": "Roles involved in Convene data governance group",
         "e": "resources",
         "eText": "resources",
-        "eToolTip": "Resources used by Identify and define high-level RDM organizational goals",
+        "eToolTip": "Resources used by Convene data governance group",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forIdentify and define high-level RDM organizational goals",
+        "yToolTip": "Considerations forConvene data governance group",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.1 Identification of goals and roles"
+        "zToolTip": "E.1.5 Data management value proposition"
     },
     {
         "key": "suny:outcome.1",
-        "text": "goals identified and defined",
+        "text": "Institutional Data Governance goals identified and defined",
         "category": "outcome-extension-considerations",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in goals identified and defined",
+        "aToolTip": "Activities that result in Institutional Data Governance goals identified and defined",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forgoals identified and defined",
+        "yToolTip": "Considerations forInstitutional Data Governance goals identified and defined",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.1 Identification of goals and roles"
@@ -1189,41 +1231,15 @@
         "category": "output"
     },
     {
-        "key": "suny:activity.2",
-        "text": "Identify and define roles and responsibilities for each RDaF topic: E.1, E.2, E.3, E.4., E.5, E.6",
-        "category": "activity-extension-considerations",
-        "a": "participants",
-        "aText": "Participants",
-        "aToolTip": "Participants in Identify and define roles and responsibilities for each RDaF topic: E.1, E.2, E.3, E.4., E.5, E.6",
-        "b": "methods",
-        "bText": "Methods",
-        "bToolTip": "Methods for Identify and define roles and responsibilities for each RDaF topic: E.1, E.2, E.3, E.4., E.5, E.6",
-        "c": "outputs",
-        "cText": "Outputs",
-        "cToolTip": "Outputs of Identify and define roles and responsibilities for each RDaF topic: E.1, E.2, E.3, E.4., E.5, E.6",
-        "d": "pgroups",
-        "dText": "Roles",
-        "dToolTip": "Roles involved in Identify and define roles and responsibilities for each RDaF topic: E.1, E.2, E.3, E.4., E.5, E.6",
-        "e": "resources",
-        "eText": "resources",
-        "eToolTip": "Resources used by Identify and define roles and responsibilities for each RDaF topic: E.1, E.2, E.3, E.4., E.5, E.6",
-        "y": "considerations",
-        "yText": "Considerations",
-        "yToolTip": "Considerations forIdentify and define roles and responsibilities for each RDaF topic: E.1, E.2, E.3, E.4., E.5, E.6",
-        "z": "extends",
-        "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.1 Identification of goals and roles"
-    },
-    {
         "key": "suny:outcome.2",
-        "text": "roles and responsibilities are identified and defined",
+        "text": "Institutional Data Governance roles and responsibilities are identified and defined",
         "category": "outcome-extension-considerations",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in roles and responsibilities are identified and defined",
+        "aToolTip": "Activities that result in Institutional Data Governance roles and responsibilities are identified and defined",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forroles and responsibilities are identified and defined",
+        "yToolTip": "Considerations forInstitutional Data Governance roles and responsibilities are identified and defined",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.1 Identification of goals and roles"
@@ -1234,38 +1250,15 @@
         "category": "output"
     },
     {
-        "key": "suny:activity.3",
-        "text": "Define organizational vision for research data",
-        "category": "activity-extension-considerations",
-        "a": "participants",
-        "aText": "Participants",
-        "aToolTip": "Participants in Define organizational vision for research data",
-        "b": "methods",
-        "bText": "Methods",
-        "bToolTip": "Methods for Define organizational vision for research data",
-        "c": "outputs",
-        "cText": "Outputs",
-        "cToolTip": "Outputs of Define organizational vision for research data",
-        "d": "pgroups",
-        "dText": "Roles",
-        "dToolTip": "Roles involved in Define organizational vision for research data",
-        "e": "resources",
-        "eText": "resources",
-        "eToolTip": "Resources used by Define organizational vision for research data",
-        "y": "considerations",
-        "yText": "Considerations",
-        "yToolTip": "Considerations forDefine organizational vision for research data",
+        "key": "suny:outcome.3",
+        "text": "Institution has a clearly defined vision for research data management",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Institution has a clearly defined vision for research data management",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.2 Vision and/or policy"
-    },
-    {
-        "key": "suny:outcome.3",
-        "text": "Organization has a clearly defined vision for research data management",
-        "category": "outcome",
-        "a": "activities",
-        "aText": "Activities",
-        "aToolTip": "Activities that result in Organization has a clearly defined vision for research data management"
     },
     {
         "key": "suny:output.3",
@@ -1273,136 +1266,82 @@
         "category": "output"
     },
     {
-        "key": "suny:activity.4",
-        "text": "Define organizational policy infrastructure for research data",
-        "category": "activity-extension-considerations",
-        "a": "participants",
-        "aText": "Participants",
-        "aToolTip": "Participants in Define organizational policy infrastructure for research data",
-        "b": "methods",
-        "bText": "Methods",
-        "bToolTip": "Methods for Define organizational policy infrastructure for research data",
-        "c": "outputs",
-        "cText": "Outputs",
-        "cToolTip": "Outputs of Define organizational policy infrastructure for research data",
-        "d": "pgroups",
-        "dText": "Roles",
-        "dToolTip": "Roles involved in Define organizational policy infrastructure for research data",
-        "e": "resources",
-        "eText": "resources",
-        "eToolTip": "Resources used by Define organizational policy infrastructure for research data",
-        "y": "considerations",
-        "yText": "Considerations",
-        "yToolTip": "Considerations forDefine organizational policy infrastructure for research data",
+        "key": "suny:outcome.4",
+        "text": "Institution has a clearly defined high-level policies for research data management",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Institution has a clearly defined high-level policies for research data management",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.2 Vision and/or policy"
-    },
-    {
-        "key": "suny:outcome.4",
-        "text": "Organization has a clearly defined high-level policies for research data management",
-        "category": "outcome",
-        "a": "activities",
-        "aText": "Activities",
-        "aToolTip": "Activities that result in Organization has a clearly defined high-level policies for research data management"
     },
     {
         "key": "suny:output.4",
         "text": "Data policies",
-        "category": "output-extension-considerations",
-        "y": "considerations",
-        "yText": "Considerations",
-        "yToolTip": "Considerations forData policies",
-        "z": "extends",
-        "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.2 Vision and/or policy"
+        "category": "output"
     },
     {
-        "key": "suny:activity.5",
-        "text": "Create data governance group",
+        "key": "suny:activity.2",
+        "text": "Build RDM infrastructure",
         "category": "activity-extension-considerations",
         "a": "participants",
         "aText": "Participants",
-        "aToolTip": "Participants in Create data governance group",
+        "aToolTip": "Participants in Build RDM infrastructure",
         "b": "methods",
         "bText": "Methods",
-        "bToolTip": "Methods for Create data governance group",
+        "bToolTip": "Methods for Build RDM infrastructure",
         "c": "outputs",
         "cText": "Outputs",
-        "cToolTip": "Outputs of Create data governance group",
+        "cToolTip": "Outputs of Build RDM infrastructure",
         "d": "pgroups",
         "dText": "Roles",
-        "dToolTip": "Roles involved in Create data governance group",
+        "dToolTip": "Roles involved in Build RDM infrastructure",
         "e": "resources",
         "eText": "resources",
-        "eToolTip": "Resources used by Create data governance group",
+        "eToolTip": "Resources used by Build RDM infrastructure",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forCreate data governance group",
+        "yToolTip": "Considerations forBuild RDM infrastructure",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.3 Data management organization"
     },
     {
         "key": "suny:outcome.5",
-        "text": "Data governance policies, framework, and plans exist and are updated as needed",
+        "text": "RDM infrastructure of human and capital resources that support data-related activities exists",
         "category": "outcome-extension-considerations",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in Data governance policies, framework, and plans exist and are updated as needed",
+        "aToolTip": "Activities that result in RDM infrastructure of human and capital resources that support data-related activities exists",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forData governance policies, framework, and plans exist and are updated as needed",
+        "yToolTip": "Considerations forRDM infrastructure of human and capital resources that support data-related activities exists",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.3 Data management organization"
     },
     {
-        "key": "suny:output.5",
-        "text": "Data governance policies, framework, and plans exist",
-        "category": "output"
-    },
-    {
-        "key": "suny:activity.6",
-        "text": "Define organizational value for research data",
-        "category": "activity-extension-considerations",
-        "a": "participants",
-        "aText": "Participants",
-        "aToolTip": "Participants in Define organizational value for research data",
-        "b": "methods",
-        "bText": "Methods",
-        "bToolTip": "Methods for Define organizational value for research data",
-        "c": "outputs",
-        "cText": "Outputs",
-        "cToolTip": "Outputs of Define organizational value for research data",
-        "d": "pgroups",
-        "dText": "Roles",
-        "dToolTip": "Roles involved in Define organizational value for research data",
-        "e": "resources",
-        "eText": "resources",
-        "eToolTip": "Resources used by Define organizational value for research data",
+        "key": "suny:outcome.6",
+        "text": "Institution has a clearly defined statement of purpose and value for research data",
+        "category": "outcome-extension-considerations",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Institution has a clearly defined statement of purpose and value for research data",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forDefine organizational value for research data",
+        "yToolTip": "Considerations forInstitution has a clearly defined statement of purpose and value for research data",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.5 Data management value proposition"
     },
     {
-        "key": "suny:outcome.6",
-        "text": "Organization has a clearly defined value statement",
-        "category": "outcome",
-        "a": "activities",
-        "aText": "Activities",
-        "aToolTip": "Activities that result in Organization has a clearly defined value statement"
-    },
-    {
-        "key": "suny:output.6",
-        "text": "E.1.5 Data management value proposition",
+        "key": "suny:output.5",
+        "text": "Data Management Value Statement",
         "category": "output"
     },
     {
-        "key": "suny:activity.7",
+        "key": "suny:activity.3",
         "text": "Conduct data needs assessments",
         "category": "activity-extension",
         "a": "participants",
@@ -1426,44 +1365,60 @@
     },
     {
         "key": "suny:outcome.7",
-        "text": "Data needs assessment completed at the desired level of analysis: researcher, student, discipline, institution, unit, library",
-        "category": "outcome",
+        "text": "Data needs assessment completed at the desired level of analysis including: researcher, student, discipline, institution, unit, library",
+        "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in Data needs assessment completed at the desired level of analysis: researcher, student, discipline, institution, unit, library"
-    },
-    {
-        "key": "suny:output.7",
-        "text": "Data Needs Assessment document(s)",
-        "category": "output-extension",
+        "aToolTip": "Activities that result in Data needs assessment completed at the desired level of analysis including: researcher, student, discipline, institution, unit, library",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.6 Data needs assessment"
     },
     {
-        "key": "suny:outcome.8",
-        "text": "well defined across the institution",
-        "category": "outcome-extension",
-        "a": "activities",
-        "aText": "Activities",
-        "aToolTip": "Activities that result in well defined across the institution",
-        "z": "extends",
-        "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.7 Purpose and value of data"
+        "key": "suny:output.6",
+        "text": "Data Needs Assessment reports",
+        "category": "output"
     },
     {
-        "key": "suny:outcome.9",
-        "text": "well defined across the institution and contributes to vision and policy",
+        "key": "suny:outcome.8",
+        "text": "Organizational intent regarding FAIR data is well defined across the institution and contributes to vision and policy",
         "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in well defined across the institution and contributes to vision and policy",
+        "aToolTip": "Activities that result in Organizational intent regarding FAIR data is well defined across the institution and contributes to vision and policy",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.8 Organization intent regarding FAIR data"
     },
     {
-        "key": "suny:activity.8",
+        "key": "suny:outcome.9",
+        "text": "Support for end users included in institutional RDM and data governance standards",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Support for end users included in institutional RDM and data governance standards",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.1.9 End-use support"
+    },
+    {
+        "key": "suny:outcome.10",
+        "text": "Data governance legal policies, framework, and plans exist and are continually updated",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Data governance legal policies, framework, and plans exist and are continually updated",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.2.1 Privacy"
+    },
+    {
+        "key": "suny:output.7",
+        "text": "Data governance policies",
+        "category": "output"
+    },
+    {
+        "key": "suny:activity.4",
         "text": "Conduct a dataset inventory",
         "category": "activity-extension-considerations",
         "a": "participants",
@@ -1489,26 +1444,26 @@
         "zToolTip": "E.2.4 Inventory"
     },
     {
-        "key": "suny:outcome.10",
-        "text": "Inventory includes relevant dataset metadata including: repository, identifiers, data usage metrics, creators, funders, supporting grants",
-        "category": "outcome",
+        "key": "suny:outcome.11",
+        "text": "Dataset inventory exists and includes relevant dataset metadata including: repository, identifiers, data usage metrics, creators, funders, supporting grants",
+        "category": "outcome-extension-considerations",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in Inventory includes relevant dataset metadata including: repository, identifiers, data usage metrics, creators, funders, supporting grants"
-    },
-    {
-        "key": "suny:output.8",
-        "text": "Dataset inventory",
-        "category": "output-extension-considerations",
+        "aToolTip": "Activities that result in Dataset inventory exists and includes relevant dataset metadata including: repository, identifiers, data usage metrics, creators, funders, supporting grants",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forDataset inventory",
+        "yToolTip": "Considerations forDataset inventory exists and includes relevant dataset metadata including: repository, identifiers, data usage metrics, creators, funders, supporting grants",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.2.4 Inventory"
     },
     {
-        "key": "suny:activity.9",
+        "key": "suny:output.8",
+        "text": "Dataset inventory",
+        "category": "output"
+    },
+    {
+        "key": "suny:activity.5",
         "text": "Conduct a data services inventory",
         "category": "activity-extension-considerations",
         "a": "participants",
@@ -1534,26 +1489,26 @@
         "zToolTip": "E.2.4 Inventory"
     },
     {
-        "key": "suny:outcome.11",
-        "text": "Inventory includes relevant data services provided across institution or unit",
-        "category": "outcome",
+        "key": "suny:outcome.12",
+        "text": "Data services inventory: includes relevant data services provided across institution or unit",
+        "category": "outcome-extension-considerations",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in Inventory includes relevant data services provided across institution or unit"
-    },
-    {
-        "key": "suny:output.9",
-        "text": "Data Services inventory",
-        "category": "output-extension-considerations",
+        "aToolTip": "Activities that result in Data services inventory: includes relevant data services provided across institution or unit",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forData Services inventory",
+        "yToolTip": "Considerations forData services inventory: includes relevant data services provided across institution or unit",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.2.4 Inventory"
     },
     {
-        "key": "suny:activity.10",
+        "key": "suny:output.9",
+        "text": "Data Services inventory",
+        "category": "output"
+    },
+    {
+        "key": "suny:activity.6",
         "text": "Conduct a risk assessment",
         "category": "activity-extension-considerations",
         "a": "participants",
@@ -1579,15 +1534,15 @@
         "zToolTip": "E.2.5 Risk assessment"
     },
     {
-        "key": "suny:outcome.12",
-        "text": "Risk assessment includes risks associated with unmanaged data, research subject privacy, data preservation, funder compliance",
+        "key": "suny:outcome.13",
+        "text": "Risk is assessed and includes risks associated with unmanaged data, research subject privacy, data preservation, funder compliance",
         "category": "outcome-extension-considerations",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in Risk assessment includes risks associated with unmanaged data, research subject privacy, data preservation, funder compliance",
+        "aToolTip": "Activities that result in Risk is assessed and includes risks associated with unmanaged data, research subject privacy, data preservation, funder compliance",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forRisk assessment includes risks associated with unmanaged data, research subject privacy, data preservation, funder compliance",
+        "yToolTip": "Considerations forRisk is assessed and includes risks associated with unmanaged data, research subject privacy, data preservation, funder compliance",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.2.5 Risk assessment"
@@ -1598,7 +1553,7 @@
         "category": "output"
     },
     {
-        "key": "suny:activity.11",
+        "key": "suny:activity.7",
         "text": "Implement solutions to mitigate and manage risk discovered in risk assessment",
         "category": "activity-extension-considerations",
         "a": "participants",
@@ -1624,7 +1579,7 @@
         "zToolTip": "E.2.6 Risk mitigation and management"
     },
     {
-        "key": "suny:outcome.13",
+        "key": "suny:outcome.14",
         "text": "Risks determined in risk assessment are mitigated, managed, and controlled",
         "category": "outcome-extension-considerations",
         "a": "activities",
@@ -1643,7 +1598,37 @@
         "category": "output"
     },
     {
-        "key": "suny:activity.12",
+        "key": "suny:outcome.15",
+        "text": "Policies for sharing and licensing data exist",
+        "category": "outcome-extension-considerations",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Policies for sharing and licensing data exist",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations forPolicies for sharing and licensing data exist",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.2.7 Sharing/licensing"
+    },
+    {
+        "key": "suny:output.12",
+        "text": "Data Use Agreement",
+        "category": "output"
+    },
+    {
+        "key": "suny:outcome.16",
+        "text": "Community standards for social licensing of and (re)use of data exist",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Community standards for social licensing of and (re)use of data exist",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.2.8 Social license for use and reuse"
+    },
+    {
+        "key": "suny:activity.8",
         "text": "Define roles and responsibilities for building a strong data sharing culture and rewards structure",
         "category": "activity-extension",
         "a": "participants",
@@ -1666,18 +1651,18 @@
         "zToolTip": "E.3.1 Roles and responsibilities"
     },
     {
-        "key": "suny:outcome.14",
-        "text": "Institution demonstrates a strong data sharing culture and rewards structure",
+        "key": "suny:outcome.17",
+        "text": "Roles and responsibilities are identified and defined for a strong data sharing culture with rewards structure",
         "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in Institution demonstrates a strong data sharing culture and rewards structure",
+        "aToolTip": "Activities that result in Roles and responsibilities are identified and defined for a strong data sharing culture with rewards structure",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.3.1 Roles and responsibilities"
     },
     {
-        "key": "suny:activity.13",
+        "key": "suny:activity.9",
         "text": "Build a data culture",
         "category": "activity-extension",
         "a": "participants",
@@ -1700,77 +1685,94 @@
         "zToolTip": "E.3.4 Promotion and tenure"
     },
     {
-        "key": "suny:outcome.15",
-        "text": "E.3.2 Recognition of data management to build a Data Culture",
-        "category": "outcome",
+        "key": "suny:outcome.18",
+        "text": "Data management work is recognized and supported",
+        "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in E.3.2 Recognition of data management to build a Data Culture"
+        "aToolTip": "Activities that result in Data management work is recognized and supported",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.3.2 Recognition of data management"
     },
     {
-        "key": "suny:outcome.16",
-        "text": "E.3.3 Data workers are valued",
-        "category": "outcome",
+        "key": "suny:output.13",
+        "text": "Recognition for data management through awards, professional expectations, data metrics, promotion",
+        "category": "output"
+    },
+    {
+        "key": "suny:outcome.19",
+        "text": "Data workers are valued and data work is recognized and supported",
+        "category": "outcome-extension-considerations",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in E.3.3 Data workers are valued"
+        "aToolTip": "Activities that result in Data workers are valued and data work is recognized and supported",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations forData workers are valued and data work is recognized and supported",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.3.3 Value of data workers"
     },
     {
-        "key": "suny:output.12",
+        "key": "suny:output.14",
         "text": "Recognition for data sharing and open data through awards, professional expectations, data metrics, promotion",
         "category": "output"
     },
     {
-        "key": "suny:outcome.17",
-        "text": "E.3.4 Promotion and tenure reflect the importance of open research and scholarship",
-        "category": "outcome",
+        "key": "suny:outcome.20",
+        "text": "Promotion and tenure reflect the importance of open research and scholarship",
+        "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in E.3.4 Promotion and tenure reflect the importance of open research and scholarship"
+        "aToolTip": "Activities that result in Promotion and tenure reflect the importance of open research and scholarship",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.3.4 Promotion and tenure"
     },
     {
-        "key": "suny:output.13",
+        "key": "suny:output.15",
         "text": "Data sharing is incentivized in promotion and tenure work through use of data metrics and open publishing, community engagement",
         "category": "output"
     },
     {
-        "key": "suny:activity.14",
-        "text": "Follow standard practices to ensure research and outputs maintain integrity",
-        "category": "activity-extension-considerations",
+        "key": "suny:activity.10",
+        "text": "Integrate integrity or research and data into curriculum and RDM training",
+        "category": "activity-extension",
         "a": "participants",
         "aText": "Participants",
-        "aToolTip": "Participants in Follow standard practices to ensure research and outputs maintain integrity",
+        "aToolTip": "Participants in Integrate integrity or research and data into curriculum and RDM training",
         "b": "methods",
         "bText": "Methods",
-        "bToolTip": "Methods for Follow standard practices to ensure research and outputs maintain integrity",
+        "bToolTip": "Methods for Integrate integrity or research and data into curriculum and RDM training",
         "c": "outputs",
         "cText": "Outputs",
-        "cToolTip": "Outputs of Follow standard practices to ensure research and outputs maintain integrity",
+        "cToolTip": "Outputs of Integrate integrity or research and data into curriculum and RDM training",
         "d": "pgroups",
         "dText": "Roles",
-        "dToolTip": "Roles involved in Follow standard practices to ensure research and outputs maintain integrity",
+        "dToolTip": "Roles involved in Integrate integrity or research and data into curriculum and RDM training",
         "e": "resources",
         "eText": "resources",
-        "eToolTip": "Resources used by Follow standard practices to ensure research and outputs maintain integrity",
-        "y": "considerations",
-        "yText": "Considerations",
-        "yToolTip": "Considerations forFollow standard practices to ensure research and outputs maintain integrity",
+        "eToolTip": "Resources used by Integrate integrity or research and data into curriculum and RDM training",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.3.5 Integrity of research and data"
     },
     {
-        "key": "suny:outcome.18",
-        "text": "Outcomes from related subtopics",
-        "category": "outcome",
+        "key": "suny:outcome.21",
+        "text": "Researchers are expected to follow standard practices to ensure research and outputs maintain integrity",
+        "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in Outcomes from related subtopics"
+        "aToolTip": "Activities that result in Researchers are expected to follow standard practices to ensure research and outputs maintain integrity",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.3.5 Integrity of research and data"
     },
     {
-        "key": "suny:activity.15",
+        "key": "suny:activity.11",
         "text": "Perform accuracy checks on all shared or published datasets, Create README files",
-        "category": "activity-extension-considerations",
+        "category": "activity-extension",
         "a": "participants",
         "aText": "Participants",
         "aToolTip": "Participants in Perform accuracy checks on all shared or published datasets, Create README files",
@@ -1786,47 +1788,88 @@
         "e": "resources",
         "eText": "resources",
         "eToolTip": "Resources used by Perform accuracy checks on all shared or published datasets, Create README files",
-        "y": "considerations",
-        "yText": "Considerations",
-        "yToolTip": "Considerations forPerform accuracy checks on all shared or published datasets, Create README files",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.3.5 Integrity of research and data"
     },
     {
-        "key": "suny:outcome.19",
-        "text": "E.3.5 Integrity of research and data",
-        "category": "outcome",
-        "a": "activities",
-        "aText": "Activities",
-        "aToolTip": "Activities that result in E.3.5 Integrity of research and data"
-    },
-    {
-        "key": "suny:outcome.20",
-        "text": "E.3.6 FAIR data principles are followed",
-        "category": "outcome",
-        "a": "activities",
-        "aText": "Activities",
-        "aToolTip": "Activities that result in E.3.6 FAIR data principles are followed"
-    },
-    {
-        "key": "suny:outcome.21",
-        "text": "Principles for Indigenous Data Governance are respected",
+        "key": "suny:outcome.22",
+        "text": "Data is checked for accuracy before publishing and sharing",
         "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in Principles for Indigenous Data Governance are respected",
+        "aToolTip": "Activities that result in Data is checked for accuracy before publishing and sharing",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.3.5 Integrity of research and data"
+    },
+    {
+        "key": "suny:outcome.23",
+        "text": "FAIR data principles are integrated into RDM and data governance efforts",
+        "category": "outcome-extension-considerations",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in FAIR data principles are integrated into RDM and data governance efforts",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations forFAIR data principles are integrated into RDM and data governance efforts",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.3.6 FAIR data principles"
+    },
+    {
+        "key": "suny:output.16",
+        "text": "RDM training includes FAIR",
+        "category": "output"
+    },
+    {
+        "key": "suny:outcome.24",
+        "text": "Data sharing infrastructure supports FAIR data",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Data sharing infrastructure supports FAIR data",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.3.7 Maintenance of FAIR data"
+    },
+    {
+        "key": "suny:outcome.25",
+        "text": "Appropriate incentives (or disincentives) exist for data sharing and reuse",
+        "category": "outcome-extension-considerations",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Appropriate incentives (or disincentives) exist for data sharing and reuse",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations forAppropriate incentives (or disincentives) exist for data sharing and reuse",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.3.8 Incentives and impact for sharing and reuse"
+    },
+    {
+        "key": "suny:output.17",
+        "text": "Data metrics",
+        "category": "output"
+    },
+    {
+        "key": "suny:outcome.26",
+        "text": "Principles for Indigenous Data Governance are respected (CARE, OCAP, and ethics)",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Principles for Indigenous Data Governance are respected (CARE, OCAP, and ethics)",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.3.10 CARE and ethics"
     },
     {
-        "key": "suny:output.14",
+        "key": "suny:output.18",
         "text": "Statement on Indigenous ethics of ownership",
         "category": "output"
     },
     {
-        "key": "suny:activity.16",
+        "key": "suny:activity.12",
         "text": "Conduct a Workforce skills inventory to determine an organization's internal capacity to conduct and support RDM",
         "category": "activity-extension",
         "a": "participants",
@@ -1849,20 +1892,23 @@
         "zToolTip": "E.4.1 Workforce skills inventory"
     },
     {
-        "key": "suny:outcome.22",
-        "text": "Strengths and weaknesses in workforce capacity to conduct RDM at institution are documented",
-        "category": "outcome",
+        "key": "suny:outcome.27",
+        "text": "Internal workforce skills inventory exists to document strengths and weaknesses in workforce capacity to conduct RDM",
+        "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in Strengths and weaknesses in workforce capacity to conduct RDM at institution are documented"
+        "aToolTip": "Activities that result in Internal workforce skills inventory exists to document strengths and weaknesses in workforce capacity to conduct RDM",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.4.1 Workforce skills inventory"
     },
     {
-        "key": "suny:output.15",
-        "text": "E.4.1 Workforce skills inventory (internal)",
+        "key": "suny:output.19",
+        "text": "Workforce skills inventory (internal)",
         "category": "output"
     },
     {
-        "key": "suny:activity.17",
+        "key": "suny:activity.13",
         "text": "Conduct a Workforce skills inventory to determine needs for students to build workforce skills to conduct or support RDM",
         "category": "activity-extension",
         "a": "participants",
@@ -1885,23 +1931,23 @@
         "zToolTip": "E.4.1 Workforce skills inventory"
     },
     {
-        "key": "suny:outcome.23",
-        "text": "Strengths and weaknesses in workforce capacity to conduct RDM across NYS are documented",
-        "category": "outcome",
+        "key": "suny:outcome.28",
+        "text": "Statewide workforce skills inventory exists to document strengths and weaknesses in workforce capacity to conduct RDM across NYS are documented",
+        "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in Strengths and weaknesses in workforce capacity to conduct RDM across NYS are documented"
-    },
-    {
-        "key": "suny:output.16",
-        "text": "Inventory of state workforce needs that can be addressed through education",
-        "category": "output-extension",
+        "aToolTip": "Activities that result in Statewide workforce skills inventory exists to document strengths and weaknesses in workforce capacity to conduct RDM across NYS are documented",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.4.1 Workforce skills inventory"
     },
     {
-        "key": "suny:activity.18",
+        "key": "suny:output.20",
+        "text": "Inventory of state workforce needs that can be addressed through education",
+        "category": "output"
+    },
+    {
+        "key": "suny:activity.14",
         "text": "Provide training and opportunities for employees to build their skills and expertise in emerging technologies",
         "category": "activity-extension",
         "a": "participants",
@@ -1924,23 +1970,23 @@
         "zToolTip": "E.4.2 Workforce preparedness in new and advanced technologies"
     },
     {
-        "key": "suny:outcome.24",
-        "text": "Institution can support RDM through appropriately skilled staff",
-        "category": "outcome",
+        "key": "suny:outcome.29",
+        "text": "Institution can support RDM through Institutional workforce preparedness activities in new and advanced technologies",
+        "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in Institution can support RDM through appropriately skilled staff"
-    },
-    {
-        "key": "suny:output.17",
-        "text": "Suite of internal workforce training offered",
-        "category": "output-extension",
+        "aToolTip": "Activities that result in Institution can support RDM through Institutional workforce preparedness activities in new and advanced technologies",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.4.2 Workforce preparedness in new and advanced technologies"
     },
     {
-        "key": "suny:activity.19",
+        "key": "suny:output.21",
+        "text": "Suite of internal workforce training offered",
+        "category": "output"
+    },
+    {
+        "key": "suny:activity.15",
         "text": "Build workforce preparedness programs for emerging technologies for state workforce",
         "category": "activity-extension",
         "a": "participants",
@@ -1963,23 +2009,23 @@
         "zToolTip": "E.4.2 Workforce preparedness in new and advanced technologies"
     },
     {
-        "key": "suny:outcome.25",
+        "key": "suny:outcome.30",
         "text": "State Workforce is well prepared to adapt and innovate in response to emerging technologies",
-        "category": "outcome",
+        "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in State Workforce is well prepared to adapt and innovate in response to emerging technologies"
-    },
-    {
-        "key": "suny:output.18",
-        "text": "Educational programs equip students to work with data and emerging technologies",
-        "category": "output-extension",
+        "aToolTip": "Activities that result in State Workforce is well prepared to adapt and innovate in response to emerging technologies",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.4.2 Workforce preparedness in new and advanced technologies"
     },
     {
-        "key": "suny:activity.20",
+        "key": "suny:output.22",
+        "text": "Educational programs equip students to work with data and emerging technologies",
+        "category": "output"
+    },
+    {
+        "key": "suny:activity.16",
         "text": "Provide research data management training as a data service",
         "category": "activity-extension-considerations",
         "a": "participants",
@@ -2005,20 +2051,26 @@
         "zToolTip": "E.4.3 Data management training"
     },
     {
-        "key": "suny:outcome.26",
-        "text": "RDM training is available for organizational participants",
-        "category": "outcome",
+        "key": "suny:outcome.31",
+        "text": "RDM training is available for researchers, faculty, staff, and students",
+        "category": "outcome-extension-considerations",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in RDM training is available for organizational participants"
+        "aToolTip": "Activities that result in RDM training is available for researchers, faculty, staff, and students",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations forRDM training is available for researchers, faculty, staff, and students",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.4.3 Data management training"
     },
     {
-        "key": "suny:output.19",
-        "text": "E.4.3 Data management training",
+        "key": "suny:output.23",
+        "text": "Asynchronous and synchronous RDM training",
         "category": "output"
     },
     {
-        "key": "suny:activity.21",
+        "key": "suny:activity.17",
         "text": "Provide research data management training to data service providers",
         "category": "activity-extension",
         "a": "participants",
@@ -2041,20 +2093,25 @@
         "zToolTip": "E.4.4 HR\u2019s supporting role in workforce development and training"
     },
     {
-        "key": "suny:outcome.27",
-        "text": "RDM training for data services providers exists",
+        "key": "suny:outcome.32",
+        "text": "Continual opportunities for RDM training for staff supported",
         "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in RDM training for data services providers exists",
+        "aToolTip": "Activities that result in Continual opportunities for RDM training for staff supported",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.4.4 HR\u2019s supporting role in workforce development and training"
     },
     {
-        "key": "suny:activity.22",
+        "key": "suny:output.24",
+        "text": "Organization funds training and employee time spent on training",
+        "category": "output"
+    },
+    {
+        "key": "suny:activity.18",
         "text": "Determine initial financial support models to launch RDM infrastructure",
-        "category": "activity-extension-considerations",
+        "category": "activity-extension",
         "a": "participants",
         "aText": "Participants",
         "aToolTip": "Participants in Determine initial financial support models to launch RDM infrastructure",
@@ -2070,28 +2127,28 @@
         "e": "resources",
         "eText": "resources",
         "eToolTip": "Resources used by Determine initial financial support models to launch RDM infrastructure",
-        "y": "considerations",
-        "yText": "Considerations",
-        "yToolTip": "Considerations forDetermine initial financial support models to launch RDM infrastructure",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.5.1 Sources of funding"
     },
     {
-        "key": "suny:outcome.28",
-        "text": "RDM is funded through dedicated streams (may be temporary)",
-        "category": "outcome",
+        "key": "suny:outcome.33",
+        "text": "RDM is funded through dedicated financial resources (may be temporary)",
+        "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in RDM is funded through dedicated streams (may be temporary)"
+        "aToolTip": "Activities that result in RDM is funded through dedicated financial resources (may be temporary)",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.5.1 Sources of funding"
     },
     {
-        "key": "suny:output.20",
-        "text": "E.5.1 Sources of funding discovered and captured",
+        "key": "suny:output.25",
+        "text": "Sources of funding discovered and captured",
         "category": "output"
     },
     {
-        "key": "suny:activity.23",
+        "key": "suny:activity.19",
         "text": "Integrate RDM costs into sustainable financial models",
         "category": "activity-extension",
         "a": "participants",
@@ -2114,22 +2171,25 @@
         "zToolTip": "E.5.2 Long-term funding"
     },
     {
-        "key": "suny:outcome.29",
-        "text": "RDM funding is operationalized",
-        "category": "outcome",
+        "key": "suny:outcome.34",
+        "text": "RDM funding is operationalized with long-term funding",
+        "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in RDM funding is operationalized"
+        "aToolTip": "Activities that result in RDM funding is operationalized with long-term funding",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.5.2 Long-term funding"
     },
     {
-        "key": "suny:output.21",
-        "text": "E.5.2 Long-term funding integrated into budget",
+        "key": "suny:output.26",
+        "text": "Long-term funding integrated into budget",
         "category": "output"
     },
     {
-        "key": "suny:activity.24",
+        "key": "suny:activity.20",
         "text": "Increase existing staff skills in RDM, redeploy existing staff, or hire new staff members with RDM skills",
-        "category": "activity-extension-considerations",
+        "category": "activity-extension",
         "a": "participants",
         "aText": "Participants",
         "aToolTip": "Participants in Increase existing staff skills in RDM, redeploy existing staff, or hire new staff members with RDM skills",
@@ -2145,28 +2205,28 @@
         "e": "resources",
         "eText": "resources",
         "eToolTip": "Resources used by Increase existing staff skills in RDM, redeploy existing staff, or hire new staff members with RDM skills",
-        "y": "considerations",
-        "yText": "Considerations",
-        "yToolTip": "Considerations forIncrease existing staff skills in RDM, redeploy existing staff, or hire new staff members with RDM skills",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.5.3 Staffing"
     },
     {
-        "key": "suny:outcome.30",
-        "text": "E.5.3. Staffing is considered in resource allocation",
-        "category": "outcome",
+        "key": "suny:outcome.35",
+        "text": "Staffing is considered in resource allocation",
+        "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in E.5.3. Staffing is considered in resource allocation"
+        "aToolTip": "Activities that result in Staffing is considered in resource allocation",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.5.3 Staffing"
     },
     {
-        "key": "suny:output.22",
+        "key": "suny:output.27",
         "text": "Organization chart",
         "category": "output"
     },
     {
-        "key": "suny:activity.25",
+        "key": "suny:activity.21",
         "text": "Build Stakeholder communities of practice: local, campus, system, national, international",
         "category": "activity-extension-considerations",
         "a": "participants",
@@ -2192,20 +2252,26 @@
         "zToolTip": "E.6.1 Stakeholder communities"
     },
     {
-        "key": "suny:outcome.31",
-        "text": "E.6.1 Stakeholder communities exist",
-        "category": "outcome",
+        "key": "suny:outcome.36",
+        "text": "Active RDM stakeholder communities exist",
+        "category": "outcome-extension-considerations",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in E.6.1 Stakeholder communities exist"
+        "aToolTip": "Activities that result in Active RDM stakeholder communities exist",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations forActive RDM stakeholder communities exist",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "E.6.1 Stakeholder communities"
     },
     {
-        "key": "suny:output.23",
+        "key": "suny:output.28",
         "text": "Active communities of practice exist along continuum of emergent data community to established data community",
         "category": "output"
     },
     {
-        "key": "suny:activity.26",
+        "key": "suny:activity.22",
         "text": "Establish communication channels",
         "category": "activity-extension",
         "a": "participants",
@@ -2228,18 +2294,18 @@
         "zToolTip": "E.6.2 Modes of communication"
     },
     {
-        "key": "suny:outcome.32",
-        "text": "established",
+        "key": "suny:outcome.37",
+        "text": "Consistent modes of communication are established",
         "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in established",
+        "aToolTip": "Activities that result in Consistent modes of communication are established",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.6.2 Modes of communication"
     },
     {
-        "key": "suny:activity.27",
+        "key": "suny:activity.23",
         "text": "Map potential local stakeholders and partners",
         "category": "activity-extension",
         "a": "participants",
@@ -2262,52 +2328,243 @@
         "zToolTip": "E.6.3 Partners/partnerships"
     },
     {
-        "key": "suny:outcome.33",
-        "text": "considered and documented",
+        "key": "suny:outcome.38",
+        "text": "Relevant unit, departmental, institutional, SUNY system-wide, state, national, and funder partnerships are built and nurtured",
         "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in considered and documented",
+        "aToolTip": "Activities that result in Relevant unit, departmental, institutional, SUNY system-wide, state, national, and funder partnerships are built and nurtured",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.6.3 Partners/partnerships"
     },
     {
-        "key": "suny:activity.28",
-        "text": "Assess Milestone Achievement and Indicator status",
+        "key": "suny:outcome.39",
+        "text": "Ownership of data assets within research project is documented, controlled, and managed",
+        "category": "outcome-extension-considerations",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Ownership of data assets within research project is documented, controlled, and managed",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations forOwnership of data assets within research project is documented, controlled, and managed",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.1.1 Roles and responsibilities (Chain of Control)"
+    },
+    {
+        "key": "suny:activity.24",
+        "text": "Conduct project-specific inventory",
         "category": "activity-extension",
         "a": "participants",
         "aText": "Participants",
-        "aToolTip": "Participants in Assess Milestone Achievement and Indicator status",
+        "aToolTip": "Participants in Conduct project-specific inventory",
         "b": "methods",
         "bText": "Methods",
-        "bToolTip": "Methods for Assess Milestone Achievement and Indicator status",
+        "bToolTip": "Methods for Conduct project-specific inventory",
         "c": "outputs",
         "cText": "Outputs",
-        "cToolTip": "Outputs of Assess Milestone Achievement and Indicator status",
+        "cToolTip": "Outputs of Conduct project-specific inventory",
         "d": "pgroups",
         "dText": "Roles",
-        "dToolTip": "Roles involved in Assess Milestone Achievement and Indicator status",
+        "dToolTip": "Roles involved in Conduct project-specific inventory",
         "e": "resources",
         "eText": "resources",
-        "eToolTip": "Resources used by Assess Milestone Achievement and Indicator status",
+        "eToolTip": "Resources used by Conduct project-specific inventory",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.10.1 Goals/definition of success"
+        "zToolTip": "P.1.3 Centralized inventory of services, groups, and resources"
     },
     {
-        "key": "suny:outcome.34",
-        "text": "Dashboards, KPI, Metrics reviewed a specific time designations for comparison",
+        "key": "suny:outcome.40",
+        "text": "Project-specific inventory of services, groups, and resources exists",
         "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in Dashboards, KPI, Metrics reviewed a specific time designations for comparison",
+        "aToolTip": "Activities that result in Project-specific inventory of services, groups, and resources exists",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.1.3 Centralized inventory of services, groups, and resources"
+    },
+    {
+        "key": "suny:outcome.41",
+        "text": "Project planning includes financial considerations to consider in estimating or assessing the costs associated with all research data and RDM activities over the data lifecycle",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Project planning includes financial considerations to consider in estimating or assessing the costs associated with all research data and RDM activities over the data lifecycle",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.2.1 Funding models for provisioning resources (project)"
+    },
+    {
+        "key": "suny:outcome.42",
+        "text": "Data Management Planning is expected from all research projects",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Data Management Planning is expected from all research projects",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.3.1 Written data management plans (DMPs)"
+    },
+    {
+        "key": "suny:outcome.43",
+        "text": "Research data architecture includes machine-readable DMPs to standardize and automate capture RDM process",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Research data architecture includes machine-readable DMPs to standardize and automate capture RDM process",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.3.4 Machine-readable DMPs"
+    },
+    {
+        "key": "suny:outcome.44",
+        "text": "Research data architecture enables linkage of machine-readable DMPs other institutional data systems",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Research data architecture enables linkage of machine-readable DMPs other institutional data systems",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.3.5 Linkage of DMPs to administrative records"
+    },
+    {
+        "key": "suny:outcome.45",
+        "text": "Appropriate repository is determined to for data deposit to facilitate future access (institutional repository, shared repository, domain-specific or generalist)",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Appropriate repository is determined to for data deposit to facilitate future access (institutional repository, shared repository, domain-specific or generalist)",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.3.6 Data organization in, e.g., a database and a repository, to facilitate future access"
+    },
+    {
+        "key": "suny:outcome.46",
+        "text": "Research data project participants have necessary RDM expertise and access to RDM training",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Research data project participants have necessary RDM expertise and access to RDM training",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.3.7 Data management expertise and training"
+    },
+    {
+        "key": "suny:outcome.47",
+        "text": "Data objects and their representation metadata should be documented to maintain accuracy, integrity, and reliability",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Data objects and their representation metadata should be documented to maintain accuracy, integrity, and reliability",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.4.7 Documentation (text)"
+    },
+    {
+        "key": "suny:outcome.48",
+        "text": "FAIR data is supported and implemented in research project design",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in FAIR data is supported and implemented in research project design",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.5.1 Organizational support for making data more FAIR"
+    },
+    {
+        "key": "suny:outcome.49",
+        "text": "Research projects utilize data and metadata practices following RDM guidelines",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Research projects utilize data and metadata practices following RDM guidelines",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.6.1 Criteria for selection of data/metadata"
+    },
+    {
+        "key": "suny:outcome.50",
+        "text": "Project data architecture should be designed to meet institutional and project data governance needs",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Project data architecture should be designed to meet institutional and project data governance needs",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.7.1 Design"
+    },
+    {
+        "key": "suny:outcome.51",
+        "text": "Hardware and software infrastructure for projects producing data should match organizational research needs and standards",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Hardware and software infrastructure for projects producing data should match organizational research needs and standards",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.8.1 Organizational research needs"
+    },
+    {
+        "key": "suny:outcome.52",
+        "text": "Project hardware and software infrastructure should support RDM",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Project hardware and software infrastructure should support RDM",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.8.2 Tools to support data-related processes"
+    },
+    {
+        "key": "suny:outcome.53",
+        "text": "Projects should be developed using federal, organizational, and community research data standards",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Projects should be developed using federal, organizational, and community research data standards",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.9.1 Criteria, i.e., general vs. domain-specific standards"
+    },
+    {
+        "key": "suny:activity.25",
+        "text": "Establish project goals for research data",
+        "category": "activity-extension",
+        "a": "participants",
+        "aText": "Participants",
+        "aToolTip": "Participants in Establish project goals for research data",
+        "b": "methods",
+        "bText": "Methods",
+        "bToolTip": "Methods for Establish project goals for research data",
+        "c": "outputs",
+        "cText": "Outputs",
+        "cToolTip": "Outputs of Establish project goals for research data",
+        "d": "pgroups",
+        "dText": "Roles",
+        "dToolTip": "Roles involved in Establish project goals for research data",
+        "e": "resources",
+        "eText": "resources",
+        "eToolTip": "Resources used by Establish project goals for research data",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "P.10.1 Goals/definition of success"
     },
     {
-        "key": "suny:activity.29",
+        "key": "suny:outcome.54",
+        "text": "RDM goals for research projects and research data should be clearly articulated",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in RDM goals for research projects and research data should be clearly articulated",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.10.1 Goals/definition of success"
+    },
+    {
+        "key": "suny:activity.26",
         "text": "Create and use data metrics",
         "category": "activity-extension",
         "a": "participants",
@@ -2330,14 +2587,124 @@
         "zToolTip": "P.10.2 Metrics for tracking use and impact measures, including reuse"
     },
     {
-        "key": "suny:outcome.35",
-        "text": "Data metrics are used to support data culture",
+        "key": "suny:outcome.55",
+        "text": "Data metrics are used to track use and impact Data metrics are aligned with project goals",
         "category": "outcome-extension",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in Data metrics are used to support data culture",
+        "aToolTip": "Activities that result in Data metrics are used to track use and impact Data metrics are aligned with project goals",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "P.10.2 Metrics for tracking use and impact measures, including reuse"
+    },
+    {
+        "key": "suny:outcome.56",
+        "text": "For all research projects, communication and outreach methods and practices should be clearly defined",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in For all research projects, communication and outreach methods and practices should be clearly defined",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "P.11.1 Methods to share and reuse data/metadata"
+    },
+    {
+        "key": "suny:outcome.57",
+        "text": "Unique collection, generation, and storage challenges with specific data types generated in each research project are reviewed and mitigated",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Unique collection, generation, and storage challenges with specific data types generated in each research project are reviewed and mitigated",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "GA.1.1 Measurements, including images, audio recordings, photos/videos"
+    },
+    {
+        "key": "suny:outcome.58",
+        "text": "Unique challenges with specific data sources used in each research project are reviewed and mitigated",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Unique challenges with specific data sources used in each research project are reviewed and mitigated",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "GA.2.1 In-house generation by researchers"
+    },
+    {
+        "key": "suny:outcome.59",
+        "text": "Factors related to how data are generated are reviewed and standardized",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Factors related to how data are generated are reviewed and standardized",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "GA.4.1 Input data/metadata"
+    },
+    {
+        "key": "suny:outcome.60",
+        "text": "Factors related to the nature of qualitative data collection are reviewed and standardized",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Factors related to the nature of qualitative data collection are reviewed and standardized",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "GA.5.1 Nature of objects/subjects"
+    },
+    {
+        "key": "suny:outcome.61",
+        "text": "Factors related to how data are acquired are reviewed and standardized",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Factors related to how data are acquired are reviewed and standardized",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "GA.6.5 Provenance"
+    },
+    {
+        "key": "suny:outcome.62",
+        "text": "Factors related to the nature of critical evaluation and data collection are reviewed and standardized",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Factors related to the nature of critical evaluation and data collection are reviewed and standardized",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "GA.7.1 Infrastructure to assure the greatest data integrity"
+    },
+    {
+        "key": "suny:outcome.63",
+        "text": "Factors related to FAIR data principles are reviewed and standardized before data collection",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Factors related to FAIR data principles are reviewed and standardized before data collection",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "GA.8.1 Data born FAIR"
+    },
+    {
+        "key": "suny:outcome.64",
+        "text": "Community-based standards for data and metadata are considered before data collection",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Community-based standards for data and metadata are considered before data collection",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "GA.9.1 General vs. domain-specific"
+    },
+    {
+        "key": "suny:outcome.65",
+        "text": "Factors related to acquisition software are reviewed and standardized before data collection",
+        "category": "outcome-extension",
+        "a": "activities",
+        "aText": "Activities",
+        "aToolTip": "Activities that result in Factors related to acquisition software are reviewed and standardized before data collection",
+        "z": "extends",
+        "zText": "RDaF Subtopic",
+        "zToolTip": "GA.10.1 Open source vs. proprietary"
     }
 ]

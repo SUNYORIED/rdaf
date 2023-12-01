@@ -1,6 +1,7 @@
 import pandas as pd
 import json
 import uuid
+import re
 
 def get_obj(obj_id,name,category):
     obj = {}
@@ -72,7 +73,7 @@ def get_extension(text):
 
 def map_row(row,last_subtopic):
     subtopic_id = None
-    if str(row['SUBTOPIC']) == 'nan':
+    if str(row['SUBTOPIC']) == 'nan' or re.match('^\s*$',str(row['SUBTOPIC'])):
         subtopic_id = last_subtopic
     else:
         (subtopic_id,subtopic_text) = row['SUBTOPIC'].strip().split(' ',1)
@@ -92,21 +93,17 @@ def map_row(row,last_subtopic):
         suny_objs[activity_id] = { 'name':activity, 'type': 'activity', 'outputs': [], 'participants': [], 'roles': [], 'resources': [], 'extends': subtopic_id  }
         add_extension(subtopic_id,activity_id)
     if str(row['Outcomes (see comment)']) != 'nan':
-        parts = row['Outcomes (see comment)'].strip().split(':',1)
-        (outcome_extends,outcome) = get_extension(row['Outcomes (see comment)'].strip())
+        outcome = row['Outcomes (see comment)'].strip()
         outcome_id = get_uuid('outcome',outcome)
-        if outcome_extends:
-            add_extension(outcome_extends,outcome_id)
+        add_extension(subtopic_id,outcome_id)
         topic_id = '.'.join(subtopic_id.split('.')[0:2])
-        suny_objs[outcome_id] = { 'name':outcome, 'type': 'outcome', 'activities': {}, 'extends': outcome_extends, 'topic': topic_id }
+        suny_objs[outcome_id] = { 'name':outcome, 'type': 'outcome', 'activities': {}, 'extends': subtopic_id, 'topic': topic_id }
         if activity_id:
             suny_objs[outcome_id]['activities'][activity_id] = 1
     if str(row['Milestone Indicator (Outputs)']) != 'nan':
-        (output_extends,output) = get_extension(row['Milestone Indicator (Outputs)'].strip())
+        output = row['Milestone Indicator (Outputs)'].strip()
         output_id = get_uuid('output',output)
-        if output_extends:
-            add_extension(output_extends,outcome_id)
-        suny_objs[output_id] = { 'name':output, 'type': 'output', 'extends': output_extends }
+        suny_objs[output_id] = { 'name':output, 'type': 'output' }
         if activity_id:
             suny_objs[activity_id]['outputs'].append(output_id)
     return last_subtopic
@@ -223,4 +220,3 @@ with open("entities.json", "w") as json_file:
 
 with open("links.json","w") as json_file:
     json.dump(links, json_file, indent=4)
-print(text_to_id)
