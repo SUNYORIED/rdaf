@@ -9,8 +9,111 @@ function init() {
       initialContentAlignment: go.Spot.Left,
       allowSelect: false,  // the user cannot select any part
       // create a TreeLayout for the decision tree
-      layout: $(go.TreeLayout, { arrangement: go.TreeLayout.ArrangementFixedRoots })
+      layout: $(go.TreeLayout, { arrangement: go.TreeLayout.ArrangementFixedRoots }),
+      "undoManager.isEnabled":true,
+      allowDrop:true
     });
+
+  function selectRadio(e, shape) {
+    var myDiagram = e.diagram;
+    var node = shape.part;
+    var thisName = shape.name;
+    myDiagram.startTransaction("Change radio button");
+    ["AC_RADIO","IP_RADIO","NS_RADIO"].forEach(radio => {
+      button = node.findObject(radio);
+      if (button.name === thisName) {
+	  if (button.name === "AC_RADIO") {
+	    button.fill = "limegreen"
+	  } else if (button.name === "IP_RADIO") {
+            button.fill = "darkorange"
+	  } else { 
+            button.fill = "crimson";
+          }
+      } else {
+          button.fill = "white";
+      }
+    });
+    activities = node.findObject('button-a');
+    considerations = node.findObject('button-y');
+    if (thisName === 'AC_RADIO') {
+        if (activities) {
+          activities.visible = false;
+	}
+	if (considerations) {
+          considerations.visible = false;
+	}
+    } else {
+        if (activities) {
+          activities.visible = true;
+	}
+	if (considerations) {
+          considerations.visible = true;
+	}
+    }
+    myDiagram.commitTransaction("Change radio button");
+  }
+
+  function radioButton() {
+    return [
+      $(go.Panel, "Horizontal",
+        $(go.TextBlock,
+          {
+             name: `NS_TEXT`,
+             margin: 5,
+             text: "Not Started",
+             editable: true,
+             isMultiline: false
+           },
+        ),
+        $(go.Shape, "Circle",
+          {
+            strokeWidth: 1,
+	    name: "NS_RADIO",
+            desiredSize: new go.Size(12, 12),
+            fill: "white",
+	    click: selectRadio,
+          },
+	),
+        $(go.TextBlock,
+          {
+             name: `IP_TEXT`,
+             margin: 5,
+             text: "In Progress",
+             editable: true,
+             isMultiline: false
+           }
+        ),
+        $(go.Shape, "Circle",
+          {
+            strokeWidth: 1,
+	    name: "IP_RADIO",
+            desiredSize: new go.Size(12, 12),
+            fill: "white",
+	    click: selectRadio,
+          },
+	),
+        $(go.TextBlock,
+          {
+             name: `AC_TEXT`,
+             margin: 5,
+             text: "Achieved",
+             editable: true,
+             isMultiline: false
+           }
+        ),
+        $(go.Shape, "Circle",
+          {
+            strokeWidth: 1,
+	    name: "AC_RADIO",
+            desiredSize: new go.Size(12, 12),
+            fill: "white",
+	    click: selectRadio,
+          },
+	)
+      )
+        ]
+  }
+
 
   // custom behavior for expanding/collapsing half of the subtree from a node
   function buttonExpandCollapse(e, port) {
@@ -60,6 +163,18 @@ function init() {
         collapseTree(n, null);  // null means all links, not just for a particular portId
       }
     });
+  }
+
+  function getNSId(data) {
+    return `${data.key}_NS`
+  }
+
+  function getIPId(data) {
+    return `${data.key}_IP`
+  }
+
+  function getACId(data) {
+    return `${data.key}_AC`
   }
 
   // get the text for the tooltip from the data on the object being hovered over
@@ -213,7 +328,7 @@ function init() {
             {
               name: "button-a",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
             },
             new go.Binding("portId", "a"),
             $(go.TextBlock,
@@ -249,6 +364,7 @@ function init() {
           $(go.TextBlock,
             { font: "16px Roboto, sans-serif", margin: 5 },
             new go.Binding("text", "text")),
+	  ...radioButton(),
         ),
         // define a vertical panel to place the node's two buttons one above the other
         $(go.Panel, "Vertical",
@@ -257,7 +373,8 @@ function init() {
             {
               name: "button-a",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      visible: false,
             },
             new go.Binding("portId", "a"),
             $(go.TextBlock,
@@ -292,6 +409,7 @@ function init() {
           $(go.TextBlock,
             { font: "16px Roboto, sans-serif", margin: 5 },
             new go.Binding("text", "text")),
+	  ...radioButton(),
 	),
         // define a vertical panel to place the node's two buttons one above the other
         $(go.Panel, "Vertical",
@@ -300,7 +418,8 @@ function init() {
             {
               name: "button-a",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      visible: false,
             },
             new go.Binding("portId", "a"),
             $(go.TextBlock,
@@ -311,7 +430,8 @@ function init() {
             {
               name: "button-y",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      visible: false,
             },
             new go.Binding("portId", "y"),
             $(go.TextBlock,
