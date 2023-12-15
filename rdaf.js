@@ -38,9 +38,11 @@ function init() {
     if (thisName === 'AC_RADIO') {
         if (activities) {
           activities.visible = false;
+	  buttonCollapse(e,activities)
 	}
 	if (considerations) {
           considerations.visible = false;
+	  buttonCollapse(e,considerations)
 	}
     } else {
         if (activities) {
@@ -115,6 +117,23 @@ function init() {
   }
 
 
+  function buttonCollapse(e, port) {
+    var node = port.part;
+    node.diagram.startTransaction("collapse");
+    var portid = port.portId;
+    links = node.findLinksOutOf(portid);
+    collapsed = false;
+    links.each(l => {
+      if (l.visible) {
+        // collapse whole subtree recursively
+	collapsed = true;
+        collapseTree(node, portid);
+      }
+    });
+    myDiagram.toolManager.hideToolTip();
+    node.diagram.commitTransaction("expand/collapse");
+  }
+
   // custom behavior for expanding/collapsing half of the subtree from a node
   function buttonExpandCollapse(e, port) {
     var node = port.part;
@@ -142,7 +161,7 @@ function init() {
   }
 
   function buttonLink(e, port) {
-    link = e.targetObject.portId;
+    link = port.part.key
     if (link.startsWith('http')) {
     	window.open(link,"_blank")
     }
@@ -827,7 +846,7 @@ function init() {
         },
         new go.Binding("text", "text"))
     ));
-  myDiagram.nodeTemplateMap.add("participant_group",
+  myDiagram.nodeTemplateMap.add("role",
     $(go.Node, "Auto",
       new go.Binding("text", "text"),
       $(go.Shape, "Rectangle",
@@ -851,7 +870,7 @@ function init() {
         },
         new go.Binding("text", "text"))
     ));
-  myDiagram.nodeTemplateMap.add("exemplar",
+  myDiagram.nodeTemplateMap.add("output",
     $(go.Node, "Auto",
       new go.Binding("text", "text"),
       $(go.Shape, "Rectangle",
@@ -863,7 +882,7 @@ function init() {
         },
         new go.Binding("text", "text"))
     ));
-  myDiagram.nodeTemplateMap.add("exemplar-linked",
+  myDiagram.nodeTemplateMap.add("resource",
     $(go.Node, "Auto",
       new go.Binding("text", "text"),
       // define the node's outer shape, which will surround the Horizontal Panel
@@ -871,10 +890,6 @@ function init() {
         { fill: "whitesmoke", stroke: "lightgray" }),
       // define a horizontal Panel to place the node's text alongside the buttons
       $(go.Panel, "Horizontal",
-        $(go.TextBlock,
-          { font: "9px Roboto, sans-serif", margin: 5 },
-          new go.Binding("text", "text")),
-        // define a vertical panel to place the node's two buttons one above the other
         $(go.Panel, "Vertical",
           { defaultStretch: go.GraphObject.Fill, margin: 3 },
           $("Button",  // button A
@@ -883,10 +898,9 @@ function init() {
 	      click: buttonLink,
               toolTip: tooltipTemplate
             },
-            new go.Binding("portId", "aToolTip"),
             $(go.TextBlock,
-              { font: '500 9px Roboto, sans-serif' },
-              new go.Binding("text", "aText"))
+              { font: '500 9px Roboto, sans-serif', text:'Link' },
+              )
           )
         )  // end Vertical Panel
       )  // end Horizontal Panel

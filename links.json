@@ -212,11 +212,6 @@
     {
         "from": "P.4",
         "fromport": "considerations",
-        "to": "P.4.7"
-    },
-    {
-        "from": "P.4",
-        "fromport": "considerations",
         "to": "P.4.8"
     },
     {
@@ -657,17 +652,117 @@
     {
         "from": "suny:activity.1",
         "fromport": "outputs",
+        "to": "suny:output.1"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "outputs",
+        "to": "suny:output.2"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "outputs",
+        "to": "suny:output.3"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "outputs",
+        "to": "suny:output.4"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "outputs",
         "to": "suny:output.5"
     },
     {
         "from": "suny:activity.1",
+        "fromport": "methods",
+        "to": "suny:method.1"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "methods",
+        "to": "suny:method.1"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "methods",
+        "to": "suny:method.1"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "methods",
+        "to": "suny:method.4"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "participants",
+        "to": "suny:participant.4"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "participants",
+        "to": "suny:participant.4"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "participants",
+        "to": "suny:participant.7"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "participants",
+        "to": "suny:participant.7"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "participants",
+        "to": "suny:participant.4"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "roles",
+        "to": "suny:role.1"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "roles",
+        "to": "suny:role.1"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "roles",
+        "to": "suny:role.1"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "roles",
+        "to": "suny:role.1"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "roles",
+        "to": "suny:role.1"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "resources",
+        "to": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/"
+    },
+    {
+        "from": "suny:activity.1",
         "fromport": "considerations",
-        "to": "E.1.7"
+        "to": "E.1.4"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "considerations",
+        "to": "P.1.2"
     },
     {
         "from": "suny:activity.1",
         "fromport": "extends",
-        "to": "E.1.5"
+        "to": "E.1.1"
     },
     {
         "from": "suny:outcome.1",
@@ -751,6 +846,21 @@
     },
     {
         "from": "suny:activity.2",
+        "fromport": "methods",
+        "to": "suny:method.3"
+    },
+    {
+        "from": "suny:activity.2",
+        "fromport": "participants",
+        "to": "suny:participant.7"
+    },
+    {
+        "from": "suny:activity.2",
+        "fromport": "roles",
+        "to": "suny:role.1"
+    },
+    {
+        "from": "suny:activity.2",
         "fromport": "considerations",
         "to": "E.1.10"
     },
@@ -816,6 +926,21 @@
     },
     {
         "from": "suny:activity.3",
+        "fromport": "methods",
+        "to": "suny:method.10"
+    },
+    {
+        "from": "suny:activity.3",
+        "fromport": "participants",
+        "to": "suny:participant.9"
+    },
+    {
+        "from": "suny:activity.3",
+        "fromport": "roles",
+        "to": "suny:role.2"
+    },
+    {
+        "from": "suny:activity.3",
         "fromport": "extends",
         "to": "E.1.6"
     },
@@ -871,6 +996,21 @@
     },
     {
         "from": "suny:activity.4",
+        "fromport": "methods",
+        "to": "suny:method.12"
+    },
+    {
+        "from": "suny:activity.4",
+        "fromport": "participants",
+        "to": "suny:participant.12"
+    },
+    {
+        "from": "suny:activity.4",
+        "fromport": "roles",
+        "to": "suny:role.2"
+    },
+    {
+        "from": "suny:activity.4",
         "fromport": "considerations",
         "to": "E.4.1"
     },
@@ -903,6 +1043,26 @@
         "from": "suny:activity.5",
         "fromport": "outputs",
         "to": "suny:output.9"
+    },
+    {
+        "from": "suny:activity.5",
+        "fromport": "methods",
+        "to": "suny:method.12"
+    },
+    {
+        "from": "suny:activity.5",
+        "fromport": "participants",
+        "to": "suny:participant.13"
+    },
+    {
+        "from": "suny:activity.5",
+        "fromport": "roles",
+        "to": "suny:role.2"
+    },
+    {
+        "from": "suny:activity.5",
+        "fromport": "resources",
+        "to": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/"
     },
     {
         "from": "suny:activity.5",
@@ -941,6 +1101,21 @@
     },
     {
         "from": "suny:activity.6",
+        "fromport": "methods",
+        "to": "suny:method.13"
+    },
+    {
+        "from": "suny:activity.6",
+        "fromport": "participants",
+        "to": "suny:participant.15"
+    },
+    {
+        "from": "suny:activity.6",
+        "fromport": "roles",
+        "to": "suny:role.2"
+    },
+    {
+        "from": "suny:activity.6",
         "fromport": "considerations",
         "to": "E.2.6"
     },
@@ -973,6 +1148,21 @@
         "from": "suny:activity.7",
         "fromport": "outputs",
         "to": "suny:output.11"
+    },
+    {
+        "from": "suny:activity.7",
+        "fromport": "methods",
+        "to": "suny:method.14"
+    },
+    {
+        "from": "suny:activity.7",
+        "fromport": "participants",
+        "to": "suny:participant.15"
+    },
+    {
+        "from": "suny:activity.7",
+        "fromport": "roles",
+        "to": "suny:role.2"
     },
     {
         "from": "suny:activity.7",
@@ -1046,6 +1236,21 @@
     },
     {
         "from": "suny:activity.8",
+        "fromport": "methods",
+        "to": "suny:method.1"
+    },
+    {
+        "from": "suny:activity.8",
+        "fromport": "participants",
+        "to": "suny:participant.20"
+    },
+    {
+        "from": "suny:activity.8",
+        "fromport": "roles",
+        "to": "suny:role.1"
+    },
+    {
+        "from": "suny:activity.8",
         "fromport": "extends",
         "to": "E.3.1"
     },
@@ -1067,12 +1272,62 @@
     {
         "from": "suny:activity.9",
         "fromport": "outputs",
+        "to": "suny:output.13"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "outputs",
+        "to": "suny:output.14"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "outputs",
         "to": "suny:output.15"
     },
     {
         "from": "suny:activity.9",
+        "fromport": "methods",
+        "to": "suny:method.15"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "methods",
+        "to": "suny:method.11"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "participants",
+        "to": "suny:participant.8"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "participants",
+        "to": "suny:participant.23"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "participants",
+        "to": "suny:participant.20"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "roles",
+        "to": "suny:role.1"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "roles",
+        "to": "suny:role.2"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "resources",
+        "to": "https://www.heliosopen.org/ourwork"
+    },
+    {
+        "from": "suny:activity.9",
         "fromport": "extends",
-        "to": "E.3.4"
+        "to": "E.3.2"
     },
     {
         "from": "suny:outcome.18",
@@ -1126,6 +1381,21 @@
     },
     {
         "from": "suny:activity.10",
+        "fromport": "methods",
+        "to": "suny:method.11"
+    },
+    {
+        "from": "suny:activity.10",
+        "fromport": "participants",
+        "to": "suny:participant.8"
+    },
+    {
+        "from": "suny:activity.10",
+        "fromport": "roles",
+        "to": "suny:role.3"
+    },
+    {
+        "from": "suny:activity.10",
         "fromport": "extends",
         "to": "E.3.5"
     },
@@ -1143,6 +1413,16 @@
         "from": "suny:outcome.21",
         "fromport": "extends",
         "to": "E.3.5"
+    },
+    {
+        "from": "suny:activity.11",
+        "fromport": "participants",
+        "to": "suny:participant.8"
+    },
+    {
+        "from": "suny:activity.11",
+        "fromport": "roles",
+        "to": "suny:role.3"
     },
     {
         "from": "suny:activity.11",
@@ -1231,6 +1511,21 @@
     },
     {
         "from": "suny:activity.12",
+        "fromport": "methods",
+        "to": "suny:method.16"
+    },
+    {
+        "from": "suny:activity.12",
+        "fromport": "participants",
+        "to": "suny:participant.25"
+    },
+    {
+        "from": "suny:activity.12",
+        "fromport": "roles",
+        "to": "suny:role.2"
+    },
+    {
+        "from": "suny:activity.12",
         "fromport": "extends",
         "to": "E.4.1"
     },
@@ -1253,6 +1548,21 @@
         "from": "suny:activity.13",
         "fromport": "outputs",
         "to": "suny:output.20"
+    },
+    {
+        "from": "suny:activity.13",
+        "fromport": "methods",
+        "to": "suny:method.16"
+    },
+    {
+        "from": "suny:activity.13",
+        "fromport": "participants",
+        "to": "suny:participant.26"
+    },
+    {
+        "from": "suny:activity.13",
+        "fromport": "roles",
+        "to": "suny:role.1"
     },
     {
         "from": "suny:activity.13",
@@ -1281,6 +1591,21 @@
     },
     {
         "from": "suny:activity.14",
+        "fromport": "methods",
+        "to": "suny:method.17"
+    },
+    {
+        "from": "suny:activity.14",
+        "fromport": "participants",
+        "to": "suny:participant.25"
+    },
+    {
+        "from": "suny:activity.14",
+        "fromport": "roles",
+        "to": "suny:role.2"
+    },
+    {
+        "from": "suny:activity.14",
         "fromport": "extends",
         "to": "E.4.2"
     },
@@ -1306,6 +1631,21 @@
     },
     {
         "from": "suny:activity.15",
+        "fromport": "methods",
+        "to": "suny:method.17"
+    },
+    {
+        "from": "suny:activity.15",
+        "fromport": "participants",
+        "to": "suny:participant.26"
+    },
+    {
+        "from": "suny:activity.15",
+        "fromport": "roles",
+        "to": "suny:role.1"
+    },
+    {
+        "from": "suny:activity.15",
         "fromport": "extends",
         "to": "E.4.2"
     },
@@ -1328,6 +1668,21 @@
         "from": "suny:activity.16",
         "fromport": "outputs",
         "to": "suny:output.23"
+    },
+    {
+        "from": "suny:activity.16",
+        "fromport": "methods",
+        "to": "suny:method.20"
+    },
+    {
+        "from": "suny:activity.16",
+        "fromport": "participants",
+        "to": "suny:participant.28"
+    },
+    {
+        "from": "suny:activity.16",
+        "fromport": "roles",
+        "to": "suny:role.3"
     },
     {
         "from": "suny:activity.16",
@@ -1406,6 +1761,21 @@
     },
     {
         "from": "suny:activity.17",
+        "fromport": "methods",
+        "to": "suny:method.23"
+    },
+    {
+        "from": "suny:activity.17",
+        "fromport": "participants",
+        "to": "suny:participant.28"
+    },
+    {
+        "from": "suny:activity.17",
+        "fromport": "roles",
+        "to": "suny:role.3"
+    },
+    {
+        "from": "suny:activity.17",
         "fromport": "extends",
         "to": "E.4.4"
     },
@@ -1428,6 +1798,21 @@
         "from": "suny:activity.18",
         "fromport": "outputs",
         "to": "suny:output.25"
+    },
+    {
+        "from": "suny:activity.18",
+        "fromport": "methods",
+        "to": "suny:method.24"
+    },
+    {
+        "from": "suny:activity.18",
+        "fromport": "participants",
+        "to": "suny:participant.25"
+    },
+    {
+        "from": "suny:activity.18",
+        "fromport": "roles",
+        "to": "suny:role.1"
     },
     {
         "from": "suny:activity.18",
@@ -1456,6 +1841,21 @@
     },
     {
         "from": "suny:activity.19",
+        "fromport": "methods",
+        "to": "suny:method.25"
+    },
+    {
+        "from": "suny:activity.19",
+        "fromport": "participants",
+        "to": "suny:participant.25"
+    },
+    {
+        "from": "suny:activity.19",
+        "fromport": "roles",
+        "to": "suny:role.1"
+    },
+    {
+        "from": "suny:activity.19",
         "fromport": "extends",
         "to": "E.5.2"
     },
@@ -1481,6 +1881,21 @@
     },
     {
         "from": "suny:activity.20",
+        "fromport": "methods",
+        "to": "suny:method.17"
+    },
+    {
+        "from": "suny:activity.20",
+        "fromport": "participants",
+        "to": "suny:participant.25"
+    },
+    {
+        "from": "suny:activity.20",
+        "fromport": "roles",
+        "to": "suny:role.1"
+    },
+    {
+        "from": "suny:activity.20",
         "fromport": "extends",
         "to": "E.5.3"
     },
@@ -1503,6 +1918,26 @@
         "from": "suny:activity.21",
         "fromport": "outputs",
         "to": "suny:output.28"
+    },
+    {
+        "from": "suny:activity.21",
+        "fromport": "methods",
+        "to": "suny:method.29"
+    },
+    {
+        "from": "suny:activity.21",
+        "fromport": "participants",
+        "to": "suny:participant.30"
+    },
+    {
+        "from": "suny:activity.21",
+        "fromport": "roles",
+        "to": "suny:role.2"
+    },
+    {
+        "from": "suny:activity.21",
+        "fromport": "resources",
+        "to": "https://sr.ithaka.org/publications/leveraging-data-communities-to-advance-open-science/"
     },
     {
         "from": "suny:activity.21",
@@ -1556,6 +1991,16 @@
     },
     {
         "from": "suny:activity.22",
+        "fromport": "participants",
+        "to": "suny:participant.30"
+    },
+    {
+        "from": "suny:activity.22",
+        "fromport": "roles",
+        "to": "suny:role.2"
+    },
+    {
+        "from": "suny:activity.22",
         "fromport": "extends",
         "to": "E.6.2"
     },
@@ -1573,6 +2018,11 @@
         "from": "suny:outcome.37",
         "fromport": "extends",
         "to": "E.6.2"
+    },
+    {
+        "from": "suny:activity.23",
+        "fromport": "roles",
+        "to": "suny:role.4"
     },
     {
         "from": "suny:activity.23",
@@ -1608,6 +2058,16 @@
         "from": "suny:outcome.39",
         "fromport": "extends",
         "to": "P.1.1"
+    },
+    {
+        "from": "suny:activity.24",
+        "fromport": "participants",
+        "to": "suny:participant.31"
+    },
+    {
+        "from": "suny:activity.24",
+        "fromport": "roles",
+        "to": "suny:role.3"
     },
     {
         "from": "suny:activity.24",
@@ -1778,6 +2238,16 @@
         "from": "suny:outcome.54",
         "fromport": "extends",
         "to": "P.10.1"
+    },
+    {
+        "from": "suny:activity.26",
+        "fromport": "participants",
+        "to": "suny:participant.1"
+    },
+    {
+        "from": "suny:activity.26",
+        "fromport": "roles",
+        "to": "suny:role.2"
     },
     {
         "from": "suny:activity.26",

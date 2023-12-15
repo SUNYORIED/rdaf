@@ -90,8 +90,9 @@ def map_row(row,last_subtopic):
     if str(row['Activity']) != 'nan':
         activity = row['Activity'].strip()
         activity_id = get_uuid('activity',activity)
-        suny_objs[activity_id] = { 'name':activity, 'type': 'activity', 'outputs': [], 'participants': [], 'roles': [], 'resources': [], 'extends': subtopic_id  }
-        add_extension(subtopic_id,activity_id)
+        if activity_id not in suny_objs:
+            suny_objs[activity_id] = { 'name':activity, 'type': 'activity', 'outputs': [], 'participants': [], 'roles': [], 'resources': [], 'methods': [], 'extends': subtopic_id  }
+            add_extension(subtopic_id,activity_id)
     if str(row['Outcomes (see comment)']) != 'nan':
         outcome = row['Outcomes (see comment)'].strip()
         outcome_id = get_uuid('outcome',outcome)
@@ -106,6 +107,37 @@ def map_row(row,last_subtopic):
         suny_objs[output_id] = { 'name':output, 'type': 'output' }
         if activity_id:
             suny_objs[activity_id]['outputs'].append(output_id)
+    if str(row['Participants']) != 'nan':
+        for participant in row['Participants'].strip().split(','):
+            participant = participant.strip()
+            participant_id = get_uuid('participant',participant)
+        suny_objs[participant_id] = { 'name':participant, 'type': 'participant' }
+        if activity_id:
+            suny_objs[activity_id]['participants'].append(participant_id)
+    if str(row['Participant Group']) != 'nan':
+        for role in row['Participant Group'].strip().split(','):
+            role = role.strip()
+            role_id = get_uuid('role',role)
+        suny_objs[role_id] = { 'name':role, 'type': 'role' }
+        if activity_id:
+            suny_objs[activity_id]['roles'].append(role_id)
+    if str(row['Method']) != 'nan':
+        for method in row['Method'].strip().split(','):
+            method = method.strip()
+            method_id = get_uuid('method',method)
+        suny_objs[method_id] = { 'name':method, 'type': 'method' }
+        if activity_id:
+            suny_objs[activity_id]['methods'].append(method_id)
+    if str(row['Guiding documents']) != 'nan':
+        for url in row['Guiding documents'].strip().split(','):
+            url = url.strip()
+        suny_objs[url] = { 'name':url, 'type': 'resource' }
+        if activity_id:
+            suny_objs[activity_id]['resources'].append(url)
+
+
+
+
     return last_subtopic
 
 last_subtopic = None
@@ -165,14 +197,6 @@ for obj_id in suny_objs:
             links.append({'from': obj_id, 'fromport':'activities','to':activity})
         topic = suny_objs[obj_id]['topic']
         links.append({'from':topic,'fromport':'outcomes','to':obj_id})
-    elif otype == 'output':
-        parts = obj_id.split('|')
-        if len(parts) > 1:
-            obj['text'] = parts[0]
-            obj['category'] = 'output-linked'
-            obj['b'] = parts[1]
-            obj['bText'] = 'View'
-            obj['bToolTip'] = parts[1]
     elif otype == 'activity':
         obj['a'] = 'participants'
         obj['aText'] = 'Participants'
@@ -183,14 +207,23 @@ for obj_id in suny_objs:
         obj['c'] = 'outputs'
         obj['cText'] = 'Outputs'
         obj['cToolTip'] = 'Outputs of ' + oname
-        obj['d'] = 'pgroups'
+        obj['d'] = 'roles'
         obj['dText'] = 'Roles'
         obj['dToolTip'] = 'Roles involved in ' + oname
         obj['e'] = 'resources'
-        obj['eText'] = 'resources'
+        obj['eText'] = 'Resources'
         obj['eToolTip'] = 'Resources used by ' + oname
         for output in suny_objs[obj_id]['outputs']:
             links.append({'from': obj_id, 'fromport':'outputs','to':output})
+        for method in suny_objs[obj_id]['methods']:
+            links.append({'from': obj_id, 'fromport':'methods','to':method})
+        for participant in suny_objs[obj_id]['participants']:
+            links.append({'from': obj_id, 'fromport':'participants','to':participant})
+        for role in suny_objs[obj_id]['roles']:
+            links.append({'from': obj_id, 'fromport':'roles','to':role})
+        for resource in suny_objs[obj_id]['resources']:
+            links.append({'from': obj_id, 'fromport':'resources','to':resource})
+
     if isExtension:
         if isExtension in considerations:
             obj['category'] = obj['category'] + '-' + "extension-considerations"

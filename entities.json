@@ -913,6 +913,791 @@
         "category": "consideration"
     },
     {
+        "key": "PA.1.1",
+        "text": "Tables, spreadsheets",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.1.2",
+        "text": "Charts, graphs",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.1.3",
+        "text": "Maps, vectors, images",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.1.4",
+        "text": "Instrument outputs",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.1.5",
+        "text": "Dynamic data",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.1.6",
+        "text": "Datasets from models and simulations",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.1.7",
+        "text": "Structured data, e.g., hierarchical organization",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.2.1",
+        "text": "Data cleaning",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.2.2",
+        "text": "De-identification, anonymization",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.2.3",
+        "text": "Amputation and imputation",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.2.4",
+        "text": "Aggregation",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.2.5",
+        "text": "Validation and verification",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.2.6",
+        "text": "Curation",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.2.7",
+        "text": "Normalization of metadata",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.3.1",
+        "text": "Manual",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.3.2",
+        "text": "Exploratory",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.3.3",
+        "text": "Descriptive",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.3.4",
+        "text": "Diagnostic",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.3.5",
+        "text": "Evaluative",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.3.6",
+        "text": "Predictive",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.3.7",
+        "text": "Prescriptive",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.3.8",
+        "text": "Correlational",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.3.9",
+        "text": "Statistical",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.3.10",
+        "text": "Automated, autonomous",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.4.1",
+        "text": "Visualization",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.4.2",
+        "text": "ML, AI",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.4.3",
+        "text": "Iterative model fitting",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.4.4",
+        "text": "Integrated development environments, e.g., Jupyter, RStudio",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.5.1",
+        "text": "Types of metadata",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.5.2",
+        "text": "Responsible parties",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.5.3",
+        "text": "Specification of metadata standards",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.5.4",
+        "text": "Linked data structure",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.5.5",
+        "text": "Persistent identifiers (e.g., DOI, ORCID, ARK, ROR, PIDINST, Handles)",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.6.1",
+        "text": "Original authoritative copy",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.6.2",
+        "text": "Version identification",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.6.3",
+        "text": "Derivative product",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.6.4",
+        "text": "Aggregation",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.6.5",
+        "text": "Subset",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.6.6",
+        "text": "Timestamp",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.6.7",
+        "text": "CRediT taxonomy",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.1",
+        "text": "Commercial vs custom",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.2",
+        "text": "Open-source vs proprietary",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.3",
+        "text": "Aggregation tools",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.4",
+        "text": "Surveying tools",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.5",
+        "text": "Statistical tools",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.6",
+        "text": "Calculation and analysis tools",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.7",
+        "text": "APIs",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.8",
+        "text": "Database management tools",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.9",
+        "text": "Testing and validation tools",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.10",
+        "text": "Documentation",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.11",
+        "text": "Reproducibility and uncertainty quantification",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.12",
+        "text": "Versioning and maintenance",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.13",
+        "text": "Systems resilience and adaptability",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.14",
+        "text": "Source code repository",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.15",
+        "text": "Security and software updates",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.7.16",
+        "text": "Standards, protocols, and interfaces",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.8.1",
+        "text": "LIMS",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.8.2",
+        "text": "Laboratory notebooks, e.g., electronic and paper",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.8.3",
+        "text": "Tools for automated metadata capture",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.8.4",
+        "text": "Anomaly detection and correction tools",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.8.5",
+        "text": "Collaboration tools",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.8.6",
+        "text": "Decisions regarding the need for additional data",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.8.7",
+        "text": "Process monitoring and evaluation",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.8.8",
+        "text": "Containerization",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.8.9",
+        "text": "Reusable workflow component",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.8.10",
+        "text": "Microservices",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.8.11",
+        "text": "Distributed workflow across sites",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.8.12",
+        "text": "Comprehensive report generation",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.9.1",
+        "text": "Compute requirements",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.9.2",
+        "text": "Storage requirements",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.9.3",
+        "text": "Network requirements",
+        "category": "consideration"
+    },
+    {
+        "key": "PA.9.4",
+        "text": "Accelerator requirements",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.1",
+        "text": "Repository, i.e., domain, generalist, institutional",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.2",
+        "text": "Data papers",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.3",
+        "text": "Software",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.4",
+        "text": "Updates to datasets and new software versions",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.5",
+        "text": "Data linking",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.6",
+        "text": "Persistent identifier",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.7",
+        "text": "Metadata",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.8",
+        "text": "Integrity of data",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.9",
+        "text": "Quality measures and assessment vis-\u00e0-vis fit for purpose",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.10",
+        "text": "Peer review of datasets and metadata",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.11",
+        "text": "Reference data/digital objects in journal articles",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.12",
+        "text": "Curation",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.13",
+        "text": "Publisher agreements and policies",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.14",
+        "text": "Incentives for data publishing",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.1.15",
+        "text": "Mitigation of disincentives for data publishing",
+        "category": "consideration"
+    },
+    {
+        "key": "SU2.1.1",
+        "text": "Traditional journal article",
+        "category": "consideration"
+    },
+    {
+        "key": "SU2.1.2",
+        "text": "Supplementary material",
+        "category": "consideration"
+    },
+    {
+        "key": "SU2.1.3",
+        "text": "On request",
+        "category": "consideration"
+    },
+    {
+        "key": "SU2.1.4",
+        "text": "Data landing page",
+        "category": "consideration"
+    },
+    {
+        "key": "SU2.1.5",
+        "text": "Workflow",
+        "category": "consideration"
+    },
+    {
+        "key": "SU2.1.6",
+        "text": "Mainstream media, e.g., newspapers, radio",
+        "category": "consideration"
+    },
+    {
+        "key": "SU2.1.7",
+        "text": "Social media, e.g., Twitter, Instagram",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.3.1",
+        "text": "Citation metrics",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.3.2",
+        "text": "Citation impact",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.3.3",
+        "text": "Dataset citation",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.3.4",
+        "text": "Provenance",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.3.5",
+        "text": "Author identity management",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.3.6",
+        "text": "Use of persistent identifiers",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.3.7",
+        "text": "Versioning",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.4.1",
+        "text": "Standardized formats",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.4.2",
+        "text": "Interoperability tools",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.4.3",
+        "text": "Discovery platform",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.4.4",
+        "text": "Catalog",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.4.5",
+        "text": "Registries of repositories",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.5.1",
+        "text": "Internal access",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.5.2",
+        "text": "External access",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.5.3",
+        "text": "Programmatic access, i.e., API",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.5.4",
+        "text": "Virtual and physical enclaves",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.5.5",
+        "text": "Access vs visiting",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.5.6",
+        "text": "Availability statement",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.5.7",
+        "text": "Mitigation of barriers and economic constraints",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.6.1",
+        "text": "Ownership",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.6.2",
+        "text": "Encouragement and support for sharing, use, and reuse",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.6.3",
+        "text": "Indigeneous data rights",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.6.4",
+        "text": "Intellectual property rights/restrictions",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.6.5",
+        "text": "Usage agreements/terms/licenses and required permissions",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.6.6",
+        "text": "Data sharing agreements and licensing",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.6.7",
+        "text": "Service-level agreements",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.6.8",
+        "text": "Terms of service",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.6.9",
+        "text": "Standardized, machine-actionable license documents",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.6.10",
+        "text": "Citation requirements",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.7.1",
+        "text": "Unclassified but sensitive information",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.7.2",
+        "text": "Security classification",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.7.3",
+        "text": "Protection of limited data/secure platforms/enclaves",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.7.4",
+        "text": "Constraints and restrictions on data use and sharing",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.7.5",
+        "text": "Anonymization",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.8.1",
+        "text": "Extensibility across communities, including machine-based interactions",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.8.2",
+        "text": "Capture of insights from ML and use of these to improve datasets for future AI applications",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.8.3",
+        "text": "Capture of data performance characteristics",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.8.4",
+        "text": "Location of data",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.8.5",
+        "text": "Migration strategies and mitigation against data loss",
+        "category": "consideration"
+    },
+    {
+        "key": "SUR.8.6",
+        "text": "Economic impact of reuse",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.1.1",
+        "text": "Use",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.1.2",
+        "text": "Impact",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.1.3",
+        "text": "Value",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.1.4",
+        "text": "Uniqueness",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.1.5",
+        "text": "Cost",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.1.6",
+        "text": "Provenance",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.1.7",
+        "text": "Legal and regulatory",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.2.1",
+        "text": "Longevity and support",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.2.2",
+        "text": "Funding models",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.2.3",
+        "text": "Business models",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.3.1",
+        "text": "Media to store and preserve data",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.3.2",
+        "text": "File integrity",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.3.3",
+        "text": "Ability to do advanced searches",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.3.4",
+        "text": "Backup and recovery",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.4.1",
+        "text": "Roles and responsibilities",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.4.2",
+        "text": "Registry maintenance and curation",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.4.3",
+        "text": "Disciplinary archives",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.5.1",
+        "text": "Technical decisions, e.g., data archiving",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.5.2",
+        "text": "Administrative/policy decisions",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.5.3",
+        "text": "Deaccessioning/end-of-life",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.5.4",
+        "text": "Legal documents",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.5.5",
+        "text": "End-of-life special considerations",
+        "category": "consideration"
+    },
+    {
+        "key": "PD.5.6",
+        "text": "Recognition of removed data, i.e., tombstone page",
+        "category": "consideration"
+    },
+    {
         "key": "E.1",
         "text": "Data Governance\u2014Strategic/Qualitative",
         "category": "topic",
@@ -1198,18 +1983,18 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Convene data governance group",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Convene data governance group",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Convene data governance group",
         "y": "considerations",
         "yText": "Considerations",
         "yToolTip": "Considerations forConvene data governance group",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.5 Data management value proposition"
+        "zToolTip": "E.1.1 Identification of goals and roles"
     },
     {
         "key": "suny:outcome.1",
@@ -1231,6 +2016,16 @@
         "category": "output"
     },
     {
+        "key": "suny:participant.4",
+        "text": "Library Dean",
+        "category": "participant"
+    },
+    {
+        "key": "suny:role.1",
+        "text": "Strategic Leaders",
+        "category": "role"
+    },
+    {
         "key": "suny:outcome.2",
         "text": "Institutional Data Governance roles and responsibilities are identified and defined",
         "category": "outcome-extension-considerations",
@@ -1250,6 +2045,16 @@
         "category": "output"
     },
     {
+        "key": "suny:method.1",
+        "text": "Task Force",
+        "category": "method"
+    },
+    {
+        "key": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/",
+        "text": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/",
+        "category": "resource"
+    },
+    {
         "key": "suny:outcome.3",
         "text": "Institution has a clearly defined vision for research data management",
         "category": "outcome-extension",
@@ -1264,6 +2069,11 @@
         "key": "suny:output.3",
         "text": "Vision statement",
         "category": "output"
+    },
+    {
+        "key": "suny:participant.7",
+        "text": "Office of Research Advancement",
+        "category": "participant"
     },
     {
         "key": "suny:outcome.4",
@@ -1294,11 +2104,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Build RDM infrastructure",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Build RDM infrastructure",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Build RDM infrastructure",
         "y": "considerations",
         "yText": "Considerations",
@@ -1320,6 +2130,16 @@
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.3 Data management organization"
+    },
+    {
+        "key": "suny:method.3",
+        "text": "Data Stewardship Council",
+        "category": "method"
+    },
+    {
+        "key": "suny:method.4",
+        "text": "Strategic planning",
+        "category": "method"
     },
     {
         "key": "suny:outcome.6",
@@ -1353,11 +2173,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Conduct data needs assessments",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Conduct data needs assessments",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Conduct data needs assessments",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -1380,6 +2200,21 @@
         "category": "output"
     },
     {
+        "key": "suny:participant.9",
+        "text": "Student",
+        "category": "participant"
+    },
+    {
+        "key": "suny:role.2",
+        "text": "Connectors/Facilitators",
+        "category": "role"
+    },
+    {
+        "key": "suny:method.10",
+        "text": "investigate existing grant funded projects and grants",
+        "category": "method"
+    },
+    {
         "key": "suny:outcome.8",
         "text": "Organizational intent regarding FAIR data is well defined across the institution and contributes to vision and policy",
         "category": "outcome-extension",
@@ -1389,6 +2224,11 @@
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.8 Organization intent regarding FAIR data"
+    },
+    {
+        "key": "suny:method.11",
+        "text": "Data Governance Council",
+        "category": "method"
     },
     {
         "key": "suny:outcome.9",
@@ -1418,6 +2258,16 @@
         "category": "output"
     },
     {
+        "key": "suny:participant.10",
+        "text": "IRB",
+        "category": "participant"
+    },
+    {
+        "key": "suny:role.3",
+        "text": "SME and Implementers",
+        "category": "role"
+    },
+    {
         "key": "suny:activity.4",
         "text": "Conduct a dataset inventory",
         "category": "activity-extension-considerations",
@@ -1430,11 +2280,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Conduct a dataset inventory",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Conduct a dataset inventory",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Conduct a dataset inventory",
         "y": "considerations",
         "yText": "Considerations",
@@ -1463,6 +2313,16 @@
         "category": "output"
     },
     {
+        "key": "suny:participant.12",
+        "text": "Librarian",
+        "category": "participant"
+    },
+    {
+        "key": "suny:method.12",
+        "text": "Inventory",
+        "category": "method"
+    },
+    {
         "key": "suny:activity.5",
         "text": "Conduct a data services inventory",
         "category": "activity-extension-considerations",
@@ -1475,11 +2335,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Conduct a data services inventory",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Conduct a data services inventory",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Conduct a data services inventory",
         "y": "considerations",
         "yText": "Considerations",
@@ -1508,6 +2368,11 @@
         "category": "output"
     },
     {
+        "key": "suny:participant.13",
+        "text": "Department Heads",
+        "category": "participant"
+    },
+    {
         "key": "suny:activity.6",
         "text": "Conduct a risk assessment",
         "category": "activity-extension-considerations",
@@ -1520,11 +2385,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Conduct a risk assessment",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Conduct a risk assessment",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Conduct a risk assessment",
         "y": "considerations",
         "yText": "Considerations",
@@ -1553,6 +2418,16 @@
         "category": "output"
     },
     {
+        "key": "suny:participant.15",
+        "text": "Chief Officer for Risk and Compliance",
+        "category": "participant"
+    },
+    {
+        "key": "suny:method.13",
+        "text": "Many Risk Assessment tools and framework (NISTIR 8062)",
+        "category": "method"
+    },
+    {
         "key": "suny:activity.7",
         "text": "Implement solutions to mitigate and manage risk discovered in risk assessment",
         "category": "activity-extension-considerations",
@@ -1565,11 +2440,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Implement solutions to mitigate and manage risk discovered in risk assessment",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Implement solutions to mitigate and manage risk discovered in risk assessment",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Implement solutions to mitigate and manage risk discovered in risk assessment",
         "y": "considerations",
         "yText": "Considerations",
@@ -1598,6 +2473,11 @@
         "category": "output"
     },
     {
+        "key": "suny:method.14",
+        "text": "Many Risk Mitigation tools",
+        "category": "method"
+    },
+    {
         "key": "suny:outcome.15",
         "text": "Policies for sharing and licensing data exist",
         "category": "outcome-extension-considerations",
@@ -1615,6 +2495,11 @@
         "key": "suny:output.12",
         "text": "Data Use Agreement",
         "category": "output"
+    },
+    {
+        "key": "suny:participant.16",
+        "text": "Counsel",
+        "category": "participant"
     },
     {
         "key": "suny:outcome.16",
@@ -1640,11 +2525,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Define roles and responsibilities for building a strong data sharing culture and rewards structure",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Define roles and responsibilities for building a strong data sharing culture and rewards structure",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Define roles and responsibilities for building a strong data sharing culture and rewards structure",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -1662,6 +2547,11 @@
         "zToolTip": "E.3.1 Roles and responsibilities"
     },
     {
+        "key": "suny:participant.20",
+        "text": "Faculty Senate",
+        "category": "participant"
+    },
+    {
         "key": "suny:activity.9",
         "text": "Build a data culture",
         "category": "activity-extension",
@@ -1674,15 +2564,15 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Build a data culture",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Build a data culture",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Build a data culture",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.4 Promotion and tenure"
+        "zToolTip": "E.3.2 Recognition of data management"
     },
     {
         "key": "suny:outcome.18",
@@ -1699,6 +2589,21 @@
         "key": "suny:output.13",
         "text": "Recognition for data management through awards, professional expectations, data metrics, promotion",
         "category": "output"
+    },
+    {
+        "key": "suny:participant.8",
+        "text": "Researchers",
+        "category": "participant"
+    },
+    {
+        "key": "suny:method.15",
+        "text": "Campus working groups",
+        "category": "method"
+    },
+    {
+        "key": "https://www.heliosopen.org/ourwork",
+        "text": "https://www.heliosopen.org/ourwork",
+        "category": "resource"
     },
     {
         "key": "suny:outcome.19",
@@ -1718,6 +2623,11 @@
         "key": "suny:output.14",
         "text": "Recognition for data sharing and open data through awards, professional expectations, data metrics, promotion",
         "category": "output"
+    },
+    {
+        "key": "suny:participant.23",
+        "text": "Administrators",
+        "category": "participant"
     },
     {
         "key": "suny:outcome.20",
@@ -1748,11 +2658,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Integrate integrity or research and data into curriculum and RDM training",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Integrate integrity or research and data into curriculum and RDM training",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Integrate integrity or research and data into curriculum and RDM training",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -1782,11 +2692,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Perform accuracy checks on all shared or published datasets, Create README files",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Perform accuracy checks on all shared or published datasets, Create README files",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Perform accuracy checks on all shared or published datasets, Create README files",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -1869,6 +2779,11 @@
         "category": "output"
     },
     {
+        "key": "https://fnigc.ca/ocap-training/",
+        "text": "https://fnigc.ca/ocap-training/",
+        "category": "resource"
+    },
+    {
         "key": "suny:activity.12",
         "text": "Conduct a Workforce skills inventory to determine an organization's internal capacity to conduct and support RDM",
         "category": "activity-extension",
@@ -1881,11 +2796,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Conduct a Workforce skills inventory to determine an organization's internal capacity to conduct and support RDM",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Conduct a Workforce skills inventory to determine an organization's internal capacity to conduct and support RDM",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Conduct a Workforce skills inventory to determine an organization's internal capacity to conduct and support RDM",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -1908,6 +2823,16 @@
         "category": "output"
     },
     {
+        "key": "suny:participant.25",
+        "text": "Provost",
+        "category": "participant"
+    },
+    {
+        "key": "suny:method.16",
+        "text": "Skills inventory",
+        "category": "method"
+    },
+    {
         "key": "suny:activity.13",
         "text": "Conduct a Workforce skills inventory to determine needs for students to build workforce skills to conduct or support RDM",
         "category": "activity-extension",
@@ -1920,11 +2845,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Conduct a Workforce skills inventory to determine needs for students to build workforce skills to conduct or support RDM",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Conduct a Workforce skills inventory to determine needs for students to build workforce skills to conduct or support RDM",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Conduct a Workforce skills inventory to determine needs for students to build workforce skills to conduct or support RDM",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -1947,6 +2872,11 @@
         "category": "output"
     },
     {
+        "key": "suny:participant.26",
+        "text": "System Admin",
+        "category": "participant"
+    },
+    {
         "key": "suny:activity.14",
         "text": "Provide training and opportunities for employees to build their skills and expertise in emerging technologies",
         "category": "activity-extension",
@@ -1959,11 +2889,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Provide training and opportunities for employees to build their skills and expertise in emerging technologies",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Provide training and opportunities for employees to build their skills and expertise in emerging technologies",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Provide training and opportunities for employees to build their skills and expertise in emerging technologies",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -1986,6 +2916,11 @@
         "category": "output"
     },
     {
+        "key": "suny:method.17",
+        "text": "Training",
+        "category": "method"
+    },
+    {
         "key": "suny:activity.15",
         "text": "Build workforce preparedness programs for emerging technologies for state workforce",
         "category": "activity-extension",
@@ -1998,11 +2933,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Build workforce preparedness programs for emerging technologies for state workforce",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Build workforce preparedness programs for emerging technologies for state workforce",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Build workforce preparedness programs for emerging technologies for state workforce",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -2037,11 +2972,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Provide research data management training as a data service",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Provide research data management training as a data service",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Provide research data management training as a data service",
         "y": "considerations",
         "yText": "Considerations",
@@ -2070,6 +3005,16 @@
         "category": "output"
     },
     {
+        "key": "suny:participant.28",
+        "text": "Research and Economic Development",
+        "category": "participant"
+    },
+    {
+        "key": "suny:method.20",
+        "text": "integrated training in education offerings",
+        "category": "method"
+    },
+    {
         "key": "suny:activity.17",
         "text": "Provide research data management training to data service providers",
         "category": "activity-extension",
@@ -2082,11 +3027,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Provide research data management training to data service providers",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Provide research data management training to data service providers",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Provide research data management training to data service providers",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -2109,6 +3054,11 @@
         "category": "output"
     },
     {
+        "key": "suny:method.23",
+        "text": "management training opportunities inform providers of RDM services",
+        "category": "method"
+    },
+    {
         "key": "suny:activity.18",
         "text": "Determine initial financial support models to launch RDM infrastructure",
         "category": "activity-extension",
@@ -2121,11 +3071,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Determine initial financial support models to launch RDM infrastructure",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Determine initial financial support models to launch RDM infrastructure",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Determine initial financial support models to launch RDM infrastructure",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -2148,6 +3098,11 @@
         "category": "output"
     },
     {
+        "key": "suny:method.24",
+        "text": "Apply for grants",
+        "category": "method"
+    },
+    {
         "key": "suny:activity.19",
         "text": "Integrate RDM costs into sustainable financial models",
         "category": "activity-extension",
@@ -2160,11 +3115,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Integrate RDM costs into sustainable financial models",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Integrate RDM costs into sustainable financial models",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Integrate RDM costs into sustainable financial models",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -2187,6 +3142,11 @@
         "category": "output"
     },
     {
+        "key": "suny:method.25",
+        "text": "Budget process",
+        "category": "method"
+    },
+    {
         "key": "suny:activity.20",
         "text": "Increase existing staff skills in RDM, redeploy existing staff, or hire new staff members with RDM skills",
         "category": "activity-extension",
@@ -2199,11 +3159,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Increase existing staff skills in RDM, redeploy existing staff, or hire new staff members with RDM skills",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Increase existing staff skills in RDM, redeploy existing staff, or hire new staff members with RDM skills",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Increase existing staff skills in RDM, redeploy existing staff, or hire new staff members with RDM skills",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -2238,11 +3198,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Build Stakeholder communities of practice: local, campus, system, national, international",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Build Stakeholder communities of practice: local, campus, system, national, international",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Build Stakeholder communities of practice: local, campus, system, national, international",
         "y": "considerations",
         "yText": "Considerations",
@@ -2271,6 +3231,21 @@
         "category": "output"
     },
     {
+        "key": "suny:participant.30",
+        "text": "Administration",
+        "category": "participant"
+    },
+    {
+        "key": "suny:method.29",
+        "text": "GRANTED work",
+        "category": "method"
+    },
+    {
+        "key": "https://sr.ithaka.org/publications/leveraging-data-communities-to-advance-open-science/",
+        "text": "https://sr.ithaka.org/publications/leveraging-data-communities-to-advance-open-science/",
+        "category": "resource"
+    },
+    {
         "key": "suny:activity.22",
         "text": "Establish communication channels",
         "category": "activity-extension",
@@ -2283,11 +3258,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Establish communication channels",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Establish communication channels",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Establish communication channels",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -2317,11 +3292,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Map potential local stakeholders and partners",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Map potential local stakeholders and partners",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Map potential local stakeholders and partners",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -2339,6 +3314,11 @@
         "zToolTip": "E.6.3 Partners/partnerships"
     },
     {
+        "key": "suny:role.4",
+        "text": "Connectors/Facilitators\nStrategic Leaders",
+        "category": "role"
+    },
+    {
         "key": "suny:outcome.39",
         "text": "Ownership of data assets within research project is documented, controlled, and managed",
         "category": "outcome-extension-considerations",
@@ -2353,6 +3333,11 @@
         "zToolTip": "P.1.1 Roles and responsibilities (Chain of Control)"
     },
     {
+        "key": "suny:participant.27",
+        "text": "IT",
+        "category": "participant"
+    },
+    {
         "key": "suny:activity.24",
         "text": "Conduct project-specific inventory",
         "category": "activity-extension",
@@ -2365,11 +3350,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Conduct project-specific inventory",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Conduct project-specific inventory",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Conduct project-specific inventory",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -2387,6 +3372,11 @@
         "zToolTip": "P.1.3 Centralized inventory of services, groups, and resources"
     },
     {
+        "key": "suny:participant.31",
+        "text": "Researcher",
+        "category": "participant"
+    },
+    {
         "key": "suny:outcome.41",
         "text": "Project planning includes financial considerations to consider in estimating or assessing the costs associated with all research data and RDM activities over the data lifecycle",
         "category": "outcome-extension",
@@ -2398,6 +3388,11 @@
         "zToolTip": "P.2.1 Funding models for provisioning resources (project)"
     },
     {
+        "key": "https://datagovernance.com/funding-models-funding-data-governance/",
+        "text": "https://datagovernance.com/funding-models-funding-data-governance/",
+        "category": "resource"
+    },
+    {
         "key": "suny:outcome.42",
         "text": "Data Management Planning is expected from all research projects",
         "category": "outcome-extension",
@@ -2407,6 +3402,11 @@
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "P.3.1 Written data management plans (DMPs)"
+    },
+    {
+        "key": "suny:participant.33",
+        "text": "Pre-award",
+        "category": "participant"
     },
     {
         "key": "suny:outcome.43",
@@ -2440,6 +3440,11 @@
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "P.3.6 Data organization in, e.g., a database and a repository, to facilitate future access"
+    },
+    {
+        "key": "suny:participant.34",
+        "text": "Library",
+        "category": "participant"
     },
     {
         "key": "suny:outcome.46",
@@ -2497,6 +3502,11 @@
         "zToolTip": "P.7.1 Design"
     },
     {
+        "key": "suny:participant.3",
+        "text": "CIO",
+        "category": "participant"
+    },
+    {
         "key": "suny:outcome.51",
         "text": "Hardware and software infrastructure for projects producing data should match organizational research needs and standards",
         "category": "outcome-extension",
@@ -2517,6 +3527,11 @@
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "P.8.2 Tools to support data-related processes"
+    },
+    {
+        "key": "suny:participant.35",
+        "text": "IT security",
+        "category": "participant"
     },
     {
         "key": "suny:outcome.53",
@@ -2542,11 +3557,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Establish project goals for research data",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Establish project goals for research data",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Establish project goals for research data",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -2576,11 +3591,11 @@
         "c": "outputs",
         "cText": "Outputs",
         "cToolTip": "Outputs of Create and use data metrics",
-        "d": "pgroups",
+        "d": "roles",
         "dText": "Roles",
         "dToolTip": "Roles involved in Create and use data metrics",
         "e": "resources",
-        "eText": "resources",
+        "eText": "Resources",
         "eToolTip": "Resources used by Create and use data metrics",
         "z": "extends",
         "zText": "RDaF Subtopic",
@@ -2596,6 +3611,11 @@
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "P.10.2 Metrics for tracking use and impact measures, including reuse"
+    },
+    {
+        "key": "suny:participant.1",
+        "text": "VPR",
+        "category": "participant"
     },
     {
         "key": "suny:outcome.56",
