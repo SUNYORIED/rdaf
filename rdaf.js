@@ -23,11 +23,11 @@ function init() {
       button = node.findObject(radio);
       if (button.name === thisName) {
 	  if (button.name === "AC_RADIO") {
-	    button.fill = "limegreen"
+	    button.fill = "#3a8133";
 	  } else if (button.name === "IP_RADIO") {
-            button.fill = "darkorange"
+            button.fill = "#f5660d";
 	  } else { 
-            button.fill = "crimson";
+            button.fill = "#cc0000";
           }
       } else {
           button.fill = "white";
@@ -57,14 +57,15 @@ function init() {
 
   function radioButton() {
     return [
-      $(go.Panel, "Horizontal",
+      $(go.Panel, "Horizontal", { background: "#454545" },
         $(go.TextBlock,
           {
              name: `NS_TEXT`,
              margin: 5,
              text: "Not Started",
              editable: true,
-             isMultiline: false
+             isMultiline: false,
+	     stroke: "white",
            },
         ),
         $(go.Shape, "Circle",
@@ -82,7 +83,8 @@ function init() {
              margin: 5,
              text: "In Progress",
              editable: true,
-             isMultiline: false
+             isMultiline: false,
+	     stroke: "white",
            }
         ),
         $(go.Shape, "Circle",
@@ -100,7 +102,8 @@ function init() {
              margin: 5,
              text: "Achieved",
              editable: true,
-             isMultiline: false
+             isMultiline: false,
+	     stroke: "white",
            }
         ),
         $(go.Shape, "Circle",
@@ -238,12 +241,11 @@ function init() {
       new go.Binding("text", "text"),
       // define the node's outer shape, which will surround the Horizontal Panel
       $(go.Shape, "Rectangle",
-        //{ fill: "whitesmoke", stroke: "lightgray" }),
-        { fill: "#008B8B", stroke: "white" }),
+        { fill: "whitesmoke", stroke: "lightgray" }),
       // define a horizontal Panel to place the node's text alongside the buttons
       $(go.Panel, "Horizontal",
         $(go.TextBlock,
-          { font: "16px Roboto, sans-serif", margin: 5, stroke: "white" },
+          { font: "16px Roboto, sans-serif", margin: 5 },
           new go.Binding("text", "text")),
         // define a vertical panel to place the node's two buttons one above the other
         $(go.Panel, "Vertical",
@@ -253,12 +255,10 @@ function init() {
               name: "button-a",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate,
-	      "ButtonBorder.fill":"#008B8B",
-	      "_buttonFillOver":"#00cccc",
             },
             new go.Binding("portId", "a"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif', stroke: "white" },
+              { font: '500 10px Roboto, sans-serif' },
               new go.Binding("text", "aText"))
           ),  // end button A
           $("Button",  // button B
@@ -266,12 +266,10 @@ function init() {
               name: "button-b",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate,
-	      "ButtonBorder.fill":"#008B8B",
-	      "_buttonFillOver":"#00cccc",
             },
             new go.Binding("portId", "b"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif', stroke: "white" },
+              { font: '500 10px Roboto, sans-serif' },
               new go.Binding("text", "bText"))
           ),  // end button B
           $("Button",  // button C
@@ -279,12 +277,10 @@ function init() {
               name: "button-c",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate,
-	      "ButtonBorder.fill":"#008B8B",
-	      "_buttonFillOver":"#00cccc",
             },
             new go.Binding("portId", "c"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif', stroke: "white" },
+              { font: '500 10px Roboto, sans-serif' },
               new go.Binding("text", "cText"))
           ),  // end button C
           $("Button",  // button D
@@ -292,12 +288,10 @@ function init() {
               name: "button-d",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate,
-	      "ButtonBorder.fill":"#008B8B",
-	      "_buttonFillOver":"#00cccc",
             },
             new go.Binding("portId", "d"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif', stroke: "white" },
+              { font: '500 10px Roboto, sans-serif' },
               new go.Binding("text", "dText"))
           ),  // end button D
           $("Button",  // button D
@@ -305,12 +299,10 @@ function init() {
               name: "button-e",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate,
-	      "ButtonBorder.fill":"#008B8B",
-	      "_buttonFillOver":"#00cccc",
             },
             new go.Binding("portId", "e"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif', stroke: "white" },
+              { font: '500 10px Roboto, sans-serif' },
               new go.Binding("text", "eText"))
           ),  // end button D
           $("Button",  // button F
@@ -318,12 +310,10 @@ function init() {
               name: "button-f",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate,
-	      "ButtonBorder.fill":"#008B8B",
-	      "_buttonFillOver":"#00cccc",
             },
             new go.Binding("portId", "f"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif', stroke:"white" },
+              { font: '500 10px Roboto, sans-serif'},
               new go.Binding("text", "fText"))
           ),  // end button D
         )  // end Vertical Panel
@@ -334,7 +324,7 @@ function init() {
       new go.Binding("text", "text"),
       // define the node's outer shape, which will surround the Horizontal Panel
       $(go.Shape, "Rectangle",
-        { fill: "whitesmoke", stroke: "lightgray" }),
+        { fill: "#004a96", stroke: "white" }),
       // define a horizontal Panel to place the node's text alongside the buttons
       $(go.Panel, "Horizontal",
         $(go.TextBlock,
@@ -362,7 +352,7 @@ function init() {
       new go.Binding("text", "text"),
       // define the node's outer shape, which will surround the Horizontal Panel
       $(go.Shape, "Rectangle",
-        { fill: "whitesmoke", stroke: "lightgray" }),
+        { fill: "#007eb3", stroke: "white" }),
       // define a horizontal Panel to place the node's text alongside the buttons
       $(go.Panel, "Horizontal",
         $(go.Panel, "Vertical",
@@ -371,17 +361,15 @@ function init() {
               name: "button-z",
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate,
-	      "ButtonBorder.fill":"#008B8B",
-	      "_buttonFillOver":"#00cccc",
 	      alignment:go.Spot.Left
             },
             new go.Binding("portId", "z"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif', stroke: "white" },
+              { font: '500 10px Roboto, sans-serif' },
               new go.Binding("text", "zText")),
 	  ),
           $(go.TextBlock,
-            { font: "16px Roboto, sans-serif", margin: 5 },
+            { font: "16px Roboto, sans-serif", margin: 5, stroke: "white" },
             new go.Binding("text", "text")),
 	  ...radioButton(),
         ),
@@ -394,10 +382,12 @@ function init() {
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate,
 	      visible: false,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "a"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "aText"))
           )
         )  // end Vertical Panel
@@ -408,7 +398,7 @@ function init() {
       new go.Binding("text", "text"),
       // define the node's outer shape, which will surround the Horizontal Panel
       $(go.Shape, "Rectangle",
-        { fill: "whitesmoke", stroke: "lightgray" }),
+        { fill: "#007eb3", stroke: "white" }),
       // define a horizontal Panel to place the node's text alongside the buttons
       $(go.Panel, "Horizontal",
         $(go.Panel, "Vertical",
@@ -416,17 +406,15 @@ function init() {
             {
               name: "button-z",
               toolTip: tooltipTemplate,
-	      "ButtonBorder.fill":"#008B8B",
-	      "_buttonFillOver":"#00cccc",
 	      alignment:go.Spot.Left
             },
             new go.Binding("portId", "z"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif', stroke: "white"},
+              { font: '500 10px Roboto, sans-serif' },
               new go.Binding("text", "zText"))
           ),
           $(go.TextBlock,
-            { font: "16px Roboto, sans-serif", margin: 5 },
+            { font: "16px Roboto, sans-serif", margin: 5, stroke: "white" },
             new go.Binding("text", "text")),
 	  ...radioButton(),
 	),
@@ -439,10 +427,12 @@ function init() {
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate,
 	      visible: false,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "a"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "aText"))
           ),
           $("Button",  // button B
@@ -451,39 +441,13 @@ function init() {
               click: buttonExpandCollapse,
               toolTip: tooltipTemplate,
 	      visible: false,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "y"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "yText"))
-          )
-        )  // end Vertical Panel
-      )  // end Horizontal Panel
-    ));  // end Node and call to add
-  myDiagram.nodeTemplateMap.add("outcome-complete",
-    $(go.Node, "Auto",
-      new go.Binding("text", "text"),
-      // define the node's outer shape, which will surround the Horizontal Panel
-      $(go.Shape, "Rectangle",
-        { fill: "#50c878", stroke: "lightgray" }),
-      // define a horizontal Panel to place the node's text alongside the buttons
-      $(go.Panel, "Horizontal",
-        $(go.TextBlock,
-          { font: "16px Roboto, sans-serif", margin: 5 },
-          new go.Binding("text", "text")),
-        // define a vertical panel to place the node's two buttons one above the other
-        $(go.Panel, "Vertical",
-          { defaultStretch: go.GraphObject.Fill, margin: 3 },
-          $("Button",  // button A
-            {
-              name: "button-a",
-              click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
-            },
-            new go.Binding("portId", "a"),
-            $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
-              new go.Binding("text", "aText"))
           )
         )  // end Vertical Panel
       )  // end Horizontal Panel
@@ -493,11 +457,11 @@ function init() {
       new go.Binding("text", "text"),
       // define the node's outer shape, which will surround the Horizontal Panel
       $(go.Shape, "Rectangle",
-        { fill: "whitesmoke", stroke: "lightgray" }),
+        { fill: "#007eb3", stroke: "white" }),
       // define a horizontal Panel to place the node's text alongside the buttons
       $(go.Panel, "Horizontal",
         $(go.TextBlock,
-          { font: "16px Roboto, sans-serif", margin: 5 },
+          { font: "16px Roboto, sans-serif", margin: 5, stroke: "white" },
           new go.Binding("text", "text")),
         // define a vertical panel to place the node's two buttons one above the other
         $(go.Panel, "Vertical",
@@ -506,55 +470,65 @@ function init() {
             {
               name: "Button-a",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "a"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "aText"))
           ),  // end button A
           $("Button",  // button B
             {
               name: "Button-b",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "b"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "bText"))
           ),  // end button B
           $("Button",  // button C
             {
               name: "Button-c",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "c"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "cText"))
           ),  // end button C
           $("Button",  // button D
             {
               name: "Button-d",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "d"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "dText"))
           ),  // end button D
           $("Button",  // button E
             {
               name: "Button-e",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "e"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "dText"))
 	  )
         )  // end Vertical Panel
@@ -565,7 +539,7 @@ function init() {
       new go.Binding("text", "text"),
       // define the node's outer shape, which will surround the Horizontal Panel
       $(go.Shape, "Rectangle",
-        { fill: "whitesmoke", stroke: "lightgray" }),
+        { fill: "#007eb3", stroke: "white" }),
       // define a horizontal Panel to place the node's text alongside the buttons
       $(go.Panel, "Horizontal",
         $(go.Panel, "Vertical",
@@ -573,20 +547,18 @@ function init() {
             {
               name: "button-z",
               toolTip: tooltipTemplate,
-	      "ButtonBorder.fill":"#008B8B",
-	      "_buttonFillOver":"#00cccc",
 	      alignment:go.Spot.Left
             },
             new go.Binding("portId", "z"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif', stroke: "white"},
+              { font: '500 10px Roboto, sans-serif'},
               new go.Binding("text", "zText"))
           ),
           $(go.TextBlock,
             { font: "16px Roboto, sans-serif", margin: 5},
 	  ),
         $(go.TextBlock,
-          { font: "16px Roboto, sans-serif", margin: 5 },
+          { font: "16px Roboto, sans-serif", margin: 5, stroke: "white" },
           new go.Binding("text", "text")),
         ),
         // define a vertical panel to place the node's two buttons one above the other
@@ -596,55 +568,65 @@ function init() {
             {
               name: "Button-a",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "a"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "aText"))
           ),  // end button A
           $("Button",  // button B
             {
               name: "Button-b",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "b"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "bText"))
           ),  // end button B
           $("Button",  // button C
             {
               name: "Button-c",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "c"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "cText"))
           ),  // end button C
           $("Button",  // button D
             {
               name: "Button-d",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "d"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "dText"))
           ),  // end button D
           $("Button",  // button E
             {
               name: "Button-e",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "e"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "eText"))
           ), // end button E
         )  // end Vertical Panel
@@ -655,7 +637,7 @@ function init() {
       new go.Binding("text", "text"),
       // define the node's outer shape, which will surround the Horizontal Panel
       $(go.Shape, "Rectangle",
-        { fill: "whitesmoke", stroke: "lightgray" }),
+        { fill: "#007eb3", stroke: "white" }),
       // define a horizontal Panel to place the node's text alongside the buttons
       $(go.Panel, "Horizontal",
         $(go.Panel, "Vertical",
@@ -663,17 +645,15 @@ function init() {
             {
               name: "button-z",
               toolTip: tooltipTemplate,
-	      "ButtonBorder.fill":"#008B8B",
-	      "_buttonFillOver":"#00cccc",
 	      alignment:go.Spot.Left
             },
             new go.Binding("portId", "z"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif', stroke: "white"},
+              { font: '500 10px Roboto, sans-serif'},
               new go.Binding("text", "zText"))
           ),
           $(go.TextBlock,
-            { font: "16px Roboto, sans-serif", margin: 5 },
+            { font: "16px Roboto, sans-serif", margin: 5, stroke: "white" },
           new go.Binding("text", "text")),
 	),
         // define a vertical panel to place the node's two buttons one above the other
@@ -683,66 +663,78 @@ function init() {
             {
               name: "Button-a",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "a"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "aText"))
           ),  // end button A
           $("Button",  // button B
             {
               name: "Button-b",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "b"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "bText"))
           ),  // end button B
           $("Button",  // button C
             {
               name: "Button-c",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "c"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "cText"))
           ),  // end button C
           $("Button",  // button D
             {
               name: "Button-d",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "d"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "dText"))
           ),  // end button D
           $("Button",  // button E
             {
               name: "Button-e",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "e"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "eText"))
           ),
           $("Button",  // button y
             {
               name: "Button-y",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "y"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "yText"))
 	  ), // end button y
         )  // end Vertical Panel
@@ -754,12 +746,11 @@ function init() {
       new go.Binding("text", "text"),
       // define the node's outer shape, which will surround the Horizontal Panel
       $(go.Shape, "Rectangle",
-        //{ fill: "whitesmoke", stroke: "lightgray" }),
-        { fill: "#008B8B", stroke: "white" }),
+        { fill: "whitesmoke", stroke: "lightgray" }),
       // define a horizontal Panel to place the node's text alongside the buttons
       $(go.Panel, "Horizontal",
         $(go.TextBlock,
-          { font: "16px Roboto, sans-serif", margin: 5, stroke: "white" },
+          { font: "16px Roboto, sans-serif", margin: 5 },
           new go.Binding("text", "text")),
         // define a vertical panel to place the node's two buttons one above the other
         $(go.Panel, "Vertical",
@@ -768,11 +759,13 @@ function init() {
             {
               name: "button-a",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "a"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "aText"))
           ),  // end button A
         )  // end Vertical Panel
@@ -784,12 +777,11 @@ function init() {
       new go.Binding("text", "text"),
       // define the node's outer shape, which will surround the Horizontal Panel
       $(go.Shape, "Rectangle",
-        //{ fill: "whitesmoke", stroke: "lightgray" }),
-        { fill: "#008B8B", stroke: "white" }),
+        { fill: "whitesmoke", stroke: "lightgray" }),
       // define a horizontal Panel to place the node's text alongside the buttons
       $(go.Panel, "Horizontal",
         $(go.TextBlock,
-          { font: "16px Roboto, sans-serif", margin: 5, stroke: "white" },
+          { font: "16px Roboto, sans-serif", margin: 5 },
           new go.Binding("text", "text")),
         // define a vertical panel to place the node's two buttons one above the other
         $(go.Panel, "Vertical",
@@ -798,22 +790,26 @@ function init() {
             {
               name: "button-a",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "a"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "aText"))
           ),  // end button A
           $("Button",  // button Y
             {
               name: "button-y",
               click: buttonExpandCollapse,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#004a96",
+	      "_buttonFillOver":"#003260",
             },
             new go.Binding("portId", "y"),
             $(go.TextBlock,
-              { font: '500 10px Roboto, sans-serif' },
+              { font: '500 10px Roboto, sans-serif', stroke: "white" },
               new go.Binding("text", "yText"))
           )  // end button Y
         )  // end Vertical Panel
@@ -825,12 +821,11 @@ function init() {
     $(go.Node, "Auto",
       new go.Binding("text", "text"),
       $(go.Shape, "Rectangle",
-        //{ fill: "whitesmoke", stroke: "lightgray" }),
-        { fill: "#008B8B", stroke: "white" }),
+        { fill: "whitesmoke", stroke: "lightgray" }),
       $(go.TextBlock,
         {
           font: '9px Roboto, sans-serif',
-          wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5, stroke: "white"
+          wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5 
         },
         new go.Binding("text", "text"))
     ));
@@ -838,11 +833,11 @@ function init() {
     $(go.Node, "Auto",
       new go.Binding("text", "text"),
       $(go.Shape, "Rectangle",
-        { fill: "whitesmoke", stroke: "lightgray" }),
+        { fill: "#004a96", stroke: "white" }),
       $(go.TextBlock,
         {
           font: '9px Roboto, sans-serif',
-          wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5
+          wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5, stroke: "white"
         },
         new go.Binding("text", "text"))
     ));
@@ -850,11 +845,11 @@ function init() {
     $(go.Node, "Auto",
       new go.Binding("text", "text"),
       $(go.Shape, "Rectangle",
-        { fill: "whitesmoke", stroke: "lightgray" }),
+        { fill: "#004a96", stroke: "white" }),
       $(go.TextBlock,
         {
           font: '9px Roboto, sans-serif',
-          wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5
+          wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5, stroke: "white"
         },
         new go.Binding("text", "text"))
     ));
@@ -862,11 +857,11 @@ function init() {
     $(go.Node, "Auto",
       new go.Binding("text", "text"),
       $(go.Shape, "Rectangle",
-        { fill: "whitesmoke", stroke: "lightgray" }),
+        { fill: "#004a96", stroke: "white" }),
       $(go.TextBlock,
         {
           font: '9px Roboto, sans-serif',
-          wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5
+          wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5, stroke: "white"
         },
         new go.Binding("text", "text"))
     ));
@@ -874,11 +869,11 @@ function init() {
     $(go.Node, "Auto",
       new go.Binding("text", "text"),
       $(go.Shape, "Rectangle",
-        { fill: "whitesmoke", stroke: "lightgray" }),
+        { fill: "#004a96", stroke: "white" }),
       $(go.TextBlock,
         {
           font: '9px Roboto, sans-serif',
-          wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5
+          wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5, stroke: "white"
         },
         new go.Binding("text", "text"))
     ));
@@ -887,7 +882,7 @@ function init() {
       new go.Binding("text", "text"),
       // define the node's outer shape, which will surround the Horizontal Panel
       $(go.Shape, "Rectangle",
-        { fill: "whitesmoke", stroke: "lightgray" }),
+        { fill: "#004a96", stroke: "white" }),
       // define a horizontal Panel to place the node's text alongside the buttons
       $(go.Panel, "Horizontal",
         $(go.Panel, "Vertical",
@@ -896,10 +891,12 @@ function init() {
             {
               name: "button-a",
 	      click: buttonLink,
-              toolTip: tooltipTemplate
+              toolTip: tooltipTemplate,
+	      "ButtonBorder.fill":"#009EE0",
+	      "_buttonFillOver":"#003260",
             },
             $(go.TextBlock,
-              { font: '500 9px Roboto, sans-serif', text:'Link' },
+              { font: '500 9px Roboto, sans-serif', text:'Link', stroke: "white" },
               )
           )
         )  // end Vertical Panel
@@ -912,7 +909,8 @@ function init() {
       { fromPortId: "" },
       new go.Binding("fromPortId", "fromport"),
       $(go.Shape,  // the link shape
-        { stroke: "lightblue", strokeWidth: 2 })
+        { stroke: "#781d7e", strokeWidth: 2 })
+
     );
 
   // create the model for the decision tree
