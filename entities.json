@@ -1991,7 +1991,7 @@
         "eToolTip": "Resources used by Convene data governance group",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forConvene data governance group",
+        "yToolTip": "Considerations for Convene data governance group",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.1 Identification of goals and roles"
@@ -2005,7 +2005,7 @@
         "aToolTip": "Activities that result in Institutional Data Governance goals identified and defined",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forInstitutional Data Governance goals identified and defined",
+        "yToolTip": "Considerations for Institutional Data Governance goals identified and defined",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.1 Identification of goals and roles"
@@ -2014,6 +2014,21 @@
         "key": "suny:output.1",
         "text": "Overarching goal statements",
         "category": "output"
+    },
+    {
+        "key": "suny:participant.1",
+        "text": "VPR",
+        "category": "participant"
+    },
+    {
+        "key": "suny:participant.2",
+        "text": "Campus Provost",
+        "category": "participant"
+    },
+    {
+        "key": "suny:participant.3",
+        "text": "CIO",
+        "category": "participant"
     },
     {
         "key": "suny:participant.4",
@@ -2034,7 +2049,7 @@
         "aToolTip": "Activities that result in Institutional Data Governance roles and responsibilities are identified and defined",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forInstitutional Data Governance roles and responsibilities are identified and defined",
+        "yToolTip": "Considerations for Institutional Data Governance roles and responsibilities are identified and defined",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.1 Identification of goals and roles"
@@ -2048,6 +2063,11 @@
         "key": "suny:method.1",
         "text": "Task Force",
         "category": "method"
+    },
+    {
+        "key": "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf",
+        "text": "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf",
+        "category": "resource"
     },
     {
         "key": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/",
@@ -2069,6 +2089,16 @@
         "key": "suny:output.3",
         "text": "Vision statement",
         "category": "output"
+    },
+    {
+        "key": "suny:participant.5",
+        "text": "VPRED",
+        "category": "participant"
+    },
+    {
+        "key": "suny:participant.6",
+        "text": "Chief Medical Informatics Officer",
+        "category": "participant"
     },
     {
         "key": "suny:participant.7",
@@ -2112,7 +2142,7 @@
         "eToolTip": "Resources used by Build RDM infrastructure",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forBuild RDM infrastructure",
+        "yToolTip": "Considerations for Build RDM infrastructure",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.3 Data management organization"
@@ -2126,10 +2156,15 @@
         "aToolTip": "Activities that result in RDM infrastructure of human and capital resources that support data-related activities exists",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forRDM infrastructure of human and capital resources that support data-related activities exists",
+        "yToolTip": "Considerations for RDM infrastructure of human and capital resources that support data-related activities exists",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.3 Data management organization"
+    },
+    {
+        "key": "suny:method.2",
+        "text": "Create Data Governance Council",
+        "category": "method"
     },
     {
         "key": "suny:method.3",
@@ -2150,7 +2185,7 @@
         "aToolTip": "Activities that result in Institution has a clearly defined statement of purpose and value for research data",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forInstitution has a clearly defined statement of purpose and value for research data",
+        "yToolTip": "Considerations for Institution has a clearly defined statement of purpose and value for research data",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.5 Data management value proposition"
@@ -2200,6 +2235,11 @@
         "category": "output"
     },
     {
+        "key": "suny:participant.8",
+        "text": "Researchers",
+        "category": "participant"
+    },
+    {
         "key": "suny:participant.9",
         "text": "Student",
         "category": "participant"
@@ -2208,6 +2248,31 @@
         "key": "suny:role.2",
         "text": "Connectors/Facilitators",
         "category": "role"
+    },
+    {
+        "key": "suny:method.5",
+        "text": "Needs assessments",
+        "category": "method"
+    },
+    {
+        "key": "suny:method.6",
+        "text": "stakeholder survey",
+        "category": "method"
+    },
+    {
+        "key": "suny:method.7",
+        "text": "investigate number of",
+        "category": "method"
+    },
+    {
+        "key": "suny:method.8",
+        "text": "size",
+        "category": "method"
+    },
+    {
+        "key": "suny:method.9",
+        "text": "publishing location of datasets",
+        "category": "method"
     },
     {
         "key": "suny:method.10",
@@ -2288,7 +2353,7 @@
         "eToolTip": "Resources used by Conduct a dataset inventory",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forConduct a dataset inventory",
+        "yToolTip": "Considerations for Conduct a dataset inventory",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.2.4 Inventory"
@@ -2302,7 +2367,7 @@
         "aToolTip": "Activities that result in Dataset inventory exists and includes relevant dataset metadata including: repository, identifiers, data usage metrics, creators, funders, supporting grants",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forDataset inventory exists and includes relevant dataset metadata including: repository, identifiers, data usage metrics, creators, funders, supporting grants",
+        "yToolTip": "Considerations for Dataset inventory exists and includes relevant dataset metadata including: repository, identifiers, data usage metrics, creators, funders, supporting grants",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.2.4 Inventory"
@@ -2311,6 +2376,11 @@
         "key": "suny:output.8",
         "text": "Dataset inventory",
         "category": "output"
+    },
+    {
+        "key": "suny:participant.11",
+        "text": "IT Head",
+        "category": "participant"
     },
     {
         "key": "suny:participant.12",
@@ -2343,7 +2413,7 @@
         "eToolTip": "Resources used by Conduct a data services inventory",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forConduct a data services inventory",
+        "yToolTip": "Considerations for Conduct a data services inventory",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.2.4 Inventory"
@@ -2357,7 +2427,7 @@
         "aToolTip": "Activities that result in Data services inventory: includes relevant data services provided across institution or unit",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forData services inventory: includes relevant data services provided across institution or unit",
+        "yToolTip": "Considerations for Data services inventory: includes relevant data services provided across institution or unit",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.2.4 Inventory"
@@ -2393,7 +2463,7 @@
         "eToolTip": "Resources used by Conduct a risk assessment",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forConduct a risk assessment",
+        "yToolTip": "Considerations for Conduct a risk assessment",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.2.5 Risk assessment"
@@ -2407,7 +2477,7 @@
         "aToolTip": "Activities that result in Risk is assessed and includes risks associated with unmanaged data, research subject privacy, data preservation, funder compliance",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forRisk is assessed and includes risks associated with unmanaged data, research subject privacy, data preservation, funder compliance",
+        "yToolTip": "Considerations for Risk is assessed and includes risks associated with unmanaged data, research subject privacy, data preservation, funder compliance",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.2.5 Risk assessment"
@@ -2416,6 +2486,11 @@
         "key": "suny:output.10",
         "text": "Risk Assessment",
         "category": "output"
+    },
+    {
+        "key": "suny:participant.14",
+        "text": "CISO",
+        "category": "participant"
     },
     {
         "key": "suny:participant.15",
@@ -2448,7 +2523,7 @@
         "eToolTip": "Resources used by Implement solutions to mitigate and manage risk discovered in risk assessment",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forImplement solutions to mitigate and manage risk discovered in risk assessment",
+        "yToolTip": "Considerations for Implement solutions to mitigate and manage risk discovered in risk assessment",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.2.6 Risk mitigation and management"
@@ -2462,7 +2537,7 @@
         "aToolTip": "Activities that result in Risks determined in risk assessment are mitigated, managed, and controlled",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forRisks determined in risk assessment are mitigated, managed, and controlled",
+        "yToolTip": "Considerations for Risks determined in risk assessment are mitigated, managed, and controlled",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.2.6 Risk mitigation and management"
@@ -2486,7 +2561,7 @@
         "aToolTip": "Activities that result in Policies for sharing and licensing data exist",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forPolicies for sharing and licensing data exist",
+        "yToolTip": "Considerations for Policies for sharing and licensing data exist",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.2.7 Sharing/licensing"
@@ -2547,6 +2622,21 @@
         "zToolTip": "E.3.1 Roles and responsibilities"
     },
     {
+        "key": "suny:participant.17",
+        "text": "HR",
+        "category": "participant"
+    },
+    {
+        "key": "suny:participant.18",
+        "text": "Department Chairs",
+        "category": "participant"
+    },
+    {
+        "key": "suny:participant.19",
+        "text": "Students",
+        "category": "participant"
+    },
+    {
         "key": "suny:participant.20",
         "text": "Faculty Senate",
         "category": "participant"
@@ -2591,8 +2681,8 @@
         "category": "output"
     },
     {
-        "key": "suny:participant.8",
-        "text": "Researchers",
+        "key": "suny:participant.21",
+        "text": "Librarians",
         "category": "participant"
     },
     {
@@ -2614,7 +2704,7 @@
         "aToolTip": "Activities that result in Data workers are valued and data work is recognized and supported",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forData workers are valued and data work is recognized and supported",
+        "yToolTip": "Considerations for Data workers are valued and data work is recognized and supported",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.3.3 Value of data workers"
@@ -2623,6 +2713,11 @@
         "key": "suny:output.14",
         "text": "Recognition for data sharing and open data through awards, professional expectations, data metrics, promotion",
         "category": "output"
+    },
+    {
+        "key": "suny:participant.22",
+        "text": "Faculty",
+        "category": "participant"
     },
     {
         "key": "suny:participant.23",
@@ -2722,7 +2817,7 @@
         "aToolTip": "Activities that result in FAIR data principles are integrated into RDM and data governance efforts",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forFAIR data principles are integrated into RDM and data governance efforts",
+        "yToolTip": "Considerations for FAIR data principles are integrated into RDM and data governance efforts",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.3.6 FAIR data principles"
@@ -2752,7 +2847,7 @@
         "aToolTip": "Activities that result in Appropriate incentives (or disincentives) exist for data sharing and reuse",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forAppropriate incentives (or disincentives) exist for data sharing and reuse",
+        "yToolTip": "Considerations for Appropriate incentives (or disincentives) exist for data sharing and reuse",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.3.8 Incentives and impact for sharing and reuse"
@@ -2821,6 +2916,11 @@
         "key": "suny:output.19",
         "text": "Workforce skills inventory (internal)",
         "category": "output"
+    },
+    {
+        "key": "suny:participant.24",
+        "text": "Department Deans",
+        "category": "participant"
     },
     {
         "key": "suny:participant.25",
@@ -2980,7 +3080,7 @@
         "eToolTip": "Resources used by Provide research data management training as a data service",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forProvide research data management training as a data service",
+        "yToolTip": "Considerations for Provide research data management training as a data service",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.4.3 Data management training"
@@ -2994,7 +3094,7 @@
         "aToolTip": "Activities that result in RDM training is available for researchers, faculty, staff, and students",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forRDM training is available for researchers, faculty, staff, and students",
+        "yToolTip": "Considerations for RDM training is available for researchers, faculty, staff, and students",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.4.3 Data management training"
@@ -3005,9 +3105,24 @@
         "category": "output"
     },
     {
+        "key": "suny:participant.27",
+        "text": "IT",
+        "category": "participant"
+    },
+    {
         "key": "suny:participant.28",
         "text": "Research and Economic Development",
         "category": "participant"
+    },
+    {
+        "key": "suny:method.18",
+        "text": "Asynchronous web-based training",
+        "category": "method"
+    },
+    {
+        "key": "suny:method.19",
+        "text": "short courses",
+        "category": "method"
     },
     {
         "key": "suny:method.20",
@@ -3054,6 +3169,16 @@
         "category": "output"
     },
     {
+        "key": "suny:method.21",
+        "text": "Data curation",
+        "category": "method"
+    },
+    {
+        "key": "suny:method.22",
+        "text": "preservation",
+        "category": "method"
+    },
+    {
         "key": "suny:method.23",
         "text": "management training opportunities inform providers of RDM services",
         "category": "method"
@@ -3096,6 +3221,11 @@
         "key": "suny:output.25",
         "text": "Sources of funding discovered and captured",
         "category": "output"
+    },
+    {
+        "key": "suny:participant.29",
+        "text": "Finance",
+        "category": "participant"
     },
     {
         "key": "suny:method.24",
@@ -3206,7 +3336,7 @@
         "eToolTip": "Resources used by Build Stakeholder communities of practice: local, campus, system, national, international",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forBuild Stakeholder communities of practice: local, campus, system, national, international",
+        "yToolTip": "Considerations for Build Stakeholder communities of practice: local, campus, system, national, international",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.6.1 Stakeholder communities"
@@ -3220,7 +3350,7 @@
         "aToolTip": "Activities that result in Active RDM stakeholder communities exist",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forActive RDM stakeholder communities exist",
+        "yToolTip": "Considerations for Active RDM stakeholder communities exist",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.6.1 Stakeholder communities"
@@ -3234,6 +3364,21 @@
         "key": "suny:participant.30",
         "text": "Administration",
         "category": "participant"
+    },
+    {
+        "key": "suny:method.26",
+        "text": "Communities of Practice",
+        "category": "method"
+    },
+    {
+        "key": "suny:method.27",
+        "text": "Task Groups",
+        "category": "method"
+    },
+    {
+        "key": "suny:method.28",
+        "text": "Mentor models",
+        "category": "method"
     },
     {
         "key": "suny:method.29",
@@ -3327,14 +3472,14 @@
         "aToolTip": "Activities that result in Ownership of data assets within research project is documented, controlled, and managed",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations forOwnership of data assets within research project is documented, controlled, and managed",
+        "yToolTip": "Considerations for Ownership of data assets within research project is documented, controlled, and managed",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "P.1.1 Roles and responsibilities (Chain of Control)"
     },
     {
-        "key": "suny:participant.27",
-        "text": "IT",
+        "key": "suny:participant.31",
+        "text": "Researcher",
         "category": "participant"
     },
     {
@@ -3372,11 +3517,6 @@
         "zToolTip": "P.1.3 Centralized inventory of services, groups, and resources"
     },
     {
-        "key": "suny:participant.31",
-        "text": "Researcher",
-        "category": "participant"
-    },
-    {
         "key": "suny:outcome.41",
         "text": "Project planning includes financial considerations to consider in estimating or assessing the costs associated with all research data and RDM activities over the data lifecycle",
         "category": "outcome-extension",
@@ -3402,6 +3542,11 @@
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "P.3.1 Written data management plans (DMPs)"
+    },
+    {
+        "key": "suny:participant.32",
+        "text": "Sponsored Programs",
+        "category": "participant"
     },
     {
         "key": "suny:participant.33",
@@ -3500,11 +3645,6 @@
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "P.7.1 Design"
-    },
-    {
-        "key": "suny:participant.3",
-        "text": "CIO",
-        "category": "participant"
     },
     {
         "key": "suny:outcome.51",
@@ -3611,11 +3751,6 @@
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "P.10.2 Metrics for tracking use and impact measures, including reuse"
-    },
-    {
-        "key": "suny:participant.1",
-        "text": "VPR",
-        "category": "participant"
     },
     {
         "key": "suny:outcome.56",

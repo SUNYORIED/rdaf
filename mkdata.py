@@ -111,29 +111,29 @@ def map_row(row,last_subtopic):
         for participant in row['Participants'].strip().split(','):
             participant = participant.strip()
             participant_id = get_uuid('participant',participant)
-        suny_objs[participant_id] = { 'name':participant, 'type': 'participant' }
-        if activity_id:
-            suny_objs[activity_id]['participants'].append(participant_id)
+            suny_objs[participant_id] = { 'name':participant, 'type': 'participant' }
+            if activity_id:
+                suny_objs[activity_id]['participants'].append(participant_id)
     if str(row['Participant Group']) != 'nan':
         for role in row['Participant Group'].strip().split(','):
             role = role.strip()
             role_id = get_uuid('role',role)
-        suny_objs[role_id] = { 'name':role, 'type': 'role' }
-        if activity_id:
-            suny_objs[activity_id]['roles'].append(role_id)
+            suny_objs[role_id] = { 'name':role, 'type': 'role' }
+            if activity_id:
+                suny_objs[activity_id]['roles'].append(role_id)
     if str(row['Method']) != 'nan':
         for method in row['Method'].strip().split(','):
             method = method.strip()
             method_id = get_uuid('method',method)
-        suny_objs[method_id] = { 'name':method, 'type': 'method' }
-        if activity_id:
-            suny_objs[activity_id]['methods'].append(method_id)
+            suny_objs[method_id] = { 'name':method, 'type': 'method' }
+            if activity_id:
+                suny_objs[activity_id]['methods'].append(method_id)
     if str(row['Guiding documents']) != 'nan':
         for url in row['Guiding documents'].strip().split(','):
             url = url.strip()
-        suny_objs[url] = { 'name':url, 'type': 'resource' }
-        if activity_id:
-            suny_objs[activity_id]['resources'].append(url)
+            suny_objs[url] = { 'name':url, 'type': 'resource' }
+            if activity_id:
+                suny_objs[activity_id]['resources'].append(url)
 
 
 
@@ -179,7 +179,7 @@ for topic in rdaf_objs['topic']:
         obj['category'] = obj['category'] + '-considerations'
         obj['y'] = 'considerations'
         obj['yText'] = 'Considerations'
-        obj['yToolTip'] = 'Considerations for ' + topic
+        obj['yToolTip'] = 'Considerations for ' + name
     entities.append(obj)
 
 for obj_id in suny_objs:
@@ -213,25 +213,25 @@ for obj_id in suny_objs:
         obj['e'] = 'resources'
         obj['eText'] = 'Resources'
         obj['eToolTip'] = 'Resources used by ' + oname
-        for output in suny_objs[obj_id]['outputs']:
+        for output in set(suny_objs[obj_id]['outputs']):
             links.append({'from': obj_id, 'fromport':'outputs','to':output})
-        for method in suny_objs[obj_id]['methods']:
+        for method in set(suny_objs[obj_id]['methods']):
             links.append({'from': obj_id, 'fromport':'methods','to':method})
-        for participant in suny_objs[obj_id]['participants']:
+        for participant in set(suny_objs[obj_id]['participants']):
             links.append({'from': obj_id, 'fromport':'participants','to':participant})
-        for role in suny_objs[obj_id]['roles']:
+        for role in set(suny_objs[obj_id]['roles']):
             links.append({'from': obj_id, 'fromport':'roles','to':role})
-        for resource in suny_objs[obj_id]['resources']:
+        for resource in set(suny_objs[obj_id]['resources']):
             links.append({'from': obj_id, 'fromport':'resources','to':resource})
 
     if isExtension:
         if isExtension in considerations:
             obj['category'] = obj['category'] + '-' + "extension-considerations"
-            for cid in considerations[isExtension]:
+            for cid in set(considerations[isExtension]):
                 links.append({'from':obj_id, 'fromport':'considerations', 'to':cid})
             obj['y'] = 'considerations'
             obj['yText'] = 'Considerations'
-            obj['yToolTip'] = 'Considerations for' + oname
+            obj['yToolTip'] = 'Considerations for ' + oname
         else:
             obj['category'] = obj['category'] + '-' + "extension"
         obj['z'] = 'extends'
