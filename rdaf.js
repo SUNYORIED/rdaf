@@ -919,7 +919,8 @@ function init() {
 	      "_buttonFillOver":"#003260",
             },
             $(go.TextBlock,
-              { font: '500 9px Roboto, sans-serif', text:'Link', stroke: "white" },
+              { font: '500 9px Roboto, sans-serif', stroke: "white" },
+              new go.Binding("text", "text"),
               )
           )
         )  // end Vertical Panel

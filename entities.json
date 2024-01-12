@@ -2402,12 +2402,12 @@
     },
     {
         "key": "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf",
-        "text": "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf",
+        "text": "Research Data Curation - EDUCASE Working Group Paper",
         "category": "resource"
     },
     {
         "key": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/",
-        "text": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/",
+        "text": "Research Data Services in US Higher Education - Ithaka S+R",
         "category": "resource"
     },
     {
@@ -2459,40 +2459,40 @@
     },
     {
         "key": "suny:activity.2",
-        "text": "Build RDM infrastructure",
+        "text": "Build organizational infrastructure to support RDM.",
         "category": "activity-extension-considerations",
         "a": "participants",
         "aText": "Participants",
-        "aToolTip": "Participants in Build RDM infrastructure",
+        "aToolTip": "Participants in Build organizational infrastructure to support RDM.",
         "b": "methods",
         "bText": "Methods",
-        "bToolTip": "Methods for Build RDM infrastructure",
+        "bToolTip": "Methods for Build organizational infrastructure to support RDM.",
         "c": "outputs",
         "cText": "Outputs",
-        "cToolTip": "Outputs of Build RDM infrastructure",
+        "cToolTip": "Outputs of Build organizational infrastructure to support RDM.",
         "d": "roles",
         "dText": "Roles",
-        "dToolTip": "Roles involved in Build RDM infrastructure",
+        "dToolTip": "Roles involved in Build organizational infrastructure to support RDM.",
         "e": "resources",
         "eText": "Resources",
-        "eToolTip": "Resources used by Build RDM infrastructure",
+        "eToolTip": "Resources used by Build organizational infrastructure to support RDM.",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for Build RDM infrastructure",
+        "yToolTip": "Considerations for Build organizational infrastructure to support RDM.",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.3 Data management organization : An RDM infrastructure (RDMI) of human and capital resources that supports data-related activities, e.g., policies, planning, and sharing, as well as practices and projects, e.g., data acquisition, control, and protection."
     },
     {
         "key": "suny:outcome.5",
-        "text": "RDM infrastructure of human and capital resources that support data-related activities exists",
+        "text": "RDM organization to support data-related activities exists",
         "category": "outcome-extension-considerations",
         "a": "activities",
         "aText": "Activities",
-        "aToolTip": "Activities that result in RDM infrastructure of human and capital resources that support data-related activities exists",
+        "aToolTip": "Activities that result in RDM organization to support data-related activities exists",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for RDM infrastructure of human and capital resources that support data-related activities exists",
+        "yToolTip": "Considerations for RDM organization to support data-related activities exists",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.3 Data management organization : An RDM infrastructure (RDMI) of human and capital resources that supports data-related activities, e.g., policies, planning, and sharing, as well as practices and projects, e.g., data acquisition, control, and protection."
@@ -3028,7 +3028,7 @@
     },
     {
         "key": "https://www.heliosopen.org/ourwork",
-        "text": "https://www.heliosopen.org/ourwork",
+        "text": "Helios Open",
         "category": "resource"
     },
     {
@@ -3211,7 +3211,7 @@
     },
     {
         "key": "https://fnigc.ca/ocap-training/",
-        "text": "https://fnigc.ca/ocap-training/",
+        "text": "First Nation Principles of Ownership",
         "category": "resource"
     },
     {
@@ -3723,7 +3723,7 @@
     },
     {
         "key": "https://sr.ithaka.org/publications/leveraging-data-communities-to-advance-open-science/",
-        "text": "https://sr.ithaka.org/publications/leveraging-data-communities-to-advance-open-science/",
+        "text": "Leveraging Data Communities to Advance Open Science - Ithaka S+R",
         "category": "resource"
     },
     {
@@ -3865,7 +3865,7 @@
     },
     {
         "key": "https://datagovernance.com/funding-models-funding-data-governance/",
-        "text": "https://datagovernance.com/funding-models-funding-data-governance/",
+        "text": "Funding Data Governance - DGI",
         "category": "resource"
     },
     {

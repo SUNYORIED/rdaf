@@ -134,9 +134,11 @@ def map_row(row,last_subtopic):
             if activity_id:
                 suny_objs[activity_id]['methods'].append(method_id)
     if str(row['Guiding documents']) != 'nan':
-        for url in row['Guiding documents'].strip().split(','):
-            url = url.strip()
-            suny_objs[url] = { 'name':url, 'type': 'resource' }
+        for res in row['Guiding documents'].strip().split(','):
+            parts = res.split('|')
+            text = parts[0].strip().replace('[','').replace('"','')
+            url = parts[1].strip().replace(']','')
+            suny_objs[url] = { 'name':text, 'type': 'resource' }
             if activity_id:
                 suny_objs[activity_id]['resources'].append(url)
 
