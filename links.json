@@ -652,12 +652,7 @@
     {
         "from": "suny:activity.1",
         "fromport": "outputs",
-        "to": "suny:output.3"
-    },
-    {
-        "from": "suny:activity.1",
-        "fromport": "outputs",
-        "to": "suny:output.4"
+        "to": "suny:output.2"
     },
     {
         "from": "suny:activity.1",
@@ -672,7 +667,12 @@
     {
         "from": "suny:activity.1",
         "fromport": "outputs",
-        "to": "suny:output.2"
+        "to": "suny:output.3"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "outputs",
+        "to": "suny:output.4"
     },
     {
         "from": "suny:activity.1",
@@ -687,22 +687,22 @@
     {
         "from": "suny:activity.1",
         "fromport": "participants",
-        "to": "suny:participant.7"
-    },
-    {
-        "from": "suny:activity.1",
-        "fromport": "participants",
-        "to": "suny:participant.4"
-    },
-    {
-        "from": "suny:activity.1",
-        "fromport": "participants",
         "to": "suny:participant.1"
     },
     {
         "from": "suny:activity.1",
         "fromport": "participants",
         "to": "suny:participant.3"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "participants",
+        "to": "suny:participant.7"
+    },
+    {
+        "from": "suny:activity.1",
+        "fromport": "participants",
+        "to": "suny:participant.4"
     },
     {
         "from": "suny:activity.1",
@@ -727,12 +727,12 @@
     {
         "from": "suny:activity.1",
         "fromport": "resources",
-        "to": "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf"
+        "to": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/"
     },
     {
         "from": "suny:activity.1",
         "fromport": "resources",
-        "to": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/"
+        "to": "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf"
     },
     {
         "from": "suny:activity.1",
@@ -842,22 +842,22 @@
     {
         "from": "suny:activity.2",
         "fromport": "participants",
-        "to": "suny:participant.7"
-    },
-    {
-        "from": "suny:activity.2",
-        "fromport": "participants",
-        "to": "suny:participant.4"
-    },
-    {
-        "from": "suny:activity.2",
-        "fromport": "participants",
         "to": "suny:participant.1"
     },
     {
         "from": "suny:activity.2",
         "fromport": "participants",
         "to": "suny:participant.3"
+    },
+    {
+        "from": "suny:activity.2",
+        "fromport": "participants",
+        "to": "suny:participant.7"
+    },
+    {
+        "from": "suny:activity.2",
+        "fromport": "participants",
+        "to": "suny:participant.4"
     },
     {
         "from": "suny:activity.2",
@@ -882,12 +882,12 @@
     {
         "from": "suny:activity.2",
         "fromport": "considerations",
-        "to": "E.1.10"
+        "to": "E.2.2"
     },
     {
         "from": "suny:activity.2",
         "fromport": "considerations",
-        "to": "E.2.2"
+        "to": "E.1.10"
     },
     {
         "from": "suny:activity.2",
@@ -907,12 +907,12 @@
     {
         "from": "suny:outcome.5",
         "fromport": "considerations",
-        "to": "E.1.10"
+        "to": "E.2.2"
     },
     {
         "from": "suny:outcome.5",
         "fromport": "considerations",
-        "to": "E.2.2"
+        "to": "E.1.10"
     },
     {
         "from": "suny:outcome.5",
@@ -947,12 +947,12 @@
     {
         "from": "suny:activity.3",
         "fromport": "methods",
-        "to": "suny:method.5"
+        "to": "suny:method.6"
     },
     {
         "from": "suny:activity.3",
         "fromport": "methods",
-        "to": "suny:method.6"
+        "to": "suny:method.5"
     },
     {
         "from": "suny:activity.3",
@@ -967,22 +967,12 @@
     {
         "from": "suny:activity.3",
         "fromport": "methods",
-        "to": "suny:method.7"
-    },
-    {
-        "from": "suny:activity.3",
-        "fromport": "methods",
         "to": "suny:method.9"
     },
     {
         "from": "suny:activity.3",
-        "fromport": "participants",
-        "to": "suny:participant.9"
-    },
-    {
-        "from": "suny:activity.3",
-        "fromport": "participants",
-        "to": "suny:participant.4"
+        "fromport": "methods",
+        "to": "suny:method.7"
     },
     {
         "from": "suny:activity.3",
@@ -992,7 +982,17 @@
     {
         "from": "suny:activity.3",
         "fromport": "participants",
+        "to": "suny:participant.9"
+    },
+    {
+        "from": "suny:activity.3",
+        "fromport": "participants",
         "to": "suny:participant.3"
+    },
+    {
+        "from": "suny:activity.3",
+        "fromport": "participants",
+        "to": "suny:participant.4"
     },
     {
         "from": "suny:activity.3",
@@ -1067,12 +1067,12 @@
     {
         "from": "suny:activity.4",
         "fromport": "participants",
-        "to": "suny:participant.12"
+        "to": "suny:participant.11"
     },
     {
         "from": "suny:activity.4",
         "fromport": "participants",
-        "to": "suny:participant.11"
+        "to": "suny:participant.12"
     },
     {
         "from": "suny:activity.4",
@@ -1122,6 +1122,11 @@
     {
         "from": "suny:activity.5",
         "fromport": "participants",
+        "to": "suny:participant.11"
+    },
+    {
+        "from": "suny:activity.5",
+        "fromport": "participants",
         "to": "suny:participant.13"
     },
     {
@@ -1131,23 +1136,18 @@
     },
     {
         "from": "suny:activity.5",
-        "fromport": "participants",
-        "to": "suny:participant.11"
-    },
-    {
-        "from": "suny:activity.5",
         "fromport": "roles",
         "to": "suny:role.2"
     },
     {
         "from": "suny:activity.5",
         "fromport": "resources",
-        "to": "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf"
+        "to": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/"
     },
     {
         "from": "suny:activity.5",
         "fromport": "resources",
-        "to": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/"
+        "to": "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf"
     },
     {
         "from": "suny:activity.5",
@@ -1197,12 +1197,12 @@
     {
         "from": "suny:activity.6",
         "fromport": "participants",
-        "to": "suny:participant.3"
+        "to": "suny:participant.15"
     },
     {
         "from": "suny:activity.6",
         "fromport": "participants",
-        "to": "suny:participant.15"
+        "to": "suny:participant.3"
     },
     {
         "from": "suny:activity.6",
@@ -1257,12 +1257,12 @@
     {
         "from": "suny:activity.7",
         "fromport": "participants",
-        "to": "suny:participant.3"
+        "to": "suny:participant.15"
     },
     {
         "from": "suny:activity.7",
         "fromport": "participants",
-        "to": "suny:participant.15"
+        "to": "suny:participant.3"
     },
     {
         "from": "suny:activity.7",
@@ -1347,17 +1347,12 @@
     {
         "from": "suny:activity.8",
         "fromport": "participants",
-        "to": "suny:participant.17"
-    },
-    {
-        "from": "suny:activity.8",
-        "fromport": "participants",
-        "to": "suny:participant.4"
-    },
-    {
-        "from": "suny:activity.8",
-        "fromport": "participants",
         "to": "suny:participant.1"
+    },
+    {
+        "from": "suny:activity.8",
+        "fromport": "participants",
+        "to": "suny:participant.17"
     },
     {
         "from": "suny:activity.8",
@@ -1367,7 +1362,12 @@
     {
         "from": "suny:activity.8",
         "fromport": "participants",
-        "to": "suny:participant.19"
+        "to": "suny:participant.18"
+    },
+    {
+        "from": "suny:activity.8",
+        "fromport": "participants",
+        "to": "suny:participant.4"
     },
     {
         "from": "suny:activity.8",
@@ -1377,12 +1377,12 @@
     {
         "from": "suny:activity.8",
         "fromport": "participants",
-        "to": "suny:participant.18"
+        "to": "suny:participant.20"
     },
     {
         "from": "suny:activity.8",
         "fromport": "participants",
-        "to": "suny:participant.20"
+        "to": "suny:participant.19"
     },
     {
         "from": "suny:activity.8",
@@ -1412,6 +1412,11 @@
     {
         "from": "suny:activity.9",
         "fromport": "outputs",
+        "to": "suny:output.13"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "outputs",
         "to": "suny:output.14"
     },
     {
@@ -1421,13 +1426,8 @@
     },
     {
         "from": "suny:activity.9",
-        "fromport": "outputs",
-        "to": "suny:output.13"
-    },
-    {
-        "from": "suny:activity.9",
         "fromport": "methods",
-        "to": "suny:method.15"
+        "to": "suny:method.1"
     },
     {
         "from": "suny:activity.9",
@@ -1437,27 +1437,7 @@
     {
         "from": "suny:activity.9",
         "fromport": "methods",
-        "to": "suny:method.1"
-    },
-    {
-        "from": "suny:activity.9",
-        "fromport": "participants",
-        "to": "suny:participant.17"
-    },
-    {
-        "from": "suny:activity.9",
-        "fromport": "participants",
-        "to": "suny:participant.4"
-    },
-    {
-        "from": "suny:activity.9",
-        "fromport": "participants",
-        "to": "suny:participant.22"
-    },
-    {
-        "from": "suny:activity.9",
-        "fromport": "participants",
-        "to": "suny:participant.23"
+        "to": "suny:method.15"
     },
     {
         "from": "suny:activity.9",
@@ -1467,7 +1447,7 @@
     {
         "from": "suny:activity.9",
         "fromport": "participants",
-        "to": "suny:participant.3"
+        "to": "suny:participant.22"
     },
     {
         "from": "suny:activity.9",
@@ -1477,7 +1457,17 @@
     {
         "from": "suny:activity.9",
         "fromport": "participants",
-        "to": "suny:participant.2"
+        "to": "suny:participant.17"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "participants",
+        "to": "suny:participant.3"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "participants",
+        "to": "suny:participant.23"
     },
     {
         "from": "suny:activity.9",
@@ -1487,12 +1477,17 @@
     {
         "from": "suny:activity.9",
         "fromport": "participants",
-        "to": "suny:participant.20"
+        "to": "suny:participant.4"
     },
     {
         "from": "suny:activity.9",
         "fromport": "participants",
-        "to": "suny:participant.21"
+        "to": "suny:participant.2"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "participants",
+        "to": "suny:participant.20"
     },
     {
         "from": "suny:activity.9",
@@ -1501,13 +1496,18 @@
     },
     {
         "from": "suny:activity.9",
-        "fromport": "roles",
-        "to": "suny:role.1"
+        "fromport": "participants",
+        "to": "suny:participant.21"
     },
     {
         "from": "suny:activity.9",
         "fromport": "roles",
         "to": "suny:role.2"
+    },
+    {
+        "from": "suny:activity.9",
+        "fromport": "roles",
+        "to": "suny:role.1"
     },
     {
         "from": "suny:activity.9",
@@ -1577,12 +1577,12 @@
     {
         "from": "suny:activity.10",
         "fromport": "participants",
-        "to": "suny:participant.21"
+        "to": "suny:participant.8"
     },
     {
         "from": "suny:activity.10",
         "fromport": "participants",
-        "to": "suny:participant.8"
+        "to": "suny:participant.21"
     },
     {
         "from": "suny:activity.10",
@@ -1612,12 +1612,12 @@
     {
         "from": "suny:activity.11",
         "fromport": "participants",
-        "to": "suny:participant.21"
+        "to": "suny:participant.8"
     },
     {
         "from": "suny:activity.11",
         "fromport": "participants",
-        "to": "suny:participant.8"
+        "to": "suny:participant.21"
     },
     {
         "from": "suny:activity.11",
@@ -1652,7 +1652,7 @@
     {
         "from": "suny:outcome.23",
         "fromport": "considerations",
-        "to": "P.5.2"
+        "to": "P.5.1"
     },
     {
         "from": "suny:outcome.23",
@@ -1662,7 +1662,7 @@
     {
         "from": "suny:outcome.23",
         "fromport": "considerations",
-        "to": "P.5.1"
+        "to": "P.5.2"
     },
     {
         "from": "suny:outcome.23",
@@ -1717,12 +1717,12 @@
     {
         "from": "suny:activity.12",
         "fromport": "participants",
-        "to": "suny:participant.25"
+        "to": "suny:participant.24"
     },
     {
         "from": "suny:activity.12",
         "fromport": "participants",
-        "to": "suny:participant.24"
+        "to": "suny:participant.25"
     },
     {
         "from": "suny:activity.12",
@@ -1802,12 +1802,12 @@
     {
         "from": "suny:activity.14",
         "fromport": "participants",
-        "to": "suny:participant.25"
+        "to": "suny:participant.24"
     },
     {
         "from": "suny:activity.14",
         "fromport": "participants",
-        "to": "suny:participant.24"
+        "to": "suny:participant.25"
     },
     {
         "from": "suny:activity.14",
@@ -1887,17 +1887,17 @@
     {
         "from": "suny:activity.16",
         "fromport": "methods",
-        "to": "suny:method.20"
-    },
-    {
-        "from": "suny:activity.16",
-        "fromport": "methods",
         "to": "suny:method.18"
     },
     {
         "from": "suny:activity.16",
+        "fromport": "methods",
+        "to": "suny:method.20"
+    },
+    {
+        "from": "suny:activity.16",
         "fromport": "participants",
-        "to": "suny:participant.27"
+        "to": "suny:participant.28"
     },
     {
         "from": "suny:activity.16",
@@ -1907,27 +1907,12 @@
     {
         "from": "suny:activity.16",
         "fromport": "participants",
-        "to": "suny:participant.28"
+        "to": "suny:participant.27"
     },
     {
         "from": "suny:activity.16",
         "fromport": "roles",
         "to": "suny:role.3"
-    },
-    {
-        "from": "suny:activity.16",
-        "fromport": "considerations",
-        "to": "P.3.7"
-    },
-    {
-        "from": "suny:activity.16",
-        "fromport": "considerations",
-        "to": "P.3.2"
-    },
-    {
-        "from": "suny:activity.16",
-        "fromport": "considerations",
-        "to": "P.3.3"
     },
     {
         "from": "suny:activity.16",
@@ -1938,6 +1923,21 @@
         "from": "suny:activity.16",
         "fromport": "considerations",
         "to": "P.3.1"
+    },
+    {
+        "from": "suny:activity.16",
+        "fromport": "considerations",
+        "to": "P.3.2"
+    },
+    {
+        "from": "suny:activity.16",
+        "fromport": "considerations",
+        "to": "P.3.7"
+    },
+    {
+        "from": "suny:activity.16",
+        "fromport": "considerations",
+        "to": "P.3.3"
     },
     {
         "from": "suny:activity.16",
@@ -1957,7 +1957,12 @@
     {
         "from": "suny:outcome.31",
         "fromport": "considerations",
-        "to": "P.3.7"
+        "to": "P.3.4"
+    },
+    {
+        "from": "suny:outcome.31",
+        "fromport": "considerations",
+        "to": "P.3.1"
     },
     {
         "from": "suny:outcome.31",
@@ -1967,17 +1972,12 @@
     {
         "from": "suny:outcome.31",
         "fromport": "considerations",
+        "to": "P.3.7"
+    },
+    {
+        "from": "suny:outcome.31",
+        "fromport": "considerations",
         "to": "P.3.3"
-    },
-    {
-        "from": "suny:outcome.31",
-        "fromport": "considerations",
-        "to": "P.3.4"
-    },
-    {
-        "from": "suny:outcome.31",
-        "fromport": "considerations",
-        "to": "P.3.1"
     },
     {
         "from": "suny:outcome.31",
@@ -1997,17 +1997,12 @@
     {
         "from": "suny:activity.17",
         "fromport": "methods",
-        "to": "suny:method.22"
-    },
-    {
-        "from": "suny:activity.17",
-        "fromport": "methods",
         "to": "suny:method.23"
     },
     {
         "from": "suny:activity.17",
-        "fromport": "participants",
-        "to": "suny:participant.27"
+        "fromport": "methods",
+        "to": "suny:method.22"
     },
     {
         "from": "suny:activity.17",
@@ -2017,12 +2012,17 @@
     {
         "from": "suny:activity.17",
         "fromport": "participants",
+        "to": "suny:participant.28"
+    },
+    {
+        "from": "suny:activity.17",
+        "fromport": "participants",
         "to": "suny:participant.17"
     },
     {
         "from": "suny:activity.17",
         "fromport": "participants",
-        "to": "suny:participant.28"
+        "to": "suny:participant.27"
     },
     {
         "from": "suny:activity.17",
@@ -2062,12 +2062,7 @@
     {
         "from": "suny:activity.18",
         "fromport": "participants",
-        "to": "suny:participant.29"
-    },
-    {
-        "from": "suny:activity.18",
-        "fromport": "participants",
-        "to": "suny:participant.1"
+        "to": "suny:participant.28"
     },
     {
         "from": "suny:activity.18",
@@ -2077,7 +2072,12 @@
     {
         "from": "suny:activity.18",
         "fromport": "participants",
-        "to": "suny:participant.28"
+        "to": "suny:participant.29"
+    },
+    {
+        "from": "suny:activity.18",
+        "fromport": "participants",
+        "to": "suny:participant.1"
     },
     {
         "from": "suny:activity.18",
@@ -2117,12 +2117,7 @@
     {
         "from": "suny:activity.19",
         "fromport": "participants",
-        "to": "suny:participant.29"
-    },
-    {
-        "from": "suny:activity.19",
-        "fromport": "participants",
-        "to": "suny:participant.1"
+        "to": "suny:participant.28"
     },
     {
         "from": "suny:activity.19",
@@ -2132,7 +2127,12 @@
     {
         "from": "suny:activity.19",
         "fromport": "participants",
-        "to": "suny:participant.28"
+        "to": "suny:participant.29"
+    },
+    {
+        "from": "suny:activity.19",
+        "fromport": "participants",
+        "to": "suny:participant.1"
     },
     {
         "from": "suny:activity.19",
@@ -2172,6 +2172,11 @@
     {
         "from": "suny:activity.20",
         "fromport": "participants",
+        "to": "suny:participant.1"
+    },
+    {
+        "from": "suny:activity.20",
+        "fromport": "participants",
         "to": "suny:participant.29"
     },
     {
@@ -2182,17 +2187,12 @@
     {
         "from": "suny:activity.20",
         "fromport": "participants",
-        "to": "suny:participant.1"
+        "to": "suny:participant.28"
     },
     {
         "from": "suny:activity.20",
         "fromport": "participants",
         "to": "suny:participant.25"
-    },
-    {
-        "from": "suny:activity.20",
-        "fromport": "participants",
-        "to": "suny:participant.28"
     },
     {
         "from": "suny:activity.20",
@@ -2227,7 +2227,7 @@
     {
         "from": "suny:activity.21",
         "fromport": "methods",
-        "to": "suny:method.29"
+        "to": "suny:method.26"
     },
     {
         "from": "suny:activity.21",
@@ -2237,22 +2237,17 @@
     {
         "from": "suny:activity.21",
         "fromport": "methods",
-        "to": "suny:method.26"
-    },
-    {
-        "from": "suny:activity.21",
-        "fromport": "methods",
         "to": "suny:method.27"
     },
     {
         "from": "suny:activity.21",
-        "fromport": "participants",
-        "to": "suny:participant.30"
+        "fromport": "methods",
+        "to": "suny:method.29"
     },
     {
         "from": "suny:activity.21",
         "fromport": "participants",
-        "to": "suny:participant.21"
+        "to": "suny:participant.22"
     },
     {
         "from": "suny:activity.21",
@@ -2262,7 +2257,12 @@
     {
         "from": "suny:activity.21",
         "fromport": "participants",
-        "to": "suny:participant.22"
+        "to": "suny:participant.21"
+    },
+    {
+        "from": "suny:activity.21",
+        "fromport": "participants",
+        "to": "suny:participant.30"
     },
     {
         "from": "suny:activity.21",
@@ -2282,12 +2282,12 @@
     {
         "from": "suny:activity.21",
         "fromport": "considerations",
-        "to": "E.6.4"
+        "to": "E.6.5"
     },
     {
         "from": "suny:activity.21",
         "fromport": "considerations",
-        "to": "E.6.5"
+        "to": "E.6.4"
     },
     {
         "from": "suny:activity.21",
@@ -2312,12 +2312,12 @@
     {
         "from": "suny:outcome.36",
         "fromport": "considerations",
-        "to": "E.6.4"
+        "to": "E.6.5"
     },
     {
         "from": "suny:outcome.36",
         "fromport": "considerations",
-        "to": "E.6.5"
+        "to": "E.6.4"
     },
     {
         "from": "suny:outcome.36",
@@ -2327,12 +2327,7 @@
     {
         "from": "suny:activity.22",
         "fromport": "participants",
-        "to": "suny:participant.30"
-    },
-    {
-        "from": "suny:activity.22",
-        "fromport": "participants",
-        "to": "suny:participant.21"
+        "to": "suny:participant.22"
     },
     {
         "from": "suny:activity.22",
@@ -2342,7 +2337,12 @@
     {
         "from": "suny:activity.22",
         "fromport": "participants",
-        "to": "suny:participant.22"
+        "to": "suny:participant.21"
+    },
+    {
+        "from": "suny:activity.22",
+        "fromport": "participants",
+        "to": "suny:participant.30"
     },
     {
         "from": "suny:activity.22",
@@ -2592,6 +2592,11 @@
     {
         "from": "suny:activity.26",
         "fromport": "participants",
+        "to": "suny:participant.1"
+    },
+    {
+        "from": "suny:activity.26",
+        "fromport": "participants",
         "to": "suny:participant.22"
     },
     {
@@ -2602,17 +2607,12 @@
     {
         "from": "suny:activity.26",
         "fromport": "participants",
-        "to": "suny:participant.1"
+        "to": "suny:participant.8"
     },
     {
         "from": "suny:activity.26",
         "fromport": "participants",
         "to": "suny:participant.21"
-    },
-    {
-        "from": "suny:activity.26",
-        "fromport": "participants",
-        "to": "suny:participant.8"
     },
     {
         "from": "suny:activity.26",

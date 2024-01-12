@@ -25,562 +25,898 @@
     {
         "key": "E.1.1",
         "text": "Identification of goals and roles",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "An exercise to define the objectives of, and responsible individuals for, various aspects of research data management (RDM)."
     },
     {
         "key": "E.1.2",
         "text": "Vision and/or policy",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Vision: An aspirational state an organization wishes to achieve with respect to RDM.  Policy: A set of recommended and sometimes mandatory high-level principles that establish a guiding framework for RDM. [5,6]"
     },
     {
         "key": "E.1.3",
         "text": "Data management organization",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "An RDM infrastructure (RDMI) of human and capital resources that supports data-related activities, e.g., policies, planning, and sharing, as well as practices and projects, e.g., data acquisition, control, and protection."
     },
     {
         "key": "E.1.4",
         "text": "Organizational values, including DEI",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A set of core beliefs that function as guides to what is seen as good and important in an organization and the guiding principles that provide an organization with purpose and direction. (Values ideally include diversity, equity, and inclusivity.) [10, 11]"
     },
     {
         "key": "E.1.5",
         "text": "Data management value proposition",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A clear statement that indicates exactly what benefits an organization will derive from an RDM program. [12]"
     },
     {
         "key": "E.1.6",
         "text": "Data needs assessment",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "An evaluation of the types of data that are critical to accomplish the stated goals of an organization."
     },
     {
         "key": "E.1.7",
         "text": "Purpose and value of data",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A clear statement of the need for, use of, and benefit derived from, research data."
     },
     {
         "key": "E.1.8",
         "text": "Organization intent regarding FAIR data",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The extent to which an organization supports the internal adoption and use of the FAIR data principles."
     },
     {
         "key": "E.1.9",
         "text": "End-use support",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Components of the RDMI within an organization that enable data to be prepared and processed for its ultimate application, including reuse."
     },
     {
         "key": "E.1.10",
         "text": "Stewardship",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The application of rigorous analyses and oversight to ensure that data assets meet the needs of users. [13]"
     },
     {
         "key": "E.2.1",
         "text": "Privacy",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The practice of protecting and properly handling sensitive data, including personal, proprietary, and confidential data"
     },
     {
         "key": "E.2.2",
         "text": "Ethics",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Moral principles pertaining to data practices, e.g., analysis and dissemination, that have the potential to adversely impact people and society (e.g., to minimize bias and maintain the privacy of personal data). See also the Global Data Ethics Project. [15\u201317]"
     },
     {
         "key": "E.2.3",
         "text": "Safety and security assurance",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The practice of protecting digital information from unauthorized access, denial of access, theft, or corruption throughout its entire lifecycle. [18]"
     },
     {
         "key": "E.2.4",
         "text": "Inventory",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A function that provides organization capabilities for archiving management such that data products can be grouped, searched and identified for retrieval, statistics and reorganization. Also, a list of available items stored and/or controlled in a storage warehouse system. [15, pg 19]"
     },
     {
         "key": "E.2.5",
         "text": "Risk assessment",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A systematic process for the identification and evaluation of potential threats to and vulnerabilities of an organization\u2019s data assets, e.g., unauthorized access to sensitive data.  [20]"
     },
     {
         "key": "E.2.6",
         "text": "Risk mitigation and management",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A process for the development and implementation  of appropriate strategies to control, reduce, or eliminate potential threats to and vulnerabilities of an organization\u2019s data assets as identified by a risk assessment. [21]"
     },
     {
         "key": "E.2.7",
         "text": "Sharing/licensing",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Data sharing agreement: A formal contract that details what data are being shared and the appropriate use for the data. Licensing agreement: A formal contract that states the purpose and duration of access being provided to the recipient licensee along with restriction and security protocols the recipient licensee of the data must follow. [22, 23]"
     },
     {
         "key": "E.2.8",
         "text": "Social license for use and reuse",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "An unwritten agreement whereby a group of public stakeholders accept that certain datasets may be applied for purposes other than those for which the data were originally intended, e.g., healthcare data. [24]"
     },
     {
         "key": "E.2.9",
         "text": "Jurisdiction for sharing and reuse",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Legal requirements as set by an authoritative entity (e.g., local and national regions) concerning the dissemination of data by an organization and subsequent use of the data by other organizations.  [25]"
     },
     {
         "key": "E.3.1",
         "text": "Roles and responsibilities",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The job functions and obligations that enable the establishment of a desired data culture and reward structure."
     },
     {
         "key": "E.3.2",
         "text": "Recognition of data management",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Processes and practices that provide acknowledgement and rewards for good RDM at all levels in an organization."
     },
     {
         "key": "E.3.3",
         "text": "Value of data workers",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Recognition of the benefits that staff performing data-centric jobs or functions provide to an organization."
     },
     {
         "key": "E.3.4",
         "text": "Promotion and tenure",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Career advancements that are linked to good research processes, practices, and outcomes."
     },
     {
         "key": "E.3.5",
         "text": "Integrity of research and data",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "For research: The condition resulting from adherence to professional values and practices when conducting, reporting, applying, and disseminating results of the work.[27] For data: The accuracy, completeness, and quality of data as they are maintained over time and across formats.[28]"
     },
     {
         "key": "E.3.6",
         "text": "FAIR data principles",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Guidelines that allow digital objects (e.g., data, algorithms, and workflows) to be Findable, Accessible, Interoperable, and Reusable. [29]"
     },
     {
         "key": "E.3.7",
         "text": "Maintenance of FAIR data",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Ongoing infrastructural support to sustain FAIR data principles and practices."
     },
     {
         "key": "E.3.8",
         "text": "Incentives and impact for sharing and reuse",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Staff recognition and rewards for widespread dissemination and application of research data and the beneficial effects of such dissemination."
     },
     {
         "key": "E.3.9",
         "text": "Disincentives for sharing and reuse",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Barriers that limit dissemination of data, e.g., misinterpretation and misuse of data by others, lack of recognition, and the effort required for sharing."
     },
     {
         "key": "E.3.10",
         "text": "CARE and ethics",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The CARE (Collective benefit, Authority to control, Responsibility, and Ethics) Principles for Indigenous Data Governance are people and purpose-oriented, reflecting the crucial role of data in advancing Indigenous innovation and self-determination. (These principles complement the existing FAIR principles for indigenous data governance.)   Ethics: Moral principles pertaining to data practices, e.g., analysis and dissemination, that have the potential to adversely impact people and society (e.g., to minimize bias and maintain the privacy of personal data). [15, 30]"
     },
     {
         "key": "E.4.1",
         "text": "Workforce skills inventory",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A catalog of an organization's capabilities in essential data processes."
     },
     {
         "key": "E.4.2",
         "text": "Workforce preparedness in new and advanced technologies",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Assessment of needs for and provision of training in the skills and expertise of an organization's staff pertinent to novel and leading-edge areas of research, e.g., AI."
     },
     {
         "key": "E.4.3",
         "text": "Data management training",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "In-classroom, on-line, and/or hands-on instruction for staff to attain the skills and expertise required to manage data across all lifecycles."
     },
     {
         "key": "E.4.4",
         "text": "HR\u2019s supporting role in workforce development and training",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Involvement of an organization's HR department in establishing and implementing instructional courses for staff to expand their skill sets and expertise in research data programs and RDM."
     },
     {
         "key": "E.4.5",
         "text": "Promotional paths and career development",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Documented approaches for recruitment, advancement, and retention of staff in data-centric jobs in an organization and expansion of data-related skills and expertise for all technical jobs."
     },
     {
         "key": "E.5.1",
         "text": "Sources of funding",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Entities that provide financial support for research data programs and RDM infrastructure (e.g., capital and human resources)."
     },
     {
         "key": "E.5.2",
         "text": "Long-term funding",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Sustained financial support for research data activities and RDM infrastructure."
     },
     {
         "key": "E.5.3",
         "text": "Staffing",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Provision of sufficient resources to support RDM staff and researchers engaged in RDM activities."
     },
     {
         "key": "E.6.1",
         "text": "Stakeholder communities",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Individuals, groups, and organizations that have an interest or stake in RDM or research data activities in general and in particular domains. [31]"
     },
     {
         "key": "E.6.2",
         "text": "Modes of communication",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Ways by which information about data and data management are shared and discussed."
     },
     {
         "key": "E.6.3",
         "text": "Partners/partnerships",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Partner: Two or more organizations or individuals that share responsibility and control of ideas, processes, and outcomes of research data activities.  Partnership: An agreement between organizations and individuals to collaborate on such activities.. [32]"
     },
     {
         "key": "E.6.4",
         "text": "Engagement across knowledge domains and sectors",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Interactions among groups or individuals having expertise in different specific, specialized disciplines or fields, or expertise in different technology areas. [33]"
     },
     {
         "key": "E.6.5",
         "text": "Inclusivity in interactions",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The practice of including all types of people or ideas and treating them all fairly and equally. [34]"
     },
     {
         "key": "E.6.6",
         "text": "Data services and the beneficiaries",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Solutions for data tasks (e.g., data transfer, storage, and analytics) and the organizations or individuals deriving value from such solutions. [35]"
     },
     {
         "key": "P.1.1",
         "text": "Roles and responsibilities (Chain of Control)",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The job functions and obligations for tracking data assets."
     },
     {
         "key": "P.1.2",
         "text": "Implementation authority",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Person empowered to grant access to data assets, e.g., a Chief Data Officer."
     },
     {
         "key": "P.1.3",
         "text": "Centralized inventory of services, groups, and resources",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "An organization-wide catalog of elements supporting data-related activities at various levels of an organization, including capital (e.g., HPC), virtual (e.g., domain repositories), and human (e.g., Data Steward and AI interest group) components."
     },
     {
         "key": "P.1.4",
         "text": "Provenance",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The historical, documented record of a data asset that contains details on its origin\u2014where, when, how, and by whom it was generated/acquired/processed\u2014and on all alterations to the data asset. [15, pg 24,31]"
     },
     {
         "key": "P.2.1",
         "text": "Funding models for provisioning resources (project)",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Approaches for providing financial support for data-related activities and infrastructure, including direct, (e.g., grants, contracts, and institutional), overhead, or mixed. [38]"
     },
     {
         "key": "P.2.2",
         "text": "Funding sources (project)",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Entities that provide financial support for research data activities and infrastructure, e.g., capital and human resources."
     },
     {
         "key": "P.2.3",
         "text": "Decision-making tools to assess costs (project)",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Methods to determine the financial requirements of various data activities and infrastructure (e.g., cost-benefit analysis, market analysis, and decision trees)."
     },
     {
         "key": "P.2.4",
         "text": "Cost-benefit analysis (project)",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A systematic approach to estimating the strengths and weaknesses of alternative actions to determine options which provide the best approach to achieving benefits while preserving savings. [39]"
     },
     {
         "key": "P.2.5",
         "text": "Cost breakdown by lifecycle stage (project)",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Identification of funds required for each data activity in a project (e.g., hardware, software, and staffing for data generation), or for an RDM infrastructure (e.g., centralized data services)."
     },
     {
         "key": "P.2.6",
         "text": "Downstream lifecycle costs (project)",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Funds required after establishment of an RDM infrastructure (e.g., technology refresh and maintenance) or for later-stage data activities (e.g., long-term preservation)."
     },
     {
         "key": "P.2.7",
         "text": "Staffing and training",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Costs incurred in assuring that new staff with appropriate skills and expertise are hired for specific data activities and that existing staff attain new and advanced skills through instructional courses."
     },
     {
         "key": "P.3.1",
         "text": "Written data management plans (DMPs)",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Documents that provide sufficient detail on the following topics: Administrative Data, Data Collection, Documentation and Metadata, Ethics and Legal Compliance, Storage and Backup, Selection and Preservation, Data Sharing, and Responsibilities and Resources. DMPs are referred to herein as a research data \"roadmaps.\" [40]"
     },
     {
         "key": "P.3.2",
         "text": "Purpose/intent of research study and context of anticipated data use",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Clear articulation of research objectives in terms of data products that are essential to address specific research and/or technical requirements."
     },
     {
         "key": "P.3.3",
         "text": "Specification of data objects, metadata, analysis tools, and workflows throughout the lifecycle",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Detailed descriptions of all information, processes, software, and hardware required from conception to completion of a research data project."
     },
     {
         "key": "P.3.4",
         "text": "Machine-readable DMPs",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Research data roadmap documents in a form that can be used and understood by a computer. [41]"
     },
     {
         "key": "P.3.5",
         "text": "Linkage of DMPs to administrative records",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Interconnection of a research data roadmaps to operational data, e.g., agreements, transactions."
     },
     {
         "key": "P.3.6",
         "text": "Data organization in, e.g., a database and a repository, to facilitate future access",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The practice of categorizing, classifying, and storing data with sufficient detail and specificity such that the data are readily discoverable and usable by others. [42]"
     },
     {
         "key": "P.3.7",
         "text": "Data management expertise and training",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "In-class, on-line, and/or hands-on instruction for staff to attain the skills and knowledge required to manage data in a research study."
     },
     {
         "key": "P.4.1",
         "text": "Quantitative and qualitative",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Quantitative data are numerical data, e.g., measurements and some controlled observations and questionnaires. Qualitative data are defined as non-numerical data, e.g., text, video, photographs, or audio recordings. [43]"
     },
     {
         "key": "P.4.2",
         "text": "Measurements, including images, audio recordings, and photos/videos",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A quantity in various formats, including numerical, visual, and auditory."
     },
     {
         "key": "P.4.3",
         "text": "Observation",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A fact or occurrence often involving measurement with instruments. [44]"
     },
     {
         "key": "P.4.4",
         "text": "Survey",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A list of questions aimed for extracting specific data from a particular group of people. [45]"
     },
     {
         "key": "P.4.5",
         "text": "Software",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A computer-based application that converts inputs into outputs to support the user in one or more research tasks. [46]"
     },
     {
         "key": "P.4.6",
         "text": "Model",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A representation, pattern, or mathematical description that can help scientists replicate a system, process, or research result. [47]"
     },
     {
         "key": "P.4.7",
         "text": "Documentation (text)",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Comprehensive information that accompanies a dataset, including all associated metadata, data dictionary, description of methods and instruments [and software used to generate/collect and] process the data, and other supporting data (e.g., duplicate sample results, replicate analyses). [48]"
     },
     {
         "key": "P.4.8",
         "text": "Specimen (physical sample)",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A tangible object that may observed or tested to determine its properties or characteristics."
     },
     {
         "key": "P.4.9",
         "text": "Presentation",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Material assembled to explain and describe research results or processes to an audience."
     },
     {
         "key": "P.5.1",
         "text": "Organizational support for making data more FAIR",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Institutional resources to improve the extent of \"FAIRness\" of data. (FAIRness is used herein to denote a continuum state ranging from no FAIR aspects to fully FAIR.)"
     },
     {
         "key": "P.5.2",
         "text": "Identification of methods/guidelines vis-\u00e0-vis FAIR principles",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "An exercise to locate techniques and recommended procedures related to FAIRness."
     },
     {
         "key": "P.6.1",
         "text": "Criteria for selection of data/metadata",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Requirements and needs by which decisions are made regarding what information to generate, collect, and document in a research study."
     },
     {
         "key": "P.6.2",
         "text": "Nature of data/metadata required",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Specification of the requisite types and characteristics of selected information."
     },
     {
         "key": "P.6.3",
         "text": "Intended extent of FAIRness",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The degree to which data and metadata are meant to comply with the FAIR data principles."
     },
     {
         "key": "P.6.4",
         "text": "Methods to capture and store data/metadata",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Techniques or means by which data/metadata are collected, recorded, and preserved."
     },
     {
         "key": "P.6.5",
         "text": "Metadata schema",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The overall structure of data about the data. Two examples of general-purpose metadata schema are Dublin Core and MODS (Metadata Object Description Schema). [50, 51]"
     },
     {
         "key": "P.7.1",
         "text": "Design",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A set of principles that are formulated from specific strategies, rules, models, and guidelines for the management and flow of a dataset throughout its lifecycle."
     },
     {
         "key": "P.7.2",
         "text": "Processing operations",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Methodology for translating raw data into useable information. Specific methods include, e.g., data preparation, validation, sorting, aggregation, analysis, and reporting."
     },
     {
         "key": "P.7.3",
         "text": "Workflow",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The process of managing data in a structured manner. It involves collecting, organizing, and processing data so that it can be used for various purposes. [52]"
     },
     {
         "key": "P.7.4",
         "text": "Model",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A detailed description or scaled representation of the relationships and data flow between different components of an RDM system, typically in the form of a diagram or flowchart. [53]"
     },
     {
         "key": "P.7.5",
         "text": "LIMS",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A laboratory information management system (LIMS) is a software system developed to support laboratory operations (e.g., track specimens and workflows and aggregate data). [54]"
     },
     {
         "key": "P.7.6",
         "text": "Hosting and storage, cloud storage",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Methods whereby, and locations wherein, data are saved and from which data can be retrieved."
     },
     {
         "key": "P.7.7",
         "text": "Configuration management",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The actions of tracking and controlling changes in the hardware and software components, e.g., updates and version control. [55]"
     },
     {
         "key": "P.7.8",
         "text": "Interoperability among different architectures",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The capability to communicate, execute programs, or transfer data among different RDM systems in a useful and meaningful manner that requires the user to have little or no knowledge of the unique characteristics of those systems. [58]"
     },
     {
         "key": "P.7.9",
         "text": "Security",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Features of the architecture that protect data from unauthorized access, denial of access, corruption, or theft throughout their entire lifecycles. [18]"
     },
     {
         "key": "P.7.10",
         "text": "Existing standards",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Standards relevant to data architecture, including schema (e.g., based on SQL, JSON), format (e.g., JSON, XML), and APIs (e.g., Google Search for the web)."
     },
     {
         "key": "P.8.1",
         "text": "Organizational research needs",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Essential resources required to accomplish the objectives of research projects and RDM (e.g., centralized infrastructure, appropriate training, and support staff)."
     },
     {
         "key": "P.8.2",
         "text": "Tools to support data-related processes",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Items, e.g., instruments, methods, utility software, and APIs, that enable research."
     },
     {
         "key": "P.8.3",
         "text": "Models that connect infrastructure to data processes and workflow",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A detailed description or scaled representation of the relationships between data tasks and movement and the hardware and software components in an RDMI. [53]"
     },
     {
         "key": "P.8.4",
         "text": "Interoperability",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The capability to seamlessly communicate, execute programs, or transfer data among various functional components .that requires the user to have little or no knowledge of the unique characteristics of those components. [58]"
     },
     {
         "key": "P.8.5",
         "text": "Persistent instrument identifiers",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Globally unique, persistent, and resolvable identifiers of operational scientific instruments enable research data to be persistently associated with such crucial metadata, helping to set data into context. The Research Data Alliance Working Group Persistent Identification of Instruments (PIDINST) developed a metadata schema and prototyped schema implementation and demonstrated the viability of the proposed solution in practice. [59]"
     },
     {
         "key": "P.8.6",
         "text": "Sustainability of data vis-\u00e0-vis obsolete infrastructure",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Concerns regarding the ability to reproduce and reuse data if the hardware and software components become outdated or non-functional."
     },
     {
         "key": "P.8.7",
         "text": "Security and privacy considerations",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The degree of protection of data from unauthorized access, denial of access, corruption, or theft provided by the hardware and software. [18]"
     },
     {
         "key": "P.8.8",
         "text": "Staff expertise and support staff",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Personnel with the appropriate skills and knowledge to maintain and update the hardware and software infrastructure as needed, and personnel to interface with researchers using the infrastructure."
     },
     {
         "key": "P.9.1",
         "text": "Criteria, i.e., general vs. domain-specific standards",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Requirements and needs by which decisions are made regarding the type of research standard, i.e., broadly applicable or limited to a particular field of research."
     },
     {
         "key": "P.9.2",
         "text": "Sources of standards/guidelines for data/metadata",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Origins of accepted practices consisting of discrete, reusable components, e.g., data types, identifiers, schemas, and formats. Examples include the Dublin Core Metadata Initiative and Schema.org. [60]"
     },
     {
         "key": "P.9.3",
         "text": "Quality standards",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Guidelines that provide sufficient information to allow all users to readily evaluate the degree of \u201cfitness for purpose\u201d of the data. Key data quality components include completeness, accuracy, integrity, consistency, and timeliness. [15, pg 26, 57]"
     },
     {
         "key": "P.9.4",
         "text": "Community-based standards/conventions",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Community-based data and metadata standards are typically long-term endeavors with many different players and types of efforts. Such standards facilitate reuse of data integrative analysis and comparison to other datasets and linkage of data with other research products, such as scholarly material, algorithms and software. [63]"
     },
     {
         "key": "P.10.1",
         "text": "Goals/definition of success",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Statement of project objectives; list of accomplishments demonstrating that these objectives were met."
     },
     {
         "key": "P.10.2",
         "text": "Metrics for tracking use and impact measures, including reuse",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Quantitative and qualitative indicators of positive influence or outcomes, (e.g., number of citations of a dataset and anecdotal evidence of reuse of a dataset). [64]"
     },
     {
         "key": "P.11.1",
         "text": "Methods to share and reuse data/metadata",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Approaches to disseminate data/metadata and to facilitate reusability of data/metadata, (e.g., use of open repositories and maximizing the FAIRness of data)."
     },
     {
         "key": "P.11.2",
         "text": "Allocation of credit to project team members",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Properly documenting and recognizing each team member's contributions to a project. [65]"
     },
     {
         "key": "P.11.3",
         "text": "Promotion of data to communities of interest",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Modes to communicate the existence and location of datasets to targeted groups, e.g., special-topic data publications and presentations at topical workshops."
     },
     {
         "key": "P.11.4",
         "text": "Cross-institution cooperation",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The process of working with other institutions or organizations on a shared activity (e.g., informal collaborations, formal partnerships, and agreements)."
     },
     {
         "key": "P.11.5",
         "text": "Requests for additional data from community",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Soliciting data contributions from partners and stakeholders on areas of mutual interest."
     },
     {
         "key": "P.12.1",
         "text": "Identification of responsible parties for access",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "A determination of those individuals authorized to both prohibit and permit access to sensitive data."
     },
     {
         "key": "P.12.2",
         "text": "Ease of maintenance and implementation of records",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "The extent to which sensitive data can be kept up to date and made accessible to authorized individuals and groups."
     },
     {
         "key": "P.12.3",
         "text": "Regulatory compliance",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Efforts by organizations to ensure that they are aware of and take steps to conform to relevant laws, policies, and regulations concerning sensitive data (e.g., medical records). [66]"
     },
     {
         "key": "P.12.4",
         "text": "Sensitive data/PII",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Data that needs to be controlled due to certain risks. Personally Identifiable Information (PII) is any representation of information that permits the identity of an individual to whom the information applies to be reasonably inferred by either direct or indirect means. [67]"
     },
     {
         "key": "P.12.5",
         "text": "Limited disclosure, e.g., IP",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Restricting release of data to specific legal circumstances and often requiring notification to the data provider. Intellectual Property (IP) refers to certain exclusive rights granted by law to the owner of, e.g., a novel data product. [68]"
     },
     {
         "key": "P.12.6",
         "text": "Licensing for reuse",
-        "category": "consideration"
+        "category": "consideration-wdef",
+        "a": "definition",
+        "aText": "Definition",
+        "aToolTip": "Legal agreement that allows one party to use another party's data subject to certain conditions."
     },
     {
         "key": "GA.1.1",
@@ -1714,7 +2050,7 @@
         "aToolTip": "The policies, procedures, and processes to manage and monitor an organization\u2019s regulatory [and] legal responsibilities and risks pertaining to data.",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for E.2"
+        "yToolTip": "Considerations for Data Governance\u2014Legal and Regulatory Compliance  "
     },
     {
         "key": "E.3",
@@ -1757,7 +2093,7 @@
         "aToolTip": "A complete, fully documented step-by-step history of a data asset in an organization, i.e., who has possession of a data asset, at what time, and for what purpose, at all times throughout the lifecycle of the data asset.",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for P.1"
+        "yToolTip": "Considerations for Chain of Control (Custody of Data)"
     },
     {
         "key": "P.2",
@@ -1768,7 +2104,7 @@
         "aToolTip": "Factors to consider in estimating or assessing the costs associated with all research data and RDM activities over the data lifecycle.",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for P.2"
+        "yToolTip": "Considerations for Financial Aspects of Planning"
     },
     {
         "key": "P.3",
@@ -1787,7 +2123,7 @@
         "aToolTip": "An entity that, together with associated Representative Information (i.e., metadata), is produced or used in a research study",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for P.4"
+        "yToolTip": "Considerations for Data Objects"
     },
     {
         "key": "P.5",
@@ -1798,7 +2134,7 @@
         "aToolTip": "Findability, Accessibility, Interoperability, Reuse: a set of guiding principles to support the reusability of data that are beneficial to all scholarly digital research objects.",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for P.5"
+        "yToolTip": "Considerations for FAIR"
     },
     {
         "key": "P.6",
@@ -1809,7 +2145,7 @@
         "aToolTip": "Factors to take into account prior to conducting a research study",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for P.6"
+        "yToolTip": "Considerations for Data/Metadata Considerations"
     },
     {
         "key": "P.7",
@@ -1820,7 +2156,7 @@
         "aToolTip": "The fundamental structure of an organization's research data management (RDM) system embodied in its components, their relationships to each other and to the environment, and the principles guiding its design and evolution. Includes, for example, the underlying storage technologies, networking, hardware, system interfaces, authentication mechanisms, data brokers, monitoring platforms, semantic interoperability tools, long-term preservation services, and HPC.",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for P.7"
+        "yToolTip": "Considerations for Data Architecture"
     },
     {
         "key": "P.8",
@@ -1831,7 +2167,7 @@
         "aToolTip": "The physical and non-physical functional components that collectively form a foundation for conducting research and RDM",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for P.8"
+        "yToolTip": "Considerations for Hardware and Software Infrastructure"
     },
     {
         "key": "P.9",
@@ -1842,7 +2178,7 @@
         "aToolTip": "Documents, including codes, specifications, recommended practices, classifications, test methods and guides, that describe how data should be stored or exchanged for the consistent collection and interoperability of that data across different systems, sources, and users.",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for P.9"
+        "yToolTip": "Considerations for Research Data Standards"
     },
     {
         "key": "P.10",
@@ -1861,7 +2197,7 @@
         "aToolTip": "Engagement and interactions among groups and Individual working in similar research areas",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for P.11"
+        "yToolTip": "Considerations for Communication and Outreach"
     },
     {
         "key": "P.12",
@@ -1880,7 +2216,7 @@
         "aToolTip": "Classifications or categories of data, each with unique collection, generation, and storage challenges",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for GA.1"
+        "yToolTip": "Considerations for Data Types"
     },
     {
         "key": "GA.2",
@@ -1891,7 +2227,7 @@
         "aToolTip": "Where and from which processes data originates",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for GA.2"
+        "yToolTip": "Considerations for Data Sources"
     },
     {
         "key": "GA.3",
@@ -1902,7 +2238,7 @@
         "aToolTip": "Collection of information through active intervention by the researcher to induce and measure changes or to create differences when a variable is altered",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for GA.3"
+        "yToolTip": "Considerations for Generated Experimental Data"
     },
     {
         "key": "GA.4",
@@ -1913,7 +2249,7 @@
         "aToolTip": "Production of information resulting from executing a computer model or simulation",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for GA.4"
+        "yToolTip": "Considerations for Generated Computational Data"
     },
     {
         "key": "GA.5",
@@ -1924,7 +2260,7 @@
         "aToolTip": "Non-ordinal and focusing on qualities or characteristics",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for GA.5"
+        "yToolTip": "Considerations for Qualitative Data"
     },
     {
         "key": "GA.6",
@@ -1935,7 +2271,7 @@
         "aToolTip": "Obtained from a source outside of the researchers and which was not originally collected for the current research project",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for GA.6"
+        "yToolTip": "Considerations for Acquired Data"
     },
     {
         "key": "GA.7",
@@ -1946,7 +2282,7 @@
         "aToolTip": "Collected and processed in a standardized way with rigorous methodology to serve as a standard",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for GA.7"
+        "yToolTip": "Considerations for Critically Evaluated (CE) Data"
     },
     {
         "key": "GA.8",
@@ -1957,7 +2293,7 @@
         "aToolTip": "Technical specifications for encoding metadata for machine processing and exchange",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for GA.8"
+        "yToolTip": "Considerations for Community-Based Standards"
     },
     {
         "key": "GA.10",
@@ -1968,7 +2304,7 @@
         "aToolTip": "Programs that enable the collection and procurement of data",
         "y": "considerations",
         "yText": "Considerations",
-        "yToolTip": "Considerations for GA.10"
+        "yToolTip": "Considerations for Acquisition Software"
     },
     {
         "key": "suny:activity.1",
@@ -1994,7 +2330,7 @@
         "yToolTip": "Considerations for Convene data governance group",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.1 Identification of goals and roles"
+        "zToolTip": "E.1.1 Identification of goals and roles : An exercise to define the objectives of, and responsible individuals for, various aspects of research data management (RDM)."
     },
     {
         "key": "suny:outcome.1",
@@ -2008,7 +2344,7 @@
         "yToolTip": "Considerations for Institutional Data Governance goals identified and defined",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.1 Identification of goals and roles"
+        "zToolTip": "E.1.1 Identification of goals and roles : An exercise to define the objectives of, and responsible individuals for, various aspects of research data management (RDM)."
     },
     {
         "key": "suny:output.1",
@@ -2052,7 +2388,7 @@
         "yToolTip": "Considerations for Institutional Data Governance roles and responsibilities are identified and defined",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.1 Identification of goals and roles"
+        "zToolTip": "E.1.1 Identification of goals and roles : An exercise to define the objectives of, and responsible individuals for, various aspects of research data management (RDM)."
     },
     {
         "key": "suny:output.2",
@@ -2083,7 +2419,7 @@
         "aToolTip": "Activities that result in Institution has a clearly defined vision for research data management",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.2 Vision and/or policy"
+        "zToolTip": "E.1.2 Vision and/or policy : Vision: An aspirational state an organization wishes to achieve with respect to RDM.  Policy: A set of recommended and sometimes mandatory high-level principles that establish a guiding framework for RDM. [5,6]"
     },
     {
         "key": "suny:output.3",
@@ -2114,7 +2450,7 @@
         "aToolTip": "Activities that result in Institution has a clearly defined high-level policies for research data management",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.2 Vision and/or policy"
+        "zToolTip": "E.1.2 Vision and/or policy : Vision: An aspirational state an organization wishes to achieve with respect to RDM.  Policy: A set of recommended and sometimes mandatory high-level principles that establish a guiding framework for RDM. [5,6]"
     },
     {
         "key": "suny:output.4",
@@ -2145,7 +2481,7 @@
         "yToolTip": "Considerations for Build RDM infrastructure",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.3 Data management organization"
+        "zToolTip": "E.1.3 Data management organization : An RDM infrastructure (RDMI) of human and capital resources that supports data-related activities, e.g., policies, planning, and sharing, as well as practices and projects, e.g., data acquisition, control, and protection."
     },
     {
         "key": "suny:outcome.5",
@@ -2159,7 +2495,7 @@
         "yToolTip": "Considerations for RDM infrastructure of human and capital resources that support data-related activities exists",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.3 Data management organization"
+        "zToolTip": "E.1.3 Data management organization : An RDM infrastructure (RDMI) of human and capital resources that supports data-related activities, e.g., policies, planning, and sharing, as well as practices and projects, e.g., data acquisition, control, and protection."
     },
     {
         "key": "suny:method.2",
@@ -2188,7 +2524,7 @@
         "yToolTip": "Considerations for Institution has a clearly defined statement of purpose and value for research data",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.5 Data management value proposition"
+        "zToolTip": "E.1.5 Data management value proposition : A clear statement that indicates exactly what benefits an organization will derive from an RDM program. [12]"
     },
     {
         "key": "suny:output.5",
@@ -2216,7 +2552,7 @@
         "eToolTip": "Resources used by Conduct data needs assessments",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.6 Data needs assessment"
+        "zToolTip": "E.1.6 Data needs assessment : An evaluation of the types of data that are critical to accomplish the stated goals of an organization."
     },
     {
         "key": "suny:outcome.7",
@@ -2227,7 +2563,7 @@
         "aToolTip": "Activities that result in Data needs assessment completed at the desired level of analysis including: researcher, student, discipline, institution, unit, library",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.6 Data needs assessment"
+        "zToolTip": "E.1.6 Data needs assessment : An evaluation of the types of data that are critical to accomplish the stated goals of an organization."
     },
     {
         "key": "suny:output.6",
@@ -2288,7 +2624,7 @@
         "aToolTip": "Activities that result in Organizational intent regarding FAIR data is well defined across the institution and contributes to vision and policy",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.8 Organization intent regarding FAIR data"
+        "zToolTip": "E.1.8 Organization intent regarding FAIR data : The extent to which an organization supports the internal adoption and use of the FAIR data principles."
     },
     {
         "key": "suny:method.11",
@@ -2304,7 +2640,7 @@
         "aToolTip": "Activities that result in Support for end users included in institutional RDM and data governance standards",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.1.9 End-use support"
+        "zToolTip": "E.1.9 End-use support : Components of the RDMI within an organization that enable data to be prepared and processed for its ultimate application, including reuse."
     },
     {
         "key": "suny:outcome.10",
@@ -2315,7 +2651,7 @@
         "aToolTip": "Activities that result in Data governance legal policies, framework, and plans exist and are continually updated",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.2.1 Privacy"
+        "zToolTip": "E.2.1 Privacy : The practice of protecting and properly handling sensitive data, including personal, proprietary, and confidential data"
     },
     {
         "key": "suny:output.7",
@@ -2356,7 +2692,7 @@
         "yToolTip": "Considerations for Conduct a dataset inventory",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.2.4 Inventory"
+        "zToolTip": "E.2.4 Inventory : A function that provides organization capabilities for archiving management such that data products can be grouped, searched and identified for retrieval, statistics and reorganization. Also, a list of available items stored and/or controlled in a storage warehouse system. [15, pg 19]"
     },
     {
         "key": "suny:outcome.11",
@@ -2370,7 +2706,7 @@
         "yToolTip": "Considerations for Dataset inventory exists and includes relevant dataset metadata including: repository, identifiers, data usage metrics, creators, funders, supporting grants",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.2.4 Inventory"
+        "zToolTip": "E.2.4 Inventory : A function that provides organization capabilities for archiving management such that data products can be grouped, searched and identified for retrieval, statistics and reorganization. Also, a list of available items stored and/or controlled in a storage warehouse system. [15, pg 19]"
     },
     {
         "key": "suny:output.8",
@@ -2416,7 +2752,7 @@
         "yToolTip": "Considerations for Conduct a data services inventory",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.2.4 Inventory"
+        "zToolTip": "E.2.4 Inventory : A function that provides organization capabilities for archiving management such that data products can be grouped, searched and identified for retrieval, statistics and reorganization. Also, a list of available items stored and/or controlled in a storage warehouse system. [15, pg 19]"
     },
     {
         "key": "suny:outcome.12",
@@ -2430,7 +2766,7 @@
         "yToolTip": "Considerations for Data services inventory: includes relevant data services provided across institution or unit",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.2.4 Inventory"
+        "zToolTip": "E.2.4 Inventory : A function that provides organization capabilities for archiving management such that data products can be grouped, searched and identified for retrieval, statistics and reorganization. Also, a list of available items stored and/or controlled in a storage warehouse system. [15, pg 19]"
     },
     {
         "key": "suny:output.9",
@@ -2466,7 +2802,7 @@
         "yToolTip": "Considerations for Conduct a risk assessment",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.2.5 Risk assessment"
+        "zToolTip": "E.2.5 Risk assessment : A systematic process for the identification and evaluation of potential threats to and vulnerabilities of an organization\u2019s data assets, e.g., unauthorized access to sensitive data.  [20]"
     },
     {
         "key": "suny:outcome.13",
@@ -2480,7 +2816,7 @@
         "yToolTip": "Considerations for Risk is assessed and includes risks associated with unmanaged data, research subject privacy, data preservation, funder compliance",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.2.5 Risk assessment"
+        "zToolTip": "E.2.5 Risk assessment : A systematic process for the identification and evaluation of potential threats to and vulnerabilities of an organization\u2019s data assets, e.g., unauthorized access to sensitive data.  [20]"
     },
     {
         "key": "suny:output.10",
@@ -2526,7 +2862,7 @@
         "yToolTip": "Considerations for Implement solutions to mitigate and manage risk discovered in risk assessment",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.2.6 Risk mitigation and management"
+        "zToolTip": "E.2.6 Risk mitigation and management : A process for the development and implementation  of appropriate strategies to control, reduce, or eliminate potential threats to and vulnerabilities of an organization\u2019s data assets as identified by a risk assessment. [21]"
     },
     {
         "key": "suny:outcome.14",
@@ -2540,7 +2876,7 @@
         "yToolTip": "Considerations for Risks determined in risk assessment are mitigated, managed, and controlled",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.2.6 Risk mitigation and management"
+        "zToolTip": "E.2.6 Risk mitigation and management : A process for the development and implementation  of appropriate strategies to control, reduce, or eliminate potential threats to and vulnerabilities of an organization\u2019s data assets as identified by a risk assessment. [21]"
     },
     {
         "key": "suny:output.11",
@@ -2564,7 +2900,7 @@
         "yToolTip": "Considerations for Policies for sharing and licensing data exist",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.2.7 Sharing/licensing"
+        "zToolTip": "E.2.7 Sharing/licensing : Data sharing agreement: A formal contract that details what data are being shared and the appropriate use for the data. Licensing agreement: A formal contract that states the purpose and duration of access being provided to the recipient licensee along with restriction and security protocols the recipient licensee of the data must follow. [22, 23]"
     },
     {
         "key": "suny:output.12",
@@ -2585,7 +2921,7 @@
         "aToolTip": "Activities that result in Community standards for social licensing of and (re)use of data exist",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.2.8 Social license for use and reuse"
+        "zToolTip": "E.2.8 Social license for use and reuse : An unwritten agreement whereby a group of public stakeholders accept that certain datasets may be applied for purposes other than those for which the data were originally intended, e.g., healthcare data. [24]"
     },
     {
         "key": "suny:activity.8",
@@ -2608,7 +2944,7 @@
         "eToolTip": "Resources used by Define roles and responsibilities for building a strong data sharing culture and rewards structure",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.1 Roles and responsibilities"
+        "zToolTip": "E.3.1 Roles and responsibilities : The job functions and obligations that enable the establishment of a desired data culture and reward structure."
     },
     {
         "key": "suny:outcome.17",
@@ -2619,7 +2955,7 @@
         "aToolTip": "Activities that result in Roles and responsibilities are identified and defined for a strong data sharing culture with rewards structure",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.1 Roles and responsibilities"
+        "zToolTip": "E.3.1 Roles and responsibilities : The job functions and obligations that enable the establishment of a desired data culture and reward structure."
     },
     {
         "key": "suny:participant.17",
@@ -2662,7 +2998,7 @@
         "eToolTip": "Resources used by Build a data culture",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.2 Recognition of data management"
+        "zToolTip": "E.3.2 Recognition of data management : Processes and practices that provide acknowledgement and rewards for good RDM at all levels in an organization."
     },
     {
         "key": "suny:outcome.18",
@@ -2673,7 +3009,7 @@
         "aToolTip": "Activities that result in Data management work is recognized and supported",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.2 Recognition of data management"
+        "zToolTip": "E.3.2 Recognition of data management : Processes and practices that provide acknowledgement and rewards for good RDM at all levels in an organization."
     },
     {
         "key": "suny:output.13",
@@ -2707,7 +3043,7 @@
         "yToolTip": "Considerations for Data workers are valued and data work is recognized and supported",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.3 Value of data workers"
+        "zToolTip": "E.3.3 Value of data workers : Recognition of the benefits that staff performing data-centric jobs or functions provide to an organization."
     },
     {
         "key": "suny:output.14",
@@ -2733,7 +3069,7 @@
         "aToolTip": "Activities that result in Promotion and tenure reflect the importance of open research and scholarship",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.4 Promotion and tenure"
+        "zToolTip": "E.3.4 Promotion and tenure : Career advancements that are linked to good research processes, practices, and outcomes."
     },
     {
         "key": "suny:output.15",
@@ -2761,7 +3097,7 @@
         "eToolTip": "Resources used by Integrate integrity or research and data into curriculum and RDM training",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.5 Integrity of research and data"
+        "zToolTip": "E.3.5 Integrity of research and data : For research: The condition resulting from adherence to professional values and practices when conducting, reporting, applying, and disseminating results of the work.[27] For data: The accuracy, completeness, and quality of data as they are maintained over time and across formats.[28]"
     },
     {
         "key": "suny:outcome.21",
@@ -2772,7 +3108,7 @@
         "aToolTip": "Activities that result in Researchers are expected to follow standard practices to ensure research and outputs maintain integrity",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.5 Integrity of research and data"
+        "zToolTip": "E.3.5 Integrity of research and data : For research: The condition resulting from adherence to professional values and practices when conducting, reporting, applying, and disseminating results of the work.[27] For data: The accuracy, completeness, and quality of data as they are maintained over time and across formats.[28]"
     },
     {
         "key": "suny:activity.11",
@@ -2795,7 +3131,7 @@
         "eToolTip": "Resources used by Perform accuracy checks on all shared or published datasets, Create README files",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.5 Integrity of research and data"
+        "zToolTip": "E.3.5 Integrity of research and data : For research: The condition resulting from adherence to professional values and practices when conducting, reporting, applying, and disseminating results of the work.[27] For data: The accuracy, completeness, and quality of data as they are maintained over time and across formats.[28]"
     },
     {
         "key": "suny:outcome.22",
@@ -2806,7 +3142,7 @@
         "aToolTip": "Activities that result in Data is checked for accuracy before publishing and sharing",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.5 Integrity of research and data"
+        "zToolTip": "E.3.5 Integrity of research and data : For research: The condition resulting from adherence to professional values and practices when conducting, reporting, applying, and disseminating results of the work.[27] For data: The accuracy, completeness, and quality of data as they are maintained over time and across formats.[28]"
     },
     {
         "key": "suny:outcome.23",
@@ -2820,7 +3156,7 @@
         "yToolTip": "Considerations for FAIR data principles are integrated into RDM and data governance efforts",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.6 FAIR data principles"
+        "zToolTip": "E.3.6 FAIR data principles : Guidelines that allow digital objects (e.g., data, algorithms, and workflows) to be Findable, Accessible, Interoperable, and Reusable. [29]"
     },
     {
         "key": "suny:output.16",
@@ -2836,7 +3172,7 @@
         "aToolTip": "Activities that result in Data sharing infrastructure supports FAIR data",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.7 Maintenance of FAIR data"
+        "zToolTip": "E.3.7 Maintenance of FAIR data : Ongoing infrastructural support to sustain FAIR data principles and practices."
     },
     {
         "key": "suny:outcome.25",
@@ -2850,7 +3186,7 @@
         "yToolTip": "Considerations for Appropriate incentives (or disincentives) exist for data sharing and reuse",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.8 Incentives and impact for sharing and reuse"
+        "zToolTip": "E.3.8 Incentives and impact for sharing and reuse : Staff recognition and rewards for widespread dissemination and application of research data and the beneficial effects of such dissemination."
     },
     {
         "key": "suny:output.17",
@@ -2866,7 +3202,7 @@
         "aToolTip": "Activities that result in Principles for Indigenous Data Governance are respected (CARE, OCAP, and ethics)",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.3.10 CARE and ethics"
+        "zToolTip": "E.3.10 CARE and ethics : The CARE (Collective benefit, Authority to control, Responsibility, and Ethics) Principles for Indigenous Data Governance are people and purpose-oriented, reflecting the crucial role of data in advancing Indigenous innovation and self-determination. (These principles complement the existing FAIR principles for indigenous data governance.)   Ethics: Moral principles pertaining to data practices, e.g., analysis and dissemination, that have the potential to adversely impact people and society (e.g., to minimize bias and maintain the privacy of personal data). [15, 30]"
     },
     {
         "key": "suny:output.18",
@@ -2899,7 +3235,7 @@
         "eToolTip": "Resources used by Conduct a Workforce skills inventory to determine an organization's internal capacity to conduct and support RDM",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.4.1 Workforce skills inventory"
+        "zToolTip": "E.4.1 Workforce skills inventory : A catalog of an organization's capabilities in essential data processes."
     },
     {
         "key": "suny:outcome.27",
@@ -2910,7 +3246,7 @@
         "aToolTip": "Activities that result in Internal workforce skills inventory exists to document strengths and weaknesses in workforce capacity to conduct RDM",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.4.1 Workforce skills inventory"
+        "zToolTip": "E.4.1 Workforce skills inventory : A catalog of an organization's capabilities in essential data processes."
     },
     {
         "key": "suny:output.19",
@@ -2953,7 +3289,7 @@
         "eToolTip": "Resources used by Conduct a Workforce skills inventory to determine needs for students to build workforce skills to conduct or support RDM",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.4.1 Workforce skills inventory"
+        "zToolTip": "E.4.1 Workforce skills inventory : A catalog of an organization's capabilities in essential data processes."
     },
     {
         "key": "suny:outcome.28",
@@ -2964,7 +3300,7 @@
         "aToolTip": "Activities that result in Statewide workforce skills inventory exists to document strengths and weaknesses in workforce capacity to conduct RDM across NYS are documented",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.4.1 Workforce skills inventory"
+        "zToolTip": "E.4.1 Workforce skills inventory : A catalog of an organization's capabilities in essential data processes."
     },
     {
         "key": "suny:output.20",
@@ -2997,7 +3333,7 @@
         "eToolTip": "Resources used by Provide training and opportunities for employees to build their skills and expertise in emerging technologies",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.4.2 Workforce preparedness in new and advanced technologies"
+        "zToolTip": "E.4.2 Workforce preparedness in new and advanced technologies : Assessment of needs for and provision of training in the skills and expertise of an organization's staff pertinent to novel and leading-edge areas of research, e.g., AI."
     },
     {
         "key": "suny:outcome.29",
@@ -3008,7 +3344,7 @@
         "aToolTip": "Activities that result in Institution can support RDM through Institutional workforce preparedness activities in new and advanced technologies",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.4.2 Workforce preparedness in new and advanced technologies"
+        "zToolTip": "E.4.2 Workforce preparedness in new and advanced technologies : Assessment of needs for and provision of training in the skills and expertise of an organization's staff pertinent to novel and leading-edge areas of research, e.g., AI."
     },
     {
         "key": "suny:output.21",
@@ -3041,7 +3377,7 @@
         "eToolTip": "Resources used by Build workforce preparedness programs for emerging technologies for state workforce",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.4.2 Workforce preparedness in new and advanced technologies"
+        "zToolTip": "E.4.2 Workforce preparedness in new and advanced technologies : Assessment of needs for and provision of training in the skills and expertise of an organization's staff pertinent to novel and leading-edge areas of research, e.g., AI."
     },
     {
         "key": "suny:outcome.30",
@@ -3052,7 +3388,7 @@
         "aToolTip": "Activities that result in State Workforce is well prepared to adapt and innovate in response to emerging technologies",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.4.2 Workforce preparedness in new and advanced technologies"
+        "zToolTip": "E.4.2 Workforce preparedness in new and advanced technologies : Assessment of needs for and provision of training in the skills and expertise of an organization's staff pertinent to novel and leading-edge areas of research, e.g., AI."
     },
     {
         "key": "suny:output.22",
@@ -3083,7 +3419,7 @@
         "yToolTip": "Considerations for Provide research data management training as a data service",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.4.3 Data management training"
+        "zToolTip": "E.4.3 Data management training : In-classroom, on-line, and/or hands-on instruction for staff to attain the skills and expertise required to manage data across all lifecycles."
     },
     {
         "key": "suny:outcome.31",
@@ -3097,7 +3433,7 @@
         "yToolTip": "Considerations for RDM training is available for researchers, faculty, staff, and students",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.4.3 Data management training"
+        "zToolTip": "E.4.3 Data management training : In-classroom, on-line, and/or hands-on instruction for staff to attain the skills and expertise required to manage data across all lifecycles."
     },
     {
         "key": "suny:output.23",
@@ -3150,7 +3486,7 @@
         "eToolTip": "Resources used by Provide research data management training to data service providers",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.4.4 HR\u2019s supporting role in workforce development and training"
+        "zToolTip": "E.4.4 HR\u2019s supporting role in workforce development and training : Involvement of an organization's HR department in establishing and implementing instructional courses for staff to expand their skill sets and expertise in research data programs and RDM."
     },
     {
         "key": "suny:outcome.32",
@@ -3161,7 +3497,7 @@
         "aToolTip": "Activities that result in Continual opportunities for RDM training for staff supported",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.4.4 HR\u2019s supporting role in workforce development and training"
+        "zToolTip": "E.4.4 HR\u2019s supporting role in workforce development and training : Involvement of an organization's HR department in establishing and implementing instructional courses for staff to expand their skill sets and expertise in research data programs and RDM."
     },
     {
         "key": "suny:output.24",
@@ -3204,7 +3540,7 @@
         "eToolTip": "Resources used by Determine initial financial support models to launch RDM infrastructure",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.5.1 Sources of funding"
+        "zToolTip": "E.5.1 Sources of funding : Entities that provide financial support for research data programs and RDM infrastructure (e.g., capital and human resources)."
     },
     {
         "key": "suny:outcome.33",
@@ -3215,7 +3551,7 @@
         "aToolTip": "Activities that result in RDM is funded through dedicated financial resources (may be temporary)",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.5.1 Sources of funding"
+        "zToolTip": "E.5.1 Sources of funding : Entities that provide financial support for research data programs and RDM infrastructure (e.g., capital and human resources)."
     },
     {
         "key": "suny:output.25",
@@ -3253,7 +3589,7 @@
         "eToolTip": "Resources used by Integrate RDM costs into sustainable financial models",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.5.2 Long-term funding"
+        "zToolTip": "E.5.2 Long-term funding : Sustained financial support for research data activities and RDM infrastructure."
     },
     {
         "key": "suny:outcome.34",
@@ -3264,7 +3600,7 @@
         "aToolTip": "Activities that result in RDM funding is operationalized with long-term funding",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.5.2 Long-term funding"
+        "zToolTip": "E.5.2 Long-term funding : Sustained financial support for research data activities and RDM infrastructure."
     },
     {
         "key": "suny:output.26",
@@ -3297,7 +3633,7 @@
         "eToolTip": "Resources used by Increase existing staff skills in RDM, redeploy existing staff, or hire new staff members with RDM skills",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.5.3 Staffing"
+        "zToolTip": "E.5.3 Staffing : Provision of sufficient resources to support RDM staff and researchers engaged in RDM activities."
     },
     {
         "key": "suny:outcome.35",
@@ -3308,7 +3644,7 @@
         "aToolTip": "Activities that result in Staffing is considered in resource allocation",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.5.3 Staffing"
+        "zToolTip": "E.5.3 Staffing : Provision of sufficient resources to support RDM staff and researchers engaged in RDM activities."
     },
     {
         "key": "suny:output.27",
@@ -3339,7 +3675,7 @@
         "yToolTip": "Considerations for Build Stakeholder communities of practice: local, campus, system, national, international",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.6.1 Stakeholder communities"
+        "zToolTip": "E.6.1 Stakeholder communities : Individuals, groups, and organizations that have an interest or stake in RDM or research data activities in general and in particular domains. [31]"
     },
     {
         "key": "suny:outcome.36",
@@ -3353,7 +3689,7 @@
         "yToolTip": "Considerations for Active RDM stakeholder communities exist",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.6.1 Stakeholder communities"
+        "zToolTip": "E.6.1 Stakeholder communities : Individuals, groups, and organizations that have an interest or stake in RDM or research data activities in general and in particular domains. [31]"
     },
     {
         "key": "suny:output.28",
@@ -3411,7 +3747,7 @@
         "eToolTip": "Resources used by Establish communication channels",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.6.2 Modes of communication"
+        "zToolTip": "E.6.2 Modes of communication : Ways by which information about data and data management are shared and discussed."
     },
     {
         "key": "suny:outcome.37",
@@ -3422,7 +3758,7 @@
         "aToolTip": "Activities that result in Consistent modes of communication are established",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.6.2 Modes of communication"
+        "zToolTip": "E.6.2 Modes of communication : Ways by which information about data and data management are shared and discussed."
     },
     {
         "key": "suny:activity.23",
@@ -3445,7 +3781,7 @@
         "eToolTip": "Resources used by Map potential local stakeholders and partners",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.6.3 Partners/partnerships"
+        "zToolTip": "E.6.3 Partners/partnerships : Partner: Two or more organizations or individuals that share responsibility and control of ideas, processes, and outcomes of research data activities.  Partnership: An agreement between organizations and individuals to collaborate on such activities.. [32]"
     },
     {
         "key": "suny:outcome.38",
@@ -3456,7 +3792,7 @@
         "aToolTip": "Activities that result in Relevant unit, departmental, institutional, SUNY system-wide, state, national, and funder partnerships are built and nurtured",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "E.6.3 Partners/partnerships"
+        "zToolTip": "E.6.3 Partners/partnerships : Partner: Two or more organizations or individuals that share responsibility and control of ideas, processes, and outcomes of research data activities.  Partnership: An agreement between organizations and individuals to collaborate on such activities.. [32]"
     },
     {
         "key": "suny:role.4",
@@ -3475,7 +3811,7 @@
         "yToolTip": "Considerations for Ownership of data assets within research project is documented, controlled, and managed",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.1.1 Roles and responsibilities (Chain of Control)"
+        "zToolTip": "P.1.1 Roles and responsibilities (Chain of Control) : The job functions and obligations for tracking data assets."
     },
     {
         "key": "suny:participant.31",
@@ -3503,7 +3839,7 @@
         "eToolTip": "Resources used by Conduct project-specific inventory",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.1.3 Centralized inventory of services, groups, and resources"
+        "zToolTip": "P.1.3 Centralized inventory of services, groups, and resources : An organization-wide catalog of elements supporting data-related activities at various levels of an organization, including capital (e.g., HPC), virtual (e.g., domain repositories), and human (e.g., Data Steward and AI interest group) components."
     },
     {
         "key": "suny:outcome.40",
@@ -3514,7 +3850,7 @@
         "aToolTip": "Activities that result in Project-specific inventory of services, groups, and resources exists",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.1.3 Centralized inventory of services, groups, and resources"
+        "zToolTip": "P.1.3 Centralized inventory of services, groups, and resources : An organization-wide catalog of elements supporting data-related activities at various levels of an organization, including capital (e.g., HPC), virtual (e.g., domain repositories), and human (e.g., Data Steward and AI interest group) components."
     },
     {
         "key": "suny:outcome.41",
@@ -3525,7 +3861,7 @@
         "aToolTip": "Activities that result in Project planning includes financial considerations to consider in estimating or assessing the costs associated with all research data and RDM activities over the data lifecycle",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.2.1 Funding models for provisioning resources (project)"
+        "zToolTip": "P.2.1 Funding models for provisioning resources (project) : Approaches for providing financial support for data-related activities and infrastructure, including direct, (e.g., grants, contracts, and institutional), overhead, or mixed. [38]"
     },
     {
         "key": "https://datagovernance.com/funding-models-funding-data-governance/",
@@ -3541,7 +3877,7 @@
         "aToolTip": "Activities that result in Data Management Planning is expected from all research projects",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.3.1 Written data management plans (DMPs)"
+        "zToolTip": "P.3.1 Written data management plans (DMPs) : Documents that provide sufficient detail on the following topics: Administrative Data, Data Collection, Documentation and Metadata, Ethics and Legal Compliance, Storage and Backup, Selection and Preservation, Data Sharing, and Responsibilities and Resources. DMPs are referred to herein as a research data \"roadmaps.\" [40]"
     },
     {
         "key": "suny:participant.32",
@@ -3562,7 +3898,7 @@
         "aToolTip": "Activities that result in Research data architecture includes machine-readable DMPs to standardize and automate capture RDM process",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.3.4 Machine-readable DMPs"
+        "zToolTip": "P.3.4 Machine-readable DMPs : Research data roadmap documents in a form that can be used and understood by a computer. [41]"
     },
     {
         "key": "suny:outcome.44",
@@ -3573,7 +3909,7 @@
         "aToolTip": "Activities that result in Research data architecture enables linkage of machine-readable DMPs other institutional data systems",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.3.5 Linkage of DMPs to administrative records"
+        "zToolTip": "P.3.5 Linkage of DMPs to administrative records : Interconnection of a research data roadmaps to operational data, e.g., agreements, transactions."
     },
     {
         "key": "suny:outcome.45",
@@ -3584,7 +3920,7 @@
         "aToolTip": "Activities that result in Appropriate repository is determined to for data deposit to facilitate future access (institutional repository, shared repository, domain-specific or generalist)",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.3.6 Data organization in, e.g., a database and a repository, to facilitate future access"
+        "zToolTip": "P.3.6 Data organization in, e.g., a database and a repository, to facilitate future access : The practice of categorizing, classifying, and storing data with sufficient detail and specificity such that the data are readily discoverable and usable by others. [42]"
     },
     {
         "key": "suny:participant.34",
@@ -3600,7 +3936,7 @@
         "aToolTip": "Activities that result in Research data project participants have necessary RDM expertise and access to RDM training",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.3.7 Data management expertise and training"
+        "zToolTip": "P.3.7 Data management expertise and training : In-class, on-line, and/or hands-on instruction for staff to attain the skills and knowledge required to manage data in a research study."
     },
     {
         "key": "suny:outcome.47",
@@ -3611,7 +3947,7 @@
         "aToolTip": "Activities that result in Data objects and their representation metadata should be documented to maintain accuracy, integrity, and reliability",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.4.7 Documentation (text)"
+        "zToolTip": "P.4.7 Documentation (text) : Comprehensive information that accompanies a dataset, including all associated metadata, data dictionary, description of methods and instruments [and software used to generate/collect and] process the data, and other supporting data (e.g., duplicate sample results, replicate analyses). [48]"
     },
     {
         "key": "suny:outcome.48",
@@ -3622,7 +3958,7 @@
         "aToolTip": "Activities that result in FAIR data is supported and implemented in research project design",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.5.1 Organizational support for making data more FAIR"
+        "zToolTip": "P.5.1 Organizational support for making data more FAIR : Institutional resources to improve the extent of \"FAIRness\" of data. (FAIRness is used herein to denote a continuum state ranging from no FAIR aspects to fully FAIR.)"
     },
     {
         "key": "suny:outcome.49",
@@ -3633,7 +3969,7 @@
         "aToolTip": "Activities that result in Research projects utilize data and metadata practices following RDM guidelines",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.6.1 Criteria for selection of data/metadata"
+        "zToolTip": "P.6.1 Criteria for selection of data/metadata : Requirements and needs by which decisions are made regarding what information to generate, collect, and document in a research study."
     },
     {
         "key": "suny:outcome.50",
@@ -3644,7 +3980,7 @@
         "aToolTip": "Activities that result in Project data architecture should be designed to meet institutional and project data governance needs",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.7.1 Design"
+        "zToolTip": "P.7.1 Design : A set of principles that are formulated from specific strategies, rules, models, and guidelines for the management and flow of a dataset throughout its lifecycle."
     },
     {
         "key": "suny:outcome.51",
@@ -3655,7 +3991,7 @@
         "aToolTip": "Activities that result in Hardware and software infrastructure for projects producing data should match organizational research needs and standards",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.8.1 Organizational research needs"
+        "zToolTip": "P.8.1 Organizational research needs : Essential resources required to accomplish the objectives of research projects and RDM (e.g., centralized infrastructure, appropriate training, and support staff)."
     },
     {
         "key": "suny:outcome.52",
@@ -3666,7 +4002,7 @@
         "aToolTip": "Activities that result in Project hardware and software infrastructure should support RDM",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.8.2 Tools to support data-related processes"
+        "zToolTip": "P.8.2 Tools to support data-related processes : Items, e.g., instruments, methods, utility software, and APIs, that enable research."
     },
     {
         "key": "suny:participant.35",
@@ -3682,7 +4018,7 @@
         "aToolTip": "Activities that result in Projects should be developed using federal, organizational, and community research data standards",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.9.1 Criteria, i.e., general vs. domain-specific standards"
+        "zToolTip": "P.9.1 Criteria, i.e., general vs. domain-specific standards : Requirements and needs by which decisions are made regarding the type of research standard, i.e., broadly applicable or limited to a particular field of research."
     },
     {
         "key": "suny:activity.25",
@@ -3705,7 +4041,7 @@
         "eToolTip": "Resources used by Establish project goals for research data",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.10.1 Goals/definition of success"
+        "zToolTip": "P.10.1 Goals/definition of success : Statement of project objectives; list of accomplishments demonstrating that these objectives were met."
     },
     {
         "key": "suny:outcome.54",
@@ -3716,7 +4052,7 @@
         "aToolTip": "Activities that result in RDM goals for research projects and research data should be clearly articulated",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.10.1 Goals/definition of success"
+        "zToolTip": "P.10.1 Goals/definition of success : Statement of project objectives; list of accomplishments demonstrating that these objectives were met."
     },
     {
         "key": "suny:activity.26",
@@ -3739,7 +4075,7 @@
         "eToolTip": "Resources used by Create and use data metrics",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.10.2 Metrics for tracking use and impact measures, including reuse"
+        "zToolTip": "P.10.2 Metrics for tracking use and impact measures, including reuse : Quantitative and qualitative indicators of positive influence or outcomes, (e.g., number of citations of a dataset and anecdotal evidence of reuse of a dataset). [64]"
     },
     {
         "key": "suny:outcome.55",
@@ -3750,7 +4086,7 @@
         "aToolTip": "Activities that result in Data metrics are used to track use and impact Data metrics are aligned with project goals",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.10.2 Metrics for tracking use and impact measures, including reuse"
+        "zToolTip": "P.10.2 Metrics for tracking use and impact measures, including reuse : Quantitative and qualitative indicators of positive influence or outcomes, (e.g., number of citations of a dataset and anecdotal evidence of reuse of a dataset). [64]"
     },
     {
         "key": "suny:outcome.56",
@@ -3761,7 +4097,7 @@
         "aToolTip": "Activities that result in For all research projects, communication and outreach methods and practices should be clearly defined",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "P.11.1 Methods to share and reuse data/metadata"
+        "zToolTip": "P.11.1 Methods to share and reuse data/metadata : Approaches to disseminate data/metadata and to facilitate reusability of data/metadata, (e.g., use of open repositories and maximizing the FAIRness of data)."
     },
     {
         "key": "suny:outcome.57",

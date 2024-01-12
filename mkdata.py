@@ -42,9 +42,11 @@ startNode = {
 
 rdaf_objs = {'stage': {}, 'topic': {}, 'subtopic': {} }
 suny_objs = {}
+st_defs = {}
 
 st_df = pd.read_csv("rdafstagesandtopics.csv", encoding="utf-8",dtype="str")
 mapping_df = pd.read_csv("sunymappings.csv",encoding="utf-8",dtype="str")
+subtopics_df = pd.read_csv("subtopicdefinitions.csv", encoding="utf-8", dtype="str")
 
 for index,row in st_df.iterrows():
     obj = { 'name': row['Name'], 'description': row['Definition'] }
@@ -54,6 +56,9 @@ for index,row in st_df.iterrows():
         sid = row['ID'].split('.')[0]
         links.append({'from':'Start', 'fromport':sid, 'to':row['ID']})
 
+for index,row in subtopics_df.iterrows():
+    sid = str(row['SUBTOPIC']).strip().split(' ')[0]
+    st_defs[sid] = row['DEFINITION'].strip()
 
 extensions = {}
 def add_extension(source_id,target_id):
@@ -158,6 +163,11 @@ for subtopic in rdaf_objs['subtopic']:
     name = rdaf_objs['subtopic'][subtopic]['name']
     obj = get_obj(subtopic,name,'consideration')
     obj['text'] = name
+    if subtopic in st_defs:
+        obj['category'] = 'consideration-wdef'
+        obj['a'] = 'definition'
+        obj['aText'] = 'Definition'
+        obj['aToolTip'] = st_defs[subtopic]
     entities.append(obj)
     if len(rdaf_objs['subtopic'][subtopic]['considerationFor']) > 0:
         for obj_id in rdaf_objs['subtopic'][subtopic]['considerationFor']:
@@ -237,6 +247,8 @@ for obj_id in suny_objs:
         obj['z'] = 'extends'
         obj['zText'] = 'RDaF Subtopic'
         obj['zToolTip'] = isExtension + ' ' + rdaf_objs['subtopic'][isExtension]['name']
+        if isExtension in st_defs:
+            obj['zToolTip'] = obj['zToolTip'] + " : " + st_defs[isExtension]
         links.append({'from':obj_id, 'fromport':'extends', 'to':suny_objs[obj_id]['extends']})
     entities.append(obj)
 

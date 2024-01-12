@@ -816,6 +816,29 @@ function init() {
       )  // end Horizontal Panel
     ));  // end Node and call to add
 
+  myDiagram.nodeTemplateMap.add("consideration-wdef",
+    $(go.Node, "Auto",
+      $(go.Shape, "Rectangle",
+        { fill: "whitesmoke", stroke: "lightgray" }),
+      $(go.Panel, "Horizontal",
+      $(go.TextBlock,
+        {
+          font: '9px Roboto, sans-serif',
+          wrap: go.TextBlock.WrapFit, desiredSize: new go.Size(200, NaN), margin: 5 
+        },
+        new go.Binding("text", "text")),
+      $("Button",  // button A
+        {
+          name: "button-a",
+          click: buttonExpandCollapse,
+          toolTip: tooltipTemplate,
+        },
+        new go.Binding("portId", "a"),
+        $(go.TextBlock,
+          { font: '500 10px Roboto, sans-serif',  },
+          new go.Binding("text", "aText"))
+        )),  // end button A
+    ));
   // define the Node template for leaf nodes
   myDiagram.nodeTemplateMap.add("consideration",
     $(go.Node, "Auto",
