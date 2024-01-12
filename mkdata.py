@@ -3,6 +3,7 @@ import json
 import uuid
 import re
 
+THING = "https://schema.org/Thing",
 def get_obj(obj_id,name,category):
     obj = {}
     obj['key'] = obj_id
@@ -29,7 +30,7 @@ def get_uuid(category,text):
         text_to_id[category] = {}
     if text not in text_to_id[category]:
         uuids[category] = uuids[category] + 1
-        text_to_id[category][text] = "suny:" + category + '.' + str(uuids[category])
+        text_to_id[category][text] = "https://data.suny.edu/vocabs/oried/rdaf/suny/" + category + '.' + str(uuids[category])
     return text_to_id[category][text]
 
 links = []
@@ -160,16 +161,19 @@ for stage in rdaf_objs['stage']:
     stages.append({'port':stage, 'text':name, 'tooltip':tooltip})
 
 
+graph = {}
 considerations = {}
 for subtopic in rdaf_objs['subtopic']:
     name = rdaf_objs['subtopic'][subtopic]['name']
     obj = get_obj(subtopic,name,'consideration')
     obj['text'] = name
+    definition = None
     if subtopic in st_defs:
         obj['category'] = 'consideration-wdef'
         obj['a'] = 'definition'
         obj['aText'] = 'Definition'
         obj['aToolTip'] = st_defs[subtopic]
+        definition = st_defs[subtopic]
     entities.append(obj)
     if len(rdaf_objs['subtopic'][subtopic]['considerationFor']) > 0:
         for obj_id in rdaf_objs['subtopic'][subtopic]['considerationFor']:
@@ -178,6 +182,13 @@ for subtopic in rdaf_objs['subtopic']:
             if obj_id not in considerations:
                 considerations[obj_id] = {}
             considerations[obj_id][subtopic] = 1
+    graph[subtopic] = {
+      '@id': 'https://data.suny.edu/vocabs/oried/rdaf/nist/' + subtopic,
+      '@type': THING,
+      'name': name,
+      'additionalType': 'RdAF Subtopic',
+      'description': definition
+    }
 
 
 for topic in rdaf_objs['topic']:
@@ -193,6 +204,14 @@ for topic in rdaf_objs['topic']:
         obj['yText'] = 'Considerations'
         obj['yToolTip'] = 'Considerations for ' + name
     entities.append(obj)
+
+    graph[topic] = {
+      '@id': 'https://data.suny.edu/vocabs/oried/rdaf/nist/' + topic,
+      '@type': THING,
+      'name': name,
+      'additionalType': 'RdAF Topic',
+      'description': tooltip
+    }
 
 for obj_id in suny_objs:
     otype = suny_objs[obj_id]['type']
@@ -253,6 +272,14 @@ for obj_id in suny_objs:
             obj['zToolTip'] = obj['zToolTip'] + " : " + st_defs[isExtension]
         links.append({'from':obj_id, 'fromport':'extends', 'to':suny_objs[obj_id]['extends']})
     entities.append(obj)
+    graph[obj_id] = {
+        '@id': obj_id,
+        '@type': THING,
+        'name': oname,
+        'additionalType' : otype
+    }
+    if isExtension:
+        graph[obj_id]['ex:extends'] = graph[isExtension]['@id']
 
 port = 'a'
 for stage in stages:
@@ -267,3 +294,20 @@ with open("entities.json", "w") as json_file:
 
 with open("links.json","w") as json_file:
     json.dump(links, json_file, indent=4)
+
+with open("graph.jsonld","w") as json_file:
+    json.dump({
+        "@context": {
+        "name": "https://schema.org/name",
+        "additionalType": "https://schema.org/additionalType",
+        "description": "https://schema.org/description",
+        "ex": "http://example.org/vocab#",
+        "ex:contains": {
+            "@type": "@id"
+          },
+        "ex:extends": {
+            "@type": "@id"
+          }
+        },
+        '@graph':list(graph.values())
+        }, json_file, indent=4)
