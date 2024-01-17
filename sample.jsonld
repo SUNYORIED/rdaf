@@ -1,0 +1,227 @@
+{
+    "@context": {
+        "name": "https://schema.org/name",
+        "additionalType": "https://schema.org/additionalType",
+        "description": "https://schema.org/description",
+        "sunyrdaf": "https://data.suny.edu/vocabs/oried/rdaf/suny/",
+        "sunyrdaf:includes": {
+            "@type": "@id"
+        },
+        "sunyrdaf:extends": {
+            "@type": "@id"
+        },
+        "sunyrdaf:generates": {
+            "@type": "@id"
+        },
+        "sunyrdaf:resultsFrom": {
+            "@type": "@id"
+        }
+    },
+    "@graph": [
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/E",
+            "@type": "https://schema.org/Thing",
+            "name": "Envision",
+            "additionalType": "RdAF Stage",
+            "description": "Review of the overall strategies and drivers of an organization\u2019s research data program.",
+            "sunyrdaf:includes": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.1"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/E.1.1",
+            "@type": "https://schema.org/Thing",
+            "name": "Identification of goals and roles",
+            "additionalType": "RdAF Subtopic",
+            "description": "An exercise to define the objectives of, and responsible individuals for, various aspects of research data management (RDM)."
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/E.1.3",
+            "@type": "https://schema.org/Thing",
+            "name": "Data management organization",
+            "additionalType": "RdAF Subtopic",
+            "description": "An RDM infrastructure (RDMI) of human and capital resources that supports data-related activities, e.g., policies, planning, and sharing, as well as practices and projects, e.g., data acquisition, control, and protection."
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/E.1.4",
+            "@type": "https://schema.org/Thing",
+            "name": "Organizational values, including DEI",
+            "additionalType": "RdAF Subtopic",
+            "description": "A set of core beliefs that function as guides to what is seen as good and important in an organization and the guiding principles that provide an organization with purpose and direction. (Values ideally include diversity, equity, and inclusivity.) [10, 11]"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/E.1.10",
+            "@type": "https://schema.org/Thing",
+            "name": "Stewardship",
+            "additionalType": "RdAF Subtopic",
+            "description": "The application of rigorous analyses and oversight to ensure that data assets meet the needs of users. [13]"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/E.1",
+            "@type": "https://schema.org/Thing",
+            "name": "Data Governance\u2014Strategic/Qualitative",
+            "additionalType": "RdAF Topic",
+            "description": "The policies, procedures, and processes pertaining to authority, control,\nand shared decision-making (planning, monitoring, and enforcement) over the management of data assets",
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.1",
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.2"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
+            "name": "Convene data governance group",
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/output.2",
+                "https://data.suny.edu/entities/oried/rdaf/suny/output.1"
+            ],
+            "sunyrdaf:includes": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/method.4",
+                "https://data.suny.edu/entities/oried/rdaf/suny/method.1",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.2",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.4",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.6",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.5",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.7",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.3",
+                "https://data.suny.edu/entities/oried/rdaf/suny/role.1",
+                "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/",
+                "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.4"
+            ],
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.1"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.1",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Institutional Data Governance goals identified and defined",
+            "sunyrdaf:resultsFrom": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/activity.1"
+            ],
+            "sunyrdaf:includes": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.4"
+            ],
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.1"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/output.1",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Output",
+            "name": "Overarching goal statements"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Participant",
+            "name": "VPR"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/participant.2",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Participant",
+            "name": "Campus Provost"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/participant.3",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Participant",
+            "name": "CIO"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/participant.4",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Participant",
+            "name": "Library Dean"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/role.1",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Role",
+            "name": "Strategic Leaders"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.2",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Institutional Data Governance roles and responsibilities are identified and defined",
+            "sunyrdaf:resultsFrom": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/activity.1"
+            ],
+            "sunyrdaf:includes": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.4"
+            ],
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.1"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/output.2",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Output",
+            "name": "RACI matrix, Data Curation Roles Planning Matrix"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/method.1",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Method",
+            "name": "Task Force"
+        },
+        {
+            "@id": "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Resource",
+            "name": "Research Data Curation - EDUCASE Working Group Paper"
+        },
+        {
+            "@id": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Resource",
+            "name": "Research Data Services in US Higher Education - Ithaka S+R"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/participant.5",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Participant",
+            "name": "VPRED"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/participant.6",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Participant",
+            "name": "Chief Medical Informatics Officer"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/participant.7",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Participant",
+            "name": "Office of Research Advancement"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.2",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
+            "name": "Build organizational infrastructure to support RDM.",
+            "sunyrdaf:includes": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/method.2",
+                "https://data.suny.edu/entities/oried/rdaf/suny/method.3",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.2",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.4",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.6",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.5",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.7",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.3",
+                "https://data.suny.edu/entities/oried/rdaf/suny/role.1",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.10"
+            ],
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.3"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/method.2",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Method",
+            "name": "Create Data Governance Council"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/method.3",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Method",
+            "name": "Data Stewardship Council"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/method.4",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Method",
+            "name": "Strategic planning"
+        }
+    ]
+}
