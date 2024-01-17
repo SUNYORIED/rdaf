@@ -3,7 +3,19 @@ import json
 import uuid
 import re
 
-THING = "https://schema.org/Thing",
+THING = "https://schema.org/Thing"
+SUNYNS = "https://data.suny.edu/vocabs/oried/rdaf/suny/"
+PREDICATES = {
+    'resources': 'includes',
+    'considerations': 'includes',
+    'outputs': 'generates',
+    'activities': 'resultsFrom',
+    'outcomes': 'generates',
+    'methods': 'includes',
+    'participants': 'includes',
+    'roles': 'includes',
+    'extends': 'extends'
+}
 def get_obj(obj_id,name,category):
     obj = {}
     obj['key'] = obj_id
@@ -30,7 +42,7 @@ def get_uuid(category,text):
         text_to_id[category] = {}
     if text not in text_to_id[category]:
         uuids[category] = uuids[category] + 1
-        text_to_id[category][text] = "https://data.suny.edu/vocabs/oried/rdaf/suny/" + category + '.' + str(uuids[category])
+        text_to_id[category][text] = "https://data.suny.edu/entities/oried/rdaf/suny/" + category + '.' + str(uuids[category])
     return text_to_id[category][text]
 
 links = []
@@ -154,14 +166,21 @@ for index,row in mapping_df.iterrows():
 for extension in extensions:
     rdaf_objs['subtopic'][extension]['extensions'] = extensions[extension]
 
+graph = {}
 stages = []
 for stage in rdaf_objs['stage']:
     tooltip = rdaf_objs['stage'][stage]['description']
     name = rdaf_objs['stage'][stage]['name']
     stages.append({'port':stage, 'text':name, 'tooltip':tooltip})
+    graph[stage] = {
+      '@id': 'https://data.suny.edu/entities/oried/rdaf/nist/' + stage,
+      '@type': THING,
+      'name': name,
+      'additionalType': 'RdAF Stage',
+      'description':tooltip
+    }
 
 
-graph = {}
 considerations = {}
 for subtopic in rdaf_objs['subtopic']:
     name = rdaf_objs['subtopic'][subtopic]['name']
@@ -183,12 +202,13 @@ for subtopic in rdaf_objs['subtopic']:
                 considerations[obj_id] = {}
             considerations[obj_id][subtopic] = 1
     graph[subtopic] = {
-      '@id': 'https://data.suny.edu/vocabs/oried/rdaf/nist/' + subtopic,
+      '@id': 'https://data.suny.edu/entities/oried/rdaf/nist/' + subtopic,
       '@type': THING,
       'name': name,
       'additionalType': 'RdAF Subtopic',
-      'description': definition
     }
+    if definition:
+        graph[subtopic]['description'] = definition
 
 
 for topic in rdaf_objs['topic']:
@@ -206,7 +226,7 @@ for topic in rdaf_objs['topic']:
     entities.append(obj)
 
     graph[topic] = {
-      '@id': 'https://data.suny.edu/vocabs/oried/rdaf/nist/' + topic,
+      '@id': 'https://data.suny.edu/entities/oried/rdaf/nist/' + topic,
       '@type': THING,
       'name': name,
       'additionalType': 'RdAF Topic',
@@ -274,12 +294,9 @@ for obj_id in suny_objs:
     entities.append(obj)
     graph[obj_id] = {
         '@id': obj_id,
-        '@type': THING,
-        'name': oname,
-        'additionalType' : otype
+        '@type': SUNYNS + otype.capitalize(),
+        'name': oname
     }
-    if isExtension:
-        graph[obj_id]['ex:extends'] = graph[isExtension]['@id']
 
 port = 'a'
 for stage in stages:
@@ -288,6 +305,19 @@ for stage in stages:
     startNode[port + 'ToolTip'] = stage['tooltip']
     port = increment_alphabet(port)
 entities.insert(0,startNode)
+
+for link in links: 
+    if link['fromport'] in rdaf_objs['stage']:
+        subj = graph[link['fromport']]
+        pred = 'sunyrdaf:includes'
+    else:
+        subj = graph[link['from']]
+        pred = 'sunyrdaf:' + PREDICATES[link['fromport']]
+    obj = graph[link['to']]['@id']
+    if pred not in subj:
+        subj[pred] = []
+    subj[pred].append(obj)
+
 
 with open("entities.json", "w") as json_file:
     json.dump(entities, json_file, indent=4)
@@ -301,11 +331,17 @@ with open("graph.jsonld","w") as json_file:
         "name": "https://schema.org/name",
         "additionalType": "https://schema.org/additionalType",
         "description": "https://schema.org/description",
-        "ex": "http://example.org/vocab#",
-        "ex:contains": {
+        "sunyrdaf": SUNYNS,
+        "sunyrdaf:includes": {
             "@type": "@id"
           },
-        "ex:extends": {
+        "sunyrdaf:extends": {
+            "@type": "@id"
+          },
+        "sunyrdaf:generates": {
+            "@type": "@id"
+          },
+        "sunyrdaf:resultsFrom": {
             "@type": "@id"
           }
         },
