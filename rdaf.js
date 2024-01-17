@@ -1,10 +1,8 @@
 function init() {
 
-  // Since 2.2 you can also author concise templates with method chaining instead of GraphObject.make
-  // For details, see https://gojs.net/latest/intro/buildingObjects.html
-  const $ = go.GraphObject.make;  // for conciseness in defining templates
+  const $ = go.GraphObject.make;  
 
-  myDiagram = new go.Diagram("myDiagramDiv",  // must name or refer to the DIV HTML element
+  myDiagram = new go.Diagram("myDiagramDiv",  
     {
       initialContentAlignment: go.Spot.Left,
       allowSelect: false,  // the user cannot select any part
@@ -185,18 +183,6 @@ function init() {
         collapseTree(n, null);  // null means all links, not just for a particular portId
       }
     });
-  }
-
-  function getNSId(data) {
-    return `${data.key}_NS`
-  }
-
-  function getIPId(data) {
-    return `${data.key}_IP`
-  }
-
-  function getACId(data) {
-    return `${data.key}_AC`
   }
 
   // get the text for the tooltip from the data on the object being hovered over
