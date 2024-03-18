@@ -1,14 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JointJS Directed Graph Example with Layout</title>
+    <!-- JointJS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsonld/1.0.0/jsonld.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.7.7/joint.min.js"></script>
 
-  <!DOCTYPE html>
-  <html lang="en">
-  <body>
-  <script src="https://unpkg.com/gojs@2.3.10/release/go.js"></script>
-  <div id="allSampleContent" class="p-4 w-full">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
-  <script src="rdaf.js"></script>
+<!-- Add these script tags to include JointJS and Dagre -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.7.7/joint.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dagre/0.7.4/dagre.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/graphlib/2.1.7/graphlib.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.7.7/joint.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.7.7/joint.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Container for the graph -->
+    <div id="graph-container" style="width: 800px; height: 600px; border: 1px solid #ccc;"></div>
 
-<div id="sample">
-  <div id="myDiagramDiv" style="background-color: white; border: 1px solid black; width: 100%; height: 800px; position: relative; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); cursor: auto;"><canvas tabindex="0" width="1054" height="800" style="position: absolute; top: 0px; left: 0px; z-index: 2; user-select: none; touch-action: none; width: 1054px; height: 800px; cursor: auto;"></canvas><div style="position: absolute; overflow: auto; width: 1054px; height: 498px; z-index: 1;"><div style="position: absolute; width: 1px; height: 1px;"></div></div></div>
-</div>
-  </body>
-  </html>
+    <script src="direct.js"></script>
+    <script src="createNode.js"></script>
+    <script src="events.js"></script>
+    <script src="findNode.js"></script>
+    <script src="buttons.js"></script>
+    <script src="position.js"></script>
+</body>
+</html>
