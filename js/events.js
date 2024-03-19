@@ -27,8 +27,8 @@ function openBranch(child, shouldHide){
                 //This condition closes all the nodes when the user intereacts with the parentNode
                 const subElementsLinks = graph.getConnectedLinks(element, {outbound:true})
                 subElementsLinks.forEach(subLinks =>{
-                        subLinks.set('hidden', true)
-                        subLinks.set('collapsed', false)
+                    subLinks.set('hidden', true)
+                    subLinks.set('collapsed', false)
                 });
 
                 const successrorCells = graph.getSubgraph([
@@ -61,8 +61,12 @@ function closeTheRest(element){
     //This condition closes all the nodes when the user intereacts with the parentNode
     const subElementsLinks = graph.getConnectedLinks(element, {outbound:true})
     subElementsLinks.forEach(subLinks =>{
-        subLinks.set('hidden', true)
+        if(subLinks != undefined){
+            subLinks.set('hidden', true)
         subLinks.set('collapsed', false)
+        }else{
+            console.error("Element already closed")
+        }
     });
 
 
@@ -70,10 +74,13 @@ function closeTheRest(element){
         ...graph.getSuccessors(element),
     ])
     successrorCells.forEach(function(successor) {
-        successor.set('hidden', true);
-        successor.set('collapsed', false);
+        if(successor != undefined){
+            successor.set('hidden', true);
+            successor.set('collapsed', false);
+        }else{
+            console.error("Element already closed")
+        }
     });
-    doLayout()
 }
 
 
@@ -193,7 +200,6 @@ function radioButtonEvents(elementView, port){
         }
         if(circleElement.id.startsWith('N')){
             //When clicked on Not Started Button, show the activity button
-            console.log(activityButton)
             if(activityButton.style.visibility == "hidden" || considerationButton.style.visibility == "hidden" && (activityButton || considerationButton)){
                 var rectElement = (elementView.el.querySelector('rect'))
                 var width = parseInt(rectElement.getAttribute('width')) + 80
@@ -259,7 +265,7 @@ function defaultEvent(node, typeOfPort){
     }else{
         const OutboundLinks = graph.getConnectedLinks(node, {outbound:true})
         OutboundLinks.forEach(links =>{
-            if(links.getTargetElement().prop('name/first') == typeOfPort){
+            if(links.getTargetElement().prop('name/first') == typeOfPort && links != undefined){
                 //Make the links visible
                 links.getTargetElement().set('hidden', true)
                 links.getTargetElement().set('collapsed', false)
@@ -270,18 +276,18 @@ function defaultEvent(node, typeOfPort){
                 const orphanLink = graph.getConnectedLinks(links.getTargetElement(), {inbound:true})
                 if(orphanLink.length > 1){
                     orphanLink.forEach(links =>{
-                        if(!links.get('hidden')){
+                        if(links.get('collapsed') && links != undefined && links.getTargetElement() != undefined){
+                            console.log(links.getTargetElement())
                             links.getTargetElement().set('hidden', false)
                             links.getTargetElement().set('collapsed', true)
                             links.set('hidden', false)
                         }
                     })
-                }else{
-                    links.getTargetElement().set('hidden', true)
-                    links.getTargetElement().set('collapsed', false)
-                    links.set('hidden', true)
+                }
+                if(links.getTargetElement() != undefined){
                     closeTheRest(links.getTargetElement())
-
+                }else{
+                    console.error("element or link already closed")
                 }
                 if(typeOfPort == "Outcomes"){
                     //Using the html element (Activity button) instead to hide and show the particular button from the entire ElementView
@@ -304,10 +310,51 @@ function defaultEvent(node, typeOfPort){
                 }
             }
         })
-        doLayout()
+        //doLayout()
     }
 }
 
+
+function closeTheRest1(element){
+    //This condition closes all the nodes when the user intereacts with the parentNode
+    const subElementsLinks = graph.getConnectedLinks(element, {outbound:true})
+    if(subElementsLinks != undefined){
+        subElementsLinks.forEach(subLinks =>{
+            if(subLinks != undefined){
+                subLinks.set('hidden', true)
+                subLinks.set('collapsed', false)
+            }else{
+                console.error("Element already closed", subLinks)
+            }
+        });
+    }else{
+        console.error("Sub Elements Links not defined")
+    }
+
+    const successrorCells = graph.getSubgraph([
+        ...graph.getSuccessors(element),
+    ])
+
+    if(successrorCells != undefined){
+        successrorCells.forEach(function(successor) {
+            if(successor != undefined){
+                successor.set('hidden', true);
+                successor.set('collapsed', false);
+                const openLinks = graph.getConnectedLinks(successor, {outbound: true})
+                openLinks.forEach(links =>{
+                    if(links != undefined){
+                        links.set('hidden', true)
+                        links.set('collapsed', false)
+                    }
+                })
+            }else{
+                console.error("Element already closed", successor)
+            }
+        });
+    }else{
+        console.error("successor Cells not defined")
+    }
+}
 
 
 
@@ -320,7 +367,7 @@ paper.on('cell:mouseover', function(cellView) {
         toolsArray.forEach(element => {
             if (element.childNodes && element.childNodes.button) {
                     const subtopicButton = element.$el[0]
-                    subtopicButton.addEventListener('mouseenter', function() {
+                    subtopicButton.addEventListener('mouseover', function() {
                         // Your mouseover event handling code here
                         var bbox = cellView.model.getBBox();
                         var paperRect1 = paper.localToPaperRect(bbox);
@@ -331,7 +378,7 @@ paper.on('cell:mouseover', function(cellView) {
                             textBlock.style.top = ((paperRect1.y) + 55) + 'px';
                             textBlock.style.visibility = "visible"
                         }
-                        if(element.childNodes.button.id == "Definition"){
+                        else if(element.childNodes.button.id == "Definition"){
                             // Set the position of the element according to the pointer and make it visible
                             var textBlock = document.getElementById(cellView.model.id)
                             if(textBlock != null){
@@ -340,29 +387,29 @@ paper.on('cell:mouseover', function(cellView) {
                                 textBlock.style.visibility = "visible"
                             }
                         }
-                        if(element.childNodes.button.id == "Activities"){
-                            hoverTimeout = setTimeout(function() {
+                        else if(element.childNodes.button.id == "Activities"){
                                 element.childNodes.button.setAttribute('fill', 'lightgrey')
                                 var textBlock = document.getElementById(cellView.model.id)
                                 textBlock.style.left = (paperRect1.x + 100);
                                 textBlock.style.top = ((paperRect1.y) + 40) + 'px';
-                                textBlock.style.visibility = "visible"
-                            }, 1500);
+                                //textBlock.style.visibility = "visible"
                         }
-                        if(element.childNodes.button.id == "Considerations"){
+                        else if(element.childNodes.button.id == "Considerations"){
                                 element.childNodes.button.setAttribute('fill', 'lightgrey')
                                 var textBlock = document.getElementById(cellView.model.id)
                                 textBlock.style.left = "10%";
                                 textBlock.style.top = ((paperRect1.y) + 60) + 'px';
                                 //textBlock.style.visibility = "visible"
-
                         }
-                        if(element.childNodes.button.id == "Outcomes"){
+                        else if(element.childNodes.button.id == "Outcomes"){
                             element.childNodes.button.setAttribute('fill', 'lightgrey')
                             var textBlock = document.getElementById(cellView.model.id)
                             textBlock.style.left = "10%";
                             textBlock.style.top = ((paperRect1.y) + 40) + 'px';
                             textBlock.style.visibility = "visible"
+                        }
+                        else{
+                            console.log()
                         }
                     });
             }else {
@@ -387,24 +434,30 @@ paper.on('cell:mouseover', function(cellView) {
                     // Set the position of the element according to the pointer and make it visible
                     //Look for any events on subtopic button
                     if(element.childNodes.button.id == "RDaF Subtopic"){
+                        console.log(element.childNodes.button.id)
                         var textBlock = document.getElementById(cellView.model.id)
                         textBlock.style.visibility = "hidden"
                     }
-                    if(element.childNodes.button.id == "Definition"){
+                    else if(element.childNodes.button.id == "Definition"){
                         // Set the position of the element according to the pointer and make it visible
                         var textBlock = document.getElementById(cellView.model.id)
                         textBlock.style.visibility = "hidden"
                     }
-                    if(element.childNodes.button.id == "Activities"){
+                    else if(element.childNodes.button.id == "Activities"){
                         element.childNodes.button.setAttribute('fill', '#ffffb3')
+                        textBlock.style.visibility = "hidden"
                     }
-                    if(element.childNodes.button.id == "Considerations"){
+                    else if(element.childNodes.button.id == "Considerations"){
                         element.childNodes.button.setAttribute('fill', '#ffbf80')
                     }
-                    if(element.childNodes.button.id == "Outcomes"){
+                    else if(element.childNodes.button.id == "Outcomes"){
                         element.childNodes.button.setAttribute('fill', '#ffffb3')
                         var textBlock = document.getElementById(cellView.model.id)
-                            textBlock.style.visibility = "hidden"
+                        textBlock.style.visibility = "hidden"
+                    }
+                    else{
+                        var textBlock = document.getElementById(cellView.model.id)
+                        textBlock.style.visibility = "hidden"
                     }
                 });
             }else {
@@ -416,45 +469,7 @@ paper.on('cell:mouseover', function(cellView) {
     }
 })
 
-
-// Function to gradually fade in an element
-function fadeIn(element) {
-    var opacity = 0;
-    var interval = setInterval(function() {
-        if (opacity < 1) {
-            opacity += 0.5; // Adjust the step as needed for smoother or faster transition
-            element.style.opacity = opacity;
-        } else {
-            clearInterval(interval);
-        }
-    }, 10); // Adjust the interval for smoother or faster transition
-}
-
-
-function hoverTextBlock(element, node, elementView){
-
-    // Draw an HTML rectangle above the element.
-    var div = document.createElement('div');
-
-    div.style.background = 'white';
-    div.textContent = node['description']
-
-    div.style.border = "1px solid black";
-    div.style.fontWeight = "bold"
-    div.style.fontSize = "20px"
-
-    div.style.fontFamily = "Cambria"
-    div.style.lineBreak = 0.5
-    div.style.visibility = "hidden"
-    paper.el.appendChild(div);
-}
-
-paper.on("link:snap:disconnect", function(linkView) {
-    console.log(linkView)
-})
-
 function removeUnwantedButton(elementView, outboundLinks, activityButton, considerationButton){
-    console.log(elementView.el)
     var activitiesElements = []
     var considerationElement = []
     outboundLinks.forEach(links =>{

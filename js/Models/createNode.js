@@ -3,27 +3,22 @@ var PORT_WIDTH = 90;
 const PORT_HEIGHT = 20;
 const PORT_GAP = 20;
 
-
 //Looking on How to prevent the links from overlapping the nearby elements, and how to set the length of the links
 // Also how to increase the size of the paper when object overflow
 function makeLink(from,to) {
+
+
     const link = new joint.shapes.standard.Link({
       source: { id: from.id, anchor:{name: "right",
         args: {
-          rotate: true,
-        }
-      }},
-      target: { id: to.id, anchor:{name: "left"},
-        args: {
-          rotate: true,
-        }
+            rotate: true,
+            offset: 10
+          }
+        },
       },
+      target: { id: to.id}
 
-      attrs: {
-        '.connection': { stroke: 'blue', 'stroke-width': 2, 'stroke-dasharray': '5,5' }, // Adjust the stroke style
-
-      }
-    });
+});
 
     link.router('manhattan', {
         margin: 0,
@@ -36,7 +31,7 @@ function makeLink(from,to) {
         excludeEnds: ['source', 'target']
     });
     link.connector('rounded');
-    link.vertices([{ x: 100, y: 120 }, { x: 150, y: 60 }]);
+    link.vertices([{ x: 0, y: 0 }, { x: 0, y: 0 }]);
     link.set('hidden', true);
     return link
 }
@@ -104,7 +99,8 @@ function createTopics(id, name){
         body: {
           strokeWidth: 2,
           fill: "#4d80b3",
-          cursor: "grab"
+          cursor: "grab",
+          align: 'left'
         },
       },
       ports:{

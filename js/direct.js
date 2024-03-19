@@ -26,12 +26,20 @@ const paper = new dia.Paper({
   linkView: CustomLinkView,
   interactive: { vertexAdd: false }, // disable default vertexAdd interaction,
   width: 10000, //window.innerWidth,
-  height: 2000,//window.innerHeight,
+  height: 5000,//window.innerHeight,
   overflow: true,
   gridSize: 10,
+  perpendicularLinks: true,
   drawGrid: true,
   background: {
     color: '#f9f9f9'
+  },
+  defaultLinkAnchor: {
+    name: 'connectionLength'
+  },
+  interactive: {
+      linkMove: false,
+      labelMove: false
   },
   async: true,
   //Viewport function supports collapsing/uncollapsing behaviour on paper
@@ -433,27 +441,19 @@ function doLayout() {
     }
   })
 
-  // Apply CSS animation to visible elements
-  visibleElements.forEach(el => {
-    el.attr('class', 'show-animation'); // Add CSS class for animation
-  });
-
-
   layout = joint.layout.DirectedGraph.layout(visibleElements, {
     setVertices: true,
     rankDir: 'LR',
-    nodeSep: 20, // Increase the separation between adjacent nodes
+    nodeSep: 50, // Increase the separation between adjacent nodes
     edgeSep: 10, // Increase the separation between adjacent edges
     rankSep: 300, // Increase the separation between node layers
     marginX: 50, // Add margin to the left and right of the graph
     marginY: 50, // Add margin to the top and bottom of the graph
-    step: 10, // Adjust as needed
-    padding: 10, // Adjust as needed
-    maximumLoops: 0, // Adjust as needed
-    maxAllowedDirectionChange: 90, // Adjust as needed,
-    startDirections: ['right'],
-    endDirections:['left'],
-    size:{width: 200, height:65}
+    step: 10,
+    padding: 10,
+    maximumLoops: 0,
+    size:{width: 200, height:65},
+    resizeClusters: false,
   });
 
 

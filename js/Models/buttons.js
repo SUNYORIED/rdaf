@@ -186,8 +186,6 @@ function createSubTopicButton(port, pos){
             'id': port.id,
             'width': 100,
             'height': 20,
-            'rx': 10, // Border radius
-            'ry': 10, // Border radius
             'fill': 'lightgrey', // Button background color
             'stroke': 'black', // Button border color
             'stroke-width': 2, // Button border width
