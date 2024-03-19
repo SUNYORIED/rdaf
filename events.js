@@ -93,6 +93,8 @@ function toggelButton(node, typeOfPort){
     }
     if(typeOfPort == "Activities"){
         defaultEvent(node, typeOfPort)
+    }else{
+        defaultEvent(node, typeOfPort)
     }
 }
 
@@ -116,9 +118,7 @@ function hideSubtopic(node, typeOfPort){
     }
 }
 
-function removeButton(button){
-    butt
-}
+
 
 
 //This function handles the event for the 3 buttons on the outcomes node
@@ -126,46 +126,85 @@ function radioButtonEvents(elementView, port){
     var circleElements = elementView._toolsView.$el[0].querySelectorAll('circle')
     circleElements.forEach(circleElement =>{
     //Still need to wrap around this event because we just need to set one button at a time not all should be selected.
-    var fill = circleElement.getAttribute('fill');
-    var activityButton = elementView._toolsView.tools[1].$el[0]
+    var activityButton = elementView._toolsView.tools[1].el
     var considerationButton = elementView._toolsView.tools[0].$el[0]
     const outboundLinks = (graph.getConnectedLinks(elementView.model, {outbound: true}))
-    if(outboundLinks.length == 1){
-        if(outboundLinks[0].getTargetElement().attributes.name['first'] == "Activities"){
-            if(considerationButton){
-                considerationButton.remove()
-            }else{
-                console.log("Considerations button is already removed")
-            }
-        }else{
-            if(activityButton){
-                activityButton.remove()
-            }else{
-                console.log("Activities button is already removed")
-            }
-        }
-    }else if(outboundLinks.length == 0){
-        if(considerationButton && activityButton){
-            considerationButton.remove()
-            activityButton.remove()
-        }
-    }
+    removeUnwantedButton(elementView, outboundLinks, activityButton, considerationButton)
     //Change the color of the element when clicked
     if(circleElement.id == `${port.id}`){
         if(circleElement.id.startsWith('A')){
             //When clicked on Achieved, hide the activity button
+            if(activityButton.style.visibility == "visible" || considerationButton.style.visibility == "visible"){
+                var rectElement = (elementView.el.querySelector('rect'))
+                var width = parseInt(rectElement.getAttribute('width')) - 80
+                rectElement.setAttribute('width', width)
+                //This condition is applied when user wants to hide all the elements including Activities and Considerations
+                const OutboundLinks = graph.getConnectedLinks(elementView.model, {outbound:true})
+                OutboundLinks.forEach(links =>{
+                    //Make the links visible
+                    links.getTargetElement().set('hidden', true)
+                    links.getTargetElement().set('collapsed', false)
+                    //Make the links visible
+                    links.set('hidden', true)
+                    links.set('collapsed', false)
+                    //This condition listens to the events on elements that has more than on parent
+                    const orphanLink = graph.getConnectedLinks(links.getTargetElement(), {inbound:true})
+                    if(orphanLink.length > 1){
+                        orphanLink.forEach(links =>{
+                            if(!links.get('hidden')){
+                                links.getTargetElement().set('hidden', false)
+                                links.getTargetElement().set('collapsed', true)
+                                links.set('hidden', false)
+                            }
+                        })
+                    }else{
+                        links.getTargetElement().set('hidden', true)
+                        links.getTargetElement().set('collapsed', false)
+                        links.set('hidden', true)
+                        closeTheRest(links.getTargetElement())
+                    }
+                })
+            }else{
+                var rectElement = (elementView.el.querySelector('rect'))
+                var width = parseInt(rectElement.getAttribute('width'))
+                rectElement.setAttribute('width', width)
+            }
             activityButton.style.visibility = "hidden"
             considerationButton.style.visibility = "hidden"
             circleElement.setAttribute('fill', 'Green')
+
         }
         if(circleElement.id.startsWith('P')){
             //When clicked on In Progress button, show the activity button
+            if(activityButton.style.visibility == "hidden" || considerationButton.style.visibility == "hidden" && (activityButton || considerationButton)){
+                var rectElement = (elementView.el.querySelector('rect'))
+                var width = parseInt(rectElement.getAttribute('width')) + 80
+                rectElement.setAttribute('width', width)
+                updateAnchorConnection(elementView.model)
+            }else{
+                var rectElement = (elementView.el.querySelector('rect'))
+                var width = parseInt(rectElement.getAttribute('width'))
+                rectElement.setAttribute('width', width)
+                updateAnchorConnection(elementView.model)
+            }
             activityButton.style.visibility = "visible"
             considerationButton.style.visibility = "visible"
             circleElement.setAttribute('fill', 'Orange')
         }
         if(circleElement.id.startsWith('N')){
             //When clicked on Not Started Button, show the activity button
+            console.log(activityButton)
+            if(activityButton.style.visibility == "hidden" || considerationButton.style.visibility == "hidden" && (activityButton || considerationButton)){
+                var rectElement = (elementView.el.querySelector('rect'))
+                var width = parseInt(rectElement.getAttribute('width')) + 80
+                rectElement.setAttribute('width', width)
+                updateAnchorConnection(elementView.model)
+            }else{
+                var rectElement = (elementView.el.querySelector('rect'))
+                var width = parseInt(rectElement.getAttribute('width'))
+                rectElement.setAttribute('width', width)
+                updateAnchorConnection(elementView.model)
+            }
             activityButton.style.visibility = "visible"
             considerationButton.style.visibility = "visible"
             circleElement.setAttribute('fill', 'Red')
@@ -178,22 +217,21 @@ function radioButtonEvents(elementView, port){
 }
 
 
+
+
 function defaultEvent(node, typeOfPort){
     if(node.get('collapsed')){
-        console.log(node.get('collapsed'))
         const OutboundLinks = graph.getConnectedLinks(node, {outbound:true})
         if(Array.isArray(OutboundLinks)){
             OutboundLinks.forEach(links =>{
                 if(links && links.getTargetElement()){
-                    console.log(typeOfPort)
                     if(links.getTargetElement().prop('name/first') == typeOfPort){
                         links.getTargetElement().set('hidden', false)
                         links.getTargetElement().set('collapsed', true)
                         links.set('hidden', false)
                         links.set('collapsed', true)
-
                         if(typeOfPort == "Outcomes"){
-                        //Using the html element (Activity button) instead to hide and show the particular button from the entire ElementView
+                        //Using the html element (Activity button) to hide and show the particular button from the entire ElementView
                             var elementView = links.getTargetElement().findView(paper)
                             if(elementView.hasTools()){
                                 //Query's for the Activity Button on the and hides it
@@ -202,7 +240,7 @@ function defaultEvent(node, typeOfPort){
                                 Actbutton.style.visibility = "hidden"
                                 ConsiderationButtton.style.visibility = "hidden"
                                 const circleElement = elementView._toolsView.$el[0].querySelectorAll('circle')
-                                //If the user has selected Not Started or In progress on Outcome, Below condition checks the status while opening and closing
+                                //If the user has selected Not Started or In progress on Outcome, Below condition checks the status while opening and closing the outcome
                                 circleElement.forEach(circle =>{
                                     if(circle.getAttribute('fill') == "Red" || circle.getAttribute('fill') == "Orange"){
                                         Actbutton.style.visibility = "visible"
@@ -281,31 +319,41 @@ paper.on('cell:mouseover', function(cellView) {
         var toolsArray = cellView._toolsView.tools
         toolsArray.forEach(element => {
         if (element.childNodes && element.childNodes.button) {
-            if(element.childNodes.button.id == "RDaF Subtopic"){
                 const subtopicButton = element.$el[0]
-                subtopicButton.addEventListener('mouseover', function() {
+                subtopicButton.addEventListener('mouseenter', function() {
                     // Your mouseover event handling code here
                     var bbox = cellView.model.getBBox();
                     var paperRect1 = paper.localToPaperRect(bbox);
-                    // Set the position of the element according to the pointer and make it visible
-                    var testFind = document.getElementById(cellView.model.id)
-                    testFind.style.left = ((paperRect1.x) + 10) + 'px';
-                    testFind.style.top = ((paperRect1.y) + 55) + 'px';
-                    testFind.style.visibility = "visible"
+                    if(element.childNodes.button.id == "RDaF Subtopic"){
+                        // Set the position of the element according to the pointer and make it visible
+                        var textBlock = document.getElementById(cellView.model.id)
+                        textBlock.style.left = ((paperRect1.x) + 10) + 'px';
+                        textBlock.style.top = ((paperRect1.y) + 55) + 'px';
+                        textBlock.style.visibility = "visible"
+                    }
+                    if(element.childNodes.button.id == "Definition"){
+                        // Set the position of the element according to the pointer and make it visible
+                        var textBlock = document.getElementById(cellView.model.id)
+                        if(textBlock != null){
+                            textBlock.style.left = ((paperRect1.x) + 10) + 'px';
+                            textBlock.style.top = ((paperRect1.y) + 55) + 'px';
+                            textBlock.style.visibility = "visible"
+                        }
+                    }
+                    if(element.childNodes.button.id == "Activities"){
+                        element.childNodes.button.setAttribute('fill', 'lightgrey')
+                    }
+                    if(element.childNodes.button.id == "Considerations"){
+                        element.childNodes.button.setAttribute('fill', 'lightgrey')
+                    }
+                    if(element.childNodes.button.id == "Outcomes"){
+                        element.childNodes.button.setAttribute('fill', 'lightgrey')
+                        var textBlock = document.getElementById(cellView.model.id)
+                        textBlock.style.left = "50%";
+                        textBlock.style.top = ((paperRect1.y) + 40) + 'px';
+                        textBlock.style.visibility = "visible"
+                    }
                 });
-            }
-            if(element.childNodes.button.id == "Definition"){
-                //console.log(element)
-                var bbox = cellView.model.getBBox();
-                var paperRect1 = paper.localToPaperRect(bbox);
-                // Set the position of the element according to the pointer and make it visible
-                var testFind = document.getElementById(cellView.model.id)
-                testFind.style.left = ((paperRect1.x) + 10) + 'px';
-                testFind.style.top = ((paperRect1.y) + 55) + 'px';
-                testFind.style.visibility = "visible"
-            }
-
-
         }else {
             console.log();
         }
@@ -323,20 +371,32 @@ paper.on('cell:mouseover', function(cellView) {
         var toolsArray = cellView._toolsView.tools
         toolsArray.forEach(element => {
             if (element.childNodes && element.childNodes.button) {
-            //Look for any events on subtopic button
-                if(element.childNodes.button.id == "RDaF Subtopic"){
                 const subtopicButton = element.$el[0]
                 subtopicButton.addEventListener('mouseleave', function() {
-                // Set the position of the element according to the pointer and make it visible
-                    var testFind = document.getElementById(cellView.model.id)
-                    testFind.style.visibility = "hidden"
-                });
-                }if(element.childNodes.button.id == "Definition"){
-                // Set the position of the element according to the pointer and make it visible
-                var testFind = document.getElementById(cellView.model.id)
-                testFind.style.visibility = "hidden"
+                    // Set the position of the element according to the pointer and make it visible
+                    //Look for any events on subtopic button
+                    if(element.childNodes.button.id == "RDaF Subtopic"){
+                        var textBlock = document.getElementById(cellView.model.id)
+                        textBlock.style.visibility = "hidden"
+                    }
+                    if(element.childNodes.button.id == "Definition"){
+                        // Set the position of the element according to the pointer and make it visible
+                        var textBlock = document.getElementById(cellView.model.id)
+                        textBlock.style.visibility = "hidden"
+                    }
+                    if(element.childNodes.button.id == "Activities"){
+                        element.childNodes.button.setAttribute('fill', '#ffffb3')
+                    }
+                    if(element.childNodes.button.id == "Considerations"){
+                        element.childNodes.button.setAttribute('fill', '#ffbf80')
+                    }
+                    if(element.childNodes.button.id == "Outcomes"){
+                        element.childNodes.button.setAttribute('fill', '#ffffb3')
+                        var textBlock = document.getElementById(cellView.model.id)
+                        textBlock.style.visibility = "hidden"
+                    }
 
-                }
+                });
             }else {
                 console.log();
             }
@@ -368,3 +428,28 @@ function hoverTextBlock(element, node, elementView){
 paper.on("link:snap:disconnect", function(linkView) {
     console.log(linkView)
 })
+
+function removeUnwantedButton(elementView, outboundLinks, activityButton, considerationButton){
+    console.log(elementView.el)
+    var activitiesElements = []
+    var considerationElement = []
+    outboundLinks.forEach(links =>{
+        if(links.getTargetElement().attributes.name['first'] == "Activities"){
+            activitiesElements.push("Activities")
+        }
+        if(links.getTargetElement().attributes.name['first'] == "Considerations"){
+            considerationElement.push("Considerations")
+        }
+    })
+    if(Array.isArray(activitiesElements) && activitiesElements.length === 0){
+        if(activityButton){
+            activityButton.remove()
+        }
+    }
+
+    if(Array.isArray(considerationElement) && considerationElement.length === 0){
+        if(considerationButton){
+            considerationButton.remove()
+        }
+    }
+}

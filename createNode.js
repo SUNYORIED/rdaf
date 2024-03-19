@@ -8,8 +8,16 @@ const PORT_GAP = 20;
 // Also how to increase the size of the paper when object overflow
 function makeLink(from,to) {
     const link = new joint.shapes.standard.Link({
-      source: { id: from.id, anchor:{name: "right"}},
-      target: { id: to.id, anchor:{name: "left"}},
+      source: { id: from.id, anchor:{name: "right",
+        args: {
+          rotate: true,
+        }
+      }},
+      target: { id: to.id, anchor:{name: "left"},
+        args: {
+          rotate: true,
+        }
+      },
 
       attrs: {
         '.connection': { stroke: 'blue', 'stroke-width': 2, 'stroke-dasharray': '5,5' }, // Adjust the stroke style
@@ -28,9 +36,8 @@ function makeLink(from,to) {
         excludeEnds: ['source', 'target']
     });
     link.connector('rounded');
+    link.vertices([{ x: 100, y: 120 }, { x: 150, y: 60 }]);
     link.set('hidden', true);
-
-
     return link
 }
 
@@ -40,19 +47,18 @@ function createStage(id, name){
   const node = new joint.shapes.standard.Rectangle({
     id: id,
     size: {
-      width: '200',
-      height: 45
+      width: '150',
+      height: 30
     },
     attrs: {
       label: {
         fontWeight: "bold",
-        fontSize: 10,
+        fontSize: 15,
         fontFamily: "sans-serif",
         fill: "#ffffff",
-        stroke: "#333333",
-        strokeWidth: 5,
         paintOrder: "stroke",
         text: name,
+        cursor: "pointer"
       },
       body: {
         strokeWidth: 2,
@@ -63,48 +69,7 @@ function createStage(id, name){
       NodeType:{
         type: "Stages"
       },
-      ports: {
-        groups: {
-        rdaf: {
-          markup: [
-            {
-              tagName: "rect",
-              selector: "portBody"
-            },
-            {
-              tagName: "text",
-              selector: "portLabel"
-            }
-          ],
-          attrs: {
-            portBody: {
-              x: 0,
-              y: -PORT_HEIGHT / 2,
-              width: "calc(w)",
-              height: "calc(h)",
-              fill: "yellow",
-              stroke: "#333333",
-              strokeWidth: 2,
-              //magnet: "active", //this allows the user to drag an connect ports
-              cursor: "grab",
-            },
-            portLabel: {
-              x: "calc(0.5*w)",
-              textAnchor: "middle",
-              textVerticalAnchor: "middle",
-              pointerEvents: "none",
-              fontWeight: "bold",
-              fontSize: 12,
-              fontFamily: "sans-serif"
-            },
-          },
-          size: { width: PORT_WIDTH, height: PORT_HEIGHT },
-          position: "absolute"
-        },
-      },
-          items: []
-        }
-      });
+    })
       //node.set('hidden', true);
       return node
 }
@@ -120,8 +85,8 @@ function createTopics(id, name){
       //  y: 500
       //},
       size: {
-        width: width,
-        height: 45
+        width: width + 100,
+        height: 65
       },
       NodeType:{
         type: "Topics"
@@ -129,10 +94,9 @@ function createTopics(id, name){
       attrs: {
         label: {
           fontWeight: "bold",
-          fontSize: 15,
+          fontSize: 20,
           fontFamily: "sans-serif",
           fill: "#ffffff",
-          stroke: "#333333",
           strokeWidth: 5,
           paintOrder: "stroke",
           text: name,
@@ -145,7 +109,11 @@ function createTopics(id, name){
       },
       ports:{
         items: []
+      },
+      buttons:{
+        x: "20%"
       }
+
     });
     node.set('hidden', true);
     node.set('collapsed', false)
@@ -198,54 +166,9 @@ function createConsiderations(id, name){
 
 
 
-function createSubTopics(id, name){
-  if(typeof name == 'string'){
-    var textWidth = name.length * 10
-  }else{
-    var textWidth = 150
-  }
-  const width = Math.max(textWidth, 200); // Ensure a minimum width to accommodate shorter text
-
-
-  const node =  new joint.shapes.standard.Rectangle({
-      id: id,
-      //position: {
-      //  x: 250,
-      //  y: 500
-      //},
-      size: {
-        width: width,
-        height: 65
-      },
-      attrs: {
-        label: {
-          //fontWeight: "bold",
-          fontSize: 15,
-          fontFamily: "sans-serif",
-          fill: "black",
-          stroke: "#333333",
-          paintOrder: "stroke",
-          text: name,
-        },
-        body: {
-          strokeWidth: 2,
-          fill: "white",
-          cursor: "grab"
-        },
-      },
-      ports:{
-        id: "RDaF Subtopic",
-        items: []
-      }
-    });
-    node.set('hidden', true);
-    node.set('collapsed', false)
-    return node
-}
-
 
 function createOutcomes(id, name){
-    const textWidth = name.length * 10; // Approximate width based on font size and average character width
+    const textWidth = name.length * 8; // Approximate width based on font size and average character width
     const width = Math.max(textWidth, 100); // Ensure a minimum width to accommodate shorter text
     const node =  new joint.shapes.standard.Rectangle({
         id: id,
@@ -259,9 +182,8 @@ function createOutcomes(id, name){
             fontWeight: "bold",
             fontSize: 15,
             fontFamily: "sans-serif",
-            fill: "#ffffff",
-            stroke: "#333333",
-            strokeWidth: 5,
+            fill: "black",
+
             paintOrder: "stroke",
             text: name,
           },

@@ -25,8 +25,9 @@ const paper = new dia.Paper({
   model: graph,
   linkView: CustomLinkView,
   interactive: { vertexAdd: false }, // disable default vertexAdd interaction,
-  width: 10000,
-  height: 4000,
+  width: window.innerWidth,
+  height: window.innerHeight,
+  overflow: true,
   gridSize: 10,
   drawGrid: true,
   background: {
@@ -40,7 +41,8 @@ const paper = new dia.Paper({
   }
 });
 
-
+// Fit the paper content to the container size
+paper.transformToFitContent()
 
 
 let duplicateFrame = []
@@ -65,7 +67,7 @@ var root = []
 var models = []
 function buildTheGraph(){
   var Elements = []
-    fetch('data/json-ld/graph.jsonld')
+    fetch('graph.jsonld')
   .then(response => response.json())
    // specifying a frame allows you to set the shape of the graph you want to navigate
   .then(data => jsonld.frame(data,
@@ -100,56 +102,56 @@ function buildTheGraph(){
   }))
   .then(frame => {
 
-      // example of pulling a single Outcome and linked Activity from the input data file
-      // in reality we want to navigate the entire graph
-      const frameArray = frame['@graph']
-      duplicateFrame = frameArray
-      let xAxis = 100;
-      let yAxis = 100;
-      frameArray.forEach(node =>{
-            if(node['additionalType'] == "RdAF Stage"){
-              var stage = linkNodes(node, Elements, "", "Stages")
-              stage.position(100,100)
-              graph.addCells(stage)
-              root.push(stage)
-              //Elements.push(stage)
-              topic = node['sunyrdaf:includes']
-              if(Array.isArray(topic)){
-                topic.forEach(topics =>{
-                  var tools = [];
-                  if(topics){
-                    //Creates the topic
-                    var topicElement = linkNodes(topics, Elements, stage, "Topics")
-                    Elements.push(topicElement)
-                    //createTextBlock(topicElement, node, stage)
-                    if(topics["sunyrdaf:includes"]){
-                      //Creates the consideration button if a topic includes consideration
-                      var port3 = createPort('Considerations', 'out');
-                      // Add custom tool buttons for each port
-                      topicElement.addPort(port3);// Adds a port to the element
-                      tools.push(createConsiderationButton(port3))//Create the button
-                      graph.addCells(topicElement);
-                      toolsView = new joint.dia.ToolsView({ tools: [tools]});
-                      topicElement.findView(paper).addTools(toolsView);//Embed the tools view into the element view
-                    }
-                    var port2 = createPort('Outcomes', 'out');
-                    // Add custom tool buttons for each port
-                    topicElement.addPort(port2);
-                    tools.push(createButton(port2))//Creates the Outcome button
-                    graph.addCells(topicElement);
-                    toolsView = new joint.dia.ToolsView({ tools: tools});
-                    topicElement.findView(paper).addTools(toolsView);
-                    checkOutcomes(topics, Elements, topicElement)
-                  }
-                })
-              }
-            }
-      });
-      paper.setInteractivity(false);
-      graph.addCells(Elements)
-      // Perform layout after setting positions
-      models = Elements
-      layout = doLayout();
+// example of pulling a single Outcome and linked Activity from the input data file
+// in reality we want to navigate the entire graph
+  const frameArray = frame['@graph']
+  duplicateFrame = frameArray
+  frameArray.forEach(node =>{
+    if(node['additionalType'] == "RdAF Stage"){
+      var stage = linkNodes(node, Elements, "", "Stages")
+      stage.position(100,100)
+      graph.addCells(stage)
+      root.push(stage)
+      //Elements.push(stage)
+      topic = node['sunyrdaf:includes']
+      if(Array.isArray(topic)){
+        topic.forEach(topics =>{
+        var tools = [];
+        if(topics){
+          //Creates the topic
+          var topicElement = linkNodes(topics, Elements, stage, "Topics")
+          Elements.push(topicElement)
+          //createTextBlock(topicElement, node, stage)
+          if(topics["sunyrdaf:includes"]){
+            //Creates the consideration button if a topic includes consideration
+            var port3 = createPort('Considerations', 'out');
+            // Add custom tool buttons for each port
+            topicElement.addPort(port3);// Adds a port to the element
+            tools.push(createConsiderationButton(port3))//Create the button
+            graph.addCells(topicElement);
+            toolsView = new joint.dia.ToolsView({ tools: [tools]});
+            topicElement.findView(paper).addTools(toolsView);//Embed the tools view into the element view
+            createTextBlock(topicElement,topics["sunyrdaf:includes"], stage )
+          }
+          var port2 = createPort('Outcomes', 'out');
+          // Add custom tool buttons for each port
+          topicElement.addPort(port2);
+          tools.push(createButton(port2))//Creates the Outcome button
+          graph.addCells(topicElement);
+          toolsView = new joint.dia.ToolsView({ tools: tools});
+          topicElement.findView(paper).addTools(toolsView);
+          checkOutcomes(topics, Elements, topicElement)
+          createTextBlock(topicElement,topics, stage )
+        }
+      })
+    }
+  }
+  });
+  paper.setInteractivity(false);
+  graph.addCells(Elements)
+  // Perform layout after setting positions
+  models = Elements
+  ayout = doLayout();
   })
 }
 
@@ -188,17 +190,18 @@ function checkOutcomes(topic, arr, parentNode){
 
 
 function createTextBlock(element, node, parentNode){
-  nodeCellView = paper.findViewByModel(parentNode)
-  var bbox = nodeCellView.model.getBBox();
+  var parentElementView = paper.findViewByModel(parentNode)
+  var elementView = paper.findViewByModel(element)
+  var bbox = parentElementView.model.getBBox();
   var paperRect1 = paper.localToPaperRect(bbox);
   // Draw an HTML rectangle above the element.
   var div = document.createElement('div');
-  nodeCellView.el.style.position = "relative"
+  parentElementView.el.style.position = "relative"
   div.style.position = 'absolute';
   div.style.background = 'white';
   div.textContent = node['description']
   var length = element * 2
-  div.style.width = ((paperRect1.width)/2) + 'px';
+  div.style.width = (300) + 'px';
   div.style.height = (length) + 'px';
   div.style.border = "1px solid black";
   div.style.fontWeight = "bold"
@@ -208,7 +211,15 @@ function createTextBlock(element, node, parentNode){
   div.style.lineBreak = 0.5
   div.style.visibility = "hidden"
   div.style.backgroundColor = "lightgrey"
-  paper.el.appendChild(div);
+  if(node['description'] != null){
+    paper.el.appendChild(div);
+  }else{
+    if(elementView.model.attributes.name['first'] == "Considerations"){
+      elementView.removeTools()
+    }
+    console.warn()
+  }
+
 }
 
 //Function to create considerations nodes
@@ -353,7 +364,7 @@ function linkNodes(childNode, arr, parentNode, typeOfNode){
   if(typeOfNode == "Stages"){
     var stage = createStage(childNode['@id'], childNode['name'])
     stage.prop('name/first', "Stages")
-    setPorts(stage, ['Topics']);
+    //setPorts(stage, ['Topics']);
     arr.push(stage)
     //createTextBlock(stage, childNode, childNode)
     return stage;
@@ -361,6 +372,7 @@ function linkNodes(childNode, arr, parentNode, typeOfNode){
   if(typeOfNode == "Topics"){
     var topicElement = createTopics(childNode['@id'], childNode['name'])
     const linkStageToTopics = makeLink(parentNode, topicElement)
+    topicElement.prop('name/first', "Topics")
     arr.push(topicElement, linkStageToTopics)
     return topicElement;
   }
@@ -452,7 +464,7 @@ function doLayout() {
 
 //This function sets the root elements to a fix position
 function setRootToFix(){
-  const rootCenter = { x: 300, y: 1000 };
+  const rootCenter = { x: 200, y: (window.innerHeight)/2 };
 
   // Calculate the total height of all root elements
   let totalHeight = 0;
@@ -481,9 +493,6 @@ function setRootToFix(){
     currentY += height;
   })
 }
-
-
-
 
 
 buildTheGraph();

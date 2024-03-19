@@ -141,10 +141,8 @@ function createConsiderationButton(port,pos) {
           selector: 'button',
           attributes: {
               'id': port.id,
-              'width': 120,
+              'width': 115,
               'height': 20,
-              'rx': 10, // Border radius
-              'ry': 10, // Border radius
               'fill': '#ffbf80', // Button background color
               'stroke': 'black', // Button border color
               'stroke-width': 2, // Button border width
@@ -159,16 +157,17 @@ function createConsiderationButton(port,pos) {
               'fill': 'black', // Text color
               'font-size': '15px',
               'font-family': 'Arial',
+              'font-weight':'bold',
               'text-anchor': 'middle',
-              'x':60,
+              'x':56,
               'y': 15, // Adjust text position
               'cursor': 'pointer'
           }
         }
       ],
-      x: "90%", // Button position X
-      y: "70%", // Button position Y
-      offset: { x: -8, y: -8 },
+      x: "97%", // Button position X
+      y: "50%", // Button position Y
+      //ffset: { x: -8, y: -8 },
       action: function(evt,elementView) {
         //Event Handle for the button.
         toggelButton(this.model, `${port.id}`)
@@ -189,7 +188,7 @@ function createSubTopicButton(port, pos){
             'height': 20,
             'rx': 10, // Border radius
             'ry': 10, // Border radius
-            'fill': '#ffbf80', // Button background color
+            'fill': 'lightgrey', // Button background color
             'stroke': 'black', // Button border color
             'stroke-width': 2, // Button border width
             'cursor': 'pointer'
@@ -235,10 +234,9 @@ function createButton(port,pos) {
               selector: 'button',
               attributes: {
                   'id': port.id,
-                  'width': 80,
+                  'width': 115,
                   'height': 20,
-                  'rx': 10, // Border radius
-                  'ry': 10, // Border radius
+
                   'fill': '#ffffb3', // Button background color
                   'stroke': 'black', // Button border color
                   'stroke-width': 2, // Button border width
@@ -255,18 +253,15 @@ function createButton(port,pos) {
                   'font-size': '15px',
                   'font-family': 'Arial',
                   'text-anchor': 'middle',
-                  'x': 40,
+                  'x': 55,
                   'y': 15, // Adjust text position
                   'cursor': 'pointer'
               }
           }
       ],
-      x: "90%", // Button position X
-      y: "10%", // Button position Y
+      x: "97%", // Button position X
+      y: "20%", // Button position Y
       action: function(evt, elementView) {
-        //alert('View id: ' + this.id + '\n' + 'Model id: ' + this.model);
-        //console.log( `Clicked button for port ${port.id}`)
-        //toggleBranch(this.model)
         toggelButton(this.model, `${port.id}`)
       },
     });
