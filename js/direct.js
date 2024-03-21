@@ -26,7 +26,7 @@ const paper = new dia.Paper({
   linkView: CustomLinkView,
   interactive: { vertexAdd: false }, // disable default vertexAdd interaction,
   width: 10000, //window.innerWidth,
-  height: 5000,//window.innerHeight,
+  height: 50000,//window.innerHeight,
   overflow: true,
   gridSize: 10,
   perpendicularLinks: true,
@@ -128,6 +128,9 @@ function buildTheGraph(){
         if(topics){
           //Creates the topic
           var topicElement = linkNodes(topics, Elements, stage, "Topics")
+          const w = topicElement.size().width
+          const h = topicElement.size().height
+          topicElement.size(w + 200, h)
           Elements.push(topicElement)
           //createTextBlock(topicElement, node, stage)
           if(topics["sunyrdaf:includes"]){
@@ -135,7 +138,9 @@ function buildTheGraph(){
             var port3 = createPort('Considerations', 'out');
             // Add custom tool buttons for each port
             topicElement.addPort(port3);// Adds a port to the element
-            tools.push(createConsiderationButton(port3))//Create the button
+            const considerationButton = createConsiderationButton(port3)
+            considerationButton.options.x = "85%"
+            tools.push(considerationButton)//Create the button
             graph.addCells(topicElement);
             toolsView = new joint.dia.ToolsView({ tools: [tools]});
             topicElement.findView(paper).addTools(toolsView);//Embed the tools view into the element view
@@ -144,7 +149,9 @@ function buildTheGraph(){
           var port2 = createPort('Outcomes', 'out');
           // Add custom tool buttons for each port
           topicElement.addPort(port2);
-          tools.push(createButton(port2))//Creates the Outcome button
+          const outcomeButton = createButton(port2)
+          outcomeButton.options.x = "85%"
+          tools.push(outcomeButton)//Creates the Outcome button
           graph.addCells(topicElement);
           toolsView = new joint.dia.ToolsView({ tools: tools});
           topicElement.findView(paper).addTools(toolsView);
@@ -440,60 +447,23 @@ function doLayout() {
       visibleElements.push(el)
     }
   })
-
   layout = joint.layout.DirectedGraph.layout(visibleElements, {
-    setVertices: true,
+    setVertices: false,
     rankDir: 'LR',
     nodeSep: 50, // Increase the separation between adjacent nodes
     edgeSep: 10, // Increase the separation between adjacent edges
-    rankSep: 300, // Increase the separation between node layers
+    rankSep: 0, // Increase the separation between node layers
     marginX: 50, // Add margin to the left and right of the graph
     marginY: 50, // Add margin to the top and bottom of the graph
-    step: 10,
-    padding: 10,
-    maximumLoops: 0,
-    size:{width: 200, height:65},
     resizeClusters: false,
+    setPosition: (element, position) => {
+      // Align elements to the left by setting their x-coordinate
+      setElementsPosition(element, position)
+    }
   });
-
-
-
-  setRootToFix();
+  setRootToFix();       //Sets the position of the root elements
+  setLinkVertices();    //Sets the vertices that is, marks the points where the links should route from
 }
-
-
-//This function sets the root elements to a fix position
-function setRootToFix(){
-  const rootCenter = { x: 200, y: (window.innerHeight)/2 };
-
-  // Calculate the total height of all root elements
-  let totalHeight = 0;
-  root.forEach(element => {
-      totalHeight += element.size().height;
-  });
-
-  // Calculate the y-coordinate for the topmost root element
-  let currentY = rootCenter.y - totalHeight / 2;
-  root.forEach(el =>{
-    const { width, height } = el.size();
-
-    // Calculate the x-coordinate for the current root element
-    const currentX = rootCenter.x - width;
-
-    // Calculate the difference between the current position and the desired position
-    const diff = el.position().difference({
-        x: currentX,
-        y: currentY
-    });
-
-    // Translate the element to the desired position
-    el.translate(-diff.x, -diff.y);
-
-    // Update the y-coordinate for the next root element
-    currentY += height;
-  })
-}
-
 
 buildTheGraph();
 

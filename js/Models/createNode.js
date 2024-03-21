@@ -12,7 +12,6 @@ function makeLink(from,to) {
       source: { id: from.id, anchor:{name: "right",
         args: {
             rotate: true,
-            offset: 10
           }
         },
       },
@@ -20,18 +19,18 @@ function makeLink(from,to) {
 
 });
 
-    link.router('manhattan', {
+    link.router('orthogonal', {
         margin: 0,
         startDirections: ['right'],
         endDirections: ['left'],
-        step: 5,
-        padding: 10,
+        step: 10,
+        padding: 20,
         perpendicular: true,
-        maxAllowedDirectionChange:150,
-        excludeEnds: ['source', 'target']
+        maxAllowedDirectionChange:0,
+        excludeEnds: ['source', 'target'],
+        excludeTypes: ['standard.Rectangle']
     });
-    link.connector('rounded');
-    link.vertices([{ x: 0, y: 0 }, { x: 0, y: 0 }]);
+    link.connector('straight');
     link.set('hidden', true);
     return link
 }
@@ -71,49 +70,38 @@ function createStage(id, name){
 
 
 function createTopics(id, name){
-  const textWidth = name.length * 10; // Approximate width based on font size and average character width
-  const width = Math.max(textWidth, 100); // Ensure a minimum width to accommodate shorter text
+  const textWidth = name.length * 8; // Approximate width based on font size and average character width
+  const width = Math.max(textWidth, 0); // Ensure a minimum width to accommodate shorter text
   const node =  new joint.shapes.standard.Rectangle({
-      id: id,
-      //position: {
-      //  x: 250,
-      //  y: 500
-      //},
-      size: {
-        width: width + 100,
-        height: 65
-      },
-      NodeType:{
-        type: "Topics"
-      },
-      attrs: {
-        label: {
-          fontWeight: "bold",
-          fontSize: 20,
-          fontFamily: "sans-serif",
-          fill: "#ffffff",
-          strokeWidth: 5,
-          paintOrder: "stroke",
-          text: name,
-        },
-        body: {
-          strokeWidth: 2,
-          fill: "#4d80b3",
-          cursor: "grab",
-          align: 'left'
-        },
-      },
-      ports:{
-        items: []
-      },
-      buttons:{
-        x: "20%"
-      }
+    id: id,
 
-    });
-    node.set('hidden', true);
-    node.set('collapsed', false)
-    return node
+    size: {
+      width: width,
+      height: 70
+    },
+    attrs: {
+      label: {
+        fontWeight: "bold",
+        fontSize: 17,
+        fontFamily: "sans-serif",
+        fill: "black",
+        paintOrder: "stroke",
+        text: name,
+      },
+      body: {
+        strokeWidth: 2,
+        fill: "	#7B9EF6",
+        cursor: "grab"
+      },
+    },
+    ports:{
+      id: "Outcomes",
+      items: []
+    }
+  });
+  node.set('hidden', true);
+  node.set('collapsed', false)
+  return node;
 }
 
 
@@ -125,83 +113,78 @@ function createConsiderations(id, name){
   }
   const width = Math.max(textWidth, 200); // Ensure a minimum width to accommodate shorter text
   const node =  new joint.shapes.standard.Rectangle({
-      id: id,
-      //position: {
-      //  x: 250,
-      //  y: 500
-      //},
-      size: {
-        width: width,
-        height: 35
+    id: id,
+    size: {
+      width: width,
+      height: 35
+    },
+    attrs: {
+      label: {
+      //fontWeight: "bold",
+        fontSize: 15,
+        fontFamily: "sans-serif",
+        fill: "black",
+        stroke: "#333333",
+        paintOrder: "stroke",
+        text: name,
       },
-      attrs: {
-        label: {
-          //fontWeight: "bold",
-          fontSize: 15,
-          fontFamily: "sans-serif",
-          fill: "black",
-          stroke: "#333333",
-          paintOrder: "stroke",
-          text: name,
-        },
-        body: {
-          strokeWidth: 2,
-          fill: "white",
-          cursor: "grab"
-        },
+      body: {
+        strokeWidth: 2,
+        fill: "white",
+        cursor: "grab"
       },
-      ports:{
-        id: "Considerations",
-        items: []
-      }
-    });
-    node.set('hidden', true);
-    node.set('collapsed', false)
-    return node
+    },
+    ports:{
+      id: "Considerations",
+      items: []
+    }
+  });
+  node.set('hidden', true);
+  node.set('collapsed', false)
+  return node
 }
 
 
 
 
 function createOutcomes(id, name){
-    const textWidth = name.length * 8; // Approximate width based on font size and average character width
-    const width = Math.max(textWidth, 100); // Ensure a minimum width to accommodate shorter text
-    const node =  new joint.shapes.standard.Rectangle({
-        id: id,
-
-        size: {
-          width: width,
-          height: 70
-        },
-        attrs: {
-          label: {
-            fontWeight: "bold",
-            fontSize: 15,
-            fontFamily: "sans-serif",
-            fill: "black",
-
-            paintOrder: "stroke",
-            text: name,
-          },
-          body: {
-            strokeWidth: 2,
-            fill: "	#ffcccc",
-            cursor: "grab"
-          },
-        },
-        ports:{
-          id: "Outcomes",
-          items: []
-        }
-      });
-      node.set('hidden', true);
-      node.set('collapsed', false)
-      return node;
+  const textWidth = name.length * 8; // Approximate width based on font size and average character width
+  const width = Math.max(textWidth, 100); // Ensure a minimum width to accommodate shorter text
+  const node =  new joint.shapes.standard.Rectangle({
+    id: id,
+    size: {
+      width: width,
+      height: 70
+    },
+    attrs: {
+      label: {
+        fontWeight: "bold",
+        fontSize: 15,
+        fontFamily: "sans-serif",
+        fill: "black",
+        paintOrder: "stroke",
+        text: name,
+      },
+      body: {
+        strokeWidth: 2,
+        fill: "	#ffcccc",
+        cursor: "grab"
+      },
+    },
+    ports:{
+      id: "Outcomes",
+      items: []
+    }
+  });
+  node.set('hidden', true);
+  node.set('collapsed', false)
+  return node;
 }
+
 
 function createActivities(id, name){
 
-  const textWidth = name.length * 10; // Approximate width based on font size and average character width
+  const textWidth = name.length * 8; // Approximate width based on font size and average character width
   const width = Math.max(textWidth, 200); // Ensure a minimum width to accommodate shorter text
   const node =  new joint.shapes.standard.Rectangle({
       id: id,
@@ -211,32 +194,32 @@ function createActivities(id, name){
       //},
       size: {
         width: width,
-        height: 200
+        height: 70
       },
       attrs: {
         label: {
           //fontWeight: "bold",
-          fontSize: 15,
-          fontFamily: "sans-serif",
-          fill: "black",
-          stroke: "#333333",
-          paintOrder: "stroke",
-          text: name,
-        },
-        body: {
-          strokeWidth: 2,
-          fill: "#9999e6",
-          cursor: "grab"
-        },
+        fontSize: 15,
+        fontFamily: "sans-serif",
+        fill: "black",
+        stroke: "#333333",
+        paintOrder: "stroke",
+        text: name,
       },
-      ports:{
-        id: "Activities",
-        items: []
-      }
-    });
-    node.set('hidden', true);
-    node.set('collapsed', false)
-    return node
+      body: {
+        strokeWidth: 2,
+        fill: "#9999e6",
+        cursor: "grab"
+      },
+    },
+    ports:{
+      id: "Activities",
+      items: []
+    }
+  });
+  node.set('hidden', true);
+  node.set('collapsed', false)
+  return node
 }
 
 function setPorts(el, ports) {

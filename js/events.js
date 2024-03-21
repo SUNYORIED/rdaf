@@ -277,7 +277,6 @@ function defaultEvent(node, typeOfPort){
                 if(orphanLink.length > 1){
                     orphanLink.forEach(links =>{
                         if(links.get('collapsed') && links != undefined && links.getTargetElement() != undefined){
-                            console.log(links.getTargetElement())
                             links.getTargetElement().set('hidden', false)
                             links.getTargetElement().set('collapsed', true)
                             links.set('hidden', false)
@@ -434,7 +433,6 @@ paper.on('cell:mouseover', function(cellView) {
                     // Set the position of the element according to the pointer and make it visible
                     //Look for any events on subtopic button
                     if(element.childNodes.button.id == "RDaF Subtopic"){
-                        console.log(element.childNodes.button.id)
                         var textBlock = document.getElementById(cellView.model.id)
                         textBlock.style.visibility = "hidden"
                     }
@@ -445,6 +443,7 @@ paper.on('cell:mouseover', function(cellView) {
                     }
                     else if(element.childNodes.button.id == "Activities"){
                         element.childNodes.button.setAttribute('fill', '#ffffb3')
+                        var textBlock = document.getElementById(cellView.model.id)
                         textBlock.style.visibility = "hidden"
                     }
                     else if(element.childNodes.button.id == "Considerations"){
