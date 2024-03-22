@@ -87,7 +87,6 @@ var i = 0
   BUTTONS VIEW: Adds the button to the tools View
 */
 function buttonView(portName, element, portNameList, parentNode){
-
   var port = createPort(portName, 'out', 'Port 3');
   var considerationPort = createPort("Considerations", "out", "Port 4")
   var subTopicPort = createPort("RDaF Subtopic", 'out', 'Port 5')
@@ -108,7 +107,8 @@ function buttonView(portName, element, portNameList, parentNode){
     tool.push(createSubTopicButton(subTopicPort))
   }
   if(portName == "Outcomes"){
-    tool.push(createButton(port))
+    const button = createButton(port)
+    tool.push(button)
   }
   if(portName == "Definition"){
     tool.push(createDefinitionButton(port))
@@ -186,8 +186,6 @@ function createSubTopicButton(port, pos){
             'id': port.id,
             'width': 100,
             'height': 20,
-            'rx': 10, // Border radius
-            'ry': 10, // Border radius
             'fill': 'lightgrey', // Button background color
             'stroke': 'black', // Button border color
             'stroke-width': 2, // Button border width
