@@ -2173,7 +2173,7 @@
 <https://data.suny.edu/entities/oried/rdaf/suny/role.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://data.suny.edu/vocabs/oried/rdaf/suny/Role> .
 <https://data.suny.edu/entities/oried/rdaf/suny/role.3> <https://schema.org/name> "SME and Implementers" .
 <https://data.suny.edu/entities/oried/rdaf/suny/role.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://data.suny.edu/vocabs/oried/rdaf/suny/Role> .
-<https://data.suny.edu/entities/oried/rdaf/suny/role.4> <https://schema.org/name> "Connectors/Facilitators\nStrategic Leaders" .
+<https://data.suny.edu/entities/oried/rdaf/suny/role.4> <https://schema.org/name> "Strategic Leaders" .
 <https://datagovernance.com/funding-models-funding-data-governance/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://data.suny.edu/vocabs/oried/rdaf/suny/Resource> .
 <https://datagovernance.com/funding-models-funding-data-governance/> <https://schema.org/name> "Funding Data Governance - DGI" .
 <https://fnigc.ca/ocap-training/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://data.suny.edu/vocabs/oried/rdaf/suny/Resource> .
