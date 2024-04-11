@@ -31,7 +31,7 @@ function radioButton(port, index, name){
           selector: 'label',
           textContent: name, // Text displayed on the button
           attributes: {
-            'fill': 'black', // Text color
+            'fill': 'whitesmoke', // Text color
             'font-size': '15px',
             'font-family': 'Arial',
             'text-anchor': 'middle',
@@ -52,29 +52,13 @@ function radioButton(port, index, name){
 }
 
 
-//Test Case to test circle button
-var rect = new joint.shapes.standard.Rectangle({
-    position: { x: 275, y: 50 },
-    size: { width: 400, height: 40 },
-    attrs: {
-        body: {
-            fill: '#8ECAE6'
-        },
-    },
-    ports: {
-        items: [ ],
-        selector: 'portBody'
-    },
-});
-
-
 //This function takes in a list of ports that are to be embeded into the element,
 //Make sure the port Ids of the ports are always different
 //Creates a set of 3 circle buttons that are required in the Activities
-function radioButtonView(portName, element, tools){
-  var port1 = createPort(portName[0], 'out');
-  var port2 = createPort(portName[1],'out');
-  var port3 = createPort(portName[2], 'out');
+function radioButtonView(portNameList, element, tools){
+  var port1 = createPort(portNameList[0], 'out');
+  var port2 = createPort(portNameList[1],'out');
+  var port3 = createPort(portNameList[2], 'out');
   element.addPort(port1)
   element.addPort(port2)
   element.addPort(port3)
@@ -86,35 +70,90 @@ var i = 0
 /*
   BUTTONS VIEW: Adds the button to the tools View
 */
-function buttonView(portName, element, portNameList, parentNode){
-
-  var port = createPort(portName, 'out', 'Port 3');
-  var considerationPort = createPort("Considerations", "out", "Port 4")
-  var subTopicPort = createPort("RDaF Subtopic", 'out', 'Port 5')
+function buttonView(portName, element){
   // Add custom tool buttons for each port
   var tool = [];
-  element.addPort(port);
-  element.addPort(considerationPort)
-  element.addPort(subTopicPort)
-
   //Create the Button
   if(portName == "Considerations"){
-    tool.push(createConsiderationButton(port))
+    var considerationPort = createPort("Considerations", "Port 4", "100%", "60%")
+    element.addPort(considerationPort)
+    const button = createConsiderationButton(port)
+    tool.push(button)
   }if(portName == "Activities"){
-    tool.push(createConsiderationButton(considerationPort))
-    tool.push(createButton(port))
+    var subTopicPort = createPort("RDaF Subtopic", 'Port 5')
+    var ActivitiesPort = createPort("Activities", 'Port 3', "100%", 20);
+    var considerationPort = createPort("Considerations", "Port 4", "100%", 40)
+    element.addPort(ActivitiesPort);
+    element.addPort(considerationPort)
+    element.addPort(subTopicPort)
+    const considerationbutton = createConsiderationButton(considerationPort)
+    const activitiesbutton = createButton(ActivitiesPort)
+    tool.push(considerationbutton)
+    tool.push(activitiesbutton)
     //Push the circle buttons to the same list
+    var portNameList = ['NT1', "PG1", "AC1"]
     tool.push(radioButtonView(portNameList, element, tool))
     tool.push(createSubTopicButton(subTopicPort))
   }
   if(portName == "Outcomes"){
-    tool.push(createButton(port))
+    var port = createPort(portName, 'Port 3', "100%", "0");
+    console.log(port)
+    element.addPort(port);
+    const outcomebutton = createButton(port)
+    tool.push(outcomebutton)
   }
   if(portName == "Definition"){
+    var port = createPort(portName, 'Port 3');
+    element.addPort(port);
     tool.push(createDefinitionButton(port))
   }
-  createElementView(element, tool)
-
+  if(Array.isArray(portName)){
+    portName.forEach(ports =>{
+      if(ports == "Participants"){
+        var port1 = createPort(ports, "Port3", "100%", "32%");
+        element.addPort(port1)
+        const participantButton = createParticipantsButton(port1)
+        tool.push(participantButton)
+      }
+      if(ports == "Roles"){
+        var port1 = createPort(ports, "Port3","100%", "16%");
+        element.addPort(port1)
+        const rolesButton = createRolesButton(port1)
+        tool.push(rolesButton)
+      }
+      if(ports == "Methods"){
+        var port1 = createPort(ports, "Port3", "100%", 5);
+        element.addPort(port1)
+        const methodButton = createMethodButton(port1)
+        tool.push(methodButton)
+      }
+      if(ports == "Resources"){
+        var port1 = createPort(ports, "Port3", "100%", "49%");
+        element.addPort(port1)
+        const resourceButton = createResourcesButton(port1)
+        tool.push(resourceButton)
+      }
+      if(ports == "Outputs"){
+        var port1 = createPort(ports, "Port3", "100%", "65%", );
+        element.addPort(port1)
+        const outputButton = createOutputButton(port1)
+        tool.push(outputButton)
+      }
+      if(ports == "RDaF Subtopic"){
+        var port1 = createPort(ports, "Port3");
+        element.addPort(port1)
+        tool.push(createSubTopicButton(port1))
+      }
+      if(ports == "Considerations"){
+        var port1 = createPort(ports, "Port3", "100%", "82%");
+        element.addPort(port1)
+        const considerationButton = createConsiderationButton(port1)
+        tool.push(considerationButton)
+      }
+    })
+  }
+  var toolsView = createElementView(element, tool)
+  return toolsView
 }
 
 function createElementView(element, tool){
@@ -125,6 +164,7 @@ function createElementView(element, tool){
   var elementView = element.findView(paper)
   //Embed tthe tools view in to the element view
   elementView.addTools(toolsView);
+  return toolsView
 }
 
 
@@ -143,10 +183,12 @@ function createConsiderationButton(port,pos) {
               'id': port.id,
               'width': 115,
               'height': 20,
-              'fill': '#ffbf80', // Button background color
+              'fill': '#005C90', // Button background color
               'stroke': 'black', // Button border color
               'stroke-width': 2, // Button border width
-              'cursor': 'pointer'
+              'cursor': 'pointer',
+              'rx': 4, // Horizontal border radius
+              'ry': 4, // Vertical border radius
           }
         },
           {
@@ -154,7 +196,7 @@ function createConsiderationButton(port,pos) {
             selector: 'text',
             textContent: port.id, // Text displayed on the button
             attributes: {
-              'fill': 'black', // Text color
+              'fill': 'white', // Text color
               'font-size': '15px',
               'font-family': 'Arial',
               'font-weight':'bold',
@@ -165,7 +207,7 @@ function createConsiderationButton(port,pos) {
           }
         }
       ],
-      x: "97%", // Button position X
+      x: "100%", // Button position X
       y: "50%", // Button position Y
       //ffset: { x: -8, y: -8 },
       action: function(evt,elementView) {
@@ -184,14 +226,14 @@ function createSubTopicButton(port, pos){
         selector: 'button',
         attributes: {
             'id': port.id,
-            'width': 100,
+            'width': 105,
             'height': 20,
-            'rx': 10, // Border radius
-            'ry': 10, // Border radius
-            'fill': 'lightgrey', // Button background color
+            'fill': 'whitesmoke', // Button background color
             'stroke': 'black', // Button border color
             'stroke-width': 2, // Button border width
-            'cursor': 'pointer'
+            'cursor': 'pointer',
+            'rx': 4, // Horizontal border radius
+            'ry': 4, // Vertical border radius
         }
       },
         {
@@ -200,11 +242,11 @@ function createSubTopicButton(port, pos){
           textContent: port.id, // Text displayed on the button
           attributes: {
             'fill': 'black', // Text color
-            'font-size': '12px',
+            'font-size': '14px',
             'font-weight': 'bold',
             'font-family': 'Arial',
             'text-anchor': 'middle',
-            'x':47,
+            'x':52,
             'y': 15, // Adjust text position
             'cursor': 'pointer'
         }
@@ -236,11 +278,12 @@ function createButton(port,pos) {
                   'id': port.id,
                   'width': 115,
                   'height': 20,
-
-                  'fill': '#ffffb3', // Button background color
+                  'fill': '#005C90', // Button background color
                   'stroke': 'black', // Button border color
                   'stroke-width': 2, // Button border width
-                  'cursor': 'pointer'
+                  'cursor': 'pointer',
+                  'rx': 4, // Horizontal border radius
+                  'ry': 4, // Vertical border radius
               }
           },
           {
@@ -249,7 +292,7 @@ function createButton(port,pos) {
               textContent: port.id, // Text displayed on the button
               attributes: {
                 'fontweight':'bold',
-                  'fill': 'black', // Text color
+                  'fill': 'white', // Text color
                   'font-size': '15px',
                   'font-family': 'Arial',
                   'text-anchor': 'middle',
@@ -259,7 +302,7 @@ function createButton(port,pos) {
               }
           }
       ],
-      x: "97%", // Button position X
+      x: "100%", // Button position X
       y: "20%", // Button position Y
       action: function(evt, elementView) {
         toggelButton(this.model, `${port.id}`)
@@ -277,14 +320,14 @@ function createDefinitionButton(port,pos) {
         selector: 'button',
         attributes: {
             'id': port.id,
-            'width': 120,
+            'width': 70,
             'height': 20,
-            'rx': 10, // Border radius
-            'ry': 10, // Border radius
             'fill': 'black', // Button background color
             'stroke': 'black', // Button border color
             'stroke-width': 2, // Button border width
-            'cursor': 'pointer'
+            'cursor': 'pointer',
+            'rx': 4, // Horizontal border radius
+            'ry': 4, // Vertical border radius
         }
       },
         {
@@ -297,14 +340,14 @@ function createDefinitionButton(port,pos) {
             'font-family': 'Arial',
             'text-anchor': 'middle',
             'fill': 'white',
-            'x':60,
+            'x':35,
             'y': 15, // Adjust text position
             'cursor': 'pointer'
         }
       }
     ],
-    x: "90%", // Button position X
-    y: "70%", // Button position Y
+    x: "80%", // Button position X
+    y: "45%", // Button position Y
     offset: { x: -8, y: -8 },
     action: function(evt,elementView) {
       //Event Handler for the button.
@@ -313,4 +356,218 @@ function createDefinitionButton(port,pos) {
   return button;
 }
 
+function createMethodButton(port,pos) {
+  var button  = new joint.elementTools.Button({
+    markup: [
+        {
+            tagName: 'rect',
+            selector: 'button',
+            attributes: {
+                'id': port.id,
+                'width': 115,
+                'height': 20,
+                'fill': '#04C3D6', // Button background color
+                'stroke': 'black', // Button border color
+                'stroke-width': 2, // Button border width
+                'cursor': 'pointer',
+                'rx': 4, // Horizontal border radius
+                'ry': 4, // Vertical border radius
+            }
+        },
+        {
+            tagName: 'text',
+            selector: 'text',
+            textContent: port.id, // Text displayed on the button
+            attributes: {
+              'fontweight':'bold',
+                'fill': 'black', // Text color
+                'font-size': '15px',
+                'font-family': 'Arial',
+                'text-anchor': 'middle',
+                'x': 55,
+                'y': 15, // Adjust text position
+                'cursor': 'pointer'
+            }
+        }
+    ],
+    x: "85%", // Button position X
+    y: "0%", // Button position Y
+    action: function(evt, elementView) {
+      toggelButton(this.model, `${port.id}`)
+    },
+  });
+  return button;
+}
 
+function createRolesButton(port,pos) {
+  var button  = new joint.elementTools.Button({
+    markup: [
+        {
+            tagName: 'rect',
+            selector: 'button',
+            attributes: {
+                'id': port.id,
+                'width': 115,
+                'height': 20,
+                'fill': '#09BD00', // Button background color
+                'stroke': 'black', // Button border color
+                'stroke-width': 2, // Button border width
+                'cursor': 'pointer',
+                'rx': 4, // Horizontal border radius
+                'ry': 4, // Vertical border radius
+            }
+        },
+        {
+            tagName: 'text',
+            selector: 'text',
+            textContent: port.id, // Text displayed on the button
+            attributes: {
+              'fontweight':'bold',
+              'fill': 'black', // Text color
+              'font-size': '15px',
+              'font-family': 'Arial',
+              'text-anchor': 'middle',
+              'x': 55,
+              'y': 15, // Adjust text position
+              'cursor': 'pointer'
+            }
+        }
+    ],
+    x: "85%", // Button position X
+    y: "16%", // Button position Y
+    action: function(evt, elementView) {
+      toggelButton(this.model, `${port.id}`)
+    },
+  });
+  return button;
+}
+
+function createParticipantsButton(port,pos) {
+  var button  = new joint.elementTools.Button({
+    markup: [
+        {
+            tagName: 'rect',
+            selector: 'button',
+            attributes: {
+                'id': port.id,
+                'width': 115,
+                'height': 20,
+                'fill': '#B70316', // Button background color
+                'stroke': 'black', // Button border color
+                'stroke-width': 2, // Button border width
+                'cursor': 'pointer',
+                'rx': 4, // Horizontal border radius
+                'ry': 4, // Vertical border radius
+            }
+        },
+        {
+            tagName: 'text',
+            selector: 'text',
+            textContent: port.id, // Text displayed on the button
+            attributes: {
+              'fontweight':'bold',
+              'fill': 'white', // Text color
+              'font-size': '15px',
+              'font-family': 'Arial',
+              'text-anchor': 'middle',
+              'x': 55,
+              'y': 15, // Adjust text position
+              'cursor': 'pointer'
+            }
+        }
+    ],
+    x: "85%", // Button position X
+    y: "32%", // Button position Y
+    action: function(evt, elementView) {
+      toggelButton(this.model, `${port.id}`)
+    },
+  });
+  return button;
+}
+
+function createOutputButton(port,pos) {
+  var button  = new joint.elementTools.Button({
+    markup: [
+        {
+            tagName: 'rect',
+            selector: 'button',
+            attributes: {
+                'id': port.id,
+                'width': 115,
+                'height': 20,
+                'fill': '#0013FF', // Button background color
+                'stroke': 'black', // Button border color
+                'stroke-width': 2, // Button border width
+                'cursor': 'pointer',
+                'rx': 4, // Horizontal border radius
+                'ry': 4, // Vertical border radius
+            }
+        },
+        {
+            tagName: 'text',
+            selector: 'text',
+            textContent: port.id, // Text displayed on the button
+            attributes: {
+              'fontweight':'bold',
+              'fill': 'white', // Text color
+              'font-size': '15px',
+              'font-family': 'Arial',
+              'text-anchor': 'middle',
+              'x': 55,
+              'y': 15, // Adjust text position
+              'cursor': 'pointer'
+            }
+        }
+    ],
+    x: "85%", // Button position X
+    y: "65%", // Button position Y
+    action: function(evt, elementView) {
+      toggelButton(this.model, `${port.id}`)
+    },
+  });
+  return button;
+}
+
+
+function createResourcesButton(port,pos) {
+  var button  = new joint.elementTools.Button({
+    markup: [
+        {
+            tagName: 'rect',
+            selector: 'button',
+            attributes: {
+                'id': port.id,
+                'width': 115,
+                'height': 20,
+                'fill': '#B6BF30', // Button background color
+                'stroke': 'black', // Button border color
+                'stroke-width': 2, // Button border width
+                'cursor': 'pointer',
+                'rx': 4, // Horizontal border radius
+                'ry': 4, // Vertical border radius
+            }
+        },
+        {
+            tagName: 'text',
+            selector: 'text',
+            textContent: port.id, // Text displayed on the button
+            attributes: {
+              'fontweight':'bold',
+              'fill': 'black', // Text color
+              'font-size': '15px',
+              'font-family': 'Arial',
+              'text-anchor': 'middle',
+              'x': 55,
+              'y': 15, // Adjust text position
+              'cursor': 'pointer'
+            }
+        }
+    ],
+    x: "85%", // Button position X
+    y: "49%", // Button position Y
+    action: function(evt, elementView) {
+      toggelButton(this.model, `${port.id}`)
+    },
+  });
+  return button;
+}

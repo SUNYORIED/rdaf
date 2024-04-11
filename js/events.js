@@ -335,19 +335,17 @@ paper.on('cell:mouseover', function(cellView) {
                             // Set the position of the element according to the pointer and make it visible
                             var textBlock = document.getElementById(cellView.model.id)
                             if(textBlock != null){
-                                textBlock.style.left = ((paperRect1.x) + 10) + 'px';
+                                textBlock.style.left = "50px";
                                 textBlock.style.top = ((paperRect1.y) + 55) + 'px';
                                 textBlock.style.visibility = "visible"
                             }
                         }
                         if(element.childNodes.button.id == "Activities"){
-                            hoverTimeout = setTimeout(function() {
                                 element.childNodes.button.setAttribute('fill', 'lightgrey')
                                 var textBlock = document.getElementById(cellView.model.id)
                                 textBlock.style.left = (paperRect1.x + 100);
                                 textBlock.style.top = ((paperRect1.y) + 40) + 'px';
                                 textBlock.style.visibility = "visible"
-                            }, 1500);
                         }
                         if(element.childNodes.button.id == "Considerations"){
                                 element.childNodes.button.setAttribute('fill', 'lightgrey')
