@@ -20,10 +20,11 @@ function checkForActivitiesTarget(activity, arr, parentNode){
         }
     }const nodeTypes = ["sunyrdaf:Method", "sunyrdaf:Participant", "sunyrdaf:Role", "sunyrdaf:Resource"]
     if(Array.isArray(activity['sunyrdaf:includes'])){
-
         activity['sunyrdaf:includes'].forEach(node =>{
-            if(node['name'] == undefined){
-                node = findNode(node)
+            if(node['name']){
+                if(node['@id'] == "https://data.suny.edu/entities/oried/rdaf/suny/participant.25"){
+                    console.log(node)
+                }
                 if(node['@type'] == "sunyrdaf:Method" || node['@type'] == "https://data.suny.edu/vocabs/oried/rdaf/suny/Method"){
                     var methodElement = linkNodes(node, arr, parentNode, "Methods")
                 }
@@ -40,17 +41,20 @@ function checkForActivitiesTarget(activity, arr, parentNode){
                     var considerationElement = checkForConsiderations(node, arr, parentNode)         //Links the element to its consideration element
                 }
             }else{
+                node = findNode(node)
+
                 if(node['@type'] == "sunyrdaf:Method" || node['@type'] == "https://data.suny.edu/vocabs/oried/rdaf/suny/Method"){
-                var methodElement = linkNodes(node, arr, parentNode, "Methods")
+                    var methodElement = linkNodes(node, arr, parentNode, "Methods")
                 }
                 if(node['@type'] == "sunyrdaf:Participant" || node['@type'] == "https://data.suny.edu/vocabs/oried/rdaf/suny/Participant"){
-                var participantElement = linkNodes(node, arr, parentNode, "Participants")
+                    console.log(parentNode)
+                    var participantElement = linkNodes(node, arr, parentNode, "Participants")
                 }
                 if(node['@type'] == "sunyrdaf:Role" || node['@type'] == "https://data.suny.edu/vocabs/oried/rdaf/suny/Role"){
                     var roleElement = linkNodes(node, arr, parentNode, "Roles")
                 }
                 if(node['@type'] == "sunyrdaf:Resource" || node['@type'] == "https://data.suny.edu/vocabs/oried/rdaf/suny/Resource"){
-                var resourceElement = linkNodes(node, arr, parentNode, "Resources")
+                    var resourceElement = linkNodes(node, arr, parentNode, "Resources")
                 }
                 if(!nodeTypes.includes(node['@type'])){
                     var considerationElement = checkForConsiderations(node, arr, parentNode)         //Links the element to its consideration element
@@ -67,6 +71,7 @@ function checkForActivitiesTarget(activity, arr, parentNode){
                 var participantElement = linkNodes(targetNode, arr, parentNode, "Participants")
             }
             if(targetNode['@type'] == "sunyrdaf:Role" || targetNode['@type'] == "https://data.suny.edu/vocabs/oried/rdaf/suny/Role"){
+                console.log(targetNode)
                 var roleElement = linkNodes(targetNode, arr, parentNode, "Roles")
             }
             if(targetNode['@type'] == "sunyrdaf:Resource" || targetNode['@type'] == "https://data.suny.edu/vocabs/oried/rdaf/suny/Resource"){
@@ -80,6 +85,7 @@ function checkForActivitiesTarget(activity, arr, parentNode){
                 var methodElement = linkNodes(targetNode, arr, parentNode, "Methods")
             }
             if(targetNode['@type'] == "sunyrdaf:Participant" || targetNode['@type'] == "https://data.suny.edu/vocabs/oried/rdaf/suny/Participant"){
+                console.log(targetNode)
                 var participantElement = linkNodes(targetNode, arr, parentNode, "Participants")
             }
             if(targetNode['@type'] == "sunyrdaf:Role" || targetNode['@type'] == "https://data.suny.edu/vocabs/oried/rdaf/suny/Role"){

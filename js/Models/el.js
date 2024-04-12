@@ -3,6 +3,9 @@ function createTextBlock(element, node, parentNode){
     // Draw an HTML rectangle above the element.
     var div = document.createElement('div');
     //parentElementView.el.style.position = "relative"
+    if(!node['name']){
+        node = findNode(node)
+    }
     div.style.position = 'absolute';
     div.style.background = 'white';
     div.textContent = node['description']

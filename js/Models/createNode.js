@@ -28,13 +28,12 @@ function makeLink(from,to) {
     attrs: {
       line: {
           stroke: color, // Change the color of the link to blue
-          strokeWidth: 2, // Adjust the width of the link if needed
+          strokeWidth: 1, // Adjust the width of the link if needed
       },
     },
     vertices: []
 
 });
-
   link.router('orthogonal', {
       margin: 0,
       startDirections: ['right'],
@@ -185,7 +184,7 @@ function createOutcomes(id, name){
         fontWeight: 'bold',
         fontSize: 18,
         fontFamily: "sans-serif",
-        fill: "black",
+        fill: "whitesmoke",
         paintOrder: "stroke",
         text: name,
         "text-anchor":"start",
@@ -216,7 +215,7 @@ function createActivities(id, name){
   const node =  new joint.shapes.standard.Rectangle({
       id: id,
       size: {
-        width: width + 100,
+        width: width + 170,
         height: 145
       },
       attrs: {
@@ -224,7 +223,7 @@ function createActivities(id, name){
         fontWeight: "bold",
         fontSize: 17,
         fontFamily: "sans-serif",
-        fill: "black",
+        fill: "whitesmoke",
         stroke: "#333333",
         paintOrder: "stroke",
         text: name,
@@ -233,7 +232,8 @@ function createActivities(id, name){
       body: {
         strokeWidth: 3,
         fill: "#007eb3",
-        cursor: "grab"
+        cursor: "grab",
+        margin:10
       },
     },
     ports:{
@@ -505,8 +505,8 @@ if(x && y){
     },
     attrs: {
         portBody: {
-            width:40,
-            height: 10,
+            width:0,
+            height: 5,
             fill: color
         },
     },

@@ -71,6 +71,7 @@ function buildTheGraph(){
           const width = topicElement.size().width
           const height = topicElement.size().height
           topicElement.size(width + 200, height)
+          var topicElementPosition = topicElement.getBBox()
           Elements.push(topicElement)
           if(topicObj["sunyrdaf:includes"]){
             //Creates the consideration button if a topic includes consideration
@@ -78,14 +79,15 @@ function buildTheGraph(){
             // Add custom tool buttons for each port
             topicElement.addPort(port3);        // Adds a port to the element
             const considerationButton = createConsiderationButton(port3)
-            considerationButton.options.x = "80%"
+
+            considerationButton.options.x = parseInt(topicElementPosition.x) + parseInt(topicElementPosition.width) - 115
             tools.push(considerationButton)       //Create the button
           }
           var port2 = createPort('Outcomes', 'out', "100%", 20);
           // Add custom tool buttons for each port
           topicElement.addPort(port2);
           const outcomeButton = createButton(port2)
-          outcomeButton.options.x = "80%"
+          outcomeButton.options.x = parseInt(topicElementPosition.x) + parseInt(topicElementPosition.width) - 115
           tools.push(outcomeButton)//Creates the Outcome button
           graph.addCells(topicElement);
           toolsView = new joint.dia.ToolsView({ tools: tools});
@@ -347,11 +349,13 @@ function linkNodes(childNode, arr, parentNode, typeOfNode){
       activityElement.prop('name/first', "Activities")
       const portNameList = ['Participants', 'Methods', "Roles", "Resources", "Outputs", "RDaF Subtopic", "Considerations"]
       const buttonview = buttonView(portNameList, activityElement)
+      var elementBBox = activityElement.getBBox()
       createdActivityElementIds.add(childNode['@id']);
       multiParentElementIds[childNode['@id']] = activityElement
       var linkOutcomeToActivity = makeLink(parentNode, activityElement)
       buttonview.tools[6].options.x = "85%"
-      buttonview.tools[6].options.y = "82%"
+      buttonview.tools[6].options.y = "85%"
+      buttonview.tools[6].options.x = parseInt(elementBBox.x) + parseInt(elementBBox.width) - 115
       arr.push(activityElement, linkOutcomeToActivity)
     }
     return activityElement;
@@ -367,10 +371,11 @@ function linkNodes(childNode, arr, parentNode, typeOfNode){
       }
     }else{
       considerationElement = createConsiderations(childNode['@id'], childNode['name'])
+      considerationElement.prop('name/first', "Considerations")
       const embedButton = buttonView("Definition", considerationElement)
+      createTextBlock(considerationElement, childNode['@id'], parentNode)
       createdConsidearitonElementIds.add(childNode['@id'])
       multiParentElementIds[childNode['@id']] = considerationElement
-      considerationElement.prop('name/first', "Considerations")
       var linkOutcomeToConsideration = makeLink(parentNode, considerationElement)
       arr.push(considerationElement, linkOutcomeToConsideration)
     }
@@ -460,17 +465,18 @@ function linkNodes(childNode, arr, parentNode, typeOfNode){
       //console.warn(`Element with ID '${childNode['name']}' already exists. Skipping creation.`);
       if((multiParentElementIds[childNode['@id']])){
         roleElement =  multiParentElementIds[childNode['@id']];
+        createTextBlock(roleElement, childNode['@id'], parentNode)
         roleElement.prop('name/first', "Roles")
         var linkRoleToActivity = makeLink(parentNode, roleElement)
         arr.push(linkRoleToActivity)
       }
     }else{
       roleElement = createRoles(childNode['@id'], childNode['name'])
-      createdActivityTargets.add(childNode['@id'])
       roleElement.prop('name/first', "Roles")
+      createTextBlock(roleElement, childNode['@id'], parentNode)
+      createdActivityTargets.add(childNode['@id'])
       multiParentElementIds[childNode['@id']] = roleElement
       var linkRoleToActivity = makeLink(parentNode, roleElement)
-      createTextBlock(roleElement, childNode['@id'], parentNode)
       arr.push(roleElement, linkRoleToActivity)
     }
     return roleElement;

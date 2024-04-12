@@ -4,6 +4,7 @@ let timeoutID;
 paper.on('cell:mouseover', function(cellView) {
     try {
         if(cellView.model.attributes.name['first'] == "Resources"){
+            console.log("Here")
             const resourceElement = (cellView.el.querySelectorAll('rect')[0])
             resourceElement.setAttribute('fill', "#7490D7")
         }else if(cellView.model.attributes.name['first'] == "Stages"){
@@ -59,7 +60,7 @@ paper.on('cell:mouseover', function(cellView) {
                             element.childNodes.button.setAttribute('fill', '#004265')
                             var textBlock = document.getElementById("Considerations" + cellView.model.id)
                             if(textBlock){
-                                textBlock.style.left = (paperRect1.x + cellView.model.size().width - 20) + 'px';
+                                textBlock.style.left = (paperRect1.x + cellView.model.size().width/2) + 'px';
                                 textBlock.style.top = ((paperRect1.y) + 60) + 'px';
                                 displayTextBlock(textBlock)
                             }
@@ -135,7 +136,7 @@ paper.on('cell:mouseover', function(cellView) {
   //Hide the subtopic when the mouse pointer leaves the button
     paper.on('cell:mouseout', function(cellView) {
     try {
-        clearTimeout(timeoutID)
+
         if(cellView.model.attributes.name['first'] == "Resources"){
             const resourceElement = (cellView.el.querySelectorAll('rect')[0])
             resourceElement.setAttribute('fill', "#C8CDDA")
@@ -145,6 +146,7 @@ paper.on('cell:mouseover', function(cellView) {
             var textBlock = document.getElementById(cellView.model.id)
             textBlock.style.visibility = "hidden"
         }
+        clearTimeout(timeoutID)
         //From the element View look for the element tools
         var toolsArray = cellView._toolsView.tools
         toolsArray.forEach(element => {
