@@ -19,7 +19,7 @@
     },
     "@graph": [
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/E",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/S.1",
             "@type": "https://schema.org/Thing",
             "name": "Envision",
             "additionalType": "RdAF Stage",
@@ -34,7 +34,7 @@
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/P",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/S.2",
             "@type": "https://schema.org/Thing",
             "name": "Plan",
             "additionalType": "RdAF Stage",
@@ -55,7 +55,7 @@
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/GA",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/S.3",
             "@type": "https://schema.org/Thing",
             "name": "Generate/Acquire",
             "additionalType": "RdAF Stage",
@@ -74,21 +74,21 @@
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/PA",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/S.4",
             "@type": "https://schema.org/Thing",
             "name": "Process/Analyze",
             "additionalType": "RdAF Stage",
             "description": "The actions performed on generated or externally acquired research data to yield processed research data, typically using software, from which observations and conclusions can be made.  "
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/SUR",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/S.5",
             "@type": "https://schema.org/Thing",
             "name": "Share/Use/Reuse",
             "additionalType": "RdAF Stage",
             "description": "How raw and processed research data are disseminated, used, and reused within an organization and any constraints or encouragements to use/reuse. It also includes the dissemination, use, and reuse of raw and processed research data outside of an organization.  "
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/PD",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/S.6",
             "@type": "https://schema.org/Thing",
             "name": "Preserve/Discard",
             "additionalType": "RdAF Stage",
@@ -2716,7 +2716,8 @@
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.1"
-            ]
+            ],
+            "sunyrdaf:hasScore":null
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/output.1",
@@ -2761,7 +2762,8 @@
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.1"
-            ]
+            ],
+            "sunyrdaf:hasScore":null
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/output.2",
@@ -2792,7 +2794,8 @@
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.2"
-            ]
+            ],
+            "sunyrdaf:hasScore":null
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/output.3",
@@ -2823,7 +2826,8 @@
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.2"
-            ]
+            ],
+            "sunyrdaf:hasScore":null
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/output.4",
@@ -2865,7 +2869,8 @@
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.3"
-            ]
+            ],
+            "sunyrdaf:hasScore":null
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/method.2",
@@ -2894,7 +2899,8 @@
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.5"
-            ]
+            ],
+            "sunyrdaf:hasScore":null
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/output.5",
@@ -2935,7 +2941,8 @@
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.6"
-            ]
+            ],
+            "sunyrdaf:hasScore":null
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/output.6",

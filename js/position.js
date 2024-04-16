@@ -75,9 +75,9 @@ function setLinkVertices(){
                     var sourceMidX = parseInt(sourceBBox.x) + parseInt(sourceBBox.width)
                     var distance
                     if(sourceBBox.width < 950){
-                        distance  = 4000
+                        distance  = 3900
                     }else{
-                        distance = 4700
+                        distance = 4200
                     }
 
                     if(sourceMidX != distance && sourceMidX > distance){

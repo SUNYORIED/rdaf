@@ -28,7 +28,7 @@ function makeLink(from,to) {
     attrs: {
       line: {
           stroke: color, // Change the color of the link to blue
-          strokeWidth: 1, // Adjust the width of the link if needed
+          strokeWidth: 2, // Adjust the width of the link if needed
       },
     },
     vertices: []
@@ -215,7 +215,7 @@ function createActivities(id, name){
   const node =  new joint.shapes.standard.Rectangle({
       id: id,
       size: {
-        width: width + 170,
+        width: width + 170  ,
         height: 145
       },
       attrs: {

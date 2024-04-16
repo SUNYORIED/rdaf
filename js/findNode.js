@@ -22,9 +22,6 @@ function checkForActivitiesTarget(activity, arr, parentNode){
     if(Array.isArray(activity['sunyrdaf:includes'])){
         activity['sunyrdaf:includes'].forEach(node =>{
             if(node['name']){
-                if(node['@id'] == "https://data.suny.edu/entities/oried/rdaf/suny/participant.25"){
-                    console.log(node)
-                }
                 if(node['@type'] == "sunyrdaf:Method" || node['@type'] == "https://data.suny.edu/vocabs/oried/rdaf/suny/Method"){
                     var methodElement = linkNodes(node, arr, parentNode, "Methods")
                 }
@@ -47,7 +44,6 @@ function checkForActivitiesTarget(activity, arr, parentNode){
                     var methodElement = linkNodes(node, arr, parentNode, "Methods")
                 }
                 if(node['@type'] == "sunyrdaf:Participant" || node['@type'] == "https://data.suny.edu/vocabs/oried/rdaf/suny/Participant"){
-                    console.log(parentNode)
                     var participantElement = linkNodes(node, arr, parentNode, "Participants")
                 }
                 if(node['@type'] == "sunyrdaf:Role" || node['@type'] == "https://data.suny.edu/vocabs/oried/rdaf/suny/Role"){

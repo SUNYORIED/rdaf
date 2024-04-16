@@ -36,6 +36,8 @@ paper.on('cell:mouseover', function(cellView) {
                                 textBlock.style.top = ((paperRect1.y) + 55) + 'px';
                                 displayTextBlock(textBlock)
                             }
+                        }else if(element.childNodes.button.id == "Download"){
+                            element.childNodes.button.setAttribute('fill', 'lightgrey')
                         }
                         else if(element.childNodes.button.id == "Definition"){
                             // Set the position of the element according to the pointer and make it visible
@@ -158,6 +160,9 @@ paper.on('cell:mouseover', function(cellView) {
                     if(element.childNodes.button.id == "RDaF Subtopic"){
                         element.childNodes.button.setAttribute('fill', 'whitesmoke')
                         hideTextBlock(element.childNodes.button.id, cellView.model)
+                    }
+                    else if(element.childNodes.button.id == "Download"){
+                        element.childNodes.button.setAttribute('fill', 'whitesmoke')
                     }
                     else if(element.childNodes.button.id == "Definition"){
                         // Set the position of the element according to the pointer and make it visible

@@ -6,7 +6,15 @@ paper.on('element:pointerdown', function(cellView, evt) {
     const model = cellView.model
     evt.stopPropagation()
     evt.preventDefault()
-    if(model['id'] == "https://data.suny.edu/entities/oried/rdaf/nist/E" || model['id'] == "https://data.suny.edu/entities/oried/rdaf/nist/P" || model['id'] == "https://data.suny.edu/entities/oried/rdaf/nist/GA"){
+    const stageType = [
+        "https://data.suny.edu/entities/oried/rdaf/nist/S.1",
+        "https://data.suny.edu/entities/oried/rdaf/nist/S.2",
+        "https://data.suny.edu/entities/oried/rdaf/nist/S.3",
+        "https://data.suny.edu/entities/oried/rdaf/nist/S.4",
+        "https://data.suny.edu/entities/oried/rdaf/nist/S.5",
+        "https://data.suny.edu/entities/oried/rdaf/nist/S.6"
+    ]
+    if(stageType.includes(model['id'])){
         toggleBranch(model);
     }
     if(model.attributes.name && model.attributes.name['first'] == 'Resources'){
@@ -120,7 +128,12 @@ function closeTheRest(element){
 function toggelButton(node, typeOfPort){
     var shouldHide = node.get('collapsed');
     node.set('collapsed', !shouldHide);
-    defaultEvent(node, typeOfPort)
+    if(typeOfPort== "Download"){
+        downloadFile(node)
+    }else{
+        defaultEvent(node, typeOfPort)
+    }
+
 }
 
 
@@ -246,122 +259,139 @@ function animateElementClose(element, show){
 //This function handles the event for the 3 buttons on the outcomes node
 function radioButtonEvents(elementView, port){
     var circleElements = elementView._toolsView.$el[0].querySelectorAll('circle')
+    var score = getScore(elementView.model)
     circleElements.forEach(circleElement =>{
-    //Still need to wrap around this event because we just need to set one button at a time not all should be selected.
-    var activityButton = elementView._toolsView.tools[1].el
-    var considerationButton = elementView._toolsView.tools[0].$el[0]
-    const outboundLinks = (graph.getConnectedLinks(elementView.model, {outbound: true}))
-    var buttons = removeUnwantedButton(elementView, outboundLinks, activityButton, considerationButton)
-    activityButton = buttons[0]
-    considerationButton = buttons[1]
-    //Change the color of the element when clicked
-    if(circleElement.id == `${port.id}`){
-        if(circleElement.id.startsWith('A')){
-            //When clicked on Achieved, hide the activity button
-            if((activityButton && activityButton.style.visibility == "visible")){
-                var rectElement = (elementView.el.querySelector('rect'))
-                var width = parseInt(rectElement.getAttribute('width')) - 115
-                activityButton.style.visibility = "hidden"
-                rectElement.setAttribute('width', width)
-                //This condition is applied when user wants to hide all the elements including Activities and Considerations
-                if((considerationButton && considerationButton.style.visibility == "visible")){
+        //Still need to wrap around this event because we just need to set one button at a time not all should be selected.
+        var activityButton = elementView._toolsView.tools[1].el
+        var considerationButton = elementView._toolsView.tools[0].$el[0]
+        const outboundLinks = (graph.getConnectedLinks(elementView.model, {outbound: true}))
+        var buttons = removeUnwantedButton(elementView, outboundLinks, activityButton, considerationButton)
+        activityButton = buttons[0]
+        considerationButton = buttons[1]
+        //Change the color of the element when clicked
+        if(circleElement.id == `${port.id}`){
+            if(circleElement.id.startsWith('A')){
+                circleElement.setAttribute('Score', 2)
+                score = 2
+                //When clicked on Achieved, hide the activity button
+                if((activityButton && activityButton.style.visibility == "visible")){
+                    var rectElement = (elementView.el.querySelector('rect'))
+                    var width = parseInt(rectElement.getAttribute('width')) - 115
+                    activityButton.style.visibility = "hidden"
+                    rectElement.setAttribute('width', width)
+                    //This condition is applied when user wants to hide all the elements including Activities and Considerations
+                    if((considerationButton && considerationButton.style.visibility == "visible")){
+                        var rectElement = (elementView.el.querySelector('rect'))
+                        if(activityButton){
+                            var width = parseInt(rectElement.getAttribute('width'))
+                        }else{
+                            var width = parseInt(rectElement.getAttribute('width')) - 115
+                        }
+                        considerationButton.style.visibility = "hidden"
+                        rectElement.setAttribute('width', width)
+                    }
+                    const OutboundLinks = graph.getConnectedLinks(elementView.model, {outbound:true})
+                    OutboundLinks.forEach(links =>{
+                        //Make the links visible
+                        links.getTargetElement().set('hidden', true)
+                        links.getTargetElement().set('collapsed', false)
+                        //Make the links visible
+                        links.set('hidden', true)
+                        links.set('collapsed', false)
+                        //This condition listens to the events on elements that has more than on parent
+                        const orphanLink = graph.getConnectedLinks(links.getTargetElement(), {inbound:true})
+                        if(orphanLink.length > 1){
+                            orphanLink.forEach(links =>{
+                                if(!links.get('hidden')){
+                                    links.getTargetElement().set('hidden', false)
+                                    links.getTargetElement().set('collapsed', true)
+                                    links.set('hidden', false)
+                                }
+                                closeTheRest(links.getTargetElement())
+                            })
+                        }else{
+                            links.getTargetElement().set('hidden', true)
+                            links.getTargetElement().set('collapsed', false)
+                            links.set('hidden', true)
+                            closeTheRest(links.getTargetElement())
+                        }
+                    })
+                }else{
+                    var rectElement = (elementView.el.querySelector('rect'))
+                    var width = parseInt(rectElement.getAttribute('width'))
+                    rectElement.setAttribute('width', width)
+                }
+                circleElement.setAttribute('fill', 'Green')
+            }
+            else if(circleElement.id.startsWith('P')){
+                circleElement.setAttribute('Score', 1)
+                score = 1
+                //When clicked on In Progress button, show the activity button
+                if(considerationButton && considerationButton.style.visibility == "hidden"){
                     var rectElement = (elementView.el.querySelector('rect'))
                     if(activityButton){
                         var width = parseInt(rectElement.getAttribute('width'))
                     }else{
-                        var width = parseInt(rectElement.getAttribute('width')) - 115
+                        var width = parseInt(rectElement.getAttribute('width')) + 115
                     }
-                    considerationButton.style.visibility = "hidden"
+                    rectElement.setAttribute('width', width)
+                    considerationButton.style.visibility = "visible"
+                }
+                if(activityButton && activityButton.style.visibility == "hidden"){
+                    var rectElement = (elementView.el.querySelector('rect'))
+                    var width = parseInt(rectElement.getAttribute('width')) + 115
+                    rectElement.setAttribute('width', width)
+                    activityButton.style.visibility = "visible"
+                }else{
+                    var rectElement = (elementView.el.querySelector('rect'))
+                    var width = parseInt(rectElement.getAttribute('width'))
                     rectElement.setAttribute('width', width)
                 }
-                const OutboundLinks = graph.getConnectedLinks(elementView.model, {outbound:true})
-                OutboundLinks.forEach(links =>{
-                    //Make the links visible
-                    links.getTargetElement().set('hidden', true)
-                    links.getTargetElement().set('collapsed', false)
-                    //Make the links visible
-                    links.set('hidden', true)
-                    links.set('collapsed', false)
-                    //This condition listens to the events on elements that has more than on parent
-                    const orphanLink = graph.getConnectedLinks(links.getTargetElement(), {inbound:true})
-                    if(orphanLink.length > 1){
-                        orphanLink.forEach(links =>{
-                            if(!links.get('hidden')){
-                                links.getTargetElement().set('hidden', false)
-                                links.getTargetElement().set('collapsed', true)
-                                links.set('hidden', false)
-                            }
-                            closeTheRest(links.getTargetElement())
-                        })
+                circleElement.setAttribute('fill', '#D86C00')
+            }
+            else if(circleElement.id.startsWith('N')){
+                circleElement.setAttribute('Score', 0)
+                score = 0
+                //When clicked on Not Started Button, show the activity button
+                if(considerationButton && considerationButton.style.visibility == "hidden"){
+                    var rectElement = (elementView.el.querySelector('rect'))
+                    if(activityButton){
+                        var width = parseInt(rectElement.getAttribute('width'))
                     }else{
-                        links.getTargetElement().set('hidden', true)
-                        links.getTargetElement().set('collapsed', false)
-                        links.set('hidden', true)
-                        closeTheRest(links.getTargetElement())
+                        var width = parseInt(rectElement.getAttribute('width')) + 115
                     }
-                })
-            }else{
-                var rectElement = (elementView.el.querySelector('rect'))
-                var width = parseInt(rectElement.getAttribute('width'))
-                rectElement.setAttribute('width', width)
-            }
-            circleElement.setAttribute('fill', 'Green')
-        }
-        else if(circleElement.id.startsWith('P')){
-            //When clicked on In Progress button, show the activity button
-            if(considerationButton && considerationButton.style.visibility == "hidden"){
-                var rectElement = (elementView.el.querySelector('rect'))
-                if(activityButton){
-                    var width = parseInt(rectElement.getAttribute('width'))
-                }else{
-                    var width = parseInt(rectElement.getAttribute('width')) + 115
+                    rectElement.setAttribute('width', width)
+                    considerationButton.style.visibility = "visible"
                 }
-                rectElement.setAttribute('width', width)
-                considerationButton.style.visibility = "visible"
-            }
-            if(activityButton && activityButton.style.visibility == "hidden"){
-                var rectElement = (elementView.el.querySelector('rect'))
-                var width = parseInt(rectElement.getAttribute('width')) + 115
-                rectElement.setAttribute('width', width)
-                activityButton.style.visibility = "visible"
-            }else{
-                var rectElement = (elementView.el.querySelector('rect'))
-                var width = parseInt(rectElement.getAttribute('width'))
-                rectElement.setAttribute('width', width)
-            }
-            circleElement.setAttribute('fill', '#D86C00')
-        }
-        else if(circleElement.id.startsWith('N')){
-            //When clicked on Not Started Button, show the activity button
-            if(considerationButton && considerationButton.style.visibility == "hidden"){
-                var rectElement = (elementView.el.querySelector('rect'))
-                if(activityButton){
-                    var width = parseInt(rectElement.getAttribute('width'))
-                }else{
+                if(activityButton && activityButton.style.visibility == "hidden"){
+                    var rectElement = (elementView.el.querySelector('rect'))
                     var width = parseInt(rectElement.getAttribute('width')) + 115
+                    rectElement.setAttribute('width', width)
+                    activityButton.style.visibility = "visible"
+                }else{
+                    var rectElement = (elementView.el.querySelector('rect'))
+                    var width = parseInt(rectElement.getAttribute('width'))
+                    rectElement.setAttribute('width', width)
                 }
-                rectElement.setAttribute('width', width)
-                considerationButton.style.visibility = "visible"
+                circleElement.setAttribute('fill', '#AB0606')
             }
-            if(activityButton && activityButton.style.visibility == "hidden"){
-                var rectElement = (elementView.el.querySelector('rect'))
-                var width = parseInt(rectElement.getAttribute('width')) + 115
-                rectElement.setAttribute('width', width)
-                activityButton.style.visibility = "visible"
-            }else{
-                var rectElement = (elementView.el.querySelector('rect'))
-                var width = parseInt(rectElement.getAttribute('width'))
-                rectElement.setAttribute('width', width)
-            }
-            circleElement.setAttribute('fill', '#AB0606')
+        }else{
+            //unhighlights the rest of the elements that the user is not interacting with
+            circleElement.setAttribute('fill', 'white')
+            circleElement.setAttribute('Score', null)
         }
-    }else{
-        //unhighlights the rest of the elements that the user is not interacting with
-        circleElement.setAttribute('fill', 'white')
-    }
     })
+    updateScorecard(elementView.model,score);
 }
 
+
+function getScore(model) {
+    return scorecard[model.id];
+}
+
+function updateScorecard(model,score) {
+    scorecard[model.id] = score;
+}
 
 
 function removeUnwantedButton(elementView, outboundLinks, activityButton, considerationButton){
