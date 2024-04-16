@@ -36,7 +36,11 @@ paper.on('cell:mouseover', function(cellView) {
                                 textBlock.style.top = ((paperRect1.y) + 55) + 'px';
                                 displayTextBlock(textBlock)
                             }
-                        }else if(element.childNodes.button.id == "Download"){
+                        }
+                        else if(element.childNodes.button.id == "Download"){
+                            element.childNodes.button.setAttribute('fill', 'lightgrey')
+                        }
+                        else if(element.childNodes.button.id == "Reset Score"){
                             element.childNodes.button.setAttribute('fill', 'lightgrey')
                         }
                         else if(element.childNodes.button.id == "Definition"){
@@ -162,6 +166,9 @@ paper.on('cell:mouseover', function(cellView) {
                         hideTextBlock(element.childNodes.button.id, cellView.model)
                     }
                     else if(element.childNodes.button.id == "Download"){
+                        element.childNodes.button.setAttribute('fill', 'whitesmoke')
+                    }
+                    else if(element.childNodes.button.id == "Reset Score"){
                         element.childNodes.button.setAttribute('fill', 'whitesmoke')
                     }
                     else if(element.childNodes.button.id == "Definition"){

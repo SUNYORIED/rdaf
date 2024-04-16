@@ -401,10 +401,9 @@ function resetScore(model){
     var considerationButton = elementView._toolsView.tools[0].$el[0]
     activityButton.style.visibility = "hidden"
     considerationButton.style.visibility = "hidden"
-
+    var rectElement = (elementView.el.querySelector('rect'))
     circleElements.forEach(radioButtons =>{
-        if(radioButtons.getAttribute('fill') != "white"){
-            var rectElement = (elementView.el.querySelector('rect'))
+        if(radioButtons.getAttribute('fill') != "white" && model.getBBox().width != parseInt(rectElement.getAttribute('width'))){
             var OriginalWidth = parseInt(rectElement.getAttribute('width')) - 115
             rectElement.setAttribute('width', OriginalWidth)
             return
