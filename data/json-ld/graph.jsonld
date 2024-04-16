@@ -3000,7 +3000,8 @@
             "name": "Organizational intent regarding FAIR data is well defined across the institution and contributes to vision and policy",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.8"
-            ]
+            ],
+            "sunyrdaf:hasScore":null
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/method.11",
@@ -3013,7 +3014,8 @@
             "name": "Support for end users included in institutional RDM and data governance standards",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.9"
-            ]
+            ],
+            "sunyrdaf:hasScore":null
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.10",
@@ -3021,7 +3023,8 @@
             "name": "Data governance legal policies, framework, and plans exist and are continually updated",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.2.1"
-            ]
+            ],
+            "sunyrdaf:hasScore":null
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/output.7",
@@ -3068,7 +3071,8 @@
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.2.4"
-            ]
+            ],
+            "sunyrdaf:hasScore":null
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/output.8",
