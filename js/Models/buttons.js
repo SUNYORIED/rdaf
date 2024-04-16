@@ -82,27 +82,17 @@ function buttonView(portName, element){
   }if(portName == "Activities"){
     var elementBBox = element.getBBox()
     var subTopicPort = createPort("RDaF Subtopic", 'Port 5')
-    var downloadPort = createPort("Download", 'Port 6')
-    var resetPort = createPort("Reset Score", "Port 7")
     var ActivitiesPort = createPort("Activities", 'Port 3', parseInt(elementBBox.x) + parseInt(elementBBox.width) + 115, "30%");
     var considerationPort = createPort("Considerations", "Port 4", parseInt(elementBBox.x) + parseInt(elementBBox.width) + 115, "60%")
     element.addPort(ActivitiesPort);
     element.addPort(considerationPort)
     element.addPort(subTopicPort)
-    element.addPort(downloadPort);
-    element.addPort(resetPort)
     const considerationbutton = createConsiderationButton(considerationPort)
     const activitiesbutton = createButton(ActivitiesPort)
     const subTopicButton = createSubTopicButton(subTopicPort)
-    const downloadButton = createDownloadButton(downloadPort)
-    const resetButton = createResetButton(resetPort)
     console.log()
-    downloadButton.options.x = parseInt(subTopicButton.options.markup[0].attributes.width + 5)
-    resetButton.options.x = parseInt(subTopicButton.options.markup[0].attributes.width + downloadButton.options.markup[0].attributes.width + 10)
     tool.push(considerationbutton)
     tool.push(activitiesbutton)
-    tool.push(downloadButton)
-    tool.push(resetButton)
     //Push the circle buttons to the same list
     var portNameList = ['NT1', "PG1", "AC1"]
     tool.push(radioButtonView(portNameList, element, tool))
@@ -280,103 +270,6 @@ function createSubTopicButton(port, pos){
   });
   return button;
 }
-
-
-function createDownloadButton(port, pos){
-  var button  = new joint.elementTools.Button({
-    markup: [
-      {
-        tagName: 'rect',
-        selector: 'button',
-        attributes: {
-            'id': port.id,
-            'width': 90,
-            'height': 20,
-            'fill': 'whitesmoke', // Button background color
-            'stroke': 'black', // Button border color
-            'stroke-width': 2, // Button border width
-            'cursor': 'pointer',
-            'rx': 4, // Horizontal border radius
-            'ry': 4, // Vertical border radius
-        }
-      },
-        {
-          tagName: 'text',
-          selector: 'text',
-          textContent: port.id, // Text displayed on the button
-          attributes: {
-            'fill': 'black', // Text color
-            'font-size': '15px',
-            'font-weight': 'bold',
-            'font-family': 'Arial',
-            'text-anchor': 'middle',
-            'x':45,
-            'y': 15, // Adjust text position
-            'cursor': 'pointer'
-        }
-      }
-    ],
-    x: "20%", // Button position X
-    y: "0%", // Button position Y
-    offset: { x: -8, y: -8 },
-    action: function(evt,elementView) {
-      //Event Handle for the button.
-      evt.stopPropagation()
-      evt.preventDefault()
-      toggelButton(this.model, `${port.id}`)
-    },
-  });
-  return button;
-}
-
-function createResetButton(port, pos){
-  var button  = new joint.elementTools.Button({
-    markup: [
-      {
-        tagName: 'rect',
-        selector: 'button',
-        attributes: {
-            'id': port.id,
-            'width': 90,
-            'height': 20,
-            'fill': 'whitesmoke', // Button background color
-            'stroke': 'black', // Button border color
-            'stroke-width': 2, // Button border width
-            'cursor': 'pointer',
-            'rx': 4, // Horizontal border radius
-            'ry': 4, // Vertical border radius
-        }
-      },
-        {
-          tagName: 'text',
-          selector: 'text',
-          textContent: port.id, // Text displayed on the button
-          attributes: {
-            'fill': 'black', // Text color
-            'font-size': '15px',
-            'font-weight': 'bold',
-            'font-family': 'Arial',
-            'text-anchor': 'middle',
-            'x':45,
-            'y': 15, // Adjust text position
-            'cursor': 'pointer'
-        }
-      }
-    ],
-    x: "20%", // Button position X
-    y: "0%", // Button position Y
-    offset: { x: -8, y: -8 },
-    action: function(evt,elementView) {
-      //Event Handle for the button.
-      evt.stopPropagation()
-      evt.preventDefault()
-      toggelButton(this.model, `${port.id}`)
-    },
-  });
-  return button;
-}
-
-
 
 
 /*

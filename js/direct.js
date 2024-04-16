@@ -51,10 +51,15 @@ function buildTheGraph(){
   }))
   .then(frame => {
 
-// example of pulling a single Outcome and linked Activity from the input data file
-// in reality we want to navigate the entire graph
+  // example of pulling a single Outcome and linked Activity from the input data file
+  // in reality we want to navigate the entire graph
   const frameArray = frame['@graph']
   duplicateFrame = frameArray
+  const downloadButton = createDownloadButton("Download Scores", "Download Scores")
+  downloadButton.attr('label').refX = "5%"
+  const resetButton = createResetButton("Reset Scores", "Reset Scores")
+  resetButton.attr('label').refX = "15%"
+  graph.addCells([downloadButton, resetButton])
   frameArray.forEach(node =>{
     if(node['additionalType'] == "RdAF Stage"){
       var stage = linkNodes(node, Elements, "", "Stages")

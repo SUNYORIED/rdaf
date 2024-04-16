@@ -454,6 +454,80 @@ function createResources(id, name){
   return node
 }
 
+function createDownloadButton(id, name){
+  const node =  new joint.shapes.standard.Rectangle({
+    id: id,
+    size: {
+      width: 130,
+      height: 35
+    },
+    attrs: {
+      label: {
+      //fontWeight: "bold",
+        fontSize: 15,
+        fontFamily: "sans-serif",
+        fill: "black",
+        stroke: "#333333",
+        paintOrder: "stroke",
+        type: 'TextBlock',
+        text: name,
+        cursor: "grab",
+        "text-anchor":"start",
+      },
+      body: {
+        strokeWidth: 2,
+        fill: "#C8CDDA",
+        cursor: "grab",
+        'rx': 10, // Border radius
+        'ry': 10, // Border radius
+      },
+    },
+    ports:{
+      id: "Download",
+      items: []
+    },
+  });
+  node.position(50,15)
+  return node
+}
+
+function createResetButton(id, name){
+  const node =  new joint.shapes.standard.Rectangle({
+    id: id,
+    size: {
+      width: 130,
+      height: 35
+    },
+    attrs: {
+      label: {
+      //fontWeight: "bold",
+        fontSize: 15,
+        fontFamily: "sans-serif",
+        fill: "black",
+        stroke: "#333333",
+        paintOrder: "stroke",
+        type: 'TextBlock',
+        text: name,
+        cursor: "grab",
+        "text-anchor":"start",
+      },
+      body: {
+        strokeWidth: 2,
+        fill: "#C8CDDA",
+        cursor: "grab",
+        'rx': 10, // Border radius
+        'ry': 10, // Border radius
+      },
+    },
+    ports:{
+      id: "Reset",
+      items: []
+    }
+  });
+  node.position(50,60)
+  return node
+}
+
 function setPorts(el, ports) {
     let width = 0;
     const rdafPorts = ports.map((port, index) => {

@@ -21,6 +21,16 @@ paper.on('element:pointerdown', function(cellView, evt) {
         const url = model.attributes.resource['Link']
         window.open(url, '_blank')
     }
+    if(model.id == "Download Scores"){
+        console.log('HEere')
+        FindOpenOutcomes()
+        //downloadFile(model)
+    }
+    if(model.id == "Reset Scores"){
+        console.log('HEere')
+        FindOpenOutcomesAndReset()
+        //downloadFile(model)
+    }
 })
 
 graph.on('change:position', function(element, position) {
@@ -131,7 +141,7 @@ function toggelButton(node, typeOfPort){
     if(typeOfPort== "Download"){
         downloadFile(node)
     }else if(typeOfPort == "Reset Score"){
-        resetScore(node)
+        //resetScore(node)
     }else{
         defaultEvent(node, typeOfPort)
     }
@@ -387,61 +397,7 @@ function radioButtonEvents(elementView, port){
 }
 
 
-/*
-    * Listens to an onclick event on the reset Button
-    * @param {Object} model - svg element from the graph
-    * This function resets the color of the score cards and if any of its activities are open, it closes the rest of the graph.
-    * Changes the color of the radio buttons to white and also hides the activity and consideration button
-    *
-*/
-function resetScore(model){
-    var elementView = paper.findViewByModel(model)
-    var circleElements = elementView._toolsView.$el[0].querySelectorAll('circle')
-    var activityButton = elementView._toolsView.tools[1].el
-    var considerationButton = elementView._toolsView.tools[0].$el[0]
-    activityButton.style.visibility = "hidden"
-    considerationButton.style.visibility = "hidden"
-    var rectElement = (elementView.el.querySelector('rect'))
-    circleElements.forEach(radioButtons =>{
-        if(radioButtons.getAttribute('fill') != "white" && model.getBBox().width != parseInt(rectElement.getAttribute('width'))){
-            var OriginalWidth = parseInt(rectElement.getAttribute('width')) - 115
-            rectElement.setAttribute('width', OriginalWidth)
-            return
-        }
-    })
 
-
-    circleElements.forEach(radioButtons =>{
-        if(radioButtons.id.startsWith('A')){
-            var currentColor = radioButtons.getAttribute('fill')
-            radioButtons.setAttribute('fill', 'white')
-        }else if(radioButtons.id.startsWith('P')){
-            var currentColor = radioButtons.getAttribute('fill')
-            if(currentColor == "#D86C00"){
-                closeTheRest(model)
-                radioButtons.setAttribute('fill', 'white')
-            }else{
-                radioButtons.setAttribute('fill', 'white')
-            }
-        }else if(radioButtons.id.startsWith('N')){
-            var currentColor = radioButtons.getAttribute('fill')
-            if(currentColor == "#AB0606"){
-                closeTheRest(model)
-                radioButtons.setAttribute('fill', 'white')
-            }else{
-                radioButtons.setAttribute('fill', 'white')
-            }
-        }
-    })
-}
-
-function getScore(model) {
-    return scorecard[model.id];
-}
-
-function updateScorecard(model,score) {
-    scorecard[model.id] = score;
-}
 
 
 function removeUnwantedButton(elementView, outboundLinks, activityButton, considerationButton){
