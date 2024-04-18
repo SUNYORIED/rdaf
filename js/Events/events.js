@@ -288,16 +288,16 @@ function radioButtonEvents(elementView, port){
                 //When clicked on Achieved, hide the activity button
                 if((activityButton && activityButton.style.visibility == "visible")){
                     var rectElement = (elementView.el.querySelector('rect'))
-                    var width = parseInt(rectElement.getAttribute('width')) - 115
+                    var width = parseFloat(rectElement.getAttribute('width')) - 115
                     activityButton.style.visibility = "hidden"
                     rectElement.setAttribute('width', width)
                     //This condition is applied when user wants to hide all the elements including Activities and Considerations
                     if((considerationButton && considerationButton.style.visibility == "visible")){
                         var rectElement = (elementView.el.querySelector('rect'))
                         if(activityButton){
-                            var width = parseInt(rectElement.getAttribute('width'))
+                            var width = parseFloat(rectElement.getAttribute('width'))
                         }else{
-                            var width = parseInt(rectElement.getAttribute('width')) - 115
+                            var width = parseFloat(rectElement.getAttribute('width')) - 115
                         }
                         considerationButton.style.visibility = "hidden"
                         rectElement.setAttribute('width', width)
@@ -330,7 +330,7 @@ function radioButtonEvents(elementView, port){
                     })
                 }else{
                     var rectElement = (elementView.el.querySelector('rect'))
-                    var width = parseInt(rectElement.getAttribute('width'))
+                    var width = parseFloat(rectElement.getAttribute('width'))
                     rectElement.setAttribute('width', width)
                 }
                 circleElement.setAttribute('fill', 'Green')
@@ -342,21 +342,21 @@ function radioButtonEvents(elementView, port){
                 if(considerationButton && considerationButton.style.visibility == "hidden"){
                     var rectElement = (elementView.el.querySelector('rect'))
                     if(activityButton){
-                        var width = parseInt(rectElement.getAttribute('width'))
+                        var width = parseFloat(rectElement.getAttribute('width'))
                     }else{
-                        var width = parseInt(rectElement.getAttribute('width')) + 115
+                        var width = parseFloat(rectElement.getAttribute('width')) + 115
                     }
                     rectElement.setAttribute('width', width)
                     considerationButton.style.visibility = "visible"
                 }
                 if(activityButton && activityButton.style.visibility == "hidden"){
                     var rectElement = (elementView.el.querySelector('rect'))
-                    var width = parseInt(rectElement.getAttribute('width')) + 115
+                    var width = parseFloat(rectElement.getAttribute('width')) + 115
                     rectElement.setAttribute('width', width)
                     activityButton.style.visibility = "visible"
                 }else{
                     var rectElement = (elementView.el.querySelector('rect'))
-                    var width = parseInt(rectElement.getAttribute('width'))
+                    var width = parseFloat(rectElement.getAttribute('width'))
                     rectElement.setAttribute('width', width)
                 }
                 circleElement.setAttribute('fill', '#D86C00')
@@ -368,21 +368,21 @@ function radioButtonEvents(elementView, port){
                 if(considerationButton && considerationButton.style.visibility == "hidden"){
                     var rectElement = (elementView.el.querySelector('rect'))
                     if(activityButton){
-                        var width = parseInt(rectElement.getAttribute('width'))
+                        var width = parseFloat(rectElement.getAttribute('width'))
                     }else{
-                        var width = parseInt(rectElement.getAttribute('width')) + 115
+                        var width = parseFloat(rectElement.getAttribute('width')) + 115
                     }
                     rectElement.setAttribute('width', width)
                     considerationButton.style.visibility = "visible"
                 }
                 if(activityButton && activityButton.style.visibility == "hidden"){
                     var rectElement = (elementView.el.querySelector('rect'))
-                    var width = parseInt(rectElement.getAttribute('width')) + 115
+                    var width = parseFloat(rectElement.getAttribute('width')) + 115
                     rectElement.setAttribute('width', width)
                     activityButton.style.visibility = "visible"
                 }else{
                     var rectElement = (elementView.el.querySelector('rect'))
-                    var width = parseInt(rectElement.getAttribute('width'))
+                    var width = parseFloat(rectElement.getAttribute('width'))
                     rectElement.setAttribute('width', width)
                 }
                 circleElement.setAttribute('fill', '#AB0606')

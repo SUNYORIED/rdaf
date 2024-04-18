@@ -150,16 +150,18 @@ function resetScore(model){
     var circleElements = elementView._toolsView.$el[0].querySelectorAll('circle')
     var activityButton = elementView._toolsView.tools[1].el
     var considerationButton = elementView._toolsView.tools[0].$el[0]
-    activityButton.style.visibility = "hidden"
-    considerationButton.style.visibility = "hidden"
     var rectElement = (elementView.el.querySelector('rect'))
+    var activityButtonStatus = activityButton.style.visibility
+    var considerationButtonStatus = considerationButton.style.visibility
     circleElements.forEach(radioButtons =>{
-        if(radioButtons.getAttribute('fill') != "white" && model.getBBox().width != parseInt(rectElement.getAttribute('width'))){
+        if(((radioButtons.id.startsWith('N') || radioButtons.id.startsWith('P')) && radioButtons.getAttribute('fill') != "white" && (model.getBBox().width != rectElement.getAttribute('width')))){
             var OriginalWidth = parseInt(rectElement.getAttribute('width')) - 115
             rectElement.setAttribute('width', OriginalWidth)
             return
         }
     })
+    activityButton.style.visibility = "hidden"
+    considerationButton.style.visibility = "hidden"
     circleElements.forEach(radioButtons =>{
         if(radioButtons.id.startsWith('A')){
             var currentColor = radioButtons.getAttribute('fill')
