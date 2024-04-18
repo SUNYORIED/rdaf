@@ -1,3 +1,9 @@
+/*
+    * Creates Output, Participants, Methods, Resources, Roles, and considerations elements for Activities
+    * @param - {Object} activity: Activity Node that extends the above elements.
+    * @param - {Object []} arr: Array to store the elements.
+    * @param - {Object} parentNode: Activity element
+*/
 function checkForActivitiesTarget(activity, arr, parentNode){
     const targetNode = activity['sunyrdaf:includes']
     if(activity['sunyrdaf:generates']){
@@ -97,6 +103,10 @@ function checkForActivitiesTarget(activity, arr, parentNode){
     }
 }
 
+/*
+    Finds the node from the data file.
+    * @param - {Object} undefinedNode: Node that has name and id undefined.
+*/
 function findNode(undefinedNode){
     for (const nodes of duplicateFrame) {
         if(nodes['@id'] == undefinedNode){

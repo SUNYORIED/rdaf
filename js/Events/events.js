@@ -1,5 +1,6 @@
 /*
-There is not button set on the Stages yet so this is an event handler for when clicked on any of the stages
+    * Event handler for a click on an element.
+    * @param - {object}: cellView, CellView of the element clicked.
 */
 paper.on('element:pointerdown', function(cellView, evt) {
     const model = cellView.model
@@ -28,26 +29,26 @@ paper.on('element:pointerdown', function(cellView, evt) {
     }
 })
 
-graph.on('change:position', function(element, position) {
-    //console.log('Element ' + element.id + 'moved to ' + position.x + ',' + position.y);
-});
-
-
-
-function toggleBranch(child) {
-    if(child.isElement()){
+/*
+    * This funciton is triggred when the user clicks on button to open and close its child element.
+    * @param - {Object}: element, Element on which the click is detected
+*/
+function toggleBranch(element) {
+    if(element.isElement()){
         //retrives the value of the collapsed attribute from the root model.
-        var shouldHide = child.get('collapsed');
-        child.set('collapsed', !shouldHide);
-        const links = openBranch(child, shouldHide)
+        var shouldHide = element.get('collapsed');
+        element.set('collapsed', !shouldHide);
+        const links = openBranch(element, shouldHide)
     }
 }
 
-function openBranch(child, shouldHide){
-    // TODO: openBranch should only open the next level of the tree, not the
-    // full tree - this might also help with the initial layout
+/*
+    * This function opens the child elements of the element passed in.
+    * @param - {Object}: element, JointJS element.
+*/
+function openBranch(element, shouldHide){
     //Finds the outgoing links to the element the user is interacting with
-    const findTarget = graph.getConnectedLinks(child, {outbound:true})
+    const findTarget = graph.getConnectedLinks(element, {outbound:true})
     //Using each link that is connected find the target Elements and play with them
     findTarget.forEach(targetLink =>{
         //elements connected to the child, those in the 1st rank of the graph
@@ -85,6 +86,7 @@ function openBranch(child, shouldHide){
 
 /*
     This function takes and element and routes through all of its child element and hides all the elements
+    * @param - {Object}, element: Element whose child elements are to be hidden.
 */
 function closeTheRest(element){
     //This condition closes all the nodes when the user intereacts with the parentNode
@@ -122,26 +124,25 @@ function closeTheRest(element){
 
 
 /*
-    This function handles the event when a button is clicked. Collapse and hide the child nodes
-    for now its just closes the first connected childs but later when we create the child (participants, roles, methods, etc. ) for activities we can use
-    the above close the Rest to close the rest of the tree
+    This function handles the event when a button is clicked. opens and hide the child nodes.
+    * @param - {Object}: element, JointJS element.
+    * @param - {Object}: typeOfPort, Type of element that is to be closed and opened.
 */
-function toggelButton(node, typeOfPort){
-    var shouldHide = node.get('collapsed');
-    node.set('collapsed', !shouldHide);
-    if(typeOfPort== "Download"){
-        downloadFile(node)
-    }else if(typeOfPort == "Reset Score"){
-        //resetScore(node)
-    }else{
-        defaultEvent(node, typeOfPort)
-    }
+function toggelButton(element, typeOfPort){
+    var shouldHide = element.get('collapsed');
+    element.set('collapsed', !shouldHide);
+    openAndCloseEvent(element, typeOfPort)
 }
 
 
-function defaultEvent(node, typeOfPort){
-    if(node){ // === True
-        const OutboundLinks = graph.getConnectedLinks(node, {outbound:true})
+/*
+    * This function takes the element and the type of the port from the above function and opens and closes its child element.
+    * @param - {Object}: element, JointJS element.
+    * @param - {Object}: typeOfPort, Type of element that is to be closed and opened.
+*/
+function openAndCloseEvent(element, typeOfPort){
+    if(element){ // === True
+        const OutboundLinks = graph.getConnectedLinks(element, {outbound:true})
         if(Array.isArray(OutboundLinks)){
             OutboundLinks.forEach(links =>{
                 var targetElement = links.getTargetElement()
@@ -227,7 +228,11 @@ function defaultEvent(node, typeOfPort){
     }
 }
 
-// Function to animate showing or hiding an element
+/*
+    * Function to animate showing or hiding an element.
+    * @param - {Object}: element, JointJS element.
+    * @param - {Object bool}: show, indicates whether the element is open or closed.
+*/
 function animateElement(element, show) {
     const duration = 1000; // Animation duration in milliseconds
     const startValue = show ? 0 : 1;
@@ -243,22 +248,12 @@ function animateElement(element, show) {
 }
 
 
-function animateElementClose(element, show){
-    const duration = 1000; // Animation duration in milliseconds
-    const startValue = show ? 0 : 1;
-    const endValue = show ? 1 : 0;
-    const property = 'opacity';
-    const elementView = paper.findViewByModel(element)
-    const htmlEl = elementView.$el[0]
-    htmlEl.style.opacity = startValue;
-    htmlEl.animate(
-        { opacity: [startValue + 0.3, endValue] },
-        { duration: duration, fill: 'forwards' }
-    );
-}
 
-
-//This function handles the event for the 3 buttons on the outcomes node
+/*
+    * This function handles the event for the 3 buttons on the outcomes node.
+    * @param - {Object}: elementView, Element View of the Outcomes.
+    * @param - {Object}: port, Used to retrive the port ID of the button.
+*/
 function radioButtonEvents(elementView, port){
     var circleElements = elementView._toolsView.$el[0].querySelectorAll('circle')
     var score = getScore(elementView.model)
@@ -267,7 +262,7 @@ function radioButtonEvents(elementView, port){
         var activityButton = elementView._toolsView.tools[1].el
         var considerationButton = elementView._toolsView.tools[0].$el[0]
         const outboundLinks = (graph.getConnectedLinks(elementView.model, {outbound: true}))
-        var buttons = removeUnwantedButton(elementView, outboundLinks, activityButton, considerationButton)
+        var buttons = removeUnwantedButton(outboundLinks, activityButton, considerationButton)
         activityButton = buttons[0]
         considerationButton = buttons[1]
         //Change the color of the element when clicked
@@ -389,8 +384,13 @@ function radioButtonEvents(elementView, port){
 
 
 
-
-function removeUnwantedButton(elementView, outboundLinks, activityButton, considerationButton){
+/*
+    * This function removes activity, and consideration button from the outcomes which does not have an extention to an activity or a consideration.
+    * @param - {Object []}: OutboundLinks, An array of links that goes out of the outcome.
+    * @param - {Object}: activityButton, Activity button on an outcome.
+    * @param - {Object}: considerationButton, Consideration button on an outcome.
+*/
+function removeUnwantedButton(outboundLinks, activityButton, considerationButton){
     var activitiesElements = []
     var considerationElement = []
     outboundLinks.forEach(links =>{

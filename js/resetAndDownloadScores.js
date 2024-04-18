@@ -1,7 +1,10 @@
-let headersAdded = false;
+let headersAdded = false;   //Boolean var to add a single header to the CSV file.
 
 
-//Check all the open outcomes and look for scores
+/*
+    Finds the Open Outcomes on the graph and Checks it Score status.
+    Stores the Status of the scores to the CSV file.
+*/
 function FindOpenOutcomes(){
     let data = []
     const elements = (graph.getElements())
@@ -25,7 +28,7 @@ function FindOpenOutcomes(){
 
 
 /*
-    @param: {model}, JointJS element
+    @param - {Object}: model, JointJS element
     This function checks if an outcomes has a score yet or not
 */
 function checkStatus(model){
@@ -47,7 +50,11 @@ function checkStatus(model){
     }
 }
 
-
+/*
+    * Starts collecting data from the outcome.
+    * Data Collected: Stage ID, Stage Name, Topic ID, Topic Name, Sub-Topic ID, Sub-Topic Name, Outcome ID, Outcome Name, Score, Date.
+    * @param - {Object}: model, JointJS element
+*/
 function collectData(model){
     const outcomeID = model.id
     const outcomeName = model.attr('label/text')
@@ -81,6 +88,7 @@ function collectData(model){
     return data
 }
 
+//This function return the current date.
 function getDate(){
     var currentDate = new Date();
     var year = currentDate.getFullYear();
@@ -90,6 +98,10 @@ function getDate(){
     return date
 }
 
+/*
+    * Returns the topic element linked to the Outcome
+    * @param - {Object}: model, JointJS element.
+*/
 function getTopic(model){
     var sourceLink = graph.getConnectedLinks(model, {inbound:true})[0]
     var sourceElement = sourceLink.get("source").id
@@ -97,6 +109,10 @@ function getTopic(model){
     return [sourceElement, sourceCell.attr('label/text'), sourceCell]
 }
 
+/*
+    * Returns the Stage element linked to the Topic
+    * @param - {Object}: model, JointJS element.
+*/
 function getStage(model){
     var sourceLink = graph.getConnectedLinks(model, {inbound:true})[0]
     var sourceElement = sourceLink.get("source").id
@@ -104,6 +120,10 @@ function getStage(model){
     return [sourceElement, sourceCell.attr('label/text')]
 }
 
+/*
+    * Returns the sub-topic linked to the Outcome
+    * @param - {Object}: model, JointJS element.
+*/
 function getSubTopic(model){
     const node = findNode(model.id)
     const subTopicNode = node['sunyrdaf:extends']
@@ -114,7 +134,10 @@ function getSubTopic(model){
     }
 }
 
-
+/*
+    * This function converts the raw JSON data to CSV format
+    * @param - {Object []}: data, An Array of raw JSON data.
+*/
 function csvFormat(data){
     let csvData;
     if(!headersAdded){
@@ -127,7 +150,11 @@ function csvFormat(data){
 }
 
 
-
+/*
+    * This function creates a CSV file and downloads it to the Downlads dir.
+    * @param - {Object}: csvData, Data in CSV format to be written to the file.
+    * @param - {Object}: filename, File name of the file.
+*/
 function downloadCSVFile(csvData, filename){
     // Creating a Blob for having a csv file format
     // and passing the data with type
@@ -146,6 +173,9 @@ function downloadCSVFile(csvData, filename){
     anchor.click()
 }
 
+/*
+    * This function asks the user to input the file name.
+*/
 function getFileName(){
     var input = prompt("Please enter the File Name:");
     filename = input
@@ -178,7 +208,7 @@ function FindOpenOutcomesAndReset(){
 
 /*
     * Listens to an onclick event on the reset Button
-    * @param {Object} model - svg element from the graph
+    * @param - {Object}: model - svg element from the graph
     * This function resets the color of the score cards and if any of its activities are open, it closes the rest of the graph.
     * Changes the color of the radio buttons to white and also hides the activity and consideration button
     *
@@ -189,6 +219,7 @@ function resetScore(model){
     var activityButton = elementView._toolsView.tools[1].el
     var considerationButton = elementView._toolsView.tools[0].$el[0]
     var rectElement = (elementView.el.querySelector('rect'))
+    //Checks if (In Progress or Not Started Button is selected, Checks if the width of the model is equal to its initial width, check the color of the buttons).
     circleElements.forEach(radioButtons =>{
         if(((radioButtons.id.startsWith('N') || radioButtons.id.startsWith('P')) && radioButtons.getAttribute('fill') != "white" && (model.getBBox().width != rectElement.getAttribute('width')))){
             var OriginalWidth = parseInt(rectElement.getAttribute('width')) - 115
@@ -196,8 +227,10 @@ function resetScore(model){
             return
         }
     })
+    //Hides the buttons on the outcome element
     activityButton.style.visibility = "hidden"
     considerationButton.style.visibility = "hidden"
+    //Resets the color of the radio buttons to white
     circleElements.forEach(radioButtons =>{
         var currentColor = radioButtons.getAttribute('fill')
         if(radioButtons.id.startsWith('A')){
@@ -220,10 +253,19 @@ function resetScore(model){
     })
 }
 
+/*
+    * Returns the score of the Outcome.
+    * @param - {Object}: mode, JointJS element.
+*/
 function getScore(model) {
     return scorecard[model.id];
 }
 
+/*
+    * Updates the score of the outcome, as per the users input.
+    * @param - {Object}: model, JointJS element.
+    * @param - {Object}: score, Score input by the user.
+*/
 function updateScorecard(model,score) {
     scorecard[model.id] = score;
 }

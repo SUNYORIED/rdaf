@@ -483,7 +483,7 @@ function createDownloadButton(id, name){
       items: []
     },
   });
-  node.position(50,15)
+  node.position(50, 500)
   return node
 }
 
@@ -519,9 +519,11 @@ function createResetButton(id, name){
       items: []
     }
   });
-  node.position(50,60)
+  node.position(50, 550)
   return node
 }
+
+
 
 
 //Creates The ports on the Elements
@@ -581,5 +583,3 @@ if(x && y){
   return port
   }
 }
-
-

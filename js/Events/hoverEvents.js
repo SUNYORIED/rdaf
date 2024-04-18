@@ -1,6 +1,8 @@
 let timeoutID;
-//In order to see the effect of this function minimize the page to 25% because the subtopic elements are scattered througout the page
-//Show the subtopic when the enters the cell view of the subtopic button
+/*
+    *This events handles mouseover an element, it displays the text block describing the elements, and the buttons.
+    * @param - {Object}: CellView, cell view of the mouse over element.
+*/
 paper.on('cell:mouseover', function(cellView) {
     try {
         if(cellView.model.attributes.name['first'] == "Resources"){
@@ -14,7 +16,6 @@ paper.on('cell:mouseover', function(cellView) {
             var textBlock = document.getElementById(cellView.model.id)
             textBlock.style.left = ((paperRect1.x) + 100) + 'px';
             textBlock.style.top = ((paperRect1.y) + 40) + 'px';
-            textBlock.style.backgroundColor = 'white'
             displayTextBlock(textBlock)
         }else if(cellView.model.attributes.name['first'] == "Download Scores"){
             const resourceElement = (cellView.el.querySelectorAll('rect')[0])
@@ -71,7 +72,7 @@ paper.on('cell:mouseover', function(cellView) {
                             element.childNodes.button.setAttribute('fill', '#004265')
                             var textBlock = document.getElementById("Considerations" + cellView.model.id)
                             if(textBlock){
-                                textBlock.style.left = (paperRect1.x + cellView.model.size().width/2) + 'px';
+                                textBlock.style.left = (paperRect1.x + cellView.model.size().width - 20) + 'px';
                                 textBlock.style.top = ((paperRect1.y) + 60) + 'px';
                                 displayTextBlock(textBlock)
                             }
@@ -143,11 +144,12 @@ paper.on('cell:mouseover', function(cellView) {
     }
 });
 
-  //In order to see the effect of this function minimize the page to 25% because the subtopic elements are scattered througout the page
-  //Hide the subtopic when the mouse pointer leaves the button
-    paper.on('cell:mouseout', function(cellView) {
+/*
+    *This events handles mouseout an element, it blocks the displays of the text block describing the elements, and the buttons.
+    * @param - {Object}: CellView, cell view of the mouse out element.
+*/
+paper.on('cell:mouseout', function(cellView) {
     try {
-
         if(cellView.model.attributes.name['first'] == "Resources"){
             const resourceElement = (cellView.el.querySelectorAll('rect')[0])
             resourceElement.setAttribute('fill', "#C8CDDA")
@@ -219,13 +221,11 @@ paper.on('cell:mouseover', function(cellView) {
                         element.childNodes.button.setAttribute('fill', '#04C3D6')
                         hideTextBlock(element.childNodes.button.id, cellView.model)
                     }
-
-
                 });
             }else {
-                console.log();
+                console.log();a
             }
-        });
+        });sa
     } catch (error) {
         console.error();
     }
@@ -245,6 +245,11 @@ function animateTextBlock(htmlEl, show) {
     );
 }
 
+/*
+    * This function hides the text block.
+    * @param - {Object}: buttonId, Button ID is used to hide the descriptions of the buttons
+    * @param - {Object}: model, model is used to retrive the model Id, which is used to hide the element text blocks.
+*/
 function hideTextBlock(buttonId, model){
     const allowedButtonIds = ["Outputs", "Roles", "Resources", "Participants", "Methods", "Considerations", "Activities"];
     if(allowedButtonIds.includes(buttonId)){
@@ -264,7 +269,10 @@ function hideTextBlock(buttonId, model){
     }
 }
 
-
+/*
+    * This function displays the text block.
+    * @param - {Object}: textBlock, HTML text block.
+*/
 function displayTextBlock(textBlock){
     clearTimeout(timeoutID)
     timeoutID = setTimeout(function() {

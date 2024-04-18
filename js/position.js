@@ -1,25 +1,8 @@
-function updateAnchorConnection(element){
-    var sourceLinks = graph.getConnectedLinks(element, {outbound: true})
-    sourceLinks.forEach(links =>{
-        links.source(element, {
-            anchor: {
-                name: 'right',
-                args: {
-                    rotate: false,
-                    dx: 115,            //100 because the width of the element was increase by 100 (offset 100)
-                    dy: 0
-                }
-            }
-        });
-    })
-}
-
-
 /*
-This function sets the length and path of the link from the source element to the target
-Starts: From the ending x-coordinate of the source element
-ends: to the initial x-coordinate of the target element
-loops: depends on the position of the target element, (more the gap more loops, lesser the gap lesser the loops)
+    This function sets the length and path of the link from the source element to the target
+    Starts: From the ending x-coordinate of the source element
+    ends: to the initial x-coordinate of the target element
+    loops: depends on the position of the target element, (more the gap more loops, lesser the gap lesser the loops)
 */
 function setLinkVertices(){
     models.forEach(function(link){
@@ -79,7 +62,6 @@ function setLinkVertices(){
                     }else{
                         distance = 4200
                     }
-
                     if(sourceMidX != distance && sourceMidX > distance){
                         var difference = sourceMidX - distance
                         sourceMidX -= difference
@@ -90,7 +72,6 @@ function setLinkVertices(){
                     var targetX = sourceMidX;
                     var targetMidY =  parseInt(targetBBox.y) + parseInt(targetBBox.height)/2;
                     //Sets the path of the source link accroding to the ports y coordinate
-
                     if(targetCell.prop("name/first") == "Methods"){
                         sourceMidY = parseInt(sourceBBox.y) + parseInt(sourceBBox.height)/10;
                     }
@@ -121,7 +102,7 @@ function setLinkVertices(){
 
 
 /*
-Sets the position of a target element based on the position of the source element
+    Sets the position of a target element based on the position of the source element
 */
 function setElementsPosition(element, position){
     if(element){
@@ -206,7 +187,10 @@ function setElementsPosition(element, position){
 
 
 
-
+/*
+    The initial size of the paper depends on the size of the screen
+    It changes as the BBox of the elements changes
+*/
 function changePaperSize(){
     var sizeOfContentBox = paper.getContentBBox({useModelGeometry:true});           //Returns the Bounding box of the content that is visible on the page.
     var paperWidth = paper.options.width;   //Paper's initial width
