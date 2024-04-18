@@ -56,8 +56,10 @@ function buildTheGraph(){
   const frameArray = frame['@graph']
   duplicateFrame = frameArray
   const downloadButton = createDownloadButton("Download Scores", "Download Scores")
+  downloadButton.prop('name/first', "Download Scores")
   downloadButton.attr('label').refX = "5%"
   const resetButton = createResetButton("Reset Scores", "Reset Scores")
+  resetButton.prop('name/first', "Reset Scores")
   resetButton.attr('label').refX = "15%"
   graph.addCells([downloadButton, resetButton])
   frameArray.forEach(node =>{

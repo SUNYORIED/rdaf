@@ -1,4 +1,3 @@
-
 /*
 There is not button set on the Stages yet so this is an event handler for when clicked on any of the stages
 */
@@ -22,14 +21,10 @@ paper.on('element:pointerdown', function(cellView, evt) {
         window.open(url, '_blank')
     }
     if(model.id == "Download Scores"){
-        console.log('HEere')
         FindOpenOutcomes()
-        //downloadFile(model)
     }
     if(model.id == "Reset Scores"){
-        console.log('HEere')
         FindOpenOutcomesAndReset()
-        //downloadFile(model)
     }
 })
 
@@ -80,7 +75,7 @@ function openBranch(child, shouldHide){
                     successor.set('collapsed', false);
                 });
             }else{
-                console.error("Element Undefined")
+                //console.error("Element Undefined")
             }
         }
     })
@@ -105,7 +100,6 @@ function closeTheRest(element){
                 if(successor != undefined){
                     successor.set('hidden', true);
                     successor.set('collapsed', false);
-
                 }else{
                     console.error("Element already closed")
                 }
@@ -120,12 +114,9 @@ function closeTheRest(element){
                 }
             })
         }else{
-            console.error("Element already closed")
+            //console.error("Element already closed")
         }
     });
-
-
-
 }
 
 
@@ -145,7 +136,6 @@ function toggelButton(node, typeOfPort){
     }else{
         defaultEvent(node, typeOfPort)
     }
-
 }
 
 

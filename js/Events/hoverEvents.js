@@ -4,7 +4,6 @@ let timeoutID;
 paper.on('cell:mouseover', function(cellView) {
     try {
         if(cellView.model.attributes.name['first'] == "Resources"){
-            console.log("Here")
             const resourceElement = (cellView.el.querySelectorAll('rect')[0])
             resourceElement.setAttribute('fill', "#7490D7")
         }else if(cellView.model.attributes.name['first'] == "Stages"){
@@ -17,6 +16,12 @@ paper.on('cell:mouseover', function(cellView) {
             textBlock.style.top = ((paperRect1.y) + 40) + 'px';
             textBlock.style.backgroundColor = 'white'
             displayTextBlock(textBlock)
+        }else if(cellView.model.attributes.name['first'] == "Download Scores"){
+            const resourceElement = (cellView.el.querySelectorAll('rect')[0])
+            resourceElement.setAttribute('fill', "#7490D7")
+        }else if(cellView.model.attributes.name['first'] == "Reset Scores"){
+            const resourceElement = (cellView.el.querySelectorAll('rect')[0])
+            resourceElement.setAttribute('fill', "#7490D7")
         }
       //From the element view look for the element tools
         var toolsArray = cellView._toolsView.tools
@@ -151,6 +156,12 @@ paper.on('cell:mouseover', function(cellView) {
             stageElement.setAttribute('fill', "whitesmoke")
             var textBlock = document.getElementById(cellView.model.id)
             textBlock.style.visibility = "hidden"
+        }else if(cellView.model.attributes.name['first'] == "Download Scores"){
+            const resourceElement = (cellView.el.querySelectorAll('rect')[0])
+            resourceElement.setAttribute('fill', "#C8CDDA")
+        }else if(cellView.model.attributes.name['first'] == "Reset Scores"){
+            const resourceElement = (cellView.el.querySelectorAll('rect')[0])
+            resourceElement.setAttribute('fill', "#C8CDDA")
         }
         clearTimeout(timeoutID)
         //From the element View look for the element tools

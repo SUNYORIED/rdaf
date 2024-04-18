@@ -343,7 +343,6 @@ function createRoles(id, name){
     },
     attrs: {
       label: {
-      //fontWeight: "bold",
         fontSize: 15,
         fontFamily: "sans-serif",
         fill: "whitesmoke",
@@ -384,7 +383,6 @@ function createMethods(id, name){
     },
     attrs: {
       label: {
-      //fontWeight: "bold",
         fontSize: 15,
         fontFamily: "sans-serif",
         fill: "whitesmoke",
@@ -425,7 +423,6 @@ function createResources(id, name){
     },
     attrs: {
       label: {
-      //fontWeight: "bold",
         fontSize: 15,
         fontFamily: "sans-serif",
         fill: "black",
@@ -463,7 +460,6 @@ function createDownloadButton(id, name){
     },
     attrs: {
       label: {
-      //fontWeight: "bold",
         fontSize: 15,
         fontFamily: "sans-serif",
         fill: "black",
@@ -500,7 +496,6 @@ function createResetButton(id, name){
     },
     attrs: {
       label: {
-      //fontWeight: "bold",
         fontSize: 15,
         fontFamily: "sans-serif",
         fill: "black",
@@ -527,35 +522,6 @@ function createResetButton(id, name){
   node.position(50,60)
   return node
 }
-
-function setPorts(el, ports) {
-    let width = 0;
-    const rdafPorts = ports.map((port, index) => {
-      const x = index * (PORT_WIDTH + PORT_GAP);
-      width = x + PORT_WIDTH;
-      return {
-        id: `${port}`,
-        group: "rdaf",
-        attrs: {
-          portLabel: {
-            text: `${port}`,
-          }
-        },
-        args: {
-          x: "90%",
-          y: "50%"
-        },
-      };
-    });
-    if (rdafPorts.length > 0) {
-      width += PORT_GAP;
-    }
-    width += 2 * PORT_WIDTH;
-    el.prop(["ports", "items"], [...rdafPorts], {
-      rewrite: true
-    });
-  }
-
 
 
 //Creates The ports on the Elements

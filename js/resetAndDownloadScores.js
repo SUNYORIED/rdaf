@@ -1,3 +1,6 @@
+let headersAdded = false;
+
+
 //Check all the open outcomes and look for scores
 function FindOpenOutcomes(){
     let data = []
@@ -5,22 +8,50 @@ function FindOpenOutcomes(){
     elements.forEach(el =>{
         if(!el.get('hidden')){
             if(el.prop('name/first') == "Outcomes"){
-                const outcomes = el
-                const csvData = collectData(outcomes)
-                data.push(csvData)
+                const status = checkStatus(el)
+                if(status == true){
+                    const outcomes = el
+                    const csvData = collectData(outcomes)
+                    data.push(csvData)
+                }
             }
         }
     })
+    const csvFormatData = csvFormat(data)
     var filename = getFileName()
-    const file = downloadCSVFile(data, filename)
+    const file = downloadCSVFile(csvFormatData, filename)
     return file
 }
+
+
+/*
+    @param: {model}, JointJS element
+    This function checks if an outcomes has a score yet or not
+*/
+function checkStatus(model){
+    var elementView = paper.findViewByModel(model)
+    var circleElements = elementView._toolsView.$el[0].querySelectorAll('circle')
+    let status = [];
+    circleElements.forEach(radioButton =>{
+        const currentColor = radioButton.getAttribute('fill')
+        if(currentColor != "white"){
+            status.push(true)
+        }else{
+            status.push(false)
+        }
+    })
+    for(const check of status){
+        if(check == true){
+            return true
+        }
+    }
+}
+
 
 function collectData(model){
     const outcomeID = model.id
     const outcomeName = model.attr('label/text')
     var score = getScore(model)
-
     if(score == 0){
         score = "Not Started"
     }else if(score == 1){
@@ -47,8 +78,7 @@ function collectData(model){
         "Score": score,
         "Date": date
     }
-    const csvFormatData = csvFormat(data)
-    return csvFormatData
+    return data
 }
 
 function getDate(){
@@ -84,10 +114,19 @@ function getSubTopic(model){
     }
 }
 
+
 function csvFormat(data){
-    const csvData = json2csv.parse(data)
+    let csvData;
+    if(!headersAdded){
+        csvData = json2csv.parse(data, {headers: true})
+        headersAdded = true
+    }else{
+        csvData = json2csv.parse(data, {headers: false})
+    }
     return csvData
 }
+
+
 
 function downloadCSVFile(csvData, filename){
     // Creating a Blob for having a csv file format
@@ -97,15 +136,14 @@ function downloadCSVFile(csvData, filename){
     // Creating an object for downloading url
     const url = window.URL.createObjectURL(blob)
     // Creating an anchor(a) tag of HTML
-    const a = document.createElement('a')
+    const anchor = document.createElement('a')
     // Passing the blob downloading url
-    a.setAttribute('href', url)
+    anchor.setAttribute('href', url)
     // Setting the anchor tag attribute for downloading
     // and passing the download file name
-    a.setAttribute('download', filename);
-
+    anchor.setAttribute('download', filename);
     // Performing a download with click
-    a.click()
+    anchor.click()
 }
 
 function getFileName(){
@@ -151,8 +189,6 @@ function resetScore(model){
     var activityButton = elementView._toolsView.tools[1].el
     var considerationButton = elementView._toolsView.tools[0].$el[0]
     var rectElement = (elementView.el.querySelector('rect'))
-    var activityButtonStatus = activityButton.style.visibility
-    var considerationButtonStatus = considerationButton.style.visibility
     circleElements.forEach(radioButtons =>{
         if(((radioButtons.id.startsWith('N') || radioButtons.id.startsWith('P')) && radioButtons.getAttribute('fill') != "white" && (model.getBBox().width != rectElement.getAttribute('width')))){
             var OriginalWidth = parseInt(rectElement.getAttribute('width')) - 115
@@ -163,11 +199,10 @@ function resetScore(model){
     activityButton.style.visibility = "hidden"
     considerationButton.style.visibility = "hidden"
     circleElements.forEach(radioButtons =>{
+        var currentColor = radioButtons.getAttribute('fill')
         if(radioButtons.id.startsWith('A')){
-            var currentColor = radioButtons.getAttribute('fill')
             radioButtons.setAttribute('fill', 'white')
         }else if(radioButtons.id.startsWith('P')){
-            var currentColor = radioButtons.getAttribute('fill')
             if(currentColor == "#D86C00"){
                 closeTheRest(model)
                 radioButtons.setAttribute('fill', 'white')
@@ -175,7 +210,6 @@ function resetScore(model){
                 radioButtons.setAttribute('fill', 'white')
             }
         }else if(radioButtons.id.startsWith('N')){
-            var currentColor = radioButtons.getAttribute('fill')
             if(currentColor == "#AB0606"){
                 closeTheRest(model)
                 radioButtons.setAttribute('fill', 'white')
