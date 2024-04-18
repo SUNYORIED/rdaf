@@ -483,7 +483,7 @@ function createDownloadButton(id, name){
       items: []
     },
   });
-  node.position(50, 500)
+  node.position(50, 10)
   return node
 }
 
@@ -519,7 +519,7 @@ function createResetButton(id, name){
       items: []
     }
   });
-  node.position(50, 550)
+  node.position(50, 60)
   return node
 }
 
