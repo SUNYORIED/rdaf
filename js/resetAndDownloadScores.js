@@ -11,18 +11,25 @@ function FindOpenOutcomes(){
     elements.forEach(el =>{
         if(!el.get('hidden')){
             if(el.prop('name/first') == "Outcomes"){
-                const status = checkStatus(el)
+                const outcomes = el
+                const csvData = collectData(outcomes)
+                data.push(csvData)
+                /*const status = checkStatus(el)
                 if(status == true){
-                    const outcomes = el
-                    const csvData = collectData(outcomes)
-                    data.push(csvData)
-                }
+                    This is the condition set if only scored outcomes are to be downloaded.
+                }*/
             }
         }
     })
     const csvFormatData = csvFormat(data)
     var filename = getFileName()
-    const file = downloadCSVFile(csvFormatData, filename)
+    var file;
+    if(csvFormatData != undefined){
+        file = downloadCSVFile(csvFormatData, filename)
+    }else{
+        console.error("No Data to be downloaded.")
+    }
+
     return file
 }
 
@@ -140,11 +147,23 @@ function getSubTopic(model){
 */
 function csvFormat(data){
     let csvData;
-    if(!headersAdded){
-        csvData = json2csv.parse(data, {headers: true})
-        headersAdded = true
+    var status = checkForScoresOnOutcome()
+    console.log(data.length > 0 , status)
+    if(data.length > 0 && status == true){
+        if(!headersAdded){
+            csvData = json2csv.parse(data, {headers: true})
+            headersAdded = true
+        }else{
+            csvData = json2csv.parse(data, {headers: false})
+        }
     }else{
-        csvData = json2csv.parse(data, {headers: false})
+        //animateElement(errorBlock, true)
+        var status = checkForScoresOnOutcome()
+        if(status == true){
+            errorBlock.set('hidden', true)
+        }else{
+            errorBlock.set('hidden', false)
+        }
     }
     return csvData
 }
@@ -177,16 +196,8 @@ function downloadCSVFile(csvData, filename){
     * This function asks the user to input the file name.
 */
 function getFileName(){
-    var input = prompt("Please enter the File Name:");
-    filename = input
-    // Check if the user provided input
-    if (filename != null) {
-        return filename
-    } else {
-        filename = "RDaF Navigator Scores"
-        return filename
-    }
-
+    var filename = "Scores"
+    return filename
 }
 
 
@@ -195,14 +206,22 @@ function getFileName(){
 */
 function FindOpenOutcomesAndReset(){
     const elements = (graph.getElements())
+    var counter = 0
+    var status = checkForScoresOnOutcome()
     elements.forEach(el =>{
-        if(!el.get('hidden')){
-            if(el.prop('name/first') == "Outcomes"){
-                const outcomes = el
+        const outcomes = el
+        if(!el.get('hidden') && el.prop('name/first') == "Outcomes"){
+            counter++
+            if(status == true){
                 resetScore(outcomes)
+            }else{
+                resetErrorBlock.set('hidden', false)
             }
         }
     })
+    if(counter == 0){
+        resetErrorBlock.set('hidden', false)
+    }
     doLayout()
 }
 
@@ -268,4 +287,34 @@ function getScore(model) {
 */
 function updateScorecard(model,score) {
     scorecard[model.id] = score;
+}
+
+function checkForScoresOnOutcome(){
+    var counter = 0
+    var counter2 = 0
+    var numOfButton = 0
+    var elements = graph.getElements()
+    elements.forEach(el =>{
+        if(!el.get("hidden")){
+            if(el.prop('name/first') == "Outcomes"){
+                counter2++
+                var elementView = paper.findViewByModel(el)
+                var circleElements = elementView._toolsView.$el[0].querySelectorAll('circle')
+                circleElements.forEach(radioButton =>{
+                    var currentColor = radioButton.getAttribute('fill')
+                    if(currentColor == "white"){
+                        counter++
+                    }else{
+                        counter = 0
+                    }
+                    numOfButton++
+                })
+            }
+        }
+    })
+    if(numOfButton != counter){
+        return true
+    }else{
+        return false
+    }
 }

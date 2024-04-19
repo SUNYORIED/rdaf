@@ -484,6 +484,7 @@ function createDownloadButton(id, name){
     },
   });
   node.position(50, 10)
+  node.attr('root/title', 'Download Button')
   return node
 }
 
@@ -520,6 +521,7 @@ function createResetButton(id, name){
     }
   });
   node.position(50, 60)
+  node.attr('root/title', 'Reset Button')
   return node
 }
 
@@ -583,3 +585,7 @@ if(x && y){
   return port
   }
 }
+
+
+
+

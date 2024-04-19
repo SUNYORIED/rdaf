@@ -10,6 +10,10 @@ var multiParentElementIds = {}
 var createdActivityTargets = new Set();
 var elementsAlreadyPositioned = new Set();
 var scorecard = {}
+var downloadButton;
+var resetButton;
+var errorBlock;
+var resetErrorBlock;
 
 //initialize
 init();
@@ -55,10 +59,13 @@ function buildTheGraph(){
   // in reality we want to navigate the entire graph
   const frameArray = frame['@graph']
   duplicateFrame = frameArray
-  const downloadButton = createDownloadButton("Download Scores", "Download Scores")
+  errorBlock =  createErrorBlock("download")
+  resetErrorBlock = createErrorBlock("reset")
+  downloadButton = createDownloadButton("Download Scores", "Download Scores")
   downloadButton.prop('name/first', "Download Scores")
   downloadButton.attr('label').refX = "5%"
-  const resetButton = createResetButton("Reset Scores", "Reset Scores")
+  //downloadButton.set('hidden', true)
+  resetButton = createResetButton("Reset Scores", "Reset Scores")
   resetButton.prop('name/first', "Reset Scores")
   resetButton.attr('label').refX = "15%"
   graph.addCells([downloadButton, resetButton])
@@ -308,12 +315,24 @@ function checkForSubTopics(node, arr, parentNode){
 
 
 function doLayout() {
+  var counter = 0;
   // Apply layout using DirectedGraph plugin
   var visibleElements = []
   //Checks for the visible elements on the graph when an event occurs and adds it to the layout
   models.forEach(el =>{
     if(!el.get('hidden')){
       visibleElements.push(el)
+      //This condition is set to show the download scores button when any one or more outcomes are open
+      /*if(el.prop('name/first') == "Outcomes"){
+        counter++;
+        if(counter >= 1){
+          downloadButton.set('hidden', false)
+        }
+      }
+    }else{
+      if(counter == 0){
+        downloadButton.set('hidden', true)
+      }*/
     }
   })
   layout = joint.layout.DirectedGraph.layout(visibleElements, {

@@ -32,7 +32,6 @@ paper.on('element:pointerdown', function(cellView, evt) {
 
 
 
-
 /*
     * This funciton is triggred when the user clicks on button to open and close its child element.
     * @param - {Object}: element, Element on which the click is detected
@@ -134,8 +133,12 @@ function closeTheRest(element){
 */
 function toggelButton(element, typeOfPort){
     var shouldHide = element.get('collapsed');
-    element.set('collapsed', !shouldHide);
-    openAndCloseEvent(element, typeOfPort)
+    if(typeOfPort == "Okay"){
+        element.set('hidden',true)
+    }else{
+        element.set('collapsed', !shouldHide);
+        openAndCloseEvent(element, typeOfPort)
+    }
 }
 
 
@@ -246,7 +249,7 @@ function animateElement(element, show) {
     const htmlEl = elementView.$el[0]
     htmlEl.style[property] = startValue;
     htmlEl.animate(
-        { [property]: [startValue + 0.3, endValue] },
+        { [property]: [startValue + 0.1, endValue] },
         { duration: duration, fill: 'forwards' }
     );
 }

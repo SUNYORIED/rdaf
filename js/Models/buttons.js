@@ -452,3 +452,48 @@ function createResourcesButton(port,pos) {
   });
   return button;
 }
+
+
+function createOkayButton(port) {
+  var button  = new joint.elementTools.Button({
+    markup: [
+        {
+            tagName: 'rect',
+            selector: 'button',
+            attributes: {
+                'id': port.id,
+                'width': 100,
+                'height': 30,
+                'fill': 'red', // Button background color
+                'stroke': 'black', // Button border color
+                'stroke-width': 2, // Button border width
+                'cursor': 'pointer',
+                'rx': 4, // Horizontal border radius
+                'ry': 4, // Vertical border radius
+            }
+        },
+        {
+            tagName: 'text',
+            selector: 'text',
+            textContent: port.id, // Text displayed on the button
+            attributes: {
+              'font-weight':'bold',
+              'fill': 'whitesmoke', // Text color
+              'font-size': '15px',
+              'font-family': 'Arial',
+              'text-anchor': 'middle',
+              'x': 50,
+              'y': 20, // Adjust text position
+              'cursor': 'pointer'
+            }
+        }
+    ],
+    x: "25%", // Button position X
+    y: "70%", // Button position Y
+    action: function(evt, elementView) {
+      toggelButton(this.model, `${port.id}`)
+    },
+  });
+  return button;
+}
+

@@ -105,3 +105,42 @@ function subTopicTextBlock(subTopic, parentNode){
     paper.el.appendChild(div);
 }
 
+/*
+    *This function creates error text block to display errors if any.
+    * @param {Object}, type: Represents the element where the error occurred from
+    * @return, it returns the text block with an okay button embeded in it.
+*/
+function createErrorBlock(type){
+    var errorRect = new joint.shapes.standard.Rectangle();
+    errorRect.resize(220, 120);
+    errorRect.position(50, 120);
+    errorRect.attr('root/title', 'joint.shapes.standard.TextBlock');
+    errorRect.attr('body/fill', 'lightgray');
+    errorRect.attr('label/text', 'You mus rate progress\n on one or more Outcomes\n in order to '+  type + ' scores.');
+    errorRect.attr('label/fontSize', 15);
+    errorRect.attr('label/fontFamily', "sans-serif");
+    errorRect.attr('label/font-weight', "bold");
+    errorRect.id = (type)
+    // Styling of the label via `style` presentation attribute (i.e. CSS).
+    errorRect.attr('label/style/color', 'red');
+    graph.addCells(errorRect)
+
+    var oKayButtonTools = []
+    var okayPort = createPort("Okay", "Port 2","10%", "100%")
+    errorRect.addPort(okayPort)
+    var okayButton = createOkayButton(okayPort)
+    oKayButtonTools.push(okayButton)
+    toolsView = new joint.dia.ToolsView({ tools: oKayButtonTools});
+    //Create an element view
+    var elementView = errorRect.findView(paper)
+    //Embed tthe tools view in to the element view
+    elementView.addTools(toolsView);
+    //return toolsView
+    var label = (errorRect.attr('label'))
+    label.refY = "40%"
+    errorRect.set("hidden", true)
+    return errorRect;
+}
+
+
+

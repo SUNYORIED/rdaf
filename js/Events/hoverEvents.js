@@ -5,6 +5,7 @@ let timeoutID;
 */
 paper.on('cell:mouseover', function(cellView) {
     try {
+
         if(cellView.model.attributes.name['first'] == "Resources"){
             const resourceElement = (cellView.el.querySelectorAll('rect')[0])
             resourceElement.setAttribute('fill', "#7490D7")
@@ -27,6 +28,7 @@ paper.on('cell:mouseover', function(cellView) {
       //From the element view look for the element tools
         var toolsArray = cellView._toolsView.tools
         toolsArray.forEach(element => {
+            console.log(element.childNodes.button.id)
             if (element.childNodes && element.childNodes.button) {
                     const buttons = element.$el[0]
                     buttons.addEventListener('mouseover', function() {
@@ -131,10 +133,15 @@ paper.on('cell:mouseover', function(cellView) {
                                 displayTextBlock(textBlock)
                             }
                         }
+                        else if(element.childNodes.button.id === "Okay"){
+                            element.childNodes.button.setAttribute('fill', '#7C7C7C')
+                        }
                         else{
                             console.log()
                         }
+
                     });
+
             }else {
                 console.log();
             }
@@ -179,6 +186,10 @@ paper.on('cell:mouseout', function(cellView) {
                     //Look for any events on subtopic button
                     if(element.childNodes.button.id == "RDaF Subtopic"){
                         element.childNodes.button.setAttribute('fill', 'whitesmoke')
+                        hideTextBlock(element.childNodes.button.id, cellView.model)
+                    }
+                    if(element.childNodes.button.id == "Okay"){
+                        element.childNodes.button.setAttribute('fill', 'red')
                         hideTextBlock(element.childNodes.button.id, cellView.model)
                     }
                     else if(element.childNodes.button.id == "Definition"){
@@ -241,6 +252,7 @@ function animateTextBlock(htmlEl, show) {
         { [property]: [startValue + 0.3, endValue] },
         { duration: duration, fill: 'forwards' }
     );
+    console.log(htmlEl)
 }
 
 /*
