@@ -28,8 +28,8 @@ paper.on('cell:mouseover', function(cellView) {
         var toolsArray = cellView._toolsView.tools
         toolsArray.forEach(element => {
             if (element.childNodes && element.childNodes.button) {
-                    const subtopicButton = element.$el[0]
-                    subtopicButton.addEventListener('mouseover', function() {
+                    const buttons = element.$el[0]
+                    buttons.addEventListener('mouseover', function() {
                         // Your mouseover event handling code here
                         var bbox = cellView.model.getBBox();
                         var paperRect1 = paper.localToPaperRect(bbox);
@@ -148,8 +148,11 @@ paper.on('cell:mouseover', function(cellView) {
     *This events handles mouseout an element, it blocks the displays of the text block describing the elements, and the buttons.
     * @param - {Object}: CellView, cell view of the mouse out element.
 */
+//In order to see the effect of this function minimize the page to 25% because the subtopic elements are scattered througout the page
+  //Hide the subtopic when the mouse pointer leaves the button
 paper.on('cell:mouseout', function(cellView) {
     try {
+
         if(cellView.model.attributes.name['first'] == "Resources"){
             const resourceElement = (cellView.el.querySelectorAll('rect')[0])
             resourceElement.setAttribute('fill', "#C8CDDA")
@@ -170,19 +173,13 @@ paper.on('cell:mouseout', function(cellView) {
         var toolsArray = cellView._toolsView.tools
         toolsArray.forEach(element => {
             if (element.childNodes && element.childNodes.button) {
-                const subtopicButton = element.$el[0]
-                subtopicButton.addEventListener('mouseout', function() {
+                const buttons = element.$el[0]
+                buttons.addEventListener('mouseout', function() {
                     // Set the position of the element according to the pointer and make it visible
                     //Look for any events on subtopic button
                     if(element.childNodes.button.id == "RDaF Subtopic"){
                         element.childNodes.button.setAttribute('fill', 'whitesmoke')
                         hideTextBlock(element.childNodes.button.id, cellView.model)
-                    }
-                    else if(element.childNodes.button.id == "Download"){
-                        element.childNodes.button.setAttribute('fill', 'whitesmoke')
-                    }
-                    else if(element.childNodes.button.id == "Reset Score"){
-                        element.childNodes.button.setAttribute('fill', 'whitesmoke')
                     }
                     else if(element.childNodes.button.id == "Definition"){
                         // Set the position of the element according to the pointer and make it visible
@@ -221,16 +218,17 @@ paper.on('cell:mouseout', function(cellView) {
                         element.childNodes.button.setAttribute('fill', '#04C3D6')
                         hideTextBlock(element.childNodes.button.id, cellView.model)
                     }
+
+
                 });
             }else {
-                console.log();a
+                console.log();
             }
-        });sa
+        });
     } catch (error) {
         console.error();
     }
 })
-
 
 // Function to animate showing or hiding an element
 function animateTextBlock(htmlEl, show) {

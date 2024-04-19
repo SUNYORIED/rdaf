@@ -29,6 +29,10 @@ paper.on('element:pointerdown', function(cellView, evt) {
     }
 })
 
+
+
+
+
 /*
     * This funciton is triggred when the user clicks on button to open and close its child element.
     * @param - {Object}: element, Element on which the click is detected

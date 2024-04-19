@@ -55,8 +55,6 @@ function buildTheGraph(){
   // in reality we want to navigate the entire graph
   const frameArray = frame['@graph']
   duplicateFrame = frameArray
-  // const headerBlock = createHeaderBlock("Header");
-  // graph.addCells(headerBlock)
   const downloadButton = createDownloadButton("Download Scores", "Download Scores")
   downloadButton.prop('name/first', "Download Scores")
   downloadButton.attr('label').refX = "5%"

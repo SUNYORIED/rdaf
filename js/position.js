@@ -139,13 +139,6 @@ function setElementsPosition(element, position){
             if(parentElement && parentNodeType == "Outcomes"){
                 const parentPositionX = parentElement.position().x
                 const parentSize = parseInt(parentElement.size().width)
-                var distance = parentPositionX + parentSize + 15
-                if(distance != 300 && distance < 300){
-                    const difference = 300 - distance;
-                    distance = distance + difference
-                }else{
-                    distance = distance + 400
-                }
                 label.refX = "5%"
                 element.set('position', { x: 3000 , y: position.y});
             }
@@ -176,9 +169,9 @@ function setElementsPosition(element, position){
                 }
 
                 label.refX = "5%"
-                element.set('position', { x: 4000 , y: position.y});
+                element.set('position', { x: 4000 , y: position.y + 100});
                 if(parentElement.getBBox().width > 950){
-                    element.set('position', { x: 4900 , y: position.y});
+                    element.set('position', { x: 4900 , y: position.y+100});
                 }
             }
         }
