@@ -134,6 +134,8 @@ function closeTheRest(element){
 function toggelButton(element, typeOfPort){
     var shouldHide = element.get('collapsed');
     if(typeOfPort == "Okay"){
+        const button = (element.findView(paper)._toolsView.tools[0].$el[0].querySelectorAll('rect')[0])
+        button.setAttribute('fill', '#FF9292')
         element.set('hidden',true)
     }else{
         element.set('collapsed', !shouldHide);

@@ -61,7 +61,7 @@ function buildTheGraph(){
   const frameArray = frame['@graph']
   duplicateFrame = frameArray
   errorBlock =  createErrorBlock("download")
-  resetErrorBlock = createErrorBlock("reset")
+  resetErrorBlock = createResetBlock("reset")
   successButton = createSuccessButton("Download Successful")
   downloadButton = createDownloadButton("Download Scores", "Download Scores")
   downloadButton.prop('name/first', "Download Scores")

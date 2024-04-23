@@ -478,7 +478,7 @@ function createOkayButton(port) {
             textContent: port.id, // Text displayed on the button
             attributes: {
               'font-weight':'bold',
-              'fill': 'black', // Text color
+              'fill': '#8C0000', // Text color
               'font-size': '15px',
               'font-family': 'Arial',
               'text-anchor': 'middle',

@@ -28,8 +28,8 @@ paper.on('cell:mouseover', function(cellView) {
         var toolsArray = cellView._toolsView.tools
         toolsArray.forEach(element => {
             if (element.childNodes && element.childNodes.button) {
-                    const subtopicButton = element.$el[0]
-                    subtopicButton.addEventListener('mouseover', function() {
+                    const buttons = element.$el[0]
+                    buttons.addEventListener('mouseover', function() {
                         // Your mouseover event handling code here
                         var bbox = cellView.model.getBBox();
                         var paperRect1 = paper.localToPaperRect(bbox);
@@ -154,19 +154,19 @@ paper.on('cell:mouseover', function(cellView) {
             var textBlock = document.getElementById(cellView.model.id)
             textBlock.style.visibility = "hidden"
         }else if(cellView.model.attributes.name['first'] == "Download Scores"){
-            const resourceElement = (cellView.el.querySelectorAll('rect')[0])
-            resourceElement.setAttribute('fill', "#C8CDDA")
+            const downloadElement = (cellView.el.querySelectorAll('rect')[0])
+            downloadElement.setAttribute('fill', "#C8CDDA")
         }else if(cellView.model.attributes.name['first'] == "Reset Scores"){
-            const resourceElement = (cellView.el.querySelectorAll('rect')[0])
-            resourceElement.setAttribute('fill', "#C8CDDA")
+            const resetElement = (cellView.el.querySelectorAll('rect')[0])
+            resetElement.setAttribute('fill', "#C8CDDA")
         }
         clearTimeout(timeoutID)
         //From the element View look for the element tools
         var toolsArray = cellView._toolsView.tools
         toolsArray.forEach(element => {
             if (element.childNodes && element.childNodes.button) {
-                const subtopicButton = element.$el[0]
-                subtopicButton.addEventListener('mouseout', function() {
+                const buttons = element.$el[0]
+                buttons.addEventListener('mouseout', function() {
                     // Set the position of the element according to the pointer and make it visible
                     //Look for any events on subtopic button
                     if(element.childNodes.button.id == "RDaF Subtopic"){
