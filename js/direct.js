@@ -14,6 +14,7 @@ var downloadButton;
 var resetButton;
 var errorBlock;
 var resetErrorBlock;
+var successButton;
 
 //initialize
 init();
@@ -61,6 +62,7 @@ function buildTheGraph(){
   duplicateFrame = frameArray
   errorBlock =  createErrorBlock("download")
   resetErrorBlock = createErrorBlock("reset")
+  successButton = createSuccessButton("Download Successful")
   downloadButton = createDownloadButton("Download Scores", "Download Scores")
   downloadButton.prop('name/first', "Download Scores")
   downloadButton.attr('label').refX = "5%"

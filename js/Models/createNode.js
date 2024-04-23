@@ -76,7 +76,7 @@ function createStage(id, name){
         fill: "whitesmoke",
         cursor: "pointer",
         'rx': 4, // Horizontal border radius
-        'ry': 4, // Vertical border radius
+        'ry': 4, // Vertical border radius,
       },
       },
       NodeType:{

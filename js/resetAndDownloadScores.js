@@ -26,9 +26,13 @@ function FindOpenOutcomes(){
     var file;
     if(csvFormatData != undefined){
         file = downloadCSVFile(csvFormatData, filename)
+        animateElement(successButton, true)
+        //successButton.set('hidden', false)
+        showMessage(successButton, 6000)
     }else{
         console.error("No Data to be downloaded.")
     }
+
 
     return file
 }
@@ -148,7 +152,6 @@ function getSubTopic(model){
 function csvFormat(data){
     let csvData;
     var status = checkForScoresOnOutcome()
-    console.log(data.length > 0 , status)
     if(data.length > 0 && status == true){
         if(!headersAdded){
             csvData = json2csv.parse(data, {headers: true})
@@ -157,11 +160,12 @@ function csvFormat(data){
             csvData = json2csv.parse(data, {headers: false})
         }
     }else{
-        //animateElement(errorBlock, true)
+        animateElement(errorBlock, true)
         var status = checkForScoresOnOutcome()
         if(status == true){
             errorBlock.set('hidden', true)
         }else{
+            //animateElement(errorBlock, true)
             errorBlock.set('hidden', false)
         }
     }
@@ -208,6 +212,7 @@ function FindOpenOutcomesAndReset(){
     const elements = (graph.getElements())
     var counter = 0
     var status = checkForScoresOnOutcome()
+    animateElement(resetErrorBlock, true)
     elements.forEach(el =>{
         const outcomes = el
         if(!el.get('hidden') && el.prop('name/first') == "Outcomes"){

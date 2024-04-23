@@ -113,13 +113,17 @@ function subTopicTextBlock(subTopic, parentNode){
 function createErrorBlock(type){
     var errorRect = new joint.shapes.standard.Rectangle();
     errorRect.resize(220, 120);
-    errorRect.position(50, 120);
+    errorRect.position(230, 10);
     errorRect.attr('root/title', 'joint.shapes.standard.TextBlock');
-    errorRect.attr('body/fill', 'lightgray');
-    errorRect.attr('label/text', 'You mus rate progress\n on one or more Outcomes\n in order to '+  type + ' scores.');
+    errorRect.attr('body/fill', '#FF9292');
+    errorRect.attr('label/text', 'You must rate progress\n on one or more Outcomes\n in order to '+  type + ' scores.');
     errorRect.attr('label/fontSize', 15);
     errorRect.attr('label/fontFamily', "sans-serif");
     errorRect.attr('label/font-weight', "bold");
+    errorRect.attr('body/stroke', "#FF9292")
+    errorRect.attr('body/rx', '5')
+    errorRect.attr('body/ry', '5')
+    errorRect.prop('name/first', "Okay")
     errorRect.id = (type)
     // Styling of the label via `style` presentation attribute (i.e. CSS).
     errorRect.attr('label/style/color', 'red');
@@ -140,6 +144,31 @@ function createErrorBlock(type){
     label.refY = "40%"
     errorRect.set("hidden", true)
     return errorRect;
+}
+
+
+
+function createSuccessButton(type){
+    var successButton = new joint.shapes.standard.Rectangle();
+    successButton.resize(220, 40);
+    successButton.position(50, 120);
+    successButton.attr('root/title', 'joint.shapes.standard.TextBlock');
+    successButton.attr('body/fill', '#A8FF9B');
+    successButton.attr('label/text', 'Download Successful');
+    successButton.attr('label/fontSize', 15);
+    successButton.attr('label/fontFamily', "sans-serif");
+    successButton.attr('label/font-weight', "bold");
+    successButton.attr('label/fill', "#0B5900");
+    successButton.attr('body/stroke', "#A8FF9B")
+    successButton.attr('body/rx', '5')
+    successButton.attr('body/ry', '5')
+    successButton.prop('name/first', "Okay")
+    successButton.id = (type)
+    // Styling of the label via `style` presentation attribute (i.e. CSS).
+    successButton.attr('label/style/color', 'red');
+    graph.addCells(successButton)
+    successButton.set("hidden", true)
+    return successButton;
 }
 
 

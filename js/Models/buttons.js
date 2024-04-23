@@ -464,8 +464,8 @@ function createOkayButton(port) {
                 'id': port.id,
                 'width': 100,
                 'height': 30,
-                'fill': 'red', // Button background color
-                'stroke': 'black', // Button border color
+                'fill': '#FF9292', // Button background color
+                'stroke': 'lightgrey', // Button border color
                 'stroke-width': 2, // Button border width
                 'cursor': 'pointer',
                 'rx': 4, // Horizontal border radius
@@ -478,13 +478,13 @@ function createOkayButton(port) {
             textContent: port.id, // Text displayed on the button
             attributes: {
               'font-weight':'bold',
-              'fill': 'whitesmoke', // Text color
+              'fill': 'black', // Text color
               'font-size': '15px',
               'font-family': 'Arial',
               'text-anchor': 'middle',
               'x': 50,
               'y': 20, // Adjust text position
-              'cursor': 'pointer'
+              'cursor': 'pointer',
             }
         }
     ],
