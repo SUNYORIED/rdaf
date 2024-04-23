@@ -3,8 +3,12 @@ var PORT_WIDTH = 90;
 const PORT_HEIGHT = 20;
 const PORT_GAP = 20;
 
-//Looking on How to prevent the links from overlapping the nearby elements, and how to set the length of the links
-// Also how to increase the size of the paper when object overflow
+/*
+  * This function creates a link two elements.
+  * @param {Object} from, Joint JS element, source element.
+  * @param {Object} to, Joint JS element, target element.
+  * @Return the link between the source and target.
+*/
 function makeLink(from,to) {
   const portName = to.prop('name/first')
   let color
@@ -51,7 +55,12 @@ function makeLink(from,to) {
 }
 
 
-
+/*
+  * This function used to create the stage elements.
+  * @param {Object} id, Identifier for the element.
+  * @param {Object} name, label for the element.
+  * @Return the Joint JS element.
+*/
 function createStage(id, name){
   const node = new joint.shapes.standard.Rectangle({
     id: id,
@@ -87,13 +96,17 @@ function createStage(id, name){
       return node
 }
 
-
+/*
+  * This function used to create the Topic element.
+  * @param {Object} id, Identifier for the element.
+  * @param {Object} name, label for the element.
+  * @Return the Joint JS element.
+*/
 function createTopics(id, name){
   const textWidth = name.length * 8; // Approximate width based on font size and average character width
   const width = Math.max(textWidth, 100); // Ensure a minimum width to accommodate shorter text
   const node =  new joint.shapes.standard.Rectangle({
     id: id,
-
     size: {
       width: width,
       height: 70
@@ -125,7 +138,12 @@ function createTopics(id, name){
   return node;
 }
 
-
+/*
+  * This function used to create the Consideration element.
+  * @param {Object} id, Identifier for the element.
+  * @param {Object} name, label for the element.
+  * @Return the Joint JS element.
+*/
 function createConsiderations(id, name){
   if(typeof name == 'string'){
     var textWidth = name.length * 10
@@ -169,7 +187,12 @@ function createConsiderations(id, name){
 
 
 
-
+/*
+  * This function used to create the Outcome element.
+  * @param {Object} id, Identifier for the element.
+  * @param {Object} name, label for the element.
+  * @Return the Joint JS element.
+*/
 function createOutcomes(id, name){
   const textWidth = name.length * 9.5; // Approximate width based on font size and average character width
   const width = Math.max(textWidth, 100); // Ensure a minimum width to accommodate shorter text
@@ -208,8 +231,13 @@ function createOutcomes(id, name){
 }
 
 
+/*
+  * This function used to create the Activity element.
+  * @param {Object} id, Identifier for the element.
+  * @param {Object} name, label for the element.
+  * @Return the Joint JS element.
+*/
 function createActivities(id, name){
-
   const textWidth = name.length * 10; // Approximate width based on font size and average character width
   const width = Math.max(textWidth, 200); // Ensure a minimum width to accommodate shorter text
   const node =  new joint.shapes.standard.Rectangle({
@@ -246,6 +274,13 @@ function createActivities(id, name){
   return node
 }
 
+
+/*
+  * This function used to create the Output element.
+  * @param {Object} id, Identifier for the element.
+  * @param {Object} name, label for the element.
+  * @Return the Joint JS element.
+*/
 function createOutputs(id, name){
   if(typeof name == 'string'){
     var textWidth = name.length * 8

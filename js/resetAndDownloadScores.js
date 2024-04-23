@@ -2,8 +2,9 @@ let headersAdded = false;   //Boolean var to add a single header to the CSV file
 
 
 /*
-    Finds the Open Outcomes on the graph and Checks it Score status.
-    Stores the Status of the scores to the CSV file.
+    * Finds the Open Outcomes on the graph and Checks it Score status.
+    * Stores the Status of the scores to the CSV file.
+    * @Return the csv file containing data.
 */
 function FindOpenOutcomes(){
     let data = []
@@ -39,8 +40,9 @@ function FindOpenOutcomes(){
 
 
 /*
-    @param - {Object}: model, JointJS element
-    This function checks if an outcomes has a score yet or not
+    * @param - {Object}: model, JointJS element.
+    * This function checks if an outcomes has a score yet or not.
+    * @Return the true or false, status of the outcome element.
 */
 function checkStatus(model){
     var elementView = paper.findViewByModel(model)
@@ -65,6 +67,7 @@ function checkStatus(model){
     * Starts collecting data from the outcome.
     * Data Collected: Stage ID, Stage Name, Topic ID, Topic Name, Sub-Topic ID, Sub-Topic Name, Outcome ID, Outcome Name, Score, Date.
     * @param - {Object}: model, JointJS element
+    * @Return data from all the open outcomes.
 */
 function collectData(model){
     const outcomeID = model.id
