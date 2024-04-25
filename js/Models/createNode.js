@@ -233,13 +233,7 @@ function createOutcomes(id, name){
   node.set('hidden', true);
   node.set('collapsed', false)
   node.attr('root/title', "Outcomes")
-  const rect = new joint.shapes.standard.Rectangle({
-    size: { width: 90, height: 90 },
 
-  });
-  graph.addCells([node])
-  node.embed(rect)
-  graph.addCells(rect)
   return node;
 }
 
