@@ -364,6 +364,7 @@ paper = new dia.Paper({
   gridSize: 10,
   perpendicularLinks: true,
   drawGrid: true,
+  embeddingMode: true,
   background: {
     color: '#f9f9f9'
   },

@@ -24,7 +24,7 @@ function radioButton(port, index, name){
           'stroke': 'black', // Button border color
           'stroke-width': 2, // Button border width
           'cursor': 'pointer',
-      }
+        }
       },
       {
       tagName: 'text',
@@ -38,7 +38,7 @@ function radioButton(port, index, name){
           'x':-45,
           'y': -10, // Adjust text position
           'cursor': 'pointer',
-      }
+        }
       },
   ],
   x:buttonWidth + space, // Set position based on index
@@ -134,7 +134,6 @@ function createSubTopicButton(port, pos){
     ],
     x: "0%", // Button position X
     y: "0%", // Button position Y
-    offset: { x: -8, y: -8 },
     action: function(evt,elementView) {
       //Event Handle for the button.
     },
