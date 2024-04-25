@@ -219,7 +219,6 @@ function createOutcomes(id, name){
         cursor: "pointer"
       },
       body: {
-        type:'TextBlock',
         strokeWidth: 2,
         fill: "#007eb3",
         cursor: "pointer"

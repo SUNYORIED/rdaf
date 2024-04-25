@@ -38,6 +38,7 @@ function radioButton(port, index, name){
           'x':-45,
           'y': -10, // Adjust text position
           'cursor': 'pointer',
+
         }
       },
   ],
@@ -83,8 +84,8 @@ function createConsiderationButton(port,pos) {
               'text-anchor': 'middle',
               'x':56,
               'y': 15, // Adjust text position
-              'cursor': 'pointer'
-          }
+              'cursor': 'pointer',
+          },
         }
       ],
       x: "100%", // Button position X

@@ -17,11 +17,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/graphlib/2.1.7/graphlib.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.7.7/joint.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.7.7/joint.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="desc-box" style="width: innerwidth; height: auto; border: 3px solid black;background-color: black; margin:10px">
+    <div id="desc-box" style="width: innerwidth; height: auto; border: 3px solid black;background-color: black; margin:10px"></p>
         <p style = "font-weight: bold; font-size: 20px; font-family:Verdana, Geneva, Tahoma, sans-serif;color: whitesmoke;"><u>SUNY RDaF Explorer Prototype</u></p>
+        <button id = "git-button" onclick="window.open('https://github.com/SUNYORIED/rdaf', '_blank');" style="cursor: pointer;font-size:24px; font-family: 'Courier New', Courier, monospace;border:2px solid; border-radius: 5px;top:10px;right:18px; position: absolute;"><i class="fa fa-github" id='git-icon'>  GitHub</i></button>
         <p style = "font-size: 15px; font-family:Verdana, Geneva, Tahoma, sans-serif;color:whitesmoke;">This tool prototypes a way to explore using the
             <a id = "radf1" style="color:rgb(157, 157, 252);"href="https://www.nist.gov/programs-projects/research-data-framework-rdaf" target="_blank">NIST RDaF Framework</a>
             to guide campus discussions around research data management activities, particularly the Envision and Plan stages of the RDaF Framework.

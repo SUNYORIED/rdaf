@@ -274,3 +274,18 @@ function showMessage(messageBlock, duration) {
         messageBlock.set('hidden', true); // Remove the message after the specified duration
     }, duration);
 }
+
+const githubButton = document.getElementById('git-button');
+const githubIcon = document.getElementById('git-icon')
+
+githubButton.addEventListener("mouseenter", function( event ) {
+    githubButton.style.backgroundColor = "black";
+    githubIcon.style.color = "white"
+    githubButton.style.color = "white"
+});
+
+githubButton.addEventListener("mouseleave", function( event ) {
+    githubButton.style.backgroundColor = "white";
+    githubIcon.style.color = "black"
+    githubButton.style.color = "black"
+});

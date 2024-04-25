@@ -10,7 +10,7 @@ function FindOpenOutcomes(){
     let data = []
     const elements = (graph.getElements())
     elements.forEach(el =>{
-        if(!el.get('hidden')){
+        if(el){
             if(el.prop('name/first') == "Outcomes"){
                 const outcomes = el
                 const csvData = collectData(outcomes)
