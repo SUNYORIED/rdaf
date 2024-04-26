@@ -64,26 +64,50 @@ function buildTheGraph(){
       createTextBlock(stage, node, stage)
       root.push(stage)
       topic = node['sunyrdaf:includes']
-      if(Array.isArray(topic)){
+      if(Array.isArray(topic) && topic){
         topic.forEach(topicObj =>{
-        var tools = [];
-        if(topicObj){
-          //Creates the topic
-          var topicElement = linkNodes(topicObj, Elements, stage, "Topics")
-          const width = topicElement.size().width
-          const height = topicElement.size().height
-          topicElement.size(width + 200, height)
-          var topicElementPosition = topicElement.getBBox()
-          Elements.push(topicElement)
-          if(topicObj["sunyrdaf:includes"]){
-            //Creates the consideration button if a topic includes consideration
-            var port3 = createPort('Considerations', 'out', "100%", 40);
+          var tools = [];
+          if(topicObj){
+            //Creates the topic
+            var topicElement = linkNodes(topicObj, Elements, stage, "Topics")
+            const width = topicElement.size().width
+            const height = topicElement.size().height
+            topicElement.size(width + 200, height)
+            var topicElementPosition = topicElement.getBBox()
+            Elements.push(topicElement)
+            if(topicObj["sunyrdaf:includes"]){
+              //Creates the consideration button if a topic includes consideration
+              var port3 = createPort('Considerations', 'out', "100%", 40);
+              // Add custom tool buttons for each port
+              topicElement.addPort(port3);        // Adds a port to the element
+              const considerationButton = createConsiderationButton(port3)
+              considerationButton.options.x = parseInt(topicElementPosition.x) + parseInt(topicElementPosition.width) - 115
+              tools.push(considerationButton)       //Create the button
+            }
+            var port2 = createPort('Outcomes', 'out', "100%", 20);
             // Add custom tool buttons for each port
-            topicElement.addPort(port3);        // Adds a port to the element
-            const considerationButton = createConsiderationButton(port3)
-            considerationButton.options.x = parseInt(topicElementPosition.x) + parseInt(topicElementPosition.width) - 115
-            tools.push(considerationButton)       //Create the button
+            topicElement.addPort(port2);
+            const outcomeButton = createButton(port2)
+            outcomeButton.options.x = parseInt(topicElementPosition.x) + parseInt(topicElementPosition.width) - 115
+            tools.push(outcomeButton)//Creates the Outcome button
+            graph.addCells(topicElement);
+            toolsView = new joint.dia.ToolsView({ tools: tools});
+            topicElement.findView(paper).addTools(toolsView);
+            checkOutcomes(topicObj, Elements, topicElement)
+            createTextBlock(topicElement,topicObj, stage )
           }
+        })
+      }else{
+        if(topic){
+          tools = []
+          var topicElement = linkNodes(topic, Elements, stage, "Topics")
+          var topicElementPosition = topicElement.getBBox()
+          var port3 = createPort('Considerations', 'out', "100%", 40);
+          // Add custom tool buttons for each port
+          topicElement.addPort(port3);        // Adds a port to the element
+          const considerationButton = createConsiderationButton(port3)
+          considerationButton.options.x = parseInt(topicElementPosition.x) + parseInt(topicElementPosition.width) - 115
+          tools.push(considerationButton)       //Create the button
           var port2 = createPort('Outcomes', 'out', "100%", 20);
           // Add custom tool buttons for each port
           topicElement.addPort(port2);
@@ -93,12 +117,11 @@ function buildTheGraph(){
           graph.addCells(topicElement);
           toolsView = new joint.dia.ToolsView({ tools: tools});
           topicElement.findView(paper).addTools(toolsView);
-          checkOutcomes(topicObj, Elements, topicElement)
-          createTextBlock(topicElement,topicObj, stage )
+          checkOutcomes(topic, Elements, topicElement)
+          createTextBlock(topicElement,topic, stage )
         }
-      })
+      }
     }
-  }
   });
   paper.setInteractivity(false);
   graph.addCells(Elements)
