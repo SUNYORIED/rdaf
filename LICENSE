@@ -1,4 +1,4 @@
-TThis tool prototypes a way to explore using the NIST RDaF Framework (Hansich et. al., 2024) to guide campus discussions around research data management activities, particularly the Envision and Plan 
+This tool prototypes a way to explore using the NIST RDaF Framework (Hansich et. al., 2024) to guide campus discussions around research data management activities, particularly the Envision and Plan 
 stages of the RDaF Framework. It incorporates a downloadable scorecard, intended to be completed interactively as part of the discussion. To develop this prototype, we have taken the liberty of 
 expressing the RDaF as a graph model, and extending it with SUNY-created Outcomes and Activities. See the Wiki for more information on the data model. 
 
