@@ -328,6 +328,47 @@ function radioButtonEvents(elementView, port){
                     rectElement.setAttribute('width', width)
                 }
                 circleElement.setAttribute('fill', 'Green')
+                    //This condition is applied when user wants to hide all the elements including Activities and Considerations
+                if((considerationButton && considerationButton.style.visibility == "visible")){
+                    var rectElement = (elementView.el.querySelector('rect'))
+                    if(activityButton){
+                        var width = parseFloat(rectElement.getAttribute('width'))
+                    }else{
+                        var width = parseFloat(rectElement.getAttribute('width')) - 115
+                    }
+                    considerationButton.style.visibility = "hidden"
+                    rectElement.setAttribute('width', width)
+                    const OutboundLinks = graph.getConnectedLinks(elementView.model, {outbound:true})
+                    OutboundLinks.forEach(links =>{
+                        //Make the links visible
+                        links.getTargetElement().set('hidden', true)
+                        links.getTargetElement().set('collapsed', false)
+                        //Make the links visible
+                        links.set('hidden', true)
+                        links.set('collapsed', false)
+                        //This condition listens to the events on elements that has more than on parent
+                        const orphanLink = graph.getConnectedLinks(links.getTargetElement(), {inbound:true})
+                        if(orphanLink.length > 1){
+                            orphanLink.forEach(links =>{
+                                if(!links.get('hidden')){
+                                    links.getTargetElement().set('hidden', false)
+                                    links.getTargetElement().set('collapsed', true)
+                                    links.set('hidden', false)
+                                }
+                                closeTheRest(links.getTargetElement())
+                            })
+                        }else{
+                            links.getTargetElement().set('hidden', true)
+                            links.getTargetElement().set('collapsed', false)
+                            links.set('hidden', true)
+                            closeTheRest(links.getTargetElement())
+                        }
+                    })
+                }else{
+                    var rectElement = (elementView.el.querySelector('rect'))
+                    var width = parseFloat(rectElement.getAttribute('width'))
+                    rectElement.setAttribute('width', width)
+                }
             }
             else if(circleElement.id.startsWith('P')){
                 circleElement.setAttribute('Score', 1)
