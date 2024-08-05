@@ -57,9 +57,9 @@ rdaf_objs = {'stage': {}, 'topic': {}, 'subtopic': {} }
 suny_objs = {}
 st_defs = {}
 
-st_df = pd.read_csv("rdafstagesandtopics.csv", encoding="utf-8",dtype="str")
-mapping_df = pd.read_csv("sunymappings.csv",encoding="utf-8",dtype="str")
-subtopics_df = pd.read_csv("subtopicdefinitions.csv", encoding="utf-8", dtype="str")
+st_df = pd.read_csv(r"C:\Users\patelka\OneDrive - State University of New York\Desktop\rdaf\data\csv\rdafstagesandtopics.csv", encoding="utf-8",dtype="str")
+mapping_df = pd.read_csv(r"C:\Users\patelka\OneDrive - State University of New York\Desktop\rdaf\data\csv\sunymappings.csv",encoding="utf-8",dtype="str")
+subtopics_df = pd.read_csv(r"C:\Users\patelka\OneDrive - State University of New York\Desktop\rdaf\data\csv\subtopicdefinitions.csv", encoding="utf-8", dtype="str")
 
 for index,row in st_df.iterrows():
     obj = { 'name': row['Name'], 'description': row['Definition'] }
@@ -168,17 +168,19 @@ for extension in extensions:
 
 graph = {}
 stages = []
+i = 1
 for stage in rdaf_objs['stage']:
     tooltip = rdaf_objs['stage'][stage]['description']
     name = rdaf_objs['stage'][stage]['name']
     stages.append({'port':stage, 'text':name, 'tooltip':tooltip})
     graph[stage] = {
-      '@id': 'https://data.suny.edu/entities/oried/rdaf/nist/' + stage,
-      '@type': THING,
-      'name': name,
-      'additionalType': 'RdAF Stage',
-      'description':tooltip
+        '@id': 'https://data.suny.edu/entities/oried/rdaf/nist/' + f"S.{i}",
+        '@type': THING,
+        'name': name,
+        'additionalType': 'RdAF Stage',
+        'description':tooltip
     }
+    i = i + 1
 
 
 considerations = {}
@@ -202,10 +204,10 @@ for subtopic in rdaf_objs['subtopic']:
                 considerations[obj_id] = {}
             considerations[obj_id][subtopic] = 1
     graph[subtopic] = {
-      '@id': 'https://data.suny.edu/entities/oried/rdaf/nist/' + subtopic,
-      '@type': THING,
-      'name': name,
-      'additionalType': 'RdAF Subtopic',
+        '@id': 'https://data.suny.edu/entities/oried/rdaf/nist/' + subtopic,
+        '@type': THING,
+        'name': name,
+        'additionalType': 'RdAF Subtopic',
     }
     if definition:
         graph[subtopic]['description'] = definition
@@ -226,11 +228,11 @@ for topic in rdaf_objs['topic']:
     entities.append(obj)
 
     graph[topic] = {
-      '@id': 'https://data.suny.edu/entities/oried/rdaf/nist/' + topic,
-      '@type': THING,
-      'name': name,
-      'additionalType': 'RdAF Topic',
-      'description': tooltip
+        '@id': 'https://data.suny.edu/entities/oried/rdaf/nist/' + topic,
+        '@type': THING,
+        'name': name,
+        'additionalType': 'RdAF Topic',
+        'description': tooltip
     }
 
 for obj_id in suny_objs:
@@ -238,7 +240,7 @@ for obj_id in suny_objs:
     oname = suny_objs[obj_id]['name']
     isExtension = None
     if 'extends' in suny_objs[obj_id] and suny_objs[obj_id]['extends']:
-        isExtension = suny_objs[obj_id]['extends'] 
+        isExtension = suny_objs[obj_id]['extends']
     obj = get_obj(obj_id,oname,otype)
     if otype == 'outcome':
         obj['a'] = 'activities'
@@ -306,7 +308,7 @@ for stage in stages:
     port = increment_alphabet(port)
 entities.insert(0,startNode)
 
-for link in links: 
+for link in links:
     if link['fromport'] in rdaf_objs['stage']:
         subj = graph[link['fromport']]
         pred = 'sunyrdaf:includes'
@@ -319,13 +321,13 @@ for link in links:
     subj[pred].append(obj)
 
 
-with open("entities.json", "w") as json_file:
+with open(r"./json/entities.json", "w") as json_file:
     json.dump(entities, json_file, indent=4)
 
-with open("links.json","w") as json_file:
+with open(r"./json/links.json","w") as json_file:
     json.dump(links, json_file, indent=4)
 
-with open("graph.jsonld","w") as json_file:
+with open(r"./json-ld/graph.jsonld","w") as json_file:
     json.dump({
         "@context": {
         "name": "https://schema.org/name",
@@ -334,16 +336,16 @@ with open("graph.jsonld","w") as json_file:
         "sunyrdaf": SUNYNS,
         "sunyrdaf:includes": {
             "@type": "@id"
-          },
+        },
         "sunyrdaf:extends": {
             "@type": "@id"
-          },
+        },
         "sunyrdaf:generates": {
             "@type": "@id"
-          },
+        },
         "sunyrdaf:resultsFrom": {
             "@type": "@id"
-          }
+        }
         },
         '@graph':list(graph.values())
         }, json_file, indent=4)
