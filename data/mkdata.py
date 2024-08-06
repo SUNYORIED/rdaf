@@ -91,7 +91,7 @@ def get_extension(text):
 
 def map_row(row,last_subtopic):
     subtopic_id = None
-    if str(row['SUBTOPIC']) == 'nan' or re.match('^\s*$',str(row['SUBTOPIC'])):
+    if str(row['SUBTOPIC']) == 'nan' or re.match(r'^\s*$',str(row['SUBTOPIC'])):
         subtopic_id = last_subtopic
     else:
         (subtopic_id,subtopic_text) = row['SUBTOPIC'].strip().split(' ',1)

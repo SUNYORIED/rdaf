@@ -64,7 +64,7 @@ function buildTheGraph(){
       createTextBlock(stage, node, stage)
       root.push(stage)
       topic = node['sunyrdaf:includes']
-      if(Array.isArray(topic) && topic){
+      if(Array.isArray(topic) && topic != undefined){
         topic.forEach(topicObj =>{
           var tools = [];
           if(topicObj){
@@ -101,6 +101,9 @@ function buildTheGraph(){
         if(topic){
           tools = []
           var topicElement = linkNodes(topic, Elements, stage, "Topics")
+          const width = topicElement.size().width
+          const height = topicElement.size().height
+          topicElement.size(width + 200, height)
           var topicElementPosition = topicElement.getBBox()
           var port3 = createPort('Considerations', 'out', "100%", 40);
           // Add custom tool buttons for each port

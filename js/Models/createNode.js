@@ -199,8 +199,13 @@ function createConsiderations(id, name){
   * @Return the Joint JS element.
 */
 function createOutcomes(id, name){
-  const textWidth = name.length * 9.5; // Approximate width based on font size and average character width
+  let textWidth
+  textWidth  = name.length * 9.5; // Approximate width based on font size and average character width
+  if (name.length < 30){
+    textWidth = name.length * 20;
+  }
   const width = Math.max(textWidth, 100); // Ensure a minimum width to accommodate shorter text
+
   const node =  new joint.shapes.standard.Rectangle({
     id: id,
     size: {
