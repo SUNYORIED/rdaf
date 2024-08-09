@@ -1,0 +1,58 @@
+﻿ID,Type,Name,Definition
+E,Stage,Envision,Review of the overall strategies and drivers of an organization’s research data program.
+P,Stage,Plan,The tactical management positioning in an organization for effective research data management throughout the research data lifecycle.
+GA,Stage,Generate/Acquire,"The generation of raw research data, both experimentally and computationally, within an organization, and the collection or acquisition of research data produced outside of an organization."
+PA,Stage,Process/Analyze,"The actions performed on generated or externally acquired research data to yield processed research data, typically using software, from which observations and conclusions can be made.  "
+SUR,Stage,Share/Use/Reuse,"How raw and processed research data are disseminated, used, and reused within an organization and any constraints or encouragements to use/reuse. It also includes the dissemination, use, and reuse of raw and processed research data outside of an organization.  "
+PD,Stage,Preserve/Discard,"The end-of-use and end-of-life provisions for research data in an organization and includes records management, archiving, and safe disposal."
+E.1,Topic,Data Governance—Strategic/Qualitative,"The policies, procedures, and processes pertaining to authority, control,
+and shared decision-making (planning, monitoring, and enforcement) over the management of data assets"
+E.2,Topic,Data Governance—Legal and Regulatory Compliance  ,"The policies, procedures, and processes to manage and monitor an organization’s regulatory [and] legal responsibilities and risks pertaining to data."
+E.3,Topic,Data Culture and Reward Structure,The collective beliefs and behaviors of the people in an organization concerning the value and management of research data. Practices designed to recognize the advantages and accomplishments of sharing data.
+E.4,Topic,Education and Workforce Development,Training to provide staff with the necessary skills and expertise for data-related activities and RDM. Includes leadership support and formal and informal training.
+E.5,Topic,Resources—Allocation and Sustainability,The distribution and longevity of funding to attain and maintain robust research data programs and RDM infrastructure.
+E.6,Topic,Community Engagement,Outreach and interactions among organizations or individuals with shared goals or interests concerning research data activities or RDM
+P.1,Topic,Chain of Control (Custody of Data),"A complete, fully documented step-by-step history of a data asset in an organization, i.e., who has possession of a data asset, at what time, and for what purpose, at all times throughout the lifecycle of the data asset."
+P.2,Topic,Financial Aspects of Planning,Factors to consider in estimating or assessing the costs associated with all research data and RDM activities over the data lifecycle.
+P.3,Topic,Data Management Planning,The process of organizing and specifying objectives and activities throughout the research data lifecycle.
+P.4,Topic,Data Objects,"An entity that, together with associated Representative Information (i.e., metadata), is produced or used in a research study"
+P.5,Topic,FAIR,"Findability, Accessibility, Interoperability, Reuse: a set of guiding principles to support the reusability of data that are beneficial to all scholarly digital research objects."
+P.6,Topic,Data/Metadata Considerations,Factors to take into account prior to conducting a research study
+P.7,Topic,Data Architecture,"The fundamental structure of an organization's research data management (RDM) system embodied in its components, their relationships to each other and to the environment, and the principles guiding its design and evolution. Includes, for example, the underlying storage technologies, networking, hardware, system interfaces, authentication mechanisms, data brokers, monitoring platforms, semantic interoperability tools, long-term preservation services, and HPC."
+P.8,Topic,Hardware and Software Infrastructure,The physical and non-physical functional components that collectively form a foundation for conducting research and RDM
+P.9,Topic,Research Data Standards,"Documents, including codes, specifications, recommended practices, classifications, test methods and guides, that describe how data should be stored or exchanged for the consistent collection and interoperability of that data across different systems, sources, and users."
+P.10,Topic,Assessment,Evaluation of the success of a research project against expectations set before the project has started
+P.11,Topic,Communication and Outreach,Engagement and interactions among groups and Individual working in similar research areas
+P.12,Topic,Access Control Associated with Data Sensitivity,Methods and requirements to limit the individuals and groups permitted to view or use protected data.
+GA.1,Topic,Data Types,"Classifications or categories of data, each with unique collection, generation, and storage challenges"
+GA.2,Topic,Data Sources,Description of circumstances whereby data are produced. Origin of data
+GA.3,Topic,Generated Experimental Data,Collection of information through active intervention by the researcher to induce and measure changes or to create differences when a variable is altered
+GA.4,Topic,Generated Computational Data,"Data produced by using calculations, models, simulations, or other methods. Can be produced manually or using a computer or other type of system or device. "
+GA.5,Topic,Qualitative Data,Data that are descriptive and concern phenomena which can be observed but not measured
+GA.6,Topic,Acquired Data,Data used in a research study that were not generated by the researchers conducting the study
+GA.7,Topic,Critically Evaluated (CE) Data,"Numerical data that have undergone rigorous review and critique such that the integrity, reasonableness, and usability are optimized."
+GA.8,Topic,FAIR Principles,"Findability, Accessibility, Interoperability, Reusability: four concise and measurable guidelines designed and broadly endorsed to support the reusability of data. Standards may be created that align with the FAIR principles but are not recognized standards."
+GA.9,Topic,Community-Based Standards,"Documents, including codes, specifications, recommended practices, classifications, test methods, and guides, that are developed by a group with common interests"
+GA.10,Topic,Acquisition Software,Programs that enable the collection and procurement of data
+PA.1,Topic,Types of Processed Data,Classifications or categories of data
+PA.2,Topic,Preparation and Pre-Processing Methods,Techniques by which raw data are transformed into complete datasets with consistent formatting such that data analysis can subsequently be performed.     
+PA.3,Topic,Analysis,"Statistical and/or logical techniques that are systematically applied to describe and illustrate, condense and recap, and evaluate and interpret data, with the goal of producing new, meaningful information. "
+PA.4,Topic,Modeling,"A class of computational methods whereby a representation, pattern, or mathematical description is used to replicate a system, process, or research result. "
+PA.5,Topic,Metadata,"Data about data, i.e., data that define and describe the characteristics of other data"
+PA.6,Topic,Provenance,"The historical, attributed, and documented record of a data asset that contains details on its origin—where, when, how, and by whom it was generated/acquired/processed—and on all alterations to the data asset."
+PA.7,Topic,Software,"A set of instructions, data, or programs used to operate computers and execute specific tasks"
+PA.8,Topic,Workflows and Middleware,"Workflow is a depiction of a sequence of connected operations or ""steps"" that illustrates how data flow through an RDM infrastructure. A workflow includes tasks, people involved, tools, input, and output for each step. Middleware is a software layer or ""glue"" situated between applications and operating systems that makes it easier for software developers to perform communication and input/output, so they can focus on the specific purpose of their application."
+PA.9,Topic,Hardware,The physical components that make up a computer or electronic system and everything else involved that is physically tangible such as peripheral devices.  
+SUR.1,Topic,Publishing,"Public disclosure of research datasets and supporting data objects, e.g., associated metadata   and software code, in a manner such that the datasets are findable and reusable for others for future research. Published datasets ideally have a persistent identifier"
+SUR.2,Topic,Modes of Dissemination,Methods whereby datasets and other digital objects are publicly or privately distributed or are accessible to others upon request
+SUR.3 ,Topic,Attribution,"Acknowledgement of the use of an individual's published articles, data, or other data objects. "
+SUR.4 ,Topic,Modes of Sharing,Methods whereby datasets and other digital objects are publicly or privately distributed or are accessible to others upon request.
+SUR.5 ,Topic,Access,"The ability of a user to view and retrieve data and other digital objects stored within a database or other repository. Users who have data access can store, retrieve, move, or manipulate data, which can be retained on a wide range of hard drives and external devices."
+SUR.6 ,Topic,Legal and Licenses,Juridical and regulatory issues as pertaining to research data
+SUR.7 ,Topic,Levels of Protection,"Classification scheme based on potential harm resulting from unauthorized access, disclosure, loss of privacy, compromised integrity, or violation of external obligations."
+SUR.8 ,Topic,"Architectures for Application, Use, and Reuse","The fundamental structure of an organization's RDM system embodied in its components, their relationships to each other and to the environment, and the principles guiding its design and evolution. Such a structure should enable a user to capitalize on an organization's data. "
+PD.1,Topic,Criteria for Preservation,Quantitative and qualitative metrics used to assess the need for long-term retention of data.
+PD.2,Topic,Sustainability,The capacity to maintain or improve the state and availability of data and an RDM infrastructure over the long term
+PD.3,Topic,Storage and Preservation,"Storage is a process whereby digital data are saved for later use  and access via, e.g., a device or cloud service. Preservation is a series of managed activities required to ensure continued stability and access to data for as long as necessary. "
+PD.4,Topic,Moving Data from One Service to Another across Organizations,Inter-organizational transit of data.
+PD.5,Topic,Retention and Disposition Schedules,"A timeline and plan of action based on a policy that addresses which data are important to keep for future use or reference, how that data can be searched and accessed at a later date, and which data are no longer needed and can be destroyed"
