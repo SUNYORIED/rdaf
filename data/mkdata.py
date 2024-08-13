@@ -45,6 +45,13 @@ def get_uuid(category,text):
         text_to_id[category][text] = "https://data.suny.edu/entities/oried/rdaf/suny/" + category + '.' + str(uuids[category])
     return text_to_id[category][text]
 
+
+def strip_keys(graph):
+    new_graph = {}
+    for key, value in graph.items():
+        new_key = key.strip()
+        new_graph[new_key] = value
+    return new_graph
 links = []
 entities = []
 startNode = {
@@ -57,9 +64,9 @@ rdaf_objs = {'stage': {}, 'topic': {}, 'subtopic': {} }
 suny_objs = {}
 st_defs = {}
 
-st_df = pd.read_csv(r"C:\Users\patelka\OneDrive - State University of New York\Desktop\rdaf\data\csv\rdafstagesandtopics.csv", encoding="utf-8",dtype="str")
+st_df = pd.read_csv(r"C:\Users\patelka\OneDrive - State University of New York\Desktop\rdaf\data\csv\rdafstagesandtopics_v2.csv", encoding="utf-8",dtype="str")
 mapping_df = pd.read_csv(r"C:\Users\patelka\OneDrive - State University of New York\Desktop\rdaf\data\csv\sunymappings.csv",encoding="utf-8",dtype="str")
-subtopics_df = pd.read_csv(r"C:\Users\patelka\OneDrive - State University of New York\Desktop\rdaf\data\csv\subtopicdefinitions.csv", encoding="utf-8", dtype="str")
+subtopics_df = pd.read_csv(r"C:\Users\patelka\OneDrive - State University of New York\Desktop\rdaf\data\csv\subtopicdefinitions_v2.csv", encoding="utf-8", dtype="str")
 
 for index,row in st_df.iterrows():
     obj = { 'name': row['Name'], 'description': row['Definition'] }
@@ -226,7 +233,7 @@ for topic in rdaf_objs['topic']:
         obj['yText'] = 'Considerations'
         obj['yToolTip'] = 'Considerations for ' + name
     entities.append(obj)
-
+    topic = topic.strip()
     graph[topic] = {
         '@id': 'https://data.suny.edu/entities/oried/rdaf/nist/' + topic,
         '@type': THING,
@@ -308,6 +315,7 @@ for stage in stages:
     port = increment_alphabet(port)
 entities.insert(0,startNode)
 
+graph = strip_keys(graph)
 for link in links:
     if link['fromport'] in rdaf_objs['stage']:
         subj = graph[link['fromport']]
@@ -315,6 +323,7 @@ for link in links:
     else:
         subj = graph[link['from']]
         pred = 'sunyrdaf:' + PREDICATES[link['fromport']]
+    link['to'] = link['to'].strip()
     obj = graph[link['to']]['@id']
     if pred not in subj:
         subj[pred] = []
