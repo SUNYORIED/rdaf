@@ -106,9 +106,20 @@ function setLinkVertices(){
 */
 function setElementsPosition(element, position){
     if(element){
+
         var label = (element.attr('label'))
         if(element.attributes.name['first'] == "Topics" || element.attributes.name['first'] == "Outcomes" || element.attributes.name['first'] == "Considerations"){
-            const parentElement = graph.getPredecessors(element)[0]
+
+            var parentElement
+            if (graph.getPredecessors(element).length > 2){
+                parentElement = graph.getPredecessors(element)[graph.getPredecessors(element).length-2]
+            }else{
+                parentElement = graph.getPredecessors(element)[0]
+            }
+            if (element.attributes.name['first'] == "Considerations"){
+                console.log(graph.getPredecessors(element))
+            }
+
             const parentNodeType = parentElement.attributes.name['first']
             if(parentElement && (parentNodeType == "Stages" || parentNodeType == "Topics")){
                 const parentPositionX = parentElement.position().x
@@ -175,6 +186,7 @@ function setElementsPosition(element, position){
                 }
             }
         }
+
     }
 }
 

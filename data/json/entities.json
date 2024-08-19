@@ -2143,7 +2143,7 @@
         "aToolTip": "Practices to remove or reduce barriers that limit dissemination of data (e.g., misinterpretation and misuse of data by others, and lack of recognition and effort for sharing)."
     },
     {
-        "key": "SU2.1.1",
+        "key": "SUR.2.1",
         "text": "Traditional journal article",
         "category": "consideration-wdef",
         "a": "definition",
@@ -2151,7 +2151,7 @@
         "aToolTip": "A scholarly manuscript submitted to a journal that undergoes a peer review process, an editing and copy-editing process, and finally distribution by publishers able to print and make high-quality scholarly works available to the world. Such manuscripts typically contain analysis and conclusions, but not digital data objects, e.g., raw data and software."
     },
     {
-        "key": "SU2.1.2",
+        "key": "SUR.2.2",
         "text": "Supplementary material",
         "category": "consideration-wdef",
         "a": "definition",
@@ -2159,7 +2159,7 @@
         "aToolTip": "Peer-reviewed material directly relevant to the conclusions of a manuscript that cannot be included in the printed version for reasons of space or medium (e.g., video clips or sound files)."
     },
     {
-        "key": "SU2.1.3",
+        "key": "SUR.2.3",
         "text": "On request",
         "category": "consideration-wdef",
         "a": "definition",
@@ -2167,7 +2167,7 @@
         "aToolTip": "Making data available in response to queries typically sent by email. The requester may be required to complete a form, e.g., a data release application agreement."
     },
     {
-        "key": "SU2.1.4",
+        "key": "SUR.2.4",
         "text": "Data landing page",
         "category": "consideration-wdef",
         "a": "definition",
@@ -2175,7 +2175,7 @@
         "aToolTip": "A standalone web page that a person accesses after clicking on a link from an email, ad, or other digital location. For a dataset, such a web page typically includes a narrative description of the dataset and files or links to files pertaining to the dataset, e.g., the dataset itself and the software used to generate the dataset."
     },
     {
-        "key": "SU2.1.5",
+        "key": "SUR.2.5",
         "text": "Workflow",
         "category": "consideration-wdef",
         "a": "definition",
@@ -2183,7 +2183,7 @@
         "aToolTip": "A depiction of a sequence of connected operations or steps that illustrates how data flows through a research data management infrastructure. A workflow includes tasks, people involved, tools (e.g., hardware and software), input, and output for each step."
     },
     {
-        "key": "SU2.1.6",
+        "key": "SUR.2.6",
         "text": "Mainstream media, e.g., newspapers, radio",
         "category": "consideration-wdef",
         "a": "definition",
@@ -2191,7 +2191,7 @@
         "aToolTip": "Traditional means of communication, such as newspapers, television, and radio, that may potentially influence large numbers of people."
     },
     {
-        "key": "SU2.1.7",
+        "key": "SUR.2.7",
         "text": "Social media, e.g., Twitter, Instagram",
         "category": "consideration-wdef",
         "a": "definition",
@@ -2748,10 +2748,13 @@
     {
         "key": "E.6",
         "text": "Community Engagement",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Outreach and interactions among organizations or individuals with shared goals or interests concerning research data activities or RDM"
+        "aToolTip": "Outreach and interactions among organizations or individuals with shared goals or interests concerning research data activities or RDM",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for Community Engagement"
     },
     {
         "key": "P.1",
@@ -2778,10 +2781,13 @@
     {
         "key": "P.3",
         "text": "Data Management Planning",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "The process of organizing and specifying objectives and activities throughout the research data lifecycle."
+        "aToolTip": "The process of organizing and specifying objectives and activities throughout the research data lifecycle.",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for Data Management Planning"
     },
     {
         "key": "P.4",
@@ -2871,10 +2877,13 @@
     {
         "key": "P.12",
         "text": "Access Control Associated with Data Sensitivity",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Methods and requirements to limit the individuals and groups permitted to view or use protected data."
+        "aToolTip": "Methods and requirements to limit the individuals and groups permitted to view or use protected data.",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for Access Control Associated with Data Sensitivity"
     },
     {
         "key": "GA.1",
@@ -2956,10 +2965,13 @@
     {
         "key": "GA.8",
         "text": "FAIR Principles",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Findability, Accessibility, Interoperability, Reusability: four concise and measurable guidelines designed and broadly endorsed to support the reusability of data. Standards may be created that align with the FAIR principles but are not recognized standards."
+        "aToolTip": "Findability, Accessibility, Interoperability, Reusability: four concise and measurable guidelines designed and broadly endorsed to support the reusability of data. Standards may be created that align with the FAIR principles but are not recognized standards.",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for FAIR Principles"
     },
     {
         "key": "GA.9",
@@ -3096,52 +3108,70 @@
         "yToolTip": "Considerations for Modes of Dissemination"
     },
     {
-        "key": "SUR.3 ",
+        "key": "SUR.3",
         "text": "Attribution",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Acknowledgement of the use of an individual's published articles, data, or other data objects. "
+        "aToolTip": "Acknowledgement of the use of an individual's published articles, data, or other data objects. ",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for Attribution"
     },
     {
-        "key": "SUR.4 ",
+        "key": "SUR.4",
         "text": "Modes of Sharing",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Methods whereby datasets and other digital objects are publicly or privately distributed or are accessible to others upon request."
+        "aToolTip": "Methods whereby datasets and other digital objects are publicly or privately distributed or are accessible to others upon request.",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for Modes of Sharing"
     },
     {
-        "key": "SUR.5 ",
+        "key": "SUR.5",
         "text": "Access",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "The ability of a user to view and retrieve data and other digital objects stored within a database or other repository. Users who have data access can store, retrieve, move, or manipulate data, which can be retained on a wide range of hard drives and external devices."
+        "aToolTip": "The ability of a user to view and retrieve data and other digital objects stored within a database or other repository. Users who have data access can store, retrieve, move, or manipulate data, which can be retained on a wide range of hard drives and external devices.",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for Access"
     },
     {
-        "key": "SUR.6 ",
+        "key": "SUR.6",
         "text": "Legal and Licenses",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Juridical and regulatory issues as pertaining to research data"
+        "aToolTip": "Juridical and regulatory issues as pertaining to research data",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for Legal and Licenses"
     },
     {
-        "key": "SUR.7 ",
+        "key": "SUR.7",
         "text": "Levels of Protection",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "Classification scheme based on potential harm resulting from unauthorized access, disclosure, loss of privacy, compromised integrity, or violation of external obligations."
+        "aToolTip": "Classification scheme based on potential harm resulting from unauthorized access, disclosure, loss of privacy, compromised integrity, or violation of external obligations.",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for Levels of Protection"
     },
     {
-        "key": "SUR.8 ",
+        "key": "SUR.8",
         "text": "Architectures for Application, Use, and Reuse",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "The fundamental structure of an organization's RDM system embodied in its components, their relationships to each other and to the environment, and the principles guiding its design and evolution. Such a structure should enable a user to capitalize on an organization's data. "
+        "aToolTip": "The fundamental structure of an organization's RDM system embodied in its components, their relationships to each other and to the environment, and the principles guiding its design and evolution. Such a structure should enable a user to capitalize on an organization's data. ",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for Architectures for Application, Use, and Reuse"
     },
     {
         "key": "PD.1",
@@ -3157,10 +3187,13 @@
     {
         "key": "PD.2",
         "text": "Sustainability",
-        "category": "topic",
+        "category": "topic-considerations",
         "a": "outcomes",
         "aText": "Outcomes",
-        "aToolTip": "The capacity to maintain or improve the state and availability of data and an RDM infrastructure over the long term"
+        "aToolTip": "The capacity to maintain or improve the state and availability of data and an RDM infrastructure over the long term",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for Sustainability"
     },
     {
         "key": "PD.3",
@@ -3307,10 +3340,13 @@
     {
         "key": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.3",
         "text": "Institution has a clearly defined vision for data management (including research data)",
-        "category": "outcome-extension",
+        "category": "outcome-extension-considerations",
         "a": "activities",
         "aText": "Activities",
         "aToolTip": "Activities that result in Institution has a clearly defined vision for data management (including research data)",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for Institution has a clearly defined vision for data management (including research data)",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.2 Vision and/or policy : Vision: An aspirational state an organization wishes to achieve with respect to RDM.  Policy: A set of recommended and sometimes mandatory high-level principles that establish a guiding framework for RDM. [5,6]"
@@ -3323,10 +3359,13 @@
     {
         "key": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.4",
         "text": "Institution has a clearly defined high-level policies for data management (including research data)",
-        "category": "outcome-extension",
+        "category": "outcome-extension-considerations",
         "a": "activities",
         "aText": "Activities",
         "aToolTip": "Activities that result in Institution has a clearly defined high-level policies for data management (including research data)",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for Institution has a clearly defined high-level policies for data management (including research data)",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.1.2 Vision and/or policy : Vision: An aspirational state an organization wishes to achieve with respect to RDM.  Policy: A set of recommended and sometimes mandatory high-level principles that establish a guiding framework for RDM. [5,6]"
@@ -3989,10 +4028,13 @@
     {
         "key": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.21",
         "text": "Promotion and tenure reflect the importance of open research and scholarship",
-        "category": "outcome-extension",
+        "category": "outcome-extension-considerations",
         "a": "activities",
         "aText": "Activities",
         "aToolTip": "Activities that result in Promotion and tenure reflect the importance of open research and scholarship",
+        "y": "considerations",
+        "yText": "Considerations",
+        "yToolTip": "Considerations for Promotion and tenure reflect the importance of open research and scholarship",
         "z": "extends",
         "zText": "RDaF Subtopic",
         "zToolTip": "E.3.4 Promotion and tenure : Career advancements that are linked to good research processes, practices, and outcomes."
@@ -5666,7 +5708,7 @@
         "eToolTip": "Resources used by Consider where research project outputs will be published.",
         "z": "extends",
         "zText": "RDaF Subtopic",
-        "zToolTip": "SU2.1.1 Traditional journal article : A scholarly manuscript submitted to a journal that undergoes a peer review process, an editing and copy-editing process, and finally distribution by publishers able to print and make high-quality scholarly works available to the world. Such manuscripts typically contain analysis and conclusions, but not digital data objects, e.g., raw data and software."
+        "zToolTip": "SUR.2.1 Traditional journal article : A scholarly manuscript submitted to a journal that undergoes a peer review process, an editing and copy-editing process, and finally distribution by publishers able to print and make high-quality scholarly works available to the world. Such manuscripts typically contain analysis and conclusions, but not digital data objects, e.g., raw data and software."
     },
     {
         "key": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.74",

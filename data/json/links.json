@@ -252,6 +252,11 @@
     {
         "from": "E.2",
         "fromport": "considerations",
+        "to": "E.2.2"
+    },
+    {
+        "from": "E.2",
+        "fromport": "considerations",
         "to": "E.2.3"
     },
     {
@@ -260,9 +265,19 @@
         "to": "E.3.6"
     },
     {
+        "from": "P.5",
+        "fromport": "considerations",
+        "to": "E.3.7"
+    },
+    {
         "from": "P.1",
         "fromport": "considerations",
         "to": "P.1.1"
+    },
+    {
+        "from": "P.1",
+        "fromport": "considerations",
+        "to": "P.1.2"
     },
     {
         "from": "P.2",
@@ -298,6 +313,21 @@
         "from": "P.2",
         "fromport": "considerations",
         "to": "P.2.7"
+    },
+    {
+        "from": "P.3",
+        "fromport": "considerations",
+        "to": "P.3.2"
+    },
+    {
+        "from": "P.3",
+        "fromport": "considerations",
+        "to": "P.3.3"
+    },
+    {
+        "from": "P.8",
+        "fromport": "considerations",
+        "to": "P.3.4"
     },
     {
         "from": "P.8",
@@ -356,6 +386,11 @@
     },
     {
         "from": "P.5",
+        "fromport": "considerations",
+        "to": "P.6.3"
+    },
+    {
+        "from": "P.6",
         "fromport": "considerations",
         "to": "P.6.3"
     },
@@ -450,6 +485,11 @@
         "to": "P.8.7"
     },
     {
+        "from": "P.12",
+        "fromport": "considerations",
+        "to": "P.8.7"
+    },
+    {
         "from": "P.8",
         "fromport": "considerations",
         "to": "P.8.8"
@@ -480,6 +520,11 @@
         "to": "P.11.3"
     },
     {
+        "from": "E.6",
+        "fromport": "considerations",
+        "to": "P.11.3"
+    },
+    {
         "from": "P.11",
         "fromport": "considerations",
         "to": "P.11.4"
@@ -490,7 +535,17 @@
         "to": "P.11.5"
     },
     {
+        "from": "P.12",
+        "fromport": "considerations",
+        "to": "P.12.1"
+    },
+    {
         "from": "P.1",
+        "fromport": "considerations",
+        "to": "P.12.2"
+    },
+    {
+        "from": "P.12",
         "fromport": "considerations",
         "to": "P.12.2"
     },
@@ -498,6 +553,26 @@
         "from": "E.2",
         "fromport": "considerations",
         "to": "P.12.3"
+    },
+    {
+        "from": "P.12",
+        "fromport": "considerations",
+        "to": "P.12.3"
+    },
+    {
+        "from": "P.12",
+        "fromport": "considerations",
+        "to": "P.12.4"
+    },
+    {
+        "from": "P.12",
+        "fromport": "considerations",
+        "to": "P.12.5"
+    },
+    {
+        "from": "P.12",
+        "fromport": "considerations",
+        "to": "P.12.6"
     },
     {
         "from": "GA.1",
@@ -740,7 +815,17 @@
         "to": "GA.8.1"
     },
     {
+        "from": "GA.8",
+        "fromport": "considerations",
+        "to": "GA.8.1"
+    },
+    {
         "from": "P.5",
+        "fromport": "considerations",
+        "to": "GA.8.2"
+    },
+    {
+        "from": "GA.8",
         "fromport": "considerations",
         "to": "GA.8.2"
     },
@@ -750,7 +835,17 @@
         "to": "GA.8.3"
     },
     {
+        "from": "GA.8",
+        "fromport": "considerations",
+        "to": "GA.8.3"
+    },
+    {
         "from": "P.5",
+        "fromport": "considerations",
+        "to": "GA.8.4"
+    },
+    {
+        "from": "GA.8",
         "fromport": "considerations",
         "to": "GA.8.4"
     },
@@ -760,7 +855,17 @@
         "to": "GA.8.5"
     },
     {
+        "from": "GA.8",
+        "fromport": "considerations",
+        "to": "GA.8.5"
+    },
+    {
         "from": "P.5",
+        "fromport": "considerations",
+        "to": "GA.8.6"
+    },
+    {
+        "from": "GA.8",
         "fromport": "considerations",
         "to": "GA.8.6"
     },
@@ -770,7 +875,17 @@
         "to": "GA.8.7"
     },
     {
+        "from": "GA.8",
+        "fromport": "considerations",
+        "to": "GA.8.7"
+    },
+    {
         "from": "P.5",
+        "fromport": "considerations",
+        "to": "GA.8.8"
+    },
+    {
+        "from": "GA.8",
         "fromport": "considerations",
         "to": "GA.8.8"
     },
@@ -785,7 +900,17 @@
         "to": "GA.9.2"
     },
     {
+        "from": "GA.7",
+        "fromport": "considerations",
+        "to": "GA.9.2"
+    },
+    {
         "from": "P.6",
+        "fromport": "considerations",
+        "to": "GA.9.3"
+    },
+    {
+        "from": "GA.7",
         "fromport": "considerations",
         "to": "GA.9.3"
     },
@@ -795,7 +920,17 @@
         "to": "GA.9.4"
     },
     {
+        "from": "GA.7",
+        "fromport": "considerations",
+        "to": "GA.9.4"
+    },
+    {
         "from": "P.6",
+        "fromport": "considerations",
+        "to": "GA.9.5"
+    },
+    {
+        "from": "GA.7",
         "fromport": "considerations",
         "to": "GA.9.5"
     },
@@ -805,7 +940,17 @@
         "to": "GA.9.6"
     },
     {
+        "from": "GA.7",
+        "fromport": "considerations",
+        "to": "GA.9.6"
+    },
+    {
         "from": "GA.10",
+        "fromport": "considerations",
+        "to": "GA.10.1"
+    },
+    {
+        "from": "P.8",
         "fromport": "considerations",
         "to": "GA.10.1"
     },
@@ -815,7 +960,17 @@
         "to": "GA.10.2"
     },
     {
+        "from": "P.8",
+        "fromport": "considerations",
+        "to": "GA.10.2"
+    },
+    {
         "from": "GA.10",
+        "fromport": "considerations",
+        "to": "GA.10.3"
+    },
+    {
+        "from": "P.8",
         "fromport": "considerations",
         "to": "GA.10.3"
     },
@@ -825,7 +980,17 @@
         "to": "GA.10.4"
     },
     {
+        "from": "P.8",
+        "fromport": "considerations",
+        "to": "GA.10.4"
+    },
+    {
         "from": "GA.10",
+        "fromport": "considerations",
+        "to": "GA.10.5"
+    },
+    {
+        "from": "P.8",
         "fromport": "considerations",
         "to": "GA.10.5"
     },
@@ -995,7 +1160,17 @@
         "to": "PA.7.1"
     },
     {
+        "from": "P.8",
+        "fromport": "considerations",
+        "to": "PA.7.1"
+    },
+    {
         "from": "PA.7",
+        "fromport": "considerations",
+        "to": "PA.7.2"
+    },
+    {
+        "from": "P.8",
         "fromport": "considerations",
         "to": "PA.7.2"
     },
@@ -1005,7 +1180,17 @@
         "to": "PA.7.3"
     },
     {
+        "from": "P.8",
+        "fromport": "considerations",
+        "to": "PA.7.3"
+    },
+    {
         "from": "PA.7",
+        "fromport": "considerations",
+        "to": "PA.7.4"
+    },
+    {
+        "from": "P.8",
         "fromport": "considerations",
         "to": "PA.7.4"
     },
@@ -1015,7 +1200,17 @@
         "to": "PA.7.5"
     },
     {
+        "from": "P.8",
+        "fromport": "considerations",
+        "to": "PA.7.5"
+    },
+    {
         "from": "PA.7",
+        "fromport": "considerations",
+        "to": "PA.7.6"
+    },
+    {
+        "from": "P.8",
         "fromport": "considerations",
         "to": "PA.7.6"
     },
@@ -1025,7 +1220,17 @@
         "to": "PA.7.7"
     },
     {
+        "from": "P.8",
+        "fromport": "considerations",
+        "to": "PA.7.7"
+    },
+    {
         "from": "PA.7",
+        "fromport": "considerations",
+        "to": "PA.7.8"
+    },
+    {
+        "from": "P.8",
         "fromport": "considerations",
         "to": "PA.7.8"
     },
@@ -1035,7 +1240,17 @@
         "to": "PA.7.9"
     },
     {
+        "from": "P.8",
+        "fromport": "considerations",
+        "to": "PA.7.9"
+    },
+    {
         "from": "PA.7",
+        "fromport": "considerations",
+        "to": "PA.7.10"
+    },
+    {
+        "from": "P.8",
         "fromport": "considerations",
         "to": "PA.7.10"
     },
@@ -1045,7 +1260,17 @@
         "to": "PA.7.11"
     },
     {
+        "from": "P.8",
+        "fromport": "considerations",
+        "to": "PA.7.11"
+    },
+    {
         "from": "PA.7",
+        "fromport": "considerations",
+        "to": "PA.7.12"
+    },
+    {
+        "from": "P.8",
         "fromport": "considerations",
         "to": "PA.7.12"
     },
@@ -1055,7 +1280,17 @@
         "to": "PA.7.13"
     },
     {
+        "from": "P.8",
+        "fromport": "considerations",
+        "to": "PA.7.13"
+    },
+    {
         "from": "PA.7",
+        "fromport": "considerations",
+        "to": "PA.7.14"
+    },
+    {
+        "from": "P.8",
         "fromport": "considerations",
         "to": "PA.7.14"
     },
@@ -1066,6 +1301,11 @@
     },
     {
         "from": "PA.7",
+        "fromport": "considerations",
+        "to": "PA.7.16"
+    },
+    {
+        "from": "P.8",
         "fromport": "considerations",
         "to": "PA.7.16"
     },
@@ -1135,7 +1375,17 @@
         "to": "PA.9.1"
     },
     {
+        "from": "P.8",
+        "fromport": "considerations",
+        "to": "PA.9.1"
+    },
+    {
         "from": "PA.9",
+        "fromport": "considerations",
+        "to": "PA.9.2"
+    },
+    {
+        "from": "P.8",
         "fromport": "considerations",
         "to": "PA.9.2"
     },
@@ -1145,7 +1395,17 @@
         "to": "PA.9.3"
     },
     {
+        "from": "P.8",
+        "fromport": "considerations",
+        "to": "PA.9.3"
+    },
+    {
         "from": "PA.9",
+        "fromport": "considerations",
+        "to": "PA.9.4"
+    },
+    {
+        "from": "P.8",
         "fromport": "considerations",
         "to": "PA.9.4"
     },
@@ -1227,37 +1487,242 @@
     {
         "from": "SUR.2",
         "fromport": "considerations",
-        "to": "SU2.1.1"
+        "to": "SUR.2.1"
     },
     {
         "from": "SUR.2",
         "fromport": "considerations",
-        "to": "SU2.1.2"
+        "to": "SUR.2.2"
     },
     {
         "from": "SUR.2",
         "fromport": "considerations",
-        "to": "SU2.1.3"
+        "to": "SUR.2.3"
     },
     {
         "from": "SUR.2",
         "fromport": "considerations",
-        "to": "SU2.1.4"
+        "to": "SUR.2.4"
     },
     {
         "from": "SUR.2",
         "fromport": "considerations",
-        "to": "SU2.1.5"
+        "to": "SUR.2.5"
     },
     {
         "from": "SUR.2",
         "fromport": "considerations",
-        "to": "SU2.1.6"
+        "to": "SUR.2.6"
     },
     {
         "from": "SUR.2",
         "fromport": "considerations",
-        "to": "SU2.1.7"
+        "to": "SUR.2.7"
+    },
+    {
+        "from": "SUR.3",
+        "fromport": "considerations",
+        "to": "SUR.3.1"
+    },
+    {
+        "from": "SUR.3",
+        "fromport": "considerations",
+        "to": "SUR.3.2"
+    },
+    {
+        "from": "SUR.3",
+        "fromport": "considerations",
+        "to": "SUR.3.3"
+    },
+    {
+        "from": "SUR.3",
+        "fromport": "considerations",
+        "to": "SUR.3.4"
+    },
+    {
+        "from": "SUR.3",
+        "fromport": "considerations",
+        "to": "SUR.3.5"
+    },
+    {
+        "from": "SUR.3",
+        "fromport": "considerations",
+        "to": "SUR.3.6"
+    },
+    {
+        "from": "PA.5",
+        "fromport": "considerations",
+        "to": "SUR.3.6"
+    },
+    {
+        "from": "SUR.3",
+        "fromport": "considerations",
+        "to": "SUR.3.7"
+    },
+    {
+        "from": "SUR.4",
+        "fromport": "considerations",
+        "to": "SUR.4.1"
+    },
+    {
+        "from": "SUR.4",
+        "fromport": "considerations",
+        "to": "SUR.4.2"
+    },
+    {
+        "from": "SUR.4",
+        "fromport": "considerations",
+        "to": "SUR.4.3"
+    },
+    {
+        "from": "SUR.4",
+        "fromport": "considerations",
+        "to": "SUR.4.4"
+    },
+    {
+        "from": "SUR.4",
+        "fromport": "considerations",
+        "to": "SUR.4.5"
+    },
+    {
+        "from": "SUR.5",
+        "fromport": "considerations",
+        "to": "SUR.5.1"
+    },
+    {
+        "from": "SUR.5",
+        "fromport": "considerations",
+        "to": "SUR.5.2"
+    },
+    {
+        "from": "SUR.5",
+        "fromport": "considerations",
+        "to": "SUR.5.3"
+    },
+    {
+        "from": "SUR.5",
+        "fromport": "considerations",
+        "to": "SUR.5.4"
+    },
+    {
+        "from": "SUR.5",
+        "fromport": "considerations",
+        "to": "SUR.5.5"
+    },
+    {
+        "from": "SUR.5",
+        "fromport": "considerations",
+        "to": "SUR.5.6"
+    },
+    {
+        "from": "SUR.5",
+        "fromport": "considerations",
+        "to": "SUR.5.7"
+    },
+    {
+        "from": "SUR.6",
+        "fromport": "considerations",
+        "to": "SUR.6.1"
+    },
+    {
+        "from": "SUR.6",
+        "fromport": "considerations",
+        "to": "SUR.6.2"
+    },
+    {
+        "from": "SUR.6",
+        "fromport": "considerations",
+        "to": "SUR.6.3"
+    },
+    {
+        "from": "SUR.6",
+        "fromport": "considerations",
+        "to": "SUR.6.4"
+    },
+    {
+        "from": "SUR.6",
+        "fromport": "considerations",
+        "to": "SUR.6.5"
+    },
+    {
+        "from": "SUR.6",
+        "fromport": "considerations",
+        "to": "SUR.6.6"
+    },
+    {
+        "from": "SUR.6",
+        "fromport": "considerations",
+        "to": "SUR.6.7"
+    },
+    {
+        "from": "SUR.6",
+        "fromport": "considerations",
+        "to": "SUR.6.8"
+    },
+    {
+        "from": "SUR.6",
+        "fromport": "considerations",
+        "to": "SUR.6.9"
+    },
+    {
+        "from": "SUR.6",
+        "fromport": "considerations",
+        "to": "SUR.6.10"
+    },
+    {
+        "from": "SUR.7",
+        "fromport": "considerations",
+        "to": "SUR.7.1"
+    },
+    {
+        "from": "SUR.7",
+        "fromport": "considerations",
+        "to": "SUR.7.2"
+    },
+    {
+        "from": "SUR.7",
+        "fromport": "considerations",
+        "to": "SUR.7.3"
+    },
+    {
+        "from": "SUR.7",
+        "fromport": "considerations",
+        "to": "SUR.7.4"
+    },
+    {
+        "from": "SUR.7",
+        "fromport": "considerations",
+        "to": "SUR.7.5"
+    },
+    {
+        "from": "SUR.8",
+        "fromport": "considerations",
+        "to": "SUR.8.1"
+    },
+    {
+        "from": "SUR.8",
+        "fromport": "considerations",
+        "to": "SUR.8.2"
+    },
+    {
+        "from": "SUR.8",
+        "fromport": "considerations",
+        "to": "SUR.8.3"
+    },
+    {
+        "from": "SUR.8",
+        "fromport": "considerations",
+        "to": "SUR.8.4"
+    },
+    {
+        "from": "SUR.8",
+        "fromport": "considerations",
+        "to": "SUR.8.5"
+    },
+    {
+        "from": "SUR.8",
+        "fromport": "considerations",
+        "to": "SUR.8.6"
     },
     {
         "from": "PD.1",
@@ -1295,17 +1760,17 @@
         "to": "PD.1.7"
     },
     {
-        "from": "P.2",
+        "from": "PD.2",
         "fromport": "considerations",
         "to": "PD.2.1"
     },
     {
-        "from": "P.2",
+        "from": "PD.2",
         "fromport": "considerations",
         "to": "PD.2.2"
     },
     {
-        "from": "P.2",
+        "from": "PD.2",
         "fromport": "considerations",
         "to": "PD.2.3"
     },
@@ -1377,6 +1842,11 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
         "fromport": "outputs",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/output.3"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
+        "fromport": "outputs",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/output.2"
     },
     {
@@ -1388,11 +1858,6 @@
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
         "fromport": "outputs",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/output.4"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
-        "fromport": "outputs",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/output.3"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
@@ -1412,17 +1877,17 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.2"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
-        "fromport": "participants",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.1"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
         "fromport": "participants",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.3"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.2"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
@@ -1442,12 +1907,12 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
         "fromport": "considerations",
-        "to": "P.1.2"
+        "to": "E.1.4"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
         "fromport": "considerations",
-        "to": "E.1.4"
+        "to": "P.1.2"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.1",
@@ -1467,12 +1932,12 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.1",
         "fromport": "considerations",
-        "to": "P.1.2"
+        "to": "E.1.4"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.1",
         "fromport": "considerations",
-        "to": "E.1.4"
+        "to": "P.1.2"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.1",
@@ -1492,12 +1957,12 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.2",
         "fromport": "considerations",
-        "to": "P.1.2"
+        "to": "E.1.4"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.2",
         "fromport": "considerations",
-        "to": "E.1.4"
+        "to": "P.1.2"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.2",
@@ -1516,6 +1981,16 @@
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.3",
+        "fromport": "considerations",
+        "to": "E.1.4"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.3",
+        "fromport": "considerations",
+        "to": "E.1.7"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.3",
         "fromport": "extends",
         "to": "E.1.2"
     },
@@ -1528,6 +2003,16 @@
         "from": "E.1",
         "fromport": "outcomes",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.4"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.4",
+        "fromport": "considerations",
+        "to": "E.1.4"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.4",
+        "fromport": "considerations",
+        "to": "E.1.7"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.4",
@@ -1547,11 +2032,6 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.2",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.2"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.2",
-        "fromport": "participants",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.1"
     },
     {
@@ -1561,18 +2041,23 @@
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.2",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.2"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.2",
         "fromport": "roles",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/role.1"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.2",
         "fromport": "considerations",
-        "to": "E.2.2"
+        "to": "E.1.10"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.2",
         "fromport": "considerations",
-        "to": "E.1.10"
+        "to": "E.2.2"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.2",
@@ -1592,12 +2077,12 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.5",
         "fromport": "considerations",
-        "to": "E.2.2"
+        "to": "E.1.10"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.5",
         "fromport": "considerations",
-        "to": "E.1.10"
+        "to": "E.2.2"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.5",
@@ -1622,11 +2107,6 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.3",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.2"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.3",
-        "fromport": "participants",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.1"
     },
     {
@@ -1636,8 +2116,18 @@
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.3",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.2"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.3",
         "fromport": "roles",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/role.1"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.3",
+        "fromport": "considerations",
+        "to": "E.1.4"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.3",
@@ -1662,6 +2152,11 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.6",
         "fromport": "considerations",
+        "to": "E.1.4"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.6",
+        "fromport": "considerations",
         "to": "E.1.7"
     },
     {
@@ -1677,12 +2172,7 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.4",
         "fromport": "methods",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.8"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.4",
-        "fromport": "methods",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.7"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.6"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.4",
@@ -1692,7 +2182,12 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.4",
         "fromport": "methods",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.6"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.7"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.4",
+        "fromport": "methods",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.8"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.4",
@@ -1707,7 +2202,7 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.4",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.8"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.7"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.4",
@@ -1717,12 +2212,12 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.4",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.6"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.8"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.4",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.7"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.6"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.4",
@@ -1826,6 +2321,11 @@
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.5",
+        "fromport": "considerations",
+        "to": "E.6.6"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.5",
         "fromport": "extends",
         "to": "E.2.4"
     },
@@ -1843,6 +2343,11 @@
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.12",
         "fromport": "considerations",
         "to": "E.4.1"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.12",
+        "fromport": "considerations",
+        "to": "E.6.6"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.12",
@@ -1877,17 +2382,22 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.6",
         "fromport": "resources",
-        "to": "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf"
+        "to": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.6",
         "fromport": "resources",
-        "to": "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/"
+        "to": "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.6",
         "fromport": "considerations",
         "to": "E.4.1"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.6",
+        "fromport": "considerations",
+        "to": "E.6.6"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.6",
@@ -1908,6 +2418,11 @@
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.13",
         "fromport": "considerations",
         "to": "E.4.1"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.13",
+        "fromport": "considerations",
+        "to": "E.6.6"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.13",
@@ -2042,17 +2557,17 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.16",
         "fromport": "considerations",
-        "to": "E.2.9"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.16",
-        "fromport": "considerations",
         "to": "P.12.5"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.16",
         "fromport": "considerations",
         "to": "P.12.6"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.16",
+        "fromport": "considerations",
+        "to": "E.2.9"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.16",
@@ -2082,22 +2597,12 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.9",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.4"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.8"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.9",
         "fromport": "participants",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.2"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.9",
-        "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.16"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.9",
-        "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.17"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.9",
@@ -2112,7 +2617,17 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.9",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.8"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.4"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.9",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.17"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.9",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.16"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.9",
@@ -2142,17 +2657,22 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
         "fromport": "outputs",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/output.14"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
-        "fromport": "outputs",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/output.15"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
         "fromport": "outputs",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/output.14"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
+        "fromport": "outputs",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/output.16"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
+        "fromport": "methods",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.2"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
@@ -2166,38 +2686,8 @@
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
-        "fromport": "methods",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.2"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.4"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
-        "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.2"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
-        "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.16"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
-        "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.20"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
-        "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.5"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
-        "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.1"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.8"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
@@ -2207,12 +2697,7 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.17"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
-        "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.18"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.2"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
@@ -2222,7 +2707,37 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.8"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.1"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.20"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.18"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.4"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.5"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.17"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.16"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.10",
@@ -2288,6 +2803,11 @@
         "from": "E.3",
         "fromport": "outcomes",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.21"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.21",
+        "fromport": "considerations",
+        "to": "E.4.5"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.21",
@@ -2377,17 +2897,17 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.24",
         "fromport": "considerations",
-        "to": "P.5.2"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.24",
-        "fromport": "considerations",
         "to": "P.5.1"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.24",
         "fromport": "considerations",
         "to": "E.3.7"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.24",
+        "fromport": "considerations",
+        "to": "P.5.2"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.24",
@@ -2408,6 +2928,11 @@
         "from": "E.3",
         "fromport": "outcomes",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.26"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.26",
+        "fromport": "considerations",
+        "to": "SUR.1.14"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.26",
@@ -2607,12 +3132,12 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.17",
         "fromport": "methods",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.20"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.19"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.17",
         "fromport": "methods",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.19"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.20"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.17",
@@ -2622,12 +3147,12 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.17",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.25"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.5"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.17",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.5"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.25"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.17",
@@ -2647,12 +3172,12 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.17",
         "fromport": "considerations",
-        "to": "P.3.7"
+        "to": "P.3.3"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.17",
         "fromport": "considerations",
-        "to": "P.3.3"
+        "to": "P.3.7"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.17",
@@ -2687,12 +3212,12 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.32",
         "fromport": "considerations",
-        "to": "P.3.7"
+        "to": "P.3.3"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.32",
         "fromport": "considerations",
-        "to": "P.3.3"
+        "to": "P.3.7"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.32",
@@ -2722,12 +3247,17 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.18",
         "fromport": "methods",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.21"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.23"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.18",
         "fromport": "methods",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.23"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.21"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.18",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.24"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.18",
@@ -2743,11 +3273,6 @@
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.18",
         "fromport": "participants",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.16"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.18",
-        "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.24"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.18",
@@ -2787,22 +3312,22 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.19",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.26"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.19",
-        "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.22"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.19",
-        "fromport": "participants",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.1"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.19",
         "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.26"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.19",
+        "fromport": "participants",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.27"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.19",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.22"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.19",
@@ -2842,22 +3367,22 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.20",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.26"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.20",
-        "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.22"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.20",
-        "fromport": "participants",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.1"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.20",
         "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.26"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.20",
+        "fromport": "participants",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.27"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.20",
+        "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.22"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.20",
@@ -2897,12 +3422,17 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.21",
         "fromport": "participants",
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.26"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.21",
+        "fromport": "participants",
         "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.22"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.21",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.16"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.1"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.21",
@@ -2912,12 +3442,7 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.21",
         "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.26"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.21",
-        "fromport": "participants",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.1"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/participant.16"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.21",
@@ -2952,7 +3477,7 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.22",
         "fromport": "methods",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.27"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.26"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.22",
@@ -2967,7 +3492,7 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.22",
         "fromport": "methods",
-        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.26"
+        "to": "https://data.suny.edu/entities/oried/rdaf/suny/method.27"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.22",
@@ -3002,17 +3527,22 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.22",
         "fromport": "considerations",
-        "to": "E.6.6"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.22",
-        "fromport": "considerations",
         "to": "E.6.5"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.22",
         "fromport": "considerations",
         "to": "E.6.4"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.22",
+        "fromport": "considerations",
+        "to": "P.11.4"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.22",
+        "fromport": "considerations",
+        "to": "E.6.6"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.22",
@@ -3032,17 +3562,22 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.37",
         "fromport": "considerations",
-        "to": "E.6.6"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.37",
-        "fromport": "considerations",
         "to": "E.6.5"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.37",
         "fromport": "considerations",
         "to": "E.6.4"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.37",
+        "fromport": "considerations",
+        "to": "P.11.4"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.37",
+        "fromport": "considerations",
+        "to": "E.6.6"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.37",
@@ -3138,6 +3673,11 @@
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.41",
         "fromport": "considerations",
         "to": "P.1.4"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.41",
+        "fromport": "considerations",
+        "to": "P.12.1"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.41",
@@ -3592,7 +4132,12 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.69",
         "fromport": "considerations",
-        "to": "PA.6.1"
+        "to": "PA.6.3"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.69",
+        "fromport": "considerations",
+        "to": "PA.6.5"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.69",
@@ -3607,17 +4152,17 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.69",
         "fromport": "considerations",
-        "to": "PA.6.5"
-    },
-    {
-        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.69",
-        "fromport": "considerations",
         "to": "PA.6.4"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.69",
         "fromport": "considerations",
-        "to": "PA.6.3"
+        "to": "PA.6.1"
+    },
+    {
+        "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.69",
+        "fromport": "considerations",
+        "to": "PA.6.7"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.69",
@@ -3647,12 +4192,12 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.33",
         "fromport": "resources",
-        "to": "https://www.go-fair.org/fair-principles/"
+        "to": "https://www.nature.com/articles/sdata201618"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.33",
         "fromport": "resources",
-        "to": "https://www.nature.com/articles/sdata201618"
+        "to": "https://www.go-fair.org/fair-principles/"
     },
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.33",
@@ -3807,7 +4352,7 @@
     {
         "from": "https://data.suny.edu/entities/oried/rdaf/suny/activity.43",
         "fromport": "extends",
-        "to": "SU2.1.1"
+        "to": "SUR.2.1"
     },
     {
         "from": "SUR.3",
