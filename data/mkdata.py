@@ -203,8 +203,11 @@ for subtopic in rdaf_objs['subtopic']:
         obj['aToolTip'] = st_defs[subtopic]
         definition = st_defs[subtopic]
     entities.append(obj)
+
     if len(rdaf_objs['subtopic'][subtopic]['considerationFor']) > 0:
         for obj_id in rdaf_objs['subtopic'][subtopic]['considerationFor']:
+            obj_id = obj_id.strip()
+            rdaf_objs['topic'] = strip_keys(rdaf_objs['topic'])
             if obj_id in rdaf_objs['topic']:
                 links.append({'from':obj_id, 'fromport':'considerations', 'to':subtopic})
             if obj_id not in considerations:
