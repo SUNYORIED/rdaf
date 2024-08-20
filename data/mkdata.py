@@ -2,6 +2,8 @@ import pandas as pd
 import json
 import uuid
 import re
+import datetime
+
 
 THING = "https://schema.org/Thing"
 SUNYNS = "https://data.suny.edu/vocabs/oried/rdaf/suny/"
@@ -361,3 +363,10 @@ with open(r"./json-ld/graph.jsonld","w") as json_file:
         },
         '@graph':list(graph.values())
         }, json_file, indent=4)
+
+now = datetime.datetime.now()
+formatted_date = now.strftime("%Y-%m-%d")
+with open(r"./json-ld/lastModified.json","w") as lastModified_file:
+    json.dump({
+        "Last Modified Date": formatted_date
+    }, lastModified_file, indent=4)

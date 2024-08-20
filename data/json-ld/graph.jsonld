@@ -1985,11 +1985,10 @@
             "description": "A scholarly manuscript submitted to a journal that undergoes a peer review process, an editing and copy-editing process, and finally distribution by publishers able to print and make high-quality scholarly works available to the world. Such manuscripts typically contain analysis and conclusions, but not digital data objects, e.g., raw data and software."
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/SUR.2.2",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/nist/SU2.1.2",
             "@type": "https://schema.org/Thing",
             "name": "Supplementary material",
-            "additionalType": "RdAF Subtopic",
-            "description": "Peer-reviewed material directly relevant to the conclusions of a manuscript that cannot be included in the printed version for reasons of space or medium (e.g., video clips or sound files)."
+            "additionalType": "RdAF Subtopic"
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/nist/SUR.2.3",
@@ -2651,6 +2650,8 @@
             "sunyrdaf:includes": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.3.6",
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.3.7",
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.5.1",
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.5.2",
                 "https://data.suny.edu/entities/oried/rdaf/nist/P.6.3",
                 "https://data.suny.edu/entities/oried/rdaf/nist/GA.8.1",
                 "https://data.suny.edu/entities/oried/rdaf/nist/GA.8.2",
@@ -2983,8 +2984,12 @@
             "name": "Community-Based Standards",
             "additionalType": "RdAF Topic",
             "description": "Documents, including codes, specifications, recommended practices, classifications, test methods, and guides, that are developed by a group with common interests",
+            "sunyrdaf:includes": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/GA.9.1"
+            ],
             "sunyrdaf:generates": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.72"
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.72",
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.73"
             ]
         },
         {
@@ -3001,7 +3006,7 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/GA.10.5"
             ],
             "sunyrdaf:generates": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.73"
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.74"
             ]
         },
         {
@@ -3009,7 +3014,10 @@
             "@type": "https://schema.org/Thing",
             "name": "Types of Processed Data",
             "additionalType": "RdAF Topic",
-            "description": "Classifications or categories of data"
+            "description": "Classifications or categories of data",
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.75"
+            ]
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/nist/PA.2",
@@ -3025,6 +3033,9 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.2.5",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.2.6",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.2.7"
+            ],
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.76"
             ]
         },
         {
@@ -3044,6 +3055,9 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.3.8",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.3.9",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.3.10"
+            ],
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.77"
             ]
         },
         {
@@ -3071,6 +3085,9 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.5.3",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.5.4",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.3.6"
+            ],
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.78"
             ]
         },
         {
@@ -3160,7 +3177,11 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.1.12",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.1.13",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.1.14",
-                "https://data.suny.edu/entities/oried/rdaf/nist/SUR.1.15"
+                "https://data.suny.edu/entities/oried/rdaf/nist/SUR.1.15",
+                "https://data.suny.edu/entities/oried/rdaf/nist/PD.4.3"
+            ],
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.79"
             ]
         },
         {
@@ -3171,12 +3192,15 @@
             "description": "Methods whereby datasets and other digital objects are publicly or privately distributed or are accessible to others upon request",
             "sunyrdaf:includes": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.2.1",
-                "https://data.suny.edu/entities/oried/rdaf/nist/SUR.2.2",
+                "https://data.suny.edu/entities/oried/rdaf/nist/SU2.1.2",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.2.3",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.2.4",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.2.5",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.2.6",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.2.7"
+            ],
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.80"
             ]
         },
         {
@@ -3195,8 +3219,8 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.3.7"
             ],
             "sunyrdaf:generates": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.74",
-                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.75"
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.81",
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.82"
             ]
         },
         {
@@ -3214,7 +3238,7 @@
             ],
             "sunyrdaf:generates": [
                 "https://data.suny.edu/entities/oried/rdaf/suny/outcome.47",
-                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.76"
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.83"
             ]
         },
         {
@@ -3231,6 +3255,9 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.5.5",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.5.6",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.5.7"
+            ],
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.84"
             ]
         },
         {
@@ -3250,6 +3277,9 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.6.8",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.6.9",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.6.10"
+            ],
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.85"
             ]
         },
         {
@@ -3264,6 +3294,9 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.7.3",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.7.4",
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.7.5"
+            ],
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.86"
             ]
         },
         {
@@ -3295,6 +3328,9 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.1.5",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.1.6",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.1.7"
+            ],
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.87"
             ]
         },
         {
@@ -3307,6 +3343,9 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.2.1",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.2.2",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.2.3"
+            ],
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.88"
             ]
         },
         {
@@ -3320,6 +3359,9 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.3.2",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.3.3",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.3.4"
+            ],
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.89"
             ]
         },
         {
@@ -3332,6 +3374,9 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.4.1",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.4.2",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.4.3"
+            ],
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.90"
             ]
         },
         {
@@ -3347,6 +3392,13 @@
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.5.4",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.5.5",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.5.6"
+            ],
+            "sunyrdaf:generates": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.91",
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.92",
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.93",
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.94",
+                "https://data.suny.edu/entities/oried/rdaf/suny/outcome.95"
             ]
         },
         {
@@ -3354,23 +3406,23 @@
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
             "name": "Convene data governance group (strategic Level)",
             "sunyrdaf:generates": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/output.3",
-                "https://data.suny.edu/entities/oried/rdaf/suny/output.2",
                 "https://data.suny.edu/entities/oried/rdaf/suny/output.1",
+                "https://data.suny.edu/entities/oried/rdaf/suny/output.2",
+                "https://data.suny.edu/entities/oried/rdaf/suny/output.3",
                 "https://data.suny.edu/entities/oried/rdaf/suny/output.4"
             ],
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/method.2",
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.1",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.4",
+                "https://data.suny.edu/entities/oried/rdaf/suny/method.2",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.3",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.2",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.4",
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.1",
                 "https://datagovernance.com/the-data-governance-basics/",
                 "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.4",
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.1.2"
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.1.2",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.4"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.1"
@@ -3384,8 +3436,8 @@
                 "https://data.suny.edu/entities/oried/rdaf/suny/activity.1"
             ],
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.4",
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.1.2"
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.1.2",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.4"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.1"
@@ -3439,8 +3491,8 @@
                 "https://data.suny.edu/entities/oried/rdaf/suny/activity.1"
             ],
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.4",
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.1.2"
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.1.2",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.1.4"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.1"
@@ -3507,10 +3559,10 @@
             "name": "Build organizational infrastructure to support RDM",
             "sunyrdaf:includes": [
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.3",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.4",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.3",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.2",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.4",
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.1",
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.10",
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.2.2"
@@ -3548,10 +3600,10 @@
             ],
             "sunyrdaf:includes": [
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.4",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.4",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.3",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.2",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.4",
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.1",
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.4",
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.1.7"
@@ -3594,11 +3646,11 @@
             ],
             "sunyrdaf:includes": [
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.6",
-                "https://data.suny.edu/entities/oried/rdaf/suny/method.5",
-                "https://data.suny.edu/entities/oried/rdaf/suny/method.7",
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.8",
-                "https://data.suny.edu/entities/oried/rdaf/suny/method.9",
+                "https://data.suny.edu/entities/oried/rdaf/suny/method.7",
+                "https://data.suny.edu/entities/oried/rdaf/suny/method.5",
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.10",
+                "https://data.suny.edu/entities/oried/rdaf/suny/method.9",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.7",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.5",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.8",
@@ -3700,6 +3752,16 @@
             "name": "FAIR is integrated into research policies"
         },
         {
+            "@id": "https://www.nature.com/articles/sdata201618",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Resource",
+            "name": "The FAIR Guiding Principles for scientific data management and stewardship"
+        },
+        {
+            "@id": "https://www.go-fair.org/fair-principles/",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Resource",
+            "name": "FAIR Principles from Go-FAIR"
+        },
+        {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.9",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "Research data is prepared and processed for end use and resuse",
@@ -3755,8 +3817,8 @@
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.11",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.12",
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.2",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.4.1",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.6"
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.6",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.4.1"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.2.4"
@@ -3770,8 +3832,8 @@
                 "https://data.suny.edu/entities/oried/rdaf/suny/activity.5"
             ],
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.4.1",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.6"
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.6",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.4.1"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.2.4"
@@ -3811,8 +3873,8 @@
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.2",
                 "https://sr.ithaka.org/publications/research-data-services-in-us-higher-education/",
                 "https://library.educause.edu/-/media/files/library/2018/5/ewg1803pdf.pdf",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.4.1",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.6"
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.6",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.4.1"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.2.4"
@@ -3826,8 +3888,8 @@
                 "https://data.suny.edu/entities/oried/rdaf/suny/activity.6"
             ],
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.4.1",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.6"
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.6",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.4.1"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.2.4"
@@ -3944,9 +4006,9 @@
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "Policies for sharing and licensing data exist",
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.12.5",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.2.9",
                 "https://data.suny.edu/entities/oried/rdaf/nist/P.12.6",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.2.9"
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.12.5"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.2.7"
@@ -3979,13 +4041,13 @@
             ],
             "sunyrdaf:includes": [
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.2",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.8",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.2",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.18",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.4",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.17",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.18",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.16",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.2",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.8",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.17",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.1"
             ],
             "sunyrdaf:extends": [
@@ -4023,27 +4085,27 @@
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
             "name": "Build a data culture",
             "sunyrdaf:generates": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/output.15",
                 "https://data.suny.edu/entities/oried/rdaf/suny/output.14",
+                "https://data.suny.edu/entities/oried/rdaf/suny/output.15",
                 "https://data.suny.edu/entities/oried/rdaf/suny/output.16"
             ],
             "sunyrdaf:includes": [
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.2",
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.15",
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.14",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.8",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.6",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.2",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.19",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.20",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.18",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.4",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.5",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.17",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.18",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.20",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.16",
-                "https://data.suny.edu/entities/oried/rdaf/suny/role.2",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.2",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.6",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.19",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.8",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.17",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.5",
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.1",
+                "https://data.suny.edu/entities/oried/rdaf/suny/role.2",
                 "https://www.heliosopen.org/ourwork"
             ],
             "sunyrdaf:extends": [
@@ -4181,11 +4243,11 @@
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.24",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
-            "name": "FAIR data principles are integrated into research data management work",
+            "name": "FAIR data principles are integrated into data culture in organization",
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.5.1",
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.5.2",
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.3.7",
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.5.2"
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.5.1"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.3.6"
@@ -4195,16 +4257,6 @@
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/output.17",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Output",
             "name": "RDM training includes FAIR"
-        },
-        {
-            "@id": "https://www.nature.com/articles/sdata201618",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Resource",
-            "name": "The FAIR Guiding Principles for scientific data management and stewardship"
-        },
-        {
-            "@id": "https://www.go-fair.org/fair-principles/",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Resource",
-            "name": "FAIR Principles from Go-FAIR"
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.25",
@@ -4219,8 +4271,8 @@
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "Appropriate incentives (or disincentives) exist for data sharing and reuse",
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/SUR.1.14",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.3.9"
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.3.9",
+                "https://data.suny.edu/entities/oried/rdaf/nist/SUR.1.14"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.3.8"
@@ -4235,6 +4287,9 @@
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.27",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "Principles for Indigenous Data Governance are respected (CARE, OCAP, and ethics)",
+            "sunyrdaf:includes": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/SUR.6.3"
+            ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.3.10"
             ]
@@ -4422,18 +4477,18 @@
                 "https://data.suny.edu/entities/oried/rdaf/suny/output.24"
             ],
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/method.19",
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.20",
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.18",
+                "https://data.suny.edu/entities/oried/rdaf/suny/method.19",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.24",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.5",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.25",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.24",
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.3",
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.3.2",
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.3.4",
                 "https://data.suny.edu/entities/oried/rdaf/nist/P.3.1",
                 "https://data.suny.edu/entities/oried/rdaf/nist/P.3.3",
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.3.7",
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.3.4",
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.3.2"
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.3.7"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.4.3"
@@ -4447,11 +4502,11 @@
                 "https://data.suny.edu/entities/oried/rdaf/suny/activity.17"
             ],
             "sunyrdaf:includes": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.3.2",
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.3.4",
                 "https://data.suny.edu/entities/oried/rdaf/nist/P.3.1",
                 "https://data.suny.edu/entities/oried/rdaf/nist/P.3.3",
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.3.7",
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.3.4",
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.3.2"
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.3.7"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.4.3"
@@ -4496,12 +4551,12 @@
             ],
             "sunyrdaf:includes": [
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.22",
-                "https://data.suny.edu/entities/oried/rdaf/suny/method.23",
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.21",
+                "https://data.suny.edu/entities/oried/rdaf/suny/method.23",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.24",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.26",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.5",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.16",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.5",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.26",
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.3"
             ],
             "sunyrdaf:extends": [
@@ -4553,10 +4608,10 @@
             ],
             "sunyrdaf:includes": [
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.24",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.26",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.27",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.22",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.27",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.26",
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.1"
             ],
             "sunyrdaf:extends": [
@@ -4598,10 +4653,10 @@
             ],
             "sunyrdaf:includes": [
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.25",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.26",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.27",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.22",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.27",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.26",
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.1"
             ],
             "sunyrdaf:extends": [
@@ -4638,11 +4693,11 @@
             ],
             "sunyrdaf:includes": [
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.17",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.26",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.22",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.27",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.16",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.27",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.1",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.26",
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.1"
             ],
             "sunyrdaf:extends": [
@@ -4673,20 +4728,20 @@
                 "https://data.suny.edu/entities/oried/rdaf/suny/output.29"
             ],
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/method.26",
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.29",
-                "https://data.suny.edu/entities/oried/rdaf/suny/method.28",
                 "https://data.suny.edu/entities/oried/rdaf/suny/method.27",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.19",
+                "https://data.suny.edu/entities/oried/rdaf/suny/method.28",
+                "https://data.suny.edu/entities/oried/rdaf/suny/method.26",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.28",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.5",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.19",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.6",
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.2",
                 "https://sr.ithaka.org/publications/leveraging-data-communities-to-advance-open-science/",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.5",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.4",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.6",
                 "https://data.suny.edu/entities/oried/rdaf/nist/P.11.4",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.6"
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.4",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.5"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.6.1"
@@ -4700,10 +4755,10 @@
                 "https://data.suny.edu/entities/oried/rdaf/suny/activity.22"
             ],
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.5",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.4",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.6",
                 "https://data.suny.edu/entities/oried/rdaf/nist/P.11.4",
-                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.6"
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.4",
+                "https://data.suny.edu/entities/oried/rdaf/nist/E.6.5"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/E.6.1"
@@ -4749,9 +4804,9 @@
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
             "name": "Establish communication channels",
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.19",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.28",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.5",
+                "https://data.suny.edu/entities/oried/rdaf/suny/participant.19",
                 "https://data.suny.edu/entities/oried/rdaf/suny/participant.6",
                 "https://data.suny.edu/entities/oried/rdaf/suny/role.2"
             ],
@@ -4795,7 +4850,7 @@
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/role.4",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Role",
-            "name": "Connectors/Facilitators\nStrategic Leaders"
+            "name": "Connectors/Facilitators\r\nStrategic Leaders"
         },
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.40",
@@ -4810,8 +4865,8 @@
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "Ownership of data assets within research project is documented, controlled, and managed",
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.1.4",
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.12.1"
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.12.1",
+                "https://data.suny.edu/entities/oried/rdaf/nist/P.1.4"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/P.1.1"
@@ -5001,14 +5056,6 @@
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.27",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
-            "name": "Use standard metadata to ensure research data is FAIR",
-            "sunyrdaf:extends": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/P.6.5"
-            ]
-        },
-        {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.54",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "Project data architecture should be designed to meet institutional and project data governance needs",
@@ -5054,7 +5101,7 @@
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.28",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.27",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
             "name": "Establish project goals for research data",
             "sunyrdaf:extends": [
@@ -5066,14 +5113,14 @@
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "RDM goals for research projects and research data should be clearly articulated",
             "sunyrdaf:resultsFrom": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/activity.28"
+                "https://data.suny.edu/entities/oried/rdaf/suny/activity.27"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/P.10.1"
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.29",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.28",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
             "name": "Create and use data metrics",
             "sunyrdaf:includes": [
@@ -5090,7 +5137,7 @@
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "Data metrics are used to track use and impact, Data metrics are aligned with project goals",
             "sunyrdaf:resultsFrom": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/activity.29"
+                "https://data.suny.edu/entities/oried/rdaf/suny/activity.28"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/P.10.2"
@@ -5110,7 +5157,7 @@
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.30",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.29",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
             "name": "Assign credit to all project members",
             "sunyrdaf:includes": [
@@ -5128,7 +5175,7 @@
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "Research contributions are well defined and transparent",
             "sunyrdaf:resultsFrom": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/activity.30"
+                "https://data.suny.edu/entities/oried/rdaf/suny/activity.29"
             ],
             "sunyrdaf:includes": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.6.7"
@@ -5143,7 +5190,7 @@
             "name": "CRediT Taxonomy Standard"
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.31",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.30",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
             "name": "Use and follow appropriate data use agreements, Assign appropriate licenses to products of research",
             "sunyrdaf:includes": [
@@ -5159,14 +5206,14 @@
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "Data use agreements are followed, Research data governance frameworks are established and implemented",
             "sunyrdaf:resultsFrom": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/activity.31"
+                "https://data.suny.edu/entities/oried/rdaf/suny/activity.30"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/P.12.1"
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.32",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.31",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
             "name": "Review Data Curation Network Primers for your dataset during the Generate/Acquire phase",
             "sunyrdaf:includes": [
@@ -5183,7 +5230,7 @@
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "Unique collection, generation, and storage challenges with specific data types generated in each research project are reviewed and mitigated",
             "sunyrdaf:resultsFrom": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/activity.32"
+                "https://data.suny.edu/entities/oried/rdaf/suny/activity.31"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/GA.1.1"
@@ -5231,12 +5278,12 @@
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "Factors related to how data are acquired are reviewed and standardized",
             "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/PA.6.3",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.6.5",
-                "https://data.suny.edu/entities/oried/rdaf/nist/PA.6.2",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.6.6",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.6.4",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.6.1",
+                "https://data.suny.edu/entities/oried/rdaf/nist/PA.6.3",
+                "https://data.suny.edu/entities/oried/rdaf/nist/PA.6.2",
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.6.7"
             ],
             "sunyrdaf:extends": [
@@ -5252,7 +5299,7 @@
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.33",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.32",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
             "name": "Consider FAIR principles when generating data",
             "sunyrdaf:includes": [
@@ -5270,7 +5317,7 @@
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "FAIR data is supported and implemented during the Generate/Acquire phase",
             "sunyrdaf:resultsFrom": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/activity.33"
+                "https://data.suny.edu/entities/oried/rdaf/suny/activity.32"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/GA.8.1"
@@ -5285,15 +5332,9 @@
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.34",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
-            "name": "Use standardized file naming conventions and directory structure",
-            "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.29",
-                "https://data.suny.edu/entities/oried/rdaf/suny/role.3",
-                "https://data.research.cornell.edu/content/file-management",
-                "https://datamanagement.hms.harvard.edu/collect/directory-structure "
-            ],
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.73",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Standardized file naming conventions and directory structure used in project",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/GA.9.3"
             ]
@@ -5309,7 +5350,7 @@
             "name": "Build Your Directory Structure"
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.73",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.74",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "Factors related to acquisition software are reviewed and standardized before data generation or collection",
             "sunyrdaf:extends": [
@@ -5317,96 +5358,52 @@
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.35",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
-            "name": "Use Electronic Lab Notebooks to standardize documentation and processes in research",
-            "sunyrdaf:extends": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/GA.10.4"
-            ]
-        },
-        {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.36",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
-            "name": "Review Data Curation Network Primers for your dataset during processing",
-            "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.29",
-                "https://data.suny.edu/entities/oried/rdaf/suny/role.3",
-                "https://github.com/DataCurationNetwork/data-primers/tree/main "
-            ],
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.75",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Dataset preserved and archived following best practices for type of data",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.1.1"
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.37",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
-            "name": "Follow best practices for data cleaning",
-            "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.29",
-                "https://data.suny.edu/entities/oried/rdaf/suny/role.3",
-                "https://doi.org/10.1371/journal.pmed.0020267 "
-            ],
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.76",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Follow best practices for preparing and processing data",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.2.1"
             ]
         },
         {
-            "@id": "https://doi.org/10.1371/journal.pmed.0020267 ",
+            "@id": "https://doi.org/10.1371/journal.pmed.0020267 ; [\"Anonymization Techniques for Privacy Preserving Data Publishing: A Comprehensive Survey\"",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Resource",
             "name": "Data Cleaning: Detecting; Diagnosing; and Editing Data Abnormalities"
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.38",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
-            "name": "Follow best practices for de-identification",
-            "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.29",
-                "https://data.suny.edu/entities/oried/rdaf/suny/role.3",
-                "https://ieeexplore.ieee.org/document/9298747 "
-            ],
-            "sunyrdaf:extends": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/PA.2.2"
-            ]
-        },
-        {
-            "@id": "https://ieeexplore.ieee.org/document/9298747 ",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Resource",
-            "name": "Anonymization Techniques for Privacy Preserving Data Publishing: A Comprehensive Survey"
-        },
-        {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.39",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
-            "name": "Determine what new data will be produced with data analysis and how to managed original raw data",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.77",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Factors related to analysis methods and their effect on processed data and original raw data are determined",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.3.1"
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.40",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
-            "name": "Use Persistent identifiers when possible (e.g., DOI, ORCID, ARK, ROR, PIDINST, Handles)",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.78",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Persistent identifiers used when possible (e.g., DOI, ORCID, ARK, ROR, PIDINST, Handles)",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/PA.5.5"
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.41",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
-            "name": "Create and document research workflows",
-            "sunyrdaf:extends": [
-                "https://data.suny.edu/entities/oried/rdaf/nist/PA.8.1"
-            ]
-        },
-        {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.42",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
-            "name": "Determine how and where the research project will disseminate and publish results",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.79",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Factors related to publishing outputs from research projects are considered and addressed",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.1.1"
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.43",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.33",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
             "name": "Consider where research project outputs will be published.",
             "sunyrdaf:extends": [
@@ -5414,7 +5411,18 @@
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.74",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.80",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Outputs from research are published through appropriate modes.",
+            "sunyrdaf:resultsFrom": [
+                "https://data.suny.edu/entities/oried/rdaf/suny/activity.33"
+            ],
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/SUR.2.1"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.81",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "All resources and data are cited appropriately as to the extend possible in published outputs",
             "sunyrdaf:extends": [
@@ -5422,7 +5430,7 @@
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.44",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.34",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
             "name": "Cite research datasets and share prefered dataset citation",
             "sunyrdaf:includes": [
@@ -5435,18 +5443,18 @@
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.75",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.82",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "Datasets can be and are cited in research outputs",
             "sunyrdaf:resultsFrom": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/activity.44"
+                "https://data.suny.edu/entities/oried/rdaf/suny/activity.34"
             ],
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/SUR.3.3"
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.76",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.83",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
             "name": "When possible, data is shared in standard formats, in public repositories, and discoverable",
             "sunyrdaf:extends": [
@@ -5454,15 +5462,33 @@
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.45",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
-            "name": "Consider relevant factors to appraise and select research data for curation and preservation",
-            "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.5",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.6",
-                "https://data.suny.edu/entities/oried/rdaf/suny/role.3",
-                "https://www.dcc.ac.uk/guidance/how-guides/appraise-select-data"
-            ],
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.84",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Levels of access to research outputs are appropriate to project",
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/SUR.5.1"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.85",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Data shared, used, or reused follows appropriate legal requirements",
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/SUR.6.1"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.86",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Data shared, used, or reused is regulated as appropriate",
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/SUR.7.1"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.87",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Research data is selected for curation and preservation considering factors of use, impact, value, uniqueness, cost, provenance, and legal requirements",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.1.1"
             ]
@@ -5470,28 +5496,75 @@
         {
             "@id": "https://www.dcc.ac.uk/guidance/how-guides/appraise-select-data",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Resource",
-            "name": "How to Appraise and Select Research Data fur Curation"
+            "name": "How to Appraise and Select Research Data for Curation"
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.46",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
-            "name": "Assign roles and responsibilities for data when transfering between locations",
-            "sunyrdaf:includes": [
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.29",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.33",
-                "https://data.suny.edu/entities/oried/rdaf/suny/participant.24",
-                "https://data.suny.edu/entities/oried/rdaf/suny/role.3"
-            ],
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.88",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Preservation method for appropriate datasets is sustainable and funded",
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/PD.2.1"
+            ]
+        },
+        {
+            "@id": "https://www.loc.gov/preservation/digital/formats/content/dataset.shtml",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Resource",
+            "name": "Library of Congress Sustainability of Digital Formats"
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.89",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Storage and preservation method for appropriate datasets is appropriate",
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/PD.3.1"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.90",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Roles and responsibilities for data when transfering between locations are assigned",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.4.1"
             ]
         },
         {
-            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/activity.47",
-            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Activity",
-            "name": "Determine length of data retention at time of publication (10 years, permanent, etc.)",
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.91",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Retention period for data is assigned at time of publication and appropriate (10 years, permanent, etc.)",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.5.1"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.92",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Retention and disposition schedules assign retention periods for datasets and policies to apply retention periods exist and are enforced",
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/PD.5.2"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.93",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Data that has past it's retention period can be removed from repository. Assign retention period before publication",
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/PD.5.3"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.94",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Archival data is preserved following archival guidelines and retention schedules.",
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/PD.5.5"
+            ]
+        },
+        {
+            "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.95",
+            "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
+            "name": "Data removed from a repository is indicated through metadata",
+            "sunyrdaf:extends": [
+                "https://data.suny.edu/entities/oried/rdaf/nist/PD.5.6"
             ]
         }
     ]

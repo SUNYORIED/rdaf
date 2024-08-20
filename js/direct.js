@@ -19,6 +19,20 @@ var successButton;
 //initialize
 init();
 
+function lastModifiedDate(){
+  fetch('./data/json-ld/lastModified.json')
+  .then(response => response.json())
+  .then(data => {
+    dateP = document.getElementById('last-modified-date')
+    dateP.textContent = `Last Modified:${data['Last Modified Date']}`
+    console.log(data['Last Modified Date']); // Access the parsed JSON data here
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
+lastModifiedDate()
+
 function buildTheGraph(){
   var Elements = []
     fetch('./data/json-ld/graph.jsonld')
