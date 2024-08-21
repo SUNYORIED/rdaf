@@ -5538,7 +5538,7 @@
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.92",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
-            "name": "Retention and disposition schedules assign retention periods for datasets and policies to apply retention periods exist and are enforced",
+            "name": "Retention and disposition schedules assign retention periods for datasets. Policies to apply retention periods exist and are enforced",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.5.2"
             ]
@@ -5546,7 +5546,7 @@
         {
             "@id": "https://data.suny.edu/entities/oried/rdaf/suny/outcome.93",
             "@type": "https://data.suny.edu/vocabs/oried/rdaf/suny/Outcome",
-            "name": "Data that has past it's retention period can be removed from repository. Assign retention period before publication",
+            "name": "Data that has passed its retention period can be removed from repository. Assign retention period before publication",
             "sunyrdaf:extends": [
                 "https://data.suny.edu/entities/oried/rdaf/nist/PD.5.3"
             ]
