@@ -342,8 +342,8 @@ PD.4 Moving Data from One Service to Another across Organizations  ,PD.4.1 Roles
 ,PD.4.3 Disciplinary archives,"PD.4, SUR.1",,,,,,,,
 "PD.5 Retention and Disposition Schedules
 ","PD.5.1 Technical decisions, e.g., data archiving",PD.5,,"Retention period for data is assigned at time of publication and appropriate (10 years, permanent, etc.)",,,,,,
-A plan of action that indicates the period of time to retain records,PD.5.2 Administrative/policy decisions,PD.5,,Retention and disposition schedules assign retention periods for datasets and policies to apply retention periods exist and are enforced,,,,,,
-,PD.5.3 Deaccessioning/end-of-life,PD.5,,Data that has past it's retention period can be removed from repository. Assign retention period before publication,,,,,,
+A plan of action that indicates the period of time to retain records,PD.5.2 Administrative/policy decisions,PD.5,,Retention and disposition schedules assign retention periods for datasets. Policies to apply retention periods exist and are enforced,,,,,,
+,PD.5.3 Deaccessioning/end-of-life,PD.5,,Data that has passed its retention period can be removed from repository. Assign retention period before publication,,,,,,
 ,PD.5.4 Legal documents,PD.5,,,,,,,,
 ,PD.5.5 End-of-life special considerations,PD.5,,Archival data is preserved following archival guidelines and retention schedules.,,,,,,
 ,"PD.5.6 Recognition of removed data, i.e., tombstone page",PD.5,,Data removed from a repository is indicated through metadata,,,,,,
