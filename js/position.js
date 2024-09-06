@@ -117,8 +117,18 @@ function setElementsPosition(element, position){
                 parentElement = graph.getPredecessors(element)[0]
             }
             if (element.attributes.name['first'] == "Considerations"){
-                console.log(graph.getPredecessors(element))
+                var sourceLink = (graph.getConnectedLinks(element, {inbound:true}))
+                let sourceElement
+                sourceLink.forEach(link =>{
+                    if(!link.get('hidden')){
+                        sourceElement = link.get('source').id
+                        return;
+                    }
+                })
+                var sourceCell = graph.getCell(sourceElement)
+                var parentElement = sourceCell
             }
+
 
             const parentNodeType = parentElement.attributes.name['first']
             if(parentElement && (parentNodeType == "Stages" || parentNodeType == "Topics")){
@@ -186,6 +196,7 @@ function setElementsPosition(element, position){
                 }
             }
         }
+
 
     }
 }
